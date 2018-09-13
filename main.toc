@@ -7,7 +7,6 @@
 \contentsline {section}{\numberline {1.2}Piercing complexes}{2}{section.13}
 \contentsline {section}{\numberline {1.3}Large cosystoles of a simplex}{4}{section.22}
 \contentsline {section}{\numberline {1.4}Multi-suspensions}{6}{section.30}
-\contentsline {section}{\numberline {1.5}Conings}{7}{section.35}
-\contentsline {section}{\numberline {1.6}A combinatorial perspective}{8}{section.38}
-\contentsline {subsection}{\numberline {1.6.1}Cosystolic sets and boundary isomorphisms}{8}{subsection.39}
-\contentsline {subsection}{\numberline {1.6.2}Coning of cochains}{9}{subsection.46}
+\contentsline {section}{\numberline {1.5}A combinatorial perspective}{7}{section.35}
+\contentsline {subsection}{\numberline {1.5.1}Cosystolic sets and boundary isomorphisms}{7}{subsection.36}
+\contentsline {subsection}{\numberline {1.5.2}Coning of cochains}{8}{subsection.43}

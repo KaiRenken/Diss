@@ -292,67 +292,19 @@ since we have \(\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum
 \end{proof}
 \end{lem}
 
-\begin{prop}\label{proposition12}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\alpha_i=\partial_k(\sigma_i)\), with \(\sigma_i\in\binom{[n]}{k+2}\) and \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then we have:
-\[
-\|sus_{n,k}^d(\varphi)\|_{csy}\geq\min\left\{\left\lceil\frac{dt}{n-k-1}\right\rceil,t\right\}
-\]
-\begin{proof}
-By Lemma \ref{lemma11} we have a family of cycles \(\mathcal{F}'=\left\{\alpha_1',\ldots,\alpha_{dt}'\right\}\), such that \(\left\langle sus_{n,k}^d(\varphi),\alpha_i'\right\rangle=1\). Furthermore, we have \(\alpha_i'=\partial_{k+1}(\sigma_i')\), with\\
-\(\sigma_i'\in\binom{[n]\cup\{n+\left\lceil\frac{i}{t}\right\rceil\}}{k+3}\), so the largest number of cycles from \(\mathcal{F}'\) that can be pierced by one simplex is \(\max\left\{n-k-1,d\right\}\). Thus, we have:
-\[
-\tau(\mathcal{F}')\geq\min\left\{\left\lceil\frac{dt}{n-k-1}\right\rceil,t\right\}
-\]
-and by Theorem \ref{theorem9} we are done.
-\end{proof}
-\end{prop}
-
-\begin{thm}\label{theorem8}
-Let \(k\geq 2\), then we have:
-\[
-C_{max}(\Delta^{[n]},k)\geq\min\left\{\left\lceil\frac{d^{k-1}\binom{n-dk+d}{3}}{n-k-d}\right\rceil\text{, }d^{k-2}\binom{n-dk+d}{3}\right\}
-\]
-\begin{proof}
-Let \(\varphi:=C^*\in C^1(\Delta^{[n-d(k-1)]})\), with \(C=\binom{[n-d(k-1)]}{2}\) and\\
-\(\mathcal{F}=\mathcal{T}_{n-d(k-1)}^1\). Then we obviously have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and\\
-\(\left|\mathcal{F}\right|=\binom{n-d(k-1)}{3}\). Now, applying Lemma \ref{lemma11}, inductively we get a\\
-\(\varphi'\in C^{k-1}(\Delta^{[n-d]})\) and a family of cycles \(\mathcal{F}'\subset C_{k-1}(\Delta^{[n-d]})\), such that\\
-\(\left\langle\varphi',\alpha'\right\rangle=1\) for all \(\alpha'\in\mathcal{F}'\) and \(\left|\mathcal{F}'\right|=d^{k-2}\binom{n-d(k-1)}{3}\). Furthermore, for all \(\alpha'\in\mathcal{F}'\) there exists a simplex \(\sigma'\in\binom{[n-d]}{k+1}\), such that \(\alpha'=\partial_{k-1}(\sigma')\), since \(\mathcal{F}'\) was constructed from \(\mathcal{T}_{n-d(k-1)}^1\). Now, we can apply Proposition \ref{proposition12} and we get:
-\[
-\|sus_{n-d,k-1}^{d}(\varphi')\|_{csy}\geq\min\left\{\left\lceil\frac{d^{k-1}\binom{n-dk+d}{3}}{n-k-d}\right\rceil\text{, }d^{k-2}\binom{n-dk+d}{3}\right\}
-\]
-\end{proof}
-\end{thm}
-
-\section{Conings}
-
-A special role plays the suspension map \(sus_{n,k}^1\), which we could call the coning map, since when we consider some simplex \(\sigma\), then \(supp\left(sus_{n,k}^1(\sigma)\right)\) just coincides with the topological notion of the cone of \(\sigma\). Using this map, we can find a slightly better bound for the cosystolic norm than Theorem \ref{theorem8} gives us, at least for relatively small values of \(n\).
+\begin{defi}
+Let \(S\) be some set, \(\mathcal{F}\subseteq 2^S\) a family of subsets of \(S\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0:=\emptyset\) and for each \(i=1,\ldots,m\) set \(P_i:=\left\{F\in\mathcal{F}\text{ : }F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P:=(|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
+\end{defi}
 
 \begin{prop}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then we have:
+Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
 \[
-\|sus_{n,k}^1(\varphi)\|_{csy}\geq\tau(\mathcal{F})
+\|sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
 \]
 \begin{proof}
-By Lemma \ref{lemma11} there exists a family of cycles\\
-\(\mathcal{F}'=\left\{\alpha_1',\ldots,\alpha_t'\right\}\subset C_{k+1}(\Delta^{[n+1]})\), such that \(\left\langle sus_{n,k}^1(\varphi),\alpha_i'\right\rangle=1\) for all\\
-\(i=1,\ldots,t\). Now let \(S\subset\binom{[n]}{k+1}\) be a minimal piercing set of \(\mathcal{F}\), then\\
-\(\mathcal{S}':=\left\{sus_{n,k}^1(\sigma)\text{ : }\sigma\in S\right\}\) is a piercing set of \(\mathcal{F}'\) and it is also minimal, since any simplex \(\sigma\in\binom{[n]}{k+2}\) can pierce at most one cycle from \(\mathcal{F}'\). Using the cycle detection theorem, we have:
-\[
-\|sus_{n,k}^1(\varphi)\|_{csy}\geq\tau(\mathcal{F}')=\tau(\mathcal{F})
-\]
+
 \end{proof}
 \end{prop}
-
-\begin{thm}
-Let \(k\geq 2\), then we have:
-\[
-j
-\]
-\begin{proof}
-
-\end{proof}
-\end{thm}
 
 % OLD VERSION FROM FIRST PAPER
 
