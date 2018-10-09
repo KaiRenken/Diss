@@ -6,13 +6,19 @@
 
 When we want to determine whether a cochain is a cosystole or not until now we only have the original definition of cosystolicity, which does not seem to be very useful. In this chapter we want to develop tools to get hands on this problem and investigate the structure how cosystoles in certain simplicial complexes are arranged.
 
-\section{Basic results}
+\section{Piercing sets and the cycle detection theorem}
 
 The following definition is adopted from \cite{6}.
 
 \begin{defi}
 Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of finite subsets of \(V\). A subset \(S\subseteq V\) is called a \textbf{piercing set} of \(\mathcal{F}\) if we have \(S\cap F\neq\emptyset\) for all \(F\in\mathcal{F}\). The minimal cardinality of a piercing set of \(\mathcal{F}\), denoted by \(\tau(\mathcal{F})\), is called the \textbf{piercing number} of \(\mathcal{F}\).
 \end{defi}
+
+\begin{expl}
+Let \(V:=\left\{1,2,3,4,5\right\}\) and \(\mathcal{F}:=\left\{\{1,2\}\{2,3,4\},\{1,5\},\{2,4,5\}\right\}\), then we have \(\tau(\mathcal{F})=2\), since for example \(S:=\left\{2,5\right\}\) is a minimal piercing set of \(\mathcal{F}\).
+\end{expl}
+
+Later we will often talk about piercing numbers and piercing sets of families of \(k\)-chains, which we define as follows:
 
 \begin{defi}
 Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{piercing sets} and the \textbf{piercing number} of \(\mathcal{F}\) are defined as the piercing sets and the piercing number of the family \(\left\{supp(F)\text{ : }F\in\mathcal{F}\right\}\).
@@ -25,16 +31,38 @@ Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\). Let now \(\mathcal{
 \[
 \|\varphi\|_{csy}\geq\tau(\mathcal{F})
 \]
+\begin{proof}
+Let \(\psi\in C^{k-1}(X)\), then for any \(1\leq i\leq t\) we have:
+\begin{align}
+\langle\varphi+\delta^{k-1}(\psi),\alpha_i\rangle&=\langle\varphi,\alpha_i\rangle+\langle\delta^{k-1}(\psi),\alpha_i\rangle\notag\\
+&=\langle\varphi,\alpha_i\rangle+\langle\psi,\partial_{k-1}(\alpha_i)\rangle\notag\\
+&=\langle\varphi,\alpha_i\rangle+\langle\psi,0\rangle\notag\\
+&=\langle\varphi,\alpha_i\rangle=1\notag
+\end{align}
+This means that we have \(supp(\varphi+\delta^{k-1}(\psi))\cap supp(\alpha_i)\neq\emptyset\) for all \(1\leq i\leq t\), so \(supp(\varphi+\delta^{k-1}(\psi))\) is a piercing set of \(\mathcal{F}\) and we get:
+\[
+\|\varphi+\delta^{k-1}(\psi)\|=|supp(\varphi+\delta^{k-1}(\psi))|\geq\tau(\mathcal{F})
+\]
+Since \(\psi\) was chosen arbitrarily we get the requested result.
+\end{proof}
 \end{thm}
 
-The following corollary was also stated by Kozlov in \cite{6}.
+The following corollary (a special case of the preceding theorem) was also stated by Kozlov in \cite{6}.
 
 \begin{cor}
 Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\).\\
-If there exist \(k\)-cycles \(\alpha_1,\ldots,\alpha_{\|\varphi\|}\in C_k(X)\), such that for every \(i\) we have \(\left\langle\varphi,\partial_k(d_i)\right\rangle = 1\) and for every \(i\neq j\) we have \(\|\alpha_i+\alpha_j\|=\|\alpha_i\|+\|\alpha_j\|\), then \(\varphi\) is a cosystole.
+Let now \(\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\) be a family of \(k\)-cycles in \(C_k(X)\), such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(1\leq i\leq\|\varphi\|\) and \(supp(\alpha_i)\cap supp(\alpha_j)=\emptyset\) for all \(i\neq j\), then \(\varphi\) is a cosystole.
+\begin{proof}
+Since the supports of the cycles \(\alpha_1,\ldots,\alpha_{\|\varphi\|}\) are pairwise disjoint, we obviously have \(\tau(\mathcal{F})=\|\varphi\|\) and using the cycle detection theorem we are done.
+\end{proof}
 \end{cor}
 
-To get the best possible results using the preceding theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem. For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
+\begin{expl}
+
+\end{expl}
+
+To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
+For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
 \[
 \mathcal{T}_{\varphi}:=\left\{\partial_k(\sigma)\text{ : }\sigma\in supp(\delta^k(\varphi))\right\}
 \]

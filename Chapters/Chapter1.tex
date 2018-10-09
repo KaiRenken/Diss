@@ -4,7 +4,7 @@
 
 \label{Chapter1}
 
-Let us shortly recall some basic algebraic and combinatorial concepts, which we will use through the whole thesis.
+Let us shortly recall some basic algebraic and combinatorial concepts, which we will use within this thesis.
 
 \section{Simplicial complexes}
 
@@ -41,8 +41,9 @@ is called the \(k\)-th \textbf{boundary map}. (Recall, that the boundary maps ha
 \\
 The \(k\)-th \textbf{homology group} of \(X\) is then defined as:
 \[
-H_k(X):=\frac{\text{Ker}(\partial_{k-1})}{\text{Im}(\partial_k)}
+H_k(X):=\frac{\text{Ker}(\partial_{k-1})}{\text{Im}(\partial_k)},
 \]
+where the elements from \(\text{Ker}(\partial_{k-1})\) are called k-\textbf{cycles} and the elements from \(\text{Im}(\partial_k)\) are called k-\textbf{boundaries}.\\
 Dualizing this concept, we get the \(k\)-th \textbf{cochain group} of \(X\) by
 \[
 C^k(X):=C^k(X,\mathbb{Z}_2):=\left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2\text{ : }\varphi\text{ is a linear map}\right\},
