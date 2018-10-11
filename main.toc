@@ -10,21 +10,21 @@
 \contentsline {section}{\numberline {2.4}Graphs \& Hypergraphs}{5}{section.11}
 \contentsline {chapter}{\numberline {3}Detecting cosystoles}{7}{chapter.12}
 \contentsline {section}{\numberline {3.1}Piercing sets and the cycle detection theorem}{7}{section.13}
-\contentsline {section}{\numberline {3.2}Piercing complexes}{8}{section.21}
-\contentsline {section}{\numberline {3.3}Large cosystoles of a simplex}{10}{section.30}
-\contentsline {section}{\numberline {3.4}Multi-suspensions}{12}{section.38}
-\contentsline {section}{\numberline {3.5}A combinatorial perspective}{13}{section.43}
-\contentsline {subsection}{\numberline {3.5.1}Cosystolic sets and boundary isomorphisms}{13}{subsection.44}
-\contentsline {subsection}{\numberline {3.5.2}Coning of cochains}{15}{subsection.51}
-\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{19}{chapter.62}
-\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{19}{section.63}
-\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{19}{subsection.64}
-\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{20}{subsection.70}
-\contentsline {section}{\numberline {4.2}Cheeger graphs}{28}{section.87}
-\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{28}{subsection.88}
-\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{29}{subsection.92}
-\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{33}{subsection.108}
-\contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.113}
-\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{39}{appendix.114}
-\contentsline {section}{\numberline {A.1}Preliminaries}{39}{section.115}
-\contentsline {section}{\numberline {A.2}The main theorem}{40}{section.120}
+\contentsline {section}{\numberline {3.2}Piercing complexes}{8}{section.20}
+\contentsline {section}{\numberline {3.3}Large cosystoles of a simplex}{10}{section.29}
+\contentsline {section}{\numberline {3.4}Multi-suspensions}{12}{section.37}
+\contentsline {section}{\numberline {3.5}A combinatorial perspective}{14}{section.42}
+\contentsline {subsection}{\numberline {3.5.1}Cosystolic sets and boundary isomorphisms}{14}{subsection.43}
+\contentsline {subsection}{\numberline {3.5.2}Coning of cochains}{15}{subsection.50}
+\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{19}{chapter.61}
+\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{19}{section.62}
+\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{19}{subsection.63}
+\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{20}{subsection.69}
+\contentsline {section}{\numberline {4.2}Cheeger graphs}{28}{section.86}
+\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{28}{subsection.87}
+\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{29}{subsection.91}
+\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{33}{subsection.107}
+\contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.112}
+\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{39}{appendix.113}
+\contentsline {section}{\numberline {A.1}Preliminaries}{39}{section.114}
+\contentsline {section}{\numberline {A.2}The main theorem}{40}{section.119}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  8 OCT 2018 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  11 OCT 2018 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1642,12 +1642,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 101--191
-
- []
-
-[5] [6]
+) [5] [6]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (./Chapters/Chapter2.tex
@@ -1660,12 +1655,12 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 [8] [9] [10] [11]
-Overfull \hbox (42.2987pt too wide) in paragraph at lines 280--284
+Overfull \hbox (42.2987pt too wide) in paragraph at lines 293--297
 \T1/ppl/m/n/10.95 If $\OML/zplm/m/it/10.95 n$ \T1/ppl/m/n/10.95 is odd there ex
 -ists ex-actly one $\OML/zplm/m/it/10.95  \OMS/zplm/m/n/10.95 2 T[]$\T1/ppl/m/
 n/10.95 , such that $[] \OT1/zplm/m/n/10.95 = \OT1/ppl/m/n/10.95 0$\T1/ppl/m/n/
@@ -1674,17 +1669,17 @@ n/10.95 , such that $[] \OT1/zplm/m/n/10.95 = \OT1/ppl/m/n/10.95 0$\T1/ppl/m/n/
 
 [12]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 341.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 354.
  [13]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 357.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 370.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 357.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 370.
  [14]
-(./Chapters/Figure3.tex) [15]) [16] [17]
+(./Chapters/Figure3.tex) [15] [16]) [17]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex [18
@@ -1791,9 +1786,15 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 101.
  [40] [41]) [42]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-[]\T1/ppl/m/n/10.95 Dmitry N, Ko-zlov, Roy Meshu-lam; \T1/ppl/m/it/10.95 Quan-t
-i-ta-tive as-pects of acyclic-ity\T1/ppl/m/n/10.95 ,
+Underfull \hbox (badness 2564) in paragraph at lines 228--229
+[]\T1/ppl/m/n/10.95 Dmitry N. Ko-zlov and Roy Meshu-lam; \T1/ppl/m/it/10.95 Qua
+n-ti-ta-tive as-pects of acyclic-ity\T1/ppl/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 230--231
+[]\T1/ppl/m/n/10.95 Anders Björner and Mar-tin Tancer, \T1/ppl/m/it/10.95 Com-b
+i-na-to-rial Alexan-der Du-al-ity - A
  []
 
 1: section
@@ -1801,24 +1802,24 @@ i-ta-tive as-pects of acyclic-ity\T1/ppl/m/n/10.95 ,
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (./main.aux (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux)
 (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 96AEEE4A0DADC8A2DC943D3E9B699E53;5384.
+(rerunfilecheck)             Checksum: 42BB2821D2BDEAE4312A2F3FE15FEA23;5384.
  ) 
 Here is how much of TeX's memory you used:
- 34123 strings out of 494927
- 686855 string characters out of 6177949
- 723182 words of memory out of 5000000
- 36610 multiletter control sequences out of 15000+600000
+ 34126 strings out of 494927
+ 686864 string characters out of 6177949
+ 723231 words of memory out of 5000000
+ 36612 multiletter control sequences out of 15000+600000
  83255 words of font info for 177 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 64i,20n,74p,10377b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,20n,76p,10377b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1832,10 +1833,10 @@ mri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (55 pages, 405216 bytes).
+Output written on main.pdf (55 pages, 406996 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 572 compressed objects within 6 object streams
- 186 named destinations out of 1000 (max. 500000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 578 compressed objects within 6 object streams
+ 187 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
