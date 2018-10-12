@@ -11,7 +11,8 @@ When we want to determine whether a cochain is a cosystole or not until now we o
 The following definition is adopted from \cite{6}.
 
 \begin{defi}
-Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of finite subsets of \(V\). A subset \(P\subseteq V\) is called a \textbf{piercing set} of \(\mathcal{F}\) if we have \(P\cap F\neq\emptyset\) for all \(F\in\mathcal{F}\). The minimal cardinality of a piercing set of \(\mathcal{F}\), denoted by \(\tau(\mathcal{F})\), is called the \textbf{piercing number} of \(\mathcal{F}\).
+Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of finite subsets of \(V\). A subset \(P\subseteq V\) is called a \textbf{piercing set} of \(\mathcal{F}\) if we have \(P\cap F\neq\emptyset\) for all \(F\in\mathcal{F}\). The minimal cardinality of a piercing set of \(\mathcal{F}\), denoted by \(\tau(\mathcal{F})\), is called the \textbf{piercing number} of \(\mathcal{F}\).\\
+For a \(v\in V\) and an \(F\in\mathcal{F}\) we say that \(F\) \textbf{is pierced by} \(v\), if \(v\in F\).
 \end{defi}
 
 \begin{expl}
@@ -262,13 +263,11 @@ Eventhough, we can exactly determine this number for the ultimate and the penult
 \begin{thm}\label{theorem7}
 \(C_{max}(\Delta^{[n]},n-2)=1\), for all \(n\geq 3\)
 \begin{proof}
-Let \(S\in\binom{[n]}{n-1}\) be chosen arbitrarily, \(\varphi:=S^*\in C^{n-2}(\Delta^{[n]})\) and\\
+Let \(\sigma\in\binom{[n]}{n-1}\) be chosen arbitrarily, \(\varphi:=\sigma^*\in C^{n-2}(\Delta^{[n]})\) and\\
 \(\mathcal{F}:=\left\{\alpha\right\}\), where \(\alpha\) is the boundary of the single (\(n-1\))-dimensional simplex in \(\Delta^{[n]}\). Obviously, we have \(\left\langle\varphi,\alpha\right\rangle=1\), since \(supp(\varphi)\cap supp(\alpha)=supp(\varphi)\) and \(\tau(\mathcal{F})=1\), so by the cycle detection theorem we have \(\|\varphi\|_{csy}\geq 1\).\\
-Now, let \(S_1,S_2\in\binom{[n]}{n-1}\) be chosen arbitrarily again (\(S_1\neq S_2\)) and \(C:=S_1\cap S_2\). Then we have \(\delta^{n-3}(C^*)+S_1^*+S_2^*=0\), so there exists no (\(n-2\))-cosystole attaining norm \(2\) and we are done.
+Now, let \(\sigma_1,\sigma_2\in\binom{[n]}{n-1}\) be chosen arbitrarily again (\(\sigma_1\neq\sigma_2\)) and \(c:=\sigma_1\cap\sigma_2\). Then we have \(\delta^{n-3}(c^*)+\sigma_1^*+\sigma_2^*=0\), so there exists no (\(n-2\))-cosystole attaining norm \(2\) and we are done.
 \end{proof}
 \end{thm}
-
-% CONTINUE READING HERE!
 
 \begin{lem}\label{lemma12}
 For \(n\geq 4\) we have:
@@ -278,7 +277,8 @@ For \(n\geq 4\) we have:
 \begin{proof}
 For each \(\sigma\in\binom{[n]}{n-2}\) there exist exactly two cycles \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\)\\
 (\(\alpha_1\neq\alpha_2\)), such that \(\sigma\in supp(\alpha_1)\cap supp(\alpha_2)\), so the largest possible number of cycles from \(\mathcal{T}_n^{n-3}\) that can be pierced by one simplex is two. Furthermore, we have \(\left|\mathcal{T}_n^{n-3}\right|=\binom{n}{n-1}=n\), so we get \(\tau(\mathcal{T}_n^{n-3})\geq\left\lceil\frac{n}{2}\right\rceil\).\\
-On the other hand, for all \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\) there exists a \(\sigma\in\binom{[n]}{n-2}\), such that \(\sigma\in supp(\alpha_1)\cap supp(\alpha_2)\), so we get \(\tau(\mathcal{T}_n^{n-3})\leq\left\lceil\frac{n}{2}\right\rceil\).
+On the other hand, for all \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\) there exists a \(\sigma\in\binom{[n]}{n-2}\), such that\\
+\(\sigma\in supp(\alpha_1)\cap supp(\alpha_2)\), so we get \(\tau(\mathcal{T}_n^{n-3})\leq\left\lceil\frac{n}{2}\right\rceil\).
 \end{proof}
 \end{lem}
 
@@ -293,9 +293,11 @@ For \(\sigma,\sigma'\in\binom{[n]}{n-2}\) the condition \(\left|\sigma\cap\sigma
 \(C_{max}(\Delta^{[n]},n-3)=\left\lfloor\frac{n}{2}\right\rfloor\), for all \(n\geq 4\)
 \begin{proof}
 Let \(S\subset\binom{[n]}{n-2}\) be a minimal piercing set of \(\mathcal{T}_n^{n-3}\) as constructed in the proof of Lemma \ref{lemma12} and \(\varphi:=S^*\in C^{n-3}(\Delta^{[n]})\).\\
-If \(n\) is even we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{T}_n^{n-3}\), so we immediately get \(C_{max}(\Delta^{[n]},n-3)\geq\tau(\mathcal{T}_n^{n-3})=\frac{n}{2}\) by Lemma \ref{lemma12} and the cycle detection theorem.\\
-If \(n\) is odd there exists exactly one \(\alpha\in\mathcal{T}_n^{n-3}\), such that \(\left\langle\varphi,\alpha\right\rangle=0\), since \(\left|supp(\alpha)\cap supp(\varphi)\right|=2\). Let \(\sigma\in supp(\alpha)\cap supp(\varphi)\) be one of the two simplices in \(supp(\alpha)\cap supp(\varphi)\). Now set \(\varphi':=(S\setminus\sigma)^*\in C^{n-3}(\Delta^{[n]})\), then we have \(\left\langle\varphi',\alpha\right\rangle=1\), but there exists exactly one \(\alpha'\in\mathcal{T}_n^{n-3}\), such that \(\left\langle\varphi',\alpha'\right\rangle=0\), since \(\left|supp(\varphi')\cap supp(\alpha')\right|=0\). Set \(\mathcal{F}:=\mathcal{T}_n^{n-3}\setminus\alpha'\), then we have \(\left\langle\varphi',\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=\tau(\mathcal{T}_n^{n-3})-1=\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n}{2}\right\rfloor\). by Lemma \ref{lemma12} and by the cycle detection theorem we have \(C_{max}(\Delta^{[n]},n-3)\geq\left\lfloor\frac{n}{2}\right\rfloor\).\\
-One the other hand let \(\varphi\in C^{n-3}(\Delta^{[n]})\), such that \(\|\varphi\|=\left\lfloor\frac{n}{2}\right\rfloor+1\), then by Lemma \ref{lemma13} there exist \(\sigma_1,\sigma_2\in supp(\varphi)\), such that \(\left|\sigma_1\cap\sigma_2\right|=n-3\). Now set \(\psi:=(\sigma_1\cap\sigma_2)^*\in C^{n-4}(\Delta^{[n]})\), then we have \(\|\delta^{n-4}(\psi)\|=3\) and \(\left|supp(\delta^{n-4}(\psi))\cap supp(\varphi)\right|\geq 2\). Thus, \(\|\delta^{n-4}(\psi)+\varphi\|\leq\|\varphi\|-1\) and \(\varphi\) can not be a cosystole, so we have \(C_{max}(\Delta^{[n]},n-3)\leq\left\lfloor\frac{n}{2}\right\rfloor\) and we are done.
+If \(n\) is even, then \(n-3\) is odd, so using Lemma \ref{lemma10} and Lemma \ref{lemma12} we have:
+\[
+C_{max}(\Delta^{[n]},n-3)\geq\tau(\mathcal{T}_n^{n-3})=\frac{n}{2}
+\]
+If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one \(\alpha'\in\mathcal{T}_n^{n-3}\), such that \(\left\langle\varphi,\alpha'\right\rangle=0\), since \(\left|supp(\alpha')\cap supp(\varphi)\right|=2\). Set \(\mathcal{F}:=\mathcal{T}_n^{n-3}\setminus\alpha'\), then we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})\geq\tau(\mathcal{T}_n^{n-3})-1=\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n}{2}\right\rfloor\) by Lemma \ref{lemma12}, so by the cycle detection theorem we get \(C_{max}(\Delta^{[n]},n-3)\geq\left\lfloor\frac{n}{2}\right\rfloor\). One the other hand let \(\varphi\in C^{n-3}(\Delta^{[n]})\), such that \(\|\varphi\|=\left\lfloor\frac{n}{2}\right\rfloor+1\), then by Lemma \ref{lemma13} there exist \(\sigma_1,\sigma_2\in supp(\varphi)\), such that \(\left|\sigma_1\cap\sigma_2\right|=n-3\). Now set \(\psi:=(\sigma_1\cap\sigma_2)^*\in C^{n-4}(\Delta^{[n]})\), then we have \(\|\delta^{n-4}(\psi)\|=3\) and \(\left|supp(\delta^{n-4}(\psi))\cap supp(\varphi)\right|\geq 2\). Thus, we have \(\|\delta^{n-4}(\psi)+\varphi\|\leq\|\varphi\|-1\) and \(\varphi\) can not be a cosystole, so we get \(C_{max}(\Delta^{[n]},n-3)\leq\left\lfloor\frac{n}{2}\right\rfloor\) and we are done.
 \end{proof}
 \end{thm}
 
@@ -315,7 +317,7 @@ c&\longmapsto\sum\limits_{\sigma\in supp(sus_{n,k}^d(c^*))}\sigma\notag
 \end{defi}
 
 \begin{lem}\label{lemma11}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
+Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for each \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
 \begin{proof}
 For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
 \[
@@ -348,129 +350,3 @@ Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\a
 
 \end{proof}
 \end{prop}
-
-% OLD VERSION FROM FIRST PAPER
-
-\section{A combinatorial perspective}
-
-\subsection{Cosystolic sets and boundary isomorphisms}
-
-\begin{lem}
-Let \(S\subset\Delta^{[n]}(k-1)\), then we have:
-\begin{enumerate}
-\item \(|\delta(S^C)|\leq |S|(n-k),\quad\text{for }k\text{ odd}\)
-\item \(|\delta(S^C)|\geq\binom{n}{k+1}-|S|(n-k),\quad\text{for }k\text{ even}\)
-\end{enumerate}
-\begin{proof}
-In general we obviously have \(|\delta(S)|\leq |S|(n-k)\) and the result follows directly from the preceding remark.
-\end{proof}
-\end{lem}
-
-\begin{defi}\label{definition2}
-Let \(1\leq k\leq n-1\), then the \textbf{cosystolic complex} \(\mathcal{C}^k(n)\) is defined as follows:
-\begin{itemize}
-\item The elements of \(\Delta^{[n]}(k)\) determine the vertices of \(\mathcal{C}^k(n)\).
-\item A set of vertices forms a simplex of \(\mathcal{C}^k(n)\), if it corresponds to a cosystolic set.
-\end{itemize}
-\(\mathcal{C}M(n)\) then conincides with the complex \(\mathcal{C}^1(n)\).
-\end{defi}
-
-\begin{defi}
-Let \(t\geq 0\), then \(C\subset\Delta^{[n]}(k)\) and \(C'\subset\Delta^{[n+t]}(k+t)\) are called \textbf{boundary isomorphic}, if there exists a bijection \(\varphi:C\rightarrow C'\), such that for all \(D\subset C\), satisfying \(|D|\geq 2\) we have:
-\[
-\bigg\vert\bigcap\limits_{\sigma\in D}\partial(\sigma)\bigg\vert=\bigg\vert\bigcap\limits_{\sigma\in D}\partial(\varphi(\sigma))\bigg\vert
-\]
-Then we call \(\varphi\) a \textbf{boundary isomorphism}.
-\end{defi}
-
-\begin{prop}\label{proposition6}
-If \(C\) and \(C'\) are boundary isomorphic, then \(\delta(C)\) and \(\delta(C')\) are boundary isomorphic.
-\begin{proof}
-Let \(C\subset\Delta^{[n]}(k)\) and \(S\in\Delta^{[n]}(k+1)\), such that \(S\) has an odd number of faces in \(C\) and let \(F\) be the set consisting of those faces.\\
-We will first consider the case, when we have \(|F|>2\). Let \(\sigma,\sigma'\in F\), such that \(\sigma\neq\sigma'\). Then we have \(|\partial(\sigma)\cap\partial(\sigma')|=1\), since \(\sigma\) and \(\sigma'\) belong to the same simplex \(S\). By boundary isomorphy we get \(|\partial(\varphi(\sigma))\cap\partial(\varphi(\sigma'))|=1\) (where \(\varphi\) denotes the boundary isomorphism) and so \(\varphi(\sigma)\) and \(\varphi(\sigma')\) are faces of the same simplex \(S'\), uniquely determined by \(S\). We still have to show, that there can not exist more faces of \(S'\) in \(C'\) than those from \(\varphi(F)\). Suppose, there exists a face \(\tau\in C'\) of \(S'\), such that \(\tau\neq\varphi(\sigma)\) for all \(\sigma\in F\). Then we have \(|\partial(\tau)\cap\partial(\varphi(\sigma))|=1\) for all \(\sigma\in F\). It follows by boundary isomophy, that \(|\partial(\varphi^{-1}(\tau))\cap\partial(\sigma)|=1\) for all \(\sigma\in F\), so \(\varphi^{-1}(\sigma)\in C\) is another face of \(S\), distinct from the others, but this is a contradiction to \(\varphi^{-1}(\tau)\notin F\).\\
-Thus, the number of faces of \(S\) in \(C\) equals the number of faces of \(S'\) in \(C'\) and furthermore there is a one-to-one correspondence between the simplices having an odd (\(>2\)) number of faces in \(C\) and the simplices having an odd (\(>2\)) number of faces in \(C'\) by the bijectivity of \(\varphi\).\\
-Now consider the case, when we have \(|F|=1\). By the same arguments as in the first case, there is also a one-to-one correspondence between the simplices having more than one face in \(C\) and the simplices having more than one face in \(C'\). Let \(F:=\{\sigma\}\) and \(m\) be the number of simplices having \(\sigma\) and at least one more element from \(C\) as a face. By the preceding correspondence \(m\) equals the number of simplices having \(\varphi(\sigma)\) and at least one more element from \(C'\) as a face. Hence, the number of simplices having only \(\sigma\) as a face in \(C\) equals \(n-(k+1)-m\) and the number of simplices having only \(\varphi(\sigma)\) as a face in \(C'\) equals \(n+t-(k+t+1)-m\) for some \(t\in\mathbb{Z}\), but these two numbers equal for all \(t\) and we get \(|\delta(C)|=|\delta(C')|\) in general.\\
-Furthermore, the preceding construction induces a bijection \(\phi:\delta(C)\rightarrow\delta(C')\), which turnes out to be a boundary isomorphism. Let \(D\subset C\), such that \(|D|\geq 2\) and all \(\sigma\in D\) share a common face. Then by the construction of \(\phi\) all simplices \(\phi(\sigma)\) must share a common face again. On the other hand, if the boundaries of the simplices in \(D\) are distinct, the boundaries of their images under \(\phi\) are as well.
-\end{proof}
-\end{prop}
-
-We conjecture, that boundary isomorphy even preserves cosystolicity but until now it seems pretty difficult to say anything more about boundary isomorphic sets in general. Let us instead study a certain boundary isomorphism in particular.
-
-\subsection{Coning of cochains}
-
-Consider the following so called \textbf{coning} map:
-\begin{align}
-\varepsilon:\Delta^{[n]}(k)&\longrightarrow\Delta^{[n+1]}(k+1)\notag\\
-\sigma&\longmapsto (\sigma,n+1),\notag
-\end{align}
-
-\begin{lem}\label{lemma5}
-Let \(C\subset\Delta^{[n]}(k)\), then \(C\) is boundary isomorphic to \(\varepsilon(C)\).
-\begin{proof}
-Obviously, \(\varepsilon\) is bijective. Now consider some set \(D\subset C\), satisfying \(|D|\geq 2\). Then we have:
-\[
-\bigg\vert\bigcap\limits_{\sigma\in D}\partial(\varepsilon(\sigma))\bigg\vert=\bigg\vert\bigcap\limits_{\sigma\in D}\partial((\sigma,n+1))\bigg\vert=\bigg\vert\bigcap\limits_{\sigma\in D}\partial(\sigma)\bigg\vert,
-\]
-where the second equation is valid, since if two simplices \(\sigma,\sigma'\in D\) contain the same face, then adding a vertex preserves this property in one dimension higher, just as deleting a vertex preserves it in one dimension lower.
-\end{proof}
-\end{lem}
-\begin{lem}\label{lemma7}
-Let \(C\subset\Delta^{[n]}(k)\) and \(C'\subset\Delta^{[n+1]}(k+1)\) be boundary isomorphic, then \(C'\) is boundary isomorphic to \(C'':=\varepsilon(C)\).
-\begin{proof}
-Obviously, boundary isomorphy is an equivalence relation, so by Lemma \ref{lemma5} we are done.
-\end{proof}
-\end{lem}
-Let us now switch to the algebraic situation to study \(\varepsilon\) more intensively. Consider the following diagram of cochain complexes:
-
-\input{Chapters/Figure3.tex}
-
-Here \(i\) is induced by the natural inclusion \(\Delta^{[n]}\rightarrow\Delta^{[n+1]}\) and the coning map can be again translated from the combinatorial version by \(\varepsilon(c)=supp^{-1}(\varepsilon(supp(c)))\). Another equivalent way to define the coning map algebraically is by \(\varepsilon=\delta i+i\delta\). Note, that the maps \(i\) and \(\varepsilon\) are both norm preserving.
-
-\begin{lem}\label{lemma9}
-According to the maps defined above, we have the following relations:
-\begin{enumerate}
-\item \(supp(i\delta(c))\subseteq supp(\delta i(c))\), for any cochain \(c\)
-\item \(\delta\varepsilon=\varepsilon\delta\)
-\item \(\delta\varepsilon=\delta i\delta\)
-\item \(\|\varepsilon(c)\|=\|\delta i(c)\|-\|i\delta(c)\|\), for any cochain \(c\)
-\end{enumerate}
-\begin{proof}
-(1) The support of \(i\delta(c)\) consists of all simplices from \(\Delta^{[n]}\) (in the appropriate dimension), which contain an odd number of simplices from \(supp(c)\) as a face. These are clearly contained in the set of simplices from \(\Delta^{[n+1]}\), which contain an odd number of simplices from \(supp(c)\) as a face.\\
-(2) \(\delta\varepsilon=\delta(\delta i + i\delta)=\delta\delta i + \delta i \delta=\delta i\delta=i\delta\delta + \delta i\delta=(i\delta + \delta i)\delta = \varepsilon\delta\).\\
-(3) Is already contained in the proof of (2).\\
-(4) Follows immediately from (1).
-\end{proof}
-\end{lem}
-
-\begin{prop}\label{proposition9}
-Let \(c\in C^k(\Delta^{[n]},\mathbb{Z}_2)\) not be a cosystole, then \(\varepsilon(c)\) is not a cosystole.
-\begin{proof}
-Let \(c\in C^k(\Delta^{[n]},\mathbb{Z}_2)\) not be a cosystole. Then there exists a cochain \(d'\in C^{k-1}(\Delta^{[n]},\mathbb{Z}_2)\), such that \(\|\delta(d')+c\| < \|c\|\) and so, defining \(d:=\varepsilon(d')\) and using Lemma \ref{lemma9} (2) we get:
-\begin{align}
-\|\delta(d)+\varepsilon(c)\|&=\|\delta(\varepsilon(d'))+\varepsilon(c)\|\notag\\
-&=\|\varepsilon(\delta(d')+c)\|\notag\\
-&=\|\delta(d')+c\|\notag\\
-&<\|c\|=\|\varepsilon(c)\|\notag
-\end{align}
-\end{proof}
-\end{prop}
-We conjecture that the reverse is also true and we can already prove a weaker statement. Before, consider the following small but important observation.\\
-Note, that any cochain \(d\in C^k(\Delta^{[n+1]},\mathbb{Z}_2)\) can uniquely be represented as\\
-\(d=\varepsilon(d_1)+i(d_2)\), with \(d_1\in C^{k-1}(\Delta^{[n]},\mathbb{Z}_2)\) and \(d_2\in C^k(\Delta^{[n]},\mathbb{Z}_2)\). Regarding the proof of Proposition \ref{proposition9}, we see that if we write \(d=\varepsilon(d')\) as \(\varepsilon(d_1)+i(d_2)\), the second part \(i(d_2)\) vanishes, espacially we have \(\delta(d_2)=0\). The following statement shows, that if we could always construct a \(d=\varepsilon(d_1)+i(d_2)\) satisfying \(\|\delta(d)+\varepsilon(c)\|<\|\varepsilon(c)\|\) and \(\delta(d_2)=0\), then the reverse of the preceding Proposition would be true as well.
-\begin{prop}\label{proposition10}
-Let \(\varepsilon(c)\in C^{k+1}(\Delta^{[n+1]},\mathbb{Z}_2)\) not be a cosystole. If there exists a cochain \(d=\varepsilon(d_1)+i(d_2)\in C^k(\Delta^{[n+1]},\mathbb{Z}_2)\), such that \(\|\delta(d)+\varepsilon(c)\|<\|\varepsilon(c)\|\) and \(\delta(d_2)=0\), then \(c\) is not a cosystole.
-\begin{proof}
-Let \(d=\varepsilon(d_1)+i(d_2)\in C^k(\Delta^{[n+1]},\mathbb{Z}_2)\) satisfy the assumptions. Then there exists a \(d_2'\in  C^{k-1}(\Delta^{[n]},\mathbb{Z}_2)\), such that \(d_2=\delta(d_2')\). This is because \(\Delta^{[n]}\) is contractible, so cohomology vanishes and kernel and image of \(\delta\) coinside. Now we have:
-\begin{align}
-\|\delta(d_1+d_2')+c\|&=\|\delta(d_1)+d_2+c\|\notag\\
-&=\|\varepsilon(\delta(d_1)+d_2+c)\|\notag\\
-&=\|\delta\varepsilon(d_1)+\varepsilon(d_2)+\varepsilon(c)\|\notag\\
-&=\|\delta\varepsilon(d_1)+\delta i(d_2)+\varepsilon(c)\|\notag\\
-&=\|\delta(\varepsilon(d_1)+i(d_2))+\varepsilon(c)\|\notag\\
-&<\|\varepsilon(c)\|=\|c\|\notag
-\end{align}
-Hence, \(c\) is not a cosystole.
-\end{proof}
-\end{prop}
-Now we have to deal with the following challenge. If we have some cochain \(d=\varepsilon(d_1)+i(d_2)\), satisfying \(\|\delta(d)+\varepsilon(c)\|<\|\varepsilon(c)\|\), but unfortunately not satisfying \(\delta(d_2)=0\), we have to find a better "substitude" for \(d\), which does the same job, meaning we have to find a \(d'=\varepsilon(d_1')+i(d_2')\), satisfying \(\|\delta(d')+\varepsilon(c)\|<\|\varepsilon(c)\|\) and \(\delta(d_2')=0\), but until now this seems pretty difficult to find.\\
-The central problem which makes it difficult to deal with cosystoles in general is, that compared with cut-minimal graphs we have almost no handy tools beside the original definition yet to show cosystolicity of a given cochain.

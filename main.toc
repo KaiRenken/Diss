@@ -13,18 +13,15 @@
 \contentsline {section}{\numberline {3.2}Piercing complexes}{8}{section.20}
 \contentsline {section}{\numberline {3.3}Large cosystoles of a simplex}{10}{section.29}
 \contentsline {section}{\numberline {3.4}Multi-suspensions}{12}{section.37}
-\contentsline {section}{\numberline {3.5}A combinatorial perspective}{14}{section.42}
-\contentsline {subsection}{\numberline {3.5.1}Cosystolic sets and boundary isomorphisms}{14}{subsection.43}
-\contentsline {subsection}{\numberline {3.5.2}Coning of cochains}{15}{subsection.50}
-\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{19}{chapter.61}
-\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{19}{section.62}
-\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{19}{subsection.63}
-\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{20}{subsection.69}
-\contentsline {section}{\numberline {4.2}Cheeger graphs}{28}{section.86}
-\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{28}{subsection.87}
-\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{29}{subsection.91}
-\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{33}{subsection.107}
-\contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.112}
-\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{39}{appendix.113}
-\contentsline {section}{\numberline {A.1}Preliminaries}{39}{section.114}
-\contentsline {section}{\numberline {A.2}The main theorem}{40}{section.119}
+\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{15}{chapter.42}
+\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{15}{section.43}
+\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{15}{subsection.44}
+\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{16}{subsection.50}
+\contentsline {section}{\numberline {4.2}Cheeger graphs}{24}{section.67}
+\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{24}{subsection.68}
+\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{25}{subsection.72}
+\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{29}{subsection.88}
+\contentsline {chapter}{\numberline {5}Perspectives}{33}{chapter.93}
+\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{35}{appendix.94}
+\contentsline {section}{\numberline {A.1}Preliminaries}{35}{section.95}
+\contentsline {section}{\numberline {A.2}The main theorem}{36}{section.100}
