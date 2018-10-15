@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  15 OCT 2018 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  15 OCT 2018 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1821,7 +1821,7 @@ mri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 396299 bytes).
+Output written on main.pdf (53 pages, 396347 bytes).
 PDF statistics:
  617 PDF objects out of 1000 (max. 8388607)
  542 compressed objects within 6 object streams
