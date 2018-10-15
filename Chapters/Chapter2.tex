@@ -4,7 +4,7 @@
 
 \label{Chapter2}
 
-When we want to determine whether a cochain is a cosystole or not until now we only have the original definition of cosystolicity, which does not seem to be very useful. In this chapter we want to develop tools to get hands on this problem and investigate the structure how cosystoles in certain simplicial complexes are arranged.
+When we want to determine whether a cochain is a cosystole or not until now we only have the original definition of cosystolicity, which does not seem to be very useful. In this chapter we want to develop tools to get hands on this problem, especially by estimating the cosystolic norm in various situations and investigating the structure how cosystoles in certain simplicial complexes are arranged.
 
 \section{Piercing sets and the cycle detection theorem}
 
@@ -93,7 +93,7 @@ By the definition of the coboundary map, we obviously have\\
 \end{proof}
 \end{prop}
 
-In many cases, even the equality \(\|\varphi\|_{csy}=\tau(\mathcal{T}_{\varphi})\) can be reached, but unfortunately this is not always true as the following example shows.
+Note that in many cases, even the equality \(\|\varphi\|_{csy}=\tau(\mathcal{T}_{\varphi})\) can be reached, but unfortunately this is not always true as the following example shows.
 
 \begin{expl}
 Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1}. We have:
@@ -356,22 +356,41 @@ For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\par
 \[
 \partial_k\left((\sigma,j)\right)=\left(\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma
 \]
-So, we have \(\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)\right)=\alpha_i\), since \(\partial_{k-1}(\alpha_i)=0\) for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\). Thus, for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\),
+So, we get
+\begin{align*}
+\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)\right)&=\sum\limits_{\sigma\in supp(\alpha_i)}\partial_k\left((\sigma,j)\right)\\
+&=\sum\limits_{\sigma\in supp(\alpha_i)}\left(\left(\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma\right)\\
+&=\left(\sum\limits_{\sigma\in supp(\alpha_i)}\quad\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\alpha_i\\
+&=0+\alpha_i\\
+&=\alpha_i,
+\end{align*}
+since we have
+\[
+\sum\limits_{\sigma\in supp(\alpha_i)}\quad\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}\sigma'=\partial_{k-1}(\alpha_i)=0
+\]
+for all \(i=1,\ldots,t\).\\
+Thus, for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\),
 \[
 \alpha_{i,j}:=\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i
 \]
-defines a cycle (since we have \(\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0\)) which can be naturally embedded into \(C_{k+1}(\Delta^{[n+d]})\). Furthermore, we have:
+defines a cycle, since we have
+\[
+\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0.
+\]
+Furthermore, we get
 \begin{align}
 \left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
 &=\left\langle\left(\sum\limits_{\sigma\in supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
 &=1,\notag
 \end{align}
-since we have \(\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}\sigma\right\rangle=1\).
+since we have
+\[\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}\sigma\right\rangle=1.
+\]
 \end{proof}
 \end{lem}
 
 \begin{defi}
-Let \(S\) be some set, \(\mathcal{F}\subseteq 2^S\) a family of subsets of \(S\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0:=\emptyset\) and for each \(i=1,\ldots,m\) set \(P_i:=\left\{F\in\mathcal{F}\text{ : }F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P:=(|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
+Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0:=\emptyset\) and for each \(i=1,\ldots,m\) set \(P_i:=\left\{F\in\mathcal{F}\text{ : }F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P:=(|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
 \end{defi}
 
 \begin{prop}

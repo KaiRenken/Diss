@@ -13,15 +13,15 @@
 \contentsline {section}{\numberline {3.2}Piercing complexes}{9}{section.23}
 \contentsline {section}{\numberline {3.3}Large cosystoles of a simplex}{11}{section.32}
 \contentsline {section}{\numberline {3.4}Multi-suspensions}{13}{section.40}
-\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{15}{chapter.45}
-\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{15}{section.46}
-\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{15}{subsection.47}
-\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{16}{subsection.53}
-\contentsline {section}{\numberline {4.2}Cheeger graphs}{24}{section.70}
-\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{24}{subsection.71}
-\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{25}{subsection.75}
-\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{29}{subsection.91}
-\contentsline {chapter}{\numberline {5}Perspectives}{33}{chapter.96}
-\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{35}{appendix.97}
-\contentsline {section}{\numberline {A.1}Preliminaries}{35}{section.98}
-\contentsline {section}{\numberline {A.2}The main theorem}{36}{section.103}
+\contentsline {chapter}{\numberline {4}Cut-minimal graphs and Cheeger graphs}{17}{chapter.45}
+\contentsline {section}{\numberline {4.1}Cut-minimal graphs}{17}{section.46}
+\contentsline {subsection}{\numberline {4.1.1}Basic definitions and properties}{17}{subsection.47}
+\contentsline {subsection}{\numberline {4.1.2}Maximal cut-minimal graphs}{18}{subsection.53}
+\contentsline {section}{\numberline {4.2}Cheeger graphs}{26}{section.70}
+\contentsline {subsection}{\numberline {4.2.1}Basic definitions and properties}{26}{subsection.71}
+\contentsline {subsection}{\numberline {4.2.2}Deletions and additions of edges}{27}{subsection.75}
+\contentsline {subsection}{\numberline {4.2.3}Adding vertices to Cheeger graphs}{31}{subsection.91}
+\contentsline {chapter}{\numberline {5}Perspectives}{35}{chapter.96}
+\contentsline {chapter}{\numberline {A}A theorem about partitioning consecutive numbers}{37}{appendix.97}
+\contentsline {section}{\numberline {A.1}Preliminaries}{37}{section.98}
+\contentsline {section}{\numberline {A.2}The main theorem}{38}{section.103}
