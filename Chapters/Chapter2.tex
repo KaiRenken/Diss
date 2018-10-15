@@ -15,7 +15,7 @@ Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of finite subset
 For a \(v\in V\) and an \(F\in\mathcal{F}\) we say that \(F\) \textbf{is pierced by} \(v\), if \(v\in F\).
 \end{defi}
 
-\begin{expl}
+\begin{expl}\label{example1}
 Let \(V:=\left\{1,2,3,4,5\right\}\) and \(\mathcal{F}:=\left\{\{1,2\}\{2,3,4\},\{1,5\},\{2,4,5\}\right\}\), then we have \(\tau(\mathcal{F})=2\), since for example \(P:=\left\{2,5\right\}\) is a minimal piercing set of \(\mathcal{F}\).
 \end{expl}
 
@@ -58,6 +58,24 @@ Since the supports of the cycles \(\alpha_1,\ldots,\alpha_{\|\varphi\|}\) are pa
 \end{proof}
 \end{cor}
 
+\begin{expl}
+Consider the cochain
+\[
+\varphi=\left(\{1,2,4\}+\{2,5,6\}+\{3,4,6\}+\{2,4,6\}\right)^*\in C^2(\Delta^{[6]})
+\]
+(Figure \ref{figure5:Figure 1} illustrates how the support of this cochain can be imagined) and the family of cycles
+\begin{align*}
+\mathcal{F}=\{&\{1,2,3\}+\{1,2,4\}+\{1,4,3\}+\{2,4,3\},\\
+&\{1,2,5\}+\{1,2,6\}+\{1,5,6\}+\{2,5,6\},\\
+&\{3,4,5\}+\{3,4,6\}+\{3,5,6\}+\{4,5,6\},\\
+&\{1,3,5\}+\{1,3,6\}+\{1,4,5\}+\{1,4,6\}+\\
+&\{2,3,5\}+\{2,3,6\}+\{2,4,5\}+\{2,4,6\}\}\subset C_2(\Delta^{[6]}).
+\end{align*}
+It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=4\), so we get \(\|\varphi\|_{csy}\geq 4\) by the cycle detection theorem. We can immediately see, that \(\varphi\) is a cosystole, either by the fact, that we always have \(\|\varphi\|_{csy}\leq \|\varphi\|\), so in our case we have \(\|\varphi\|=4=\|\varphi\|_{csy}\), or by using the preceding corollary, since the supports of the cycles in \(\mathcal{F}\) are pairwise disjoint.
+\end{expl}
+
+\input{Chapters/Figure5.tex}
+
 To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
 For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
 \[
@@ -74,6 +92,21 @@ By the definition of the coboundary map, we obviously have\\
 \(\left\langle\varphi,\partial_k(\sigma)\right\rangle=1\) for all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) and so by the cycle detection theorem we are done.
 \end{proof}
 \end{prop}
+
+In many cases, even the equality \(\|\varphi\|_{csy}=\tau(\mathcal{T}_{\varphi})\) can be reached, but unfortunately this is not always true as the following example shows.
+
+\begin{expl}
+Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1}. We have:
+\begin{align*}
+\mathcal{T}_{\varphi}=\{&\{1,2,3\}+\{1,2,4\}+\{1,3,4\}+\{2,3,4\},\\
+&\{1,2,4\}+\{1,2,5\}+\{1,4,5\}+\{2,4,5\},\\
+&\{2,3,5\}+\{2,3,6\}+\{2,5,6\}+\{3,5,6\},\\
+&\{1,2,5\}+\{1,2,6\}+\{1,5,6\}+\{2,5,6\},\\
+&\{3,4,5\}+\{3,4,6\}+\{3,5,6\}+\{4,5,6\},\\
+&\{1,3,4\}+\{1,3,6\}+\{1,4,6\}+\{3,4,6\}\}.
+\end{align*}
+It is easy to check that we get \(\tau(\mathcal{T}_{\varphi})=3\), but as shown in Example \ref{example1} we have \(\|\varphi\|_{csy}=4\).
+\end{expl}
 
 It seems to be very difficult to determine the piercing number of \(\mathcal{T}_{\varphi}\) explicitely, but the concept of piercing complexes might be useful on the way to solve this problem.
 
