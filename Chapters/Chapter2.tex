@@ -22,7 +22,7 @@ Let \(V:=\left\{1,2,3,4,5\right\}\) and \(\mathcal{F}:=\left\{\{1,2\}\{2,3,4\},\
 Later we will often talk about piercing numbers and piercing sets of families of \(k\)-chains, which we define as follows:
 
 \begin{defi}
-Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{piercing sets} and the \textbf{piercing number} of \(\mathcal{F}\) are defined as the piercing sets and the piercing number of the family \(\left\{supp(F)\text{ : }F\in\mathcal{F}\right\}\).
+Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{piercing sets} and the \textbf{piercing number} of \(\mathcal{F}\) are defined as the piercing sets and the piercing number of the family \(\left\{\supp(F)\text{ : }F\in\mathcal{F}\right\}\).
 \end{defi}
 
 In \cite{6} Kozlov stated the following useful method to bound the cosystolic norm of a cochain.
@@ -40,9 +40,9 @@ Let \(\psi\in C^{k-1}(X)\), then for any \(1\leq i\leq t\) we have:
 &=\langle\varphi,\alpha_i\rangle+\langle\psi,0\rangle\notag\\
 &=\langle\varphi,\alpha_i\rangle=1\notag
 \end{align}
-This means that we have \(supp(\varphi+\delta^{k-1}(\psi))\cap supp(\alpha_i)\neq\emptyset\) for all \(1\leq i\leq t\), so \(supp(\varphi+\delta^{k-1}(\psi))\) is a piercing set of \(\mathcal{F}\) and we get:
+This means that we have \(\supp(\varphi+\delta^{k-1}(\psi))\cap \supp(\alpha_i)\neq\emptyset\) for all \(1\leq i\leq t\), so \(\supp(\varphi+\delta^{k-1}(\psi))\) is a piercing set of \(\mathcal{F}\) and we get:
 \[
-\|\varphi+\delta^{k-1}(\psi)\|=|supp(\varphi+\delta^{k-1}(\psi))|\geq\tau(\mathcal{F})
+\|\varphi+\delta^{k-1}(\psi)\|=|\supp(\varphi+\delta^{k-1}(\psi))|\geq\tau(\mathcal{F})
 \]
 Since \(\psi\) was chosen arbitrarily we get the requested result.
 \end{proof}
@@ -52,7 +52,7 @@ The following corollary (a special case of the preceding theorem) was also state
 
 \begin{cor}
 Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\).\\
-Let now \(\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\) be a family of \(k\)-cycles in \(C_k(X)\), such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(1\leq i\leq\|\varphi\|\) and \(supp(\alpha_i)\cap supp(\alpha_j)=\emptyset\) for all \(i\neq j\), then \(\varphi\) is a cosystole.
+Let now \(\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\) be a family of \(k\)-cycles in \(C_k(X)\), such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(1\leq i\leq\|\varphi\|\) and \(\supp(\alpha_i)\cap \supp(\alpha_j)=\emptyset\) for all \(i\neq j\), then \(\varphi\) is a cosystole.
 \begin{proof}
 Since the supports of the cycles \(\alpha_1,\ldots,\alpha_{\|\varphi\|}\) are pairwise disjoint, we obviously have \(\tau(\mathcal{F})=\|\varphi\|\) and using the cycle detection theorem we are done.
 \end{proof}
@@ -79,7 +79,7 @@ It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) f
 To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
 For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
 \[
-\mathcal{T}_{\varphi}:=\left\{\partial_k(\sigma)\text{ : }\sigma\in supp(\delta^k(\varphi))\right\}
+\mathcal{T}_{\varphi}:=\left\{\partial_k(\sigma)\text{ : }\sigma\in \supp(\delta^k(\varphi))\right\}
 \]
 
 \begin{prop}
@@ -172,7 +172,7 @@ Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), then we have:
 \begin{proof}
 \begin{align*}
 & \varphi\in C^k(X) \\
-\Longrightarrow \quad & \text{For all }\sigma\in supp(\delta^k(\varphi))\text{ we have }\left|supp(\partial_k(\sigma))\right|=k+2 \\
+\Longrightarrow \quad & \text{For all }\sigma\in \supp(\delta^k(\varphi))\text{ we have }\left|\supp(\partial_k(\sigma))\right|=k+2 \\
 \Longrightarrow \quad & \text{For all }S\subset X^{(k)}\text{ such that }\left|S\right|\leq k+1\text{ we have that } \\ & X^{(k)}\setminus S\text{ is a piercing set of }\mathcal{T}_{\varphi} \\
 \Longrightarrow \quad & \Delta_{\varphi}\text{ has a full }k\text{-skeleton} \\
 \Longrightarrow \quad & \tilde{H}_i(\Delta_{\varphi})\cong 0\text{ for all }i\leq k-1
@@ -233,7 +233,7 @@ Let \(X\) be a finite simplicial complex and \(\varphi\in C^k(X)\), then we have
 \tilde{H}_k(\Delta_{\varphi})\cong 0
 \]
 \begin{proof}
-For all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) we have \(|supp(\partial_k(\sigma))|=k+2\), so we get:
+For all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) we have \(|\supp(\partial_k(\sigma))|=k+2\), so we get:
 \[
 dim(\Delta[\bar{\mathcal{T}}_{\varphi}])=|X^{(k)}|-(k+2)-1=|X^{(k)}|-k-3
 \]
@@ -297,7 +297,7 @@ Eventhough, we can exactly determine this number for the ultimate and the penult
 \(C_{max}(\Delta^{[n]},n-2)=1\), for all \(n\geq 3\)
 \begin{proof}
 Let \(\sigma\in\binom{[n]}{n-1}\) be chosen arbitrarily, \(\varphi:=\sigma^*\in C^{n-2}(\Delta^{[n]})\) and\\
-\(\mathcal{F}:=\left\{\alpha\right\}\), where \(\alpha\) is the boundary of the single (\(n-1\))-dimensional simplex in \(\Delta^{[n]}\). Obviously, we have \(\left\langle\varphi,\alpha\right\rangle=1\), since \(supp(\varphi)\cap supp(\alpha)=supp(\varphi)\) and \(\tau(\mathcal{F})=1\), so by the cycle detection theorem we have \(\|\varphi\|_{csy}\geq 1\).\\
+\(\mathcal{F}:=\left\{\alpha\right\}\), where \(\alpha\) is the boundary of the single (\(n-1\))-dimensional simplex in \(\Delta^{[n]}\). Obviously, we have \(\left\langle\varphi,\alpha\right\rangle=1\), since \(\supp(\varphi)\cap \supp(\alpha)=\supp(\varphi)\) and \(\tau(\mathcal{F})=1\), so by the cycle detection theorem we have \(\|\varphi\|_{csy}\geq 1\).\\
 Now, let \(\sigma_1,\sigma_2\in\binom{[n]}{n-1}\) be chosen arbitrarily again (\(\sigma_1\neq\sigma_2\)) and \(c:=\sigma_1\cap\sigma_2\). Then we have \(\delta^{n-3}(c^*)+\sigma_1^*+\sigma_2^*=0\), so there exists no (\(n-2\))-cosystole attaining norm \(2\) and we are done.
 \end{proof}
 \end{thm}
@@ -309,9 +309,9 @@ For \(n\geq 4\) we have:
 \]
 \begin{proof}
 For each \(\sigma\in\binom{[n]}{n-2}\) there exist exactly two cycles \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\)\\
-(\(\alpha_1\neq\alpha_2\)), such that \(\sigma\in supp(\alpha_1)\cap supp(\alpha_2)\), so the largest possible number of cycles from \(\mathcal{T}_n^{n-3}\) that can be pierced by one simplex is two. Furthermore, we have \(\left|\mathcal{T}_n^{n-3}\right|=\binom{n}{n-1}=n\), so we get \(\tau(\mathcal{T}_n^{n-3})\geq\left\lceil\frac{n}{2}\right\rceil\).\\
+(\(\alpha_1\neq\alpha_2\)), such that \(\sigma\in \supp(\alpha_1)\cap \supp(\alpha_2)\), so the largest possible number of cycles from \(\mathcal{T}_n^{n-3}\) that can be pierced by one simplex is two. Furthermore, we have \(\left|\mathcal{T}_n^{n-3}\right|=\binom{n}{n-1}=n\), so we get \(\tau(\mathcal{T}_n^{n-3})\geq\left\lceil\frac{n}{2}\right\rceil\).\\
 On the other hand, for all \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\) there exists a \(\sigma\in\binom{[n]}{n-2}\), such that\\
-\(\sigma\in supp(\alpha_1)\cap supp(\alpha_2)\), so we get \(\tau(\mathcal{T}_n^{n-3})\leq\left\lceil\frac{n}{2}\right\rceil\).
+\(\sigma\in \supp(\alpha_1)\cap \supp(\alpha_2)\), so we get \(\tau(\mathcal{T}_n^{n-3})\leq\left\lceil\frac{n}{2}\right\rceil\).
 \end{proof}
 \end{lem}
 
@@ -330,7 +330,7 @@ If \(n\) is even, then \(n-3\) is odd, so using Lemma \ref{lemma10} and Lemma \r
 \[
 C_{max}(\Delta^{[n]},n-3)\geq\tau(\mathcal{T}_n^{n-3})=\frac{n}{2}
 \]
-If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one \(\alpha'\in\mathcal{T}_n^{n-3}\), such that \(\left\langle\varphi,\alpha'\right\rangle=0\), since \(\left|supp(\alpha')\cap supp(\varphi)\right|=2\). Set \(\mathcal{F}:=\mathcal{T}_n^{n-3}\setminus\alpha'\), then we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})\geq\tau(\mathcal{T}_n^{n-3})-1=\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n}{2}\right\rfloor\) by Lemma \ref{lemma12}, so by the cycle detection theorem we get \(C_{max}(\Delta^{[n]},n-3)\geq\left\lfloor\frac{n}{2}\right\rfloor\). One the other hand let \(\varphi\in C^{n-3}(\Delta^{[n]})\), such that \(\|\varphi\|=\left\lfloor\frac{n}{2}\right\rfloor+1\), then by Lemma \ref{lemma13} there exist \(\sigma_1,\sigma_2\in supp(\varphi)\), such that \(\left|\sigma_1\cap\sigma_2\right|=n-3\). Now set \(\psi:=(\sigma_1\cap\sigma_2)^*\in C^{n-4}(\Delta^{[n]})\), then we have \(\|\delta^{n-4}(\psi)\|=3\) and \(\left|supp(\delta^{n-4}(\psi))\cap supp(\varphi)\right|\geq 2\). Thus, we have \(\|\delta^{n-4}(\psi)+\varphi\|\leq\|\varphi\|-1\) and \(\varphi\) can not be a cosystole, so we get \(C_{max}(\Delta^{[n]},n-3)\leq\left\lfloor\frac{n}{2}\right\rfloor\) and we are done.
+If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one \(\alpha'\in\mathcal{T}_n^{n-3}\), such that \(\left\langle\varphi,\alpha'\right\rangle=0\), since \(\left|\supp(\alpha')\cap \supp(\varphi)\right|=2\). Set \(\mathcal{F}:=\mathcal{T}_n^{n-3}\setminus\alpha'\), then we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})\geq\tau(\mathcal{T}_n^{n-3})-1=\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n}{2}\right\rfloor\) by Lemma \ref{lemma12}, so by the cycle detection theorem we get \(C_{max}(\Delta^{[n]},n-3)\geq\left\lfloor\frac{n}{2}\right\rfloor\). One the other hand let \(\varphi\in C^{n-3}(\Delta^{[n]})\), such that \(\|\varphi\|=\left\lfloor\frac{n}{2}\right\rfloor+1\), then by Lemma \ref{lemma13} there exist \(\sigma_1,\sigma_2\in \supp(\varphi)\), such that \(\left|\sigma_1\cap\sigma_2\right|=n-3\). Now set \(\psi:=(\sigma_1\cap\sigma_2)^*\in C^{n-4}(\Delta^{[n]})\), then we have \(\|\delta^{n-4}(\psi)\|=3\) and \(\left|\supp(\delta^{n-4}(\psi))\cap \supp(\varphi)\right|\geq 2\). Thus, we have \(\|\delta^{n-4}(\psi)+\varphi\|\leq\|\varphi\|-1\) and \(\varphi\) can not be a cosystole, so we get \(C_{max}(\Delta^{[n]},n-3)\leq\left\lfloor\frac{n}{2}\right\rfloor\) and we are done.
 \end{proof}
 \end{thm}
 
@@ -340,12 +340,12 @@ If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one
 Let \(d\geq 1\), then we call
 \begin{align}
 sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
-\varphi&\longmapsto\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in supp(\varphi)}(\sigma,m)\right)\right)^*\notag
+\varphi&\longmapsto\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
 \end{align}
 the \textbf{suspension map of degree d}. Note, that \(sus_{n,k}^d\) can also be easily defined on chain complexes by:
 \begin{align}
 sus_{n,k}^d:C_k(\Delta^{[n]})&\longrightarrow C_{k+1}(\Delta^{[n+d]})\notag\\
-c&\longmapsto\sum\limits_{\sigma\in supp(sus_{n,k}^d(c^*))}\sigma\notag
+c&\longmapsto\sum\limits_{\sigma\in \supp(sus_{n,k}^d(c^*))}\sigma\notag
 \end{align}
 \end{defi}
 
@@ -354,37 +354,37 @@ Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\a
 \begin{proof}
 For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
 \[
-\partial_k\left((\sigma,j)\right)=\left(\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma
+\partial_k\left((\sigma,j)\right)=\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma
 \]
 So, we get
 \begin{align*}
-\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)\right)&=\sum\limits_{\sigma\in supp(\alpha_i)}\partial_k\left((\sigma,j)\right)\\
-&=\sum\limits_{\sigma\in supp(\alpha_i)}\left(\left(\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma\right)\\
-&=\left(\sum\limits_{\sigma\in supp(\alpha_i)}\quad\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\alpha_i\\
+\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)\right)&=\sum\limits_{\sigma\in \supp(\alpha_i)}\partial_k\left((\sigma,j)\right)\\
+&=\sum\limits_{\sigma\in \supp(\alpha_i)}\left(\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma\right)\\
+&=\left(\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\alpha_i\\
 &=0+\alpha_i\\
 &=\alpha_i,
 \end{align*}
 since we have
 \[
-\sum\limits_{\sigma\in supp(\alpha_i)}\quad\sum\limits_{\sigma'\in supp(\partial_{k-1}(\sigma))}\sigma'=\partial_{k-1}(\alpha_i)=0
+\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}\sigma'=\partial_{k-1}(\alpha_i)=0
 \]
 for all \(i=1,\ldots,t\).\\
 Thus, for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\),
 \[
-\alpha_{i,j}:=\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i
+\alpha_{i,j}:=\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i
 \]
 defines a cycle, since we have
 \[
-\partial_k\left(\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0.
+\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0.
 \]
 Furthermore, we get
 \begin{align}
-\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
-&=\left\langle\left(\sum\limits_{\sigma\in supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
+\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
+&=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
 &=1,\notag
 \end{align}
 since we have
-\[\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in supp(\alpha_i)}\sigma\right\rangle=1.
+\[\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}\sigma\right\rangle=1.
 \]
 \end{proof}
 \end{lem}
