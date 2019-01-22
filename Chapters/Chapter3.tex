@@ -603,3 +603,26 @@ Let \(G=([n],E)\) be a Cheeger graph, such that \(n\) is not a power of 2 or \(n
 Assume we have \(|E|<\left\lceil\frac{n-1}{2}\right\rceil\). Then by Theorem \ref{theorem2} and since \(G\) must contain an isolated vertex, there exists a graph \(G'\in CMG(n-1)\), such that \(i_{n-1}(G')=G\). Now if we have \(n\neq 2^t\) for some \(t\in\mathbb{N}\), then \(G\) is not a Cheeger graph, since we either get \(3\nmid n-1\) and we are done by Proposition \ref{proposition4} or we get \(3\mid n-1\) and we are done by Proposition \ref{proposition5}. On the other hand, if we have \(n=2^t\) but \(3\nmid n-1\), then we immediately see that \(G\) is not a Cheeger graph by Proposition \ref{proposition4}.
 \end{proof}
 \end{prop}
+
+\subsection{The case when n is a power of 2}
+
+From \cite{1} we know that if \(h(n)>\frac{n}{3}\) can only be true, when \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such numbers \(n\). The following useful fact was also given in \cite{1}:
+
+\begin{lem}\label{lemma11:2}
+Let \(G=([n],E)\) be a cut-minimal graph, then we have \(h(n)=\frac{n}{3}\) if and only if for each vertex \(v\in [n]\) we have \(|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|\), with \(A_v:=\{w\in [n]\text{ : }(v,w)\in E\}\).
+\end{lem}
+
+\begin{prop}
+Let \(n=2^t\) and \(G=([n],E)\) be a cut-minimal graph, such that \(h(G)=\frac{n}{3}\). Then for each vertex \(v\in [n]\) we have \(|A_v|\in\left\{0\leq i\leq\frac{n-2}{2}\text{ : }n\text{ is even }\right\}\setminus\{2\}\).
+\begin{proof}
+The proof of the fact, that \(|A_v|\) is even can be found in \cite{1}. Since \(G\) is cut-minimal and \(n\) is even, we have:
+\[
+|A_v|=|E(\{v\}\text{, }[n]\setminus\{v\})|\leq\left\lfloor\frac{n-1}{2}\right\rfloor=\frac{n-2}{2}
+\]
+Now, assume there exists a \(v\in [n]\), such that \(|A_v|=2\), then by Lemma \ref{lemma11:2} we have
+\[
+|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|=\frac{2(n-2)}{2}=n-2,
+\]
+so there must exist a \(w\in A_v\), such that \(|A_w|\geq\frac{n-2}{2}=\frac{2^t-2}{2}=2^{t-1}-1\), but \(2^{t-1}-1\) is odd and \(|A_w|\) can not be strictly bigger than \(\frac{n-2}{2}\), which leads to a contradiction.
+\end{proof}
+\end{prop}

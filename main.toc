@@ -19,7 +19,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Basic definitions and properties}{26}{subsection.70}
 \contentsline {subsection}{\numberline {3.2.2}Deletions and additions of edges}{27}{subsection.74}
 \contentsline {subsection}{\numberline {3.2.3}Adding vertices to Cheeger graphs}{31}{subsection.90}
-\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{35}{chapter.95}
-\contentsline {section}{\numberline {4.1}Preliminaries}{35}{section.96}
-\contentsline {section}{\numberline {4.2}The main theorem}{36}{section.101}
-\contentsline {chapter}{\numberline {5}Perspectives}{39}{chapter.104}
+\contentsline {subsection}{\numberline {3.2.4}The case when n is a power of 2}{33}{subsection.95}
+\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{35}{chapter.98}
+\contentsline {section}{\numberline {4.1}Preliminaries}{35}{section.99}
+\contentsline {section}{\numberline {4.2}The main theorem}{36}{section.104}
+\contentsline {chapter}{\numberline {5}Perspectives}{39}{chapter.107}
