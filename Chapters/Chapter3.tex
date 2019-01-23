@@ -134,11 +134,11 @@ C_{max}(\Delta^{[n]},1)\leq\frac{n\left\lfloor\frac{n-1}{2}\right\rfloor}{2}=\fr
 \]
 but in this case unfortunately the right hand side is bigger than \(\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}\), so we have to find a smaller upper bound for \(C_{max}(\Delta^{[n]},1)\). The following investigation shows, that a graph with \(\frac{n^2-n}{4}\) edges can not be cut-minimal anymore, which will lead to the requested bound.\\
 Consider a graph \(G=([n],E)\), and choose a vertex \(v\in [n]\), such that\\
-\(\text{deg}_G(v)=\frac{n-1}{2}\). If such a vertex does not exist, we have
+\(\deg_G(v)=\frac{n-1}{2}\). If such a vertex does not exist, we have
 \[
 |E|\leq\frac{n(\frac{n-1}{2}-1)}{2}=\frac{n^2-3n}{4}<\frac{n^2-2n+1}{4}=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}
 \]
-and we are done. Now there exist exactly \(\frac{n-1}{2}\) vertices \(v_1,\ldots,v_{\frac{n-1}{2}}\in [n]\), such that \((v,v_i)\notin E\), for all \(i=1,\ldots,\frac{n-1}{2}\). If we had \(\text{deg}_G(v_i)=\frac{n-1}{2}\) for one of these vertices, we would get
+and we are done. Now there exist exactly \(\frac{n-1}{2}\) vertices \(v_1,\ldots,v_{\frac{n-1}{2}}\in [n]\), such that \((v,v_i)\notin E\), for all \(i=1,\ldots,\frac{n-1}{2}\). If we had \(\deg_G(v_i)=\frac{n-1}{2}\) for one of these vertices, we would get
 \[
 |E_G(\{v,v_i\},[n]\setminus\{v,v_i\})|=2\frac{n-1}{2}=n-1>n-2=\frac{2(n-2)}{2},
 \]
@@ -175,7 +175,7 @@ E_G(\{v,w,u\},[n]\setminus\{v,w,u\})\leq\frac{3(2t-1)}{2}=3t-\frac{3}{2},
 so by \(t\)-regularity among any three vertices at least two of them must be adjacent. Now choose a vertex \(v\in [n]\) and set \(A\) to be the set consisting of all vertices, which are not adjacent to \(v\). Then we have \(|A|=t+1\) by \(t\)-regularity and by the preceding result any two vertices in \(A\) have to be adjacent. Thus, \(A\) provides a complete graph on \(t+1\) vertices, so by \(t\)-regularity \([n]\setminus A\) must also provide a complete graph on \(t+1\) vertices. Hence, every top dimensional simplex in \(\mathcal{C}^1(n)\) (for \(n\) even) corresponds to a graph of that shape.\\
 Let now \(n\) be odd. If we set \(n=2t+3\), then by the number \(C_{max}(\Delta^{[n]},1)\) and cut-minimality there exist at least \(t+2\) vertices having degree \(t+1\). Let \(A\) denote the set of these vertices. For any \(v,w\in A\) we have:
 \[
-E_G(\{v,w\},[n]\setminus\{v,w\})\leq\frac{2(2t+3-2)}{2}=2t+1<2t+2=\text{deg}_G(v)+\text{deg}_G(w),
+E_G(\{v,w\},[n]\setminus\{v,w\})\leq\frac{2(2t+3-2)}{2}=2t+1<2t+2=\deg_G(v)+\deg_G(w),
 \]
 so all vertices from \(A\) are adjacent. By cut-minimality again we have \(|A|=t+2\), so \(A\) provides a complete graph on \(t+2\) vertices. The number of remaining edges \(\binom{t+1}{2}\) shows, that the remaining \(t+1\) vertices must also provide a complete graph, which is disjoint from the first one, because any other constellation would destroy cut-minimality. So, again every top dimensional simplex in \(\mathcal{C}^1(n)\) corresponds to a graph of the requested type.\\
 Now we see that deleting an edge from such a graph (which is the same as deleting a vertex from a top dimensional simplex) produces a graph corresponding to a simplex which appears as a face of one top dimensional simplex, but can not be a face of another top dimensional simplex, since we can not construct a graph of the requested type by adding an edge at any other place than the place where we just deleted it. So, all top dimensional simplices are at most connected via simplices of codimension 2, which implies that \(\mathcal{C}^1(n)\) can be continiously retracted to a complex of codimension 1 and so homology in top dimension vanishes.
@@ -303,7 +303,7 @@ Let \(G=([n],E)\in MAX(n)\). If \(n\) is odd, Theorem \ref{theorem1} gives:
 \[
 |E|\leq\frac{(n-1)^2}{4}=\frac{n^2-2n+1}{4}<\frac{n^2-n}{4}=\frac{n\frac{n-1}{2}}{2}\quad\text{for }n\geq 3,
 \]
-so there exists a \(v\in [n]\), such that \(\text{deg}_G(v)<\frac{n-1}{2}\) (*). Now define\\
+so there exists a \(v\in [n]\), such that \(\deg_G(v)<\frac{n-1}{2}\) (*). Now define\\
 \(G':=([n+1],E\cup (v,n+1))\) and let \(S\subset [n+1]\), such that \(1\leq |S|\leq\frac{n+1}{2}\), then we have:
 \begin{align}
 |E_{G'}(S,[n+1]\setminus S)|&\leq |E_G(S\setminus\{n+1\},[n]\setminus S)|+1\notag\\
@@ -319,7 +319,7 @@ If \(n\) is even, define \(G':=([n+1],E\cup (v,n+1))\) for some arbitrary \(v\in
 \]
 for all \(S\subset [n+1]\), such that \(|S|\geq 2\), and for \(|S|=1\) we have:
 \begin{align}
-|E_{G'}(S,[n+1]\setminus S)|&\leq\text{max}\{\text{deg}_{G'}(v)\text{ : }v\in[n+1]\}\notag\\
+|E_{G'}(S,[n+1]\setminus S)|&\leq\text{max}\{\deg_{G'}(v)\text{ : }v\in[n+1]\}\notag\\
 &=\left\lfloor\frac{n-1}{2}\right\rfloor +1\notag\\
 &=\frac{n-2}{2}+1=\frac{n}{2}=\frac{(n+1)-1}{2}.\notag
 \end{align}
@@ -374,7 +374,22 @@ We already know by \cite{1} that \(\frac{n}{3}\leq h_1(\Delta{[n]})\leq\left\lce
 
 \input{Chapters/Figure2.tex}
 
-\subsection{Deletions and additions of edges}
+\subsection{Structure theory of Cheeger graphs}
+
+\begin{prop}
+Let \(G=([n],E)\) be a Cheeger graph. Then \(G\) must have a connected component of size at least \(n-\left\lceil\frac{n}{3}\right\rceil\).
+\begin{proof}
+Let \(C\subseteq [n]\) be the largest connected component of \(G\), then we obviously have
+\[
+\left\lceil\frac{n}{3}\right\rceil\geq h(G)\geq \frac{|E|(n-|C|)}{|E|}=n-|C|,
+\]
+which is equivalent to
+\[
+|C|\geq n-\left\lceil\frac{n}{3}\right\rceil.
+\]
+\end{proof}
+\end{prop}
+
 We will now investigate how the set \(T(G)\) (and so the constant \(h(G)\) as well) changes when we delete or add one or more edges in a given graph \(G\). This will give us some methods to determine that a given graph satisfying certain conditions is not a Cheeger graph.
 \begin{defi}
 Let \(G=([n],E)\) be a simple graph. For an edge \(e\in E\) we define the numbers:
@@ -405,9 +420,9 @@ and
 \end{cases}
 \end{equation}
 \begin{proof}
-Let \(e:=(v_1,v_2)\), then we have \(\text{deg}_G(v_1),\text{deg}(v_2)\leq\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get:
+Let \(e:=(v_1,v_2)\), then we have \(\deg_G(v_1),\deg(v_2)\leq\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get:
 \[
-\psi_e^G=\text{deg}_G(v_1)+\text{deg}_G(v_2)-2\leq2\left\lfloor\frac{n-1}{2}\right\rfloor-2
+\psi_e^G=\deg_G(v_1)+\deg_G(v_2)-2\leq2\left\lfloor\frac{n-1}{2}\right\rfloor-2
 \]
 Since \(2\left\lfloor\frac{n-1}{2}\right\rfloor=n-1\) for \(n\) odd and \(n-2\) for \(n\) even we get the claimed result.\\
 The second part follows directly from the first one, since for each triangle containing \(e\), we have exactly two edges sharing a vertex with \(e\).
@@ -479,7 +494,7 @@ h(G_e)<h(G)
 \end{proof}
 \end{prop}
 \begin{expl}
-Let \(G=([n],E)\) be a simple graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\text{deg}_G(v_1)=\text{deg}_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
+Let \(G=([n],E)\) be a simple graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\deg_G(v_1)=\deg_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
 \[
 2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G=4(|E|-1)-2(2|E|-1)=-2<0
 \]

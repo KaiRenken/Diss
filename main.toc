@@ -17,10 +17,10 @@
 \contentsline {subsection}{\numberline {3.1.2}Maximal cut-minimal graphs}{18}{subsection.52}
 \contentsline {section}{\numberline {3.2}Cheeger graphs}{26}{section.69}
 \contentsline {subsection}{\numberline {3.2.1}Basic definitions and properties}{26}{subsection.70}
-\contentsline {subsection}{\numberline {3.2.2}Deletions and additions of edges}{27}{subsection.74}
-\contentsline {subsection}{\numberline {3.2.3}Adding vertices to Cheeger graphs}{31}{subsection.90}
-\contentsline {subsection}{\numberline {3.2.4}The case when n is a power of 2}{33}{subsection.95}
-\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{35}{chapter.98}
-\contentsline {section}{\numberline {4.1}Preliminaries}{35}{section.99}
-\contentsline {section}{\numberline {4.2}The main theorem}{36}{section.104}
-\contentsline {chapter}{\numberline {5}Perspectives}{39}{chapter.107}
+\contentsline {subsection}{\numberline {3.2.2}Structure theory of Cheeger graphs}{27}{subsection.74}
+\contentsline {subsection}{\numberline {3.2.3}Adding vertices to Cheeger graphs}{32}{subsection.91}
+\contentsline {subsection}{\numberline {3.2.4}The case when n is a power of 2}{33}{subsection.96}
+\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{35}{chapter.99}
+\contentsline {section}{\numberline {4.1}Preliminaries}{35}{section.100}
+\contentsline {section}{\numberline {4.2}The main theorem}{36}{section.105}
+\contentsline {chapter}{\numberline {5}Perspectives}{39}{chapter.108}
