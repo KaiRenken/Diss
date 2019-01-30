@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {0.2}Chain- / Cochain complexes \& Homology / Cohomology}{1}{section.8}
 \contentsline {section}{\numberline {0.3}Graphs \& Hypergraphs}{3}{section.9}
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.10}
-\contentsline {chapter}{\numberline {2}Detecting cosystoles}{7}{chapter.11}
+\contentsline {chapter}{\numberline {2}High-dimensional cosystoles}{7}{chapter.11}
 \contentsline {section}{\numberline {2.1}Piercing sets and the cycle detection theorem}{7}{section.12}
 \contentsline {section}{\numberline {2.2}Piercing complexes}{9}{section.22}
 \contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{11}{section.31}

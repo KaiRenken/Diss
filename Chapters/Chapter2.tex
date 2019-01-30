@@ -1,6 +1,6 @@
 % Chapter 2
 
-\chapter{Detecting cosystoles}
+\chapter{High-dimensional cosystoles}
 
 \label{Chapter2}
 
@@ -58,7 +58,7 @@ Since the supports of the cycles \(\alpha_1,\ldots,\alpha_{\|\varphi\|}\) are pa
 \end{proof}
 \end{cor}
 
-\begin{expl}
+\begin{expl}\label{example1a}
 Consider the cochain
 \[
 \varphi=\left(\{1,2,4\}+\{2,5,6\}+\{3,4,6\}+\{2,4,6\}\right)^*\in C^2(\Delta^{[6]})
@@ -96,7 +96,7 @@ By the definition of the coboundary map, we obviously have\\
 Note that in many cases, even the equality \(\|\varphi\|_{csy}=\tau(\mathcal{T}_{\varphi})\) can be reached, but unfortunately this is not always true as the following example shows.
 
 \begin{expl}
-Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1}. We have:
+Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1a}. We have:
 \begin{align*}
 \mathcal{T}_{\varphi}=\{&\{1,2,3\}+\{1,2,4\}+\{1,3,4\}+\{2,3,4\},\\
 &\{1,2,4\}+\{1,2,5\}+\{1,4,5\}+\{2,4,5\},\\
@@ -252,7 +252,11 @@ where the first isomorphy is true, because we consider homology / cohomology ove
 
 \section{Large cosystoles of a simplex}
 
-In this section we focus our investigations onto the question, what is the largest norm, a cosystole can attain when the underlying simplicial complex is a complete simplex, where the first statement we make is still valid for general simplicial complexes. 
+In this section we focus our investigations onto the question, what is the largest norm, a cosystole can attain when the underlying simplicial complex is a complete simplex, where the first statement we make is still valid for general simplicial complexes.\\
+For any simplicial complex \(X\) and any \(1\leq k\leq dim(X)\), we define the following number (the largest norm, a cosystole can attain):
+\[
+C_{max}(X,k):=\max\left\{\|\varphi\|_{csy}\text{ : }\varphi\in C^k(X)\right\}
+\]
 
 \begin{lem}\label{lemma10}
 If \(k\) is odd, then we have:
@@ -339,18 +343,18 @@ If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one
 \begin{defi}
 Let \(d\geq 1\), then we call
 \begin{align}
-sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
+\sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
 \varphi&\longmapsto\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
 \end{align}
-the \textbf{suspension map of degree d}. Note, that \(sus_{n,k}^d\) can also be easily defined on chain complexes by:
+the \textbf{suspension map of degree d}. Note, that \(\sus_{n,k}^d\) can also be easily defined on chain complexes by:
 \begin{align}
-sus_{n,k}^d:C_k(\Delta^{[n]})&\longrightarrow C_{k+1}(\Delta^{[n+d]})\notag\\
-c&\longmapsto\sum\limits_{\sigma\in \supp(sus_{n,k}^d(c^*))}\sigma\notag
+\sus_{n,k}^d:C_k(\Delta^{[n]})&\longrightarrow C_{k+1}(\Delta^{[n+d]})\notag\\
+c&\longmapsto\sum\limits_{\sigma\in \supp(\sus_{n,k}^d(c^*))}\sigma\notag
 \end{align}
 \end{defi}
 
 \begin{lem}\label{lemma11}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for each \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
+Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for each \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
 \begin{proof}
 For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
 \[
@@ -379,7 +383,7 @@ defines a cycle, since we have
 \]
 Furthermore, we get
 \begin{align}
-\left\langle sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
+\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
 &=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
 &=1,\notag
 \end{align}
@@ -396,7 +400,7 @@ Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\)
 \begin{prop}
 Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
 \[
-\|sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
+\|\sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
 \]
 \begin{proof}
 

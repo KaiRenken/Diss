@@ -3,13 +3,25 @@
 \chapter{Introduction}
 
 \label{Introduction}
-
-Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), such that \(\|\delta^{k-1}(\phi)+\varphi\|\geq\|\varphi\|\) for every \(\phi\in C^{k-1}(X)\), where \(\delta^{k-1}\) denotes the coboundary map \(C^{k-1}(X)\rightarrow C^k(X)\), then we call \(\varphi\) a \textbf{cosystole}.\\
+The classical Cheeger constant of a graph is a well-studied object and can be intuitively be imagined as a measure of connectivity of a graph, as follows: From a connected graph, we can delete edges to make it become disconnected, and so there exists a smallest (in terms of numbers of vertices) connected component. Now, the Cheeger constant is the smallest quotient that can appear by deviding the number of removed edges by the size of the smallest of the resulting connected components. So, formally the Cheeger constant of a graph \(G=(V,E)\) is then defined by:
+\[
+h(G):=\min\left\{\frac{|\delta(A)|}{|A|}\text{ : }A\subset V\text{, }1\leq |A|\leq\frac{|V|}{2}\right\},
+\]
+with \(\delta(A):=\left\{e=(v,w)\in E\text{ : }v\in A\text{, }w\in V\setminus A\right\}\).\\
+\\
+There is a lot of literature that studies this Cheeger constant for arbitrary graphs, whereas it is pretty easy to determine for the complete graph on \(n\)-vertices \(K_n\), where we have:
+\[
+h(K_n)=\left\lceil\frac{n}{2}\right\rceil
+\]
+In this thesis we want to investigate a higher-dimensional generalization of this Cheeger constant that was first introduced by Lineal and Meshulam (see \cite{2}) and later independently by Gromov (see \cite{3}) and is defined by the following construction:\\
+\\
+Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), such that \(\|\delta^{k-1}(\phi)+\varphi\|\geq\|\varphi\|\) for every \(\phi\in C^{k-1}(X)\), where \(\delta^{k-1}\) denotes the coboundary map \(C^{k-1}(X)\rightarrow C^k(X)\), then we call \(\varphi\) a \(k\)-\textbf{cosystole}.\\
 For general cochains \(\varphi\in C^k(X)\) we define the \textbf{cosystolic norm} of \(\varphi\) by:
 \[
 \|\varphi\|_{csy}:=\min\left\{\|\delta^{k-1}(\phi)+\varphi\|\text{ : }\phi\in C^{k-1}(X)\right\}
 \]
 Furthermore, any \(c\in C^k(X)\), satisfying \(c=\delta^{k-1}(\phi)+\varphi\) and \(\|c\|=\|\varphi\|_{csy}\) is called a \textbf{cosystolic form} of \(\varphi\).\\
+\\
 The quotient
 \[
 \|\varphi\|_{exp}:=\frac{\|\delta^k(\varphi)\|}{\|\varphi\|_{csy}}
@@ -19,8 +31,14 @@ is called the \textbf{coboundary expansion} of \(\varphi\) and
 h_k(X):=\min\limits_{\varphi\in C^k(X)\text{, }\delta^k(\varphi)\neq 0}\|\varphi\|_{exp}
 \]
 is called the \(k\)-th \textbf{Cheeger constant} of \(X\).\\
-Furthermore, for any simplicial complex \(X\) and any \(1\leq k\leq dim(X)\), we define the following number (the largest norm, a cosystole can attain):
+\\
+A cosystole \(\varphi\in C^k(X)\) is called a \textbf{Cheeger cosystole} if \(h_k(X)=\|\varphi\|_{exp}\).\\
+\\
+Note, that the classical Cheeger constant of a graph coincides with the \(0\)-th Cheeger constant \(h_0(X)\). For larger \(k\)'s the value of \(h_k(X)\) is not even known for all standard simplices \(X=\Delta^{[n]}\). By now we only have the estimate
 \[
-C_{max}(X,k):=\max\left\{\|\varphi\|_{csy}\text{ : }\varphi\in C^k(X)\right\}
+\frac{n}{k+2}\leq h_k(\Delta^{[n]})\leq\left\lceil\frac{n}{k+2}\right\rceil
 \]
+that was proven by Wallach and Meshulam (see \cite{4}), so we have the exact value \(h_k(\Delta^{[n]})=\frac{n}{k+2}\) when \(k+2\) devides \(n\). In \cite{1} Kozlov showed that the upper bound is archieved when \(k=n-3\), so we have \(h_{n-3}(\Delta^{[n]})=2\) and furthermore he showed that \(h_1(\Delta^{[n]})=\frac{n}{3}\) even holds for every \(n\) that is not a power of \(2\).\\
+\\
+In the first part of this thesis we will develop some theory about the cosystolic norm of cochains, since a better understanding of cosystoles seems to be the key knowledge to determine the Cheeger constants. In the second part we will focus on the special case of \(1\)-cosystoles and the first Cheeger constant, where we have an interesting graph theoretical approach introduced by Kozlov in \cite{1}, that seems to be suited well to investigate cosystoles in a combinatorial way.
 
