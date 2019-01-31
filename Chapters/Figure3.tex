@@ -1,30 +1,114 @@
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
-  \matrix (m) [matrix of math nodes, row sep=5em, column sep=1.5em]
-    { \cdots & C^{k-1}(\Delta^{[n]},\mathbb{Z}_2) & C^{k}(\Delta^{[n]},\mathbb{Z}_2) & C^{k+1}(\Delta^{[n]},\mathbb{Z}_2) & \cdots \\
-      \cdots & C^{k-1}(\Delta^{[n+1]},\mathbb{Z}_2) & C^{k}(\Delta^{[n+1]},\mathbb{Z}_2) & C^{k+1}(\Delta^{[n+1]},\mathbb{Z}_2) & \cdots \\ };
-  { [start chain] \chainin (m-1-1);
-    \chainin (m-1-2);
-    { [start branch=A] \chainin (m-2-2)
-        [join={node[right,labeled] {i}}];}
-    \chainin (m-1-3) [join={node[above,labeled] {\delta}}];
-    { [start branch=B] \chainin (m-2-3)
-        [join={node[right,labeled] {i}}];}
-    \chainin (m-1-4) [join={node[above,labeled] {\delta}}];
-    { [start branch=C] \chainin (m-2-4)
-        [join={node[right,labeled] {i}}];}
-    \chainin (m-1-5); }
-  { [start chain] \chainin (m-2-1);
-    \chainin (m-2-2);
-    \chainin (m-2-3) [join={node[above,labeled] {\delta}}];
-    \chainin (m-2-4) [join={node[above,labeled] {\delta}}];
-    \chainin (m-2-5); }
-  { [start chain] \chainin (m-1-2);
-  	\chainin (m-2-3) [join={node[above,labeled] {\varepsilon}}]; }
-  { [start chain] \chainin (m-1-3);
-  	\chainin (m-2-4) [join={node[above,labeled] {\varepsilon}}]; }
+  [scale=.04,auto=left]
+  
+  \def\X{40}
+  \def\Y{0}
+  
+  \def\x{\X -10}
+  \def\y{\Y}
+  
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{4}{1}$};
+
+  \def\x{\X -35}
+  \def\y{\Y +40}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{6}{2}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +35,\y -25);
+  
+  \def\x{\X +15}
+  \def\y{\Y +40}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{8}{2}$};
+  
+  \draw  (\x +10,\y -5) -- (\x -15,\y -25);
+  
+  \def\x{\X -85}
+  \def\y{\Y +80}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{12}{3}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +110,\y -25);
+  
+  \def\x{\X -35}
+  \def\y{\Y +80}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{10}{3}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +10,\y -25);
+  
+  \def\x{\X +15}
+  \def\y{\Y +80}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{10}{3}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +10,\y -25);
+  \draw  (\x +10,\y -5) -- (\x -40,\y -25);
+  
+  \def\x{\X +65}
+  \def\y{\Y +80}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{8}{3}$};
+  
+  \draw  (\x +10,\y -5) -- (\x -40,\y -25);
+  \draw  (\x +10,\y -5) -- (\x -90,\y -25);
+  
+  \def\x{\X -110}
+  \def\y{\Y +120}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{12}{4}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +35,\y -25);
+  \draw  (\x +10,\y -5) -- (\x +135,\y -25);
+  \draw  (\x +10,\y -5) -- (\x +185,\y -25);
+  
+  \def\x{\X -60}
+  \def\y{\Y +120}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{14}{4}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +35,\y -25);
+  \draw  (\x +10,\y -5) -- (\x +85,\y -25);
+  
+  \def\x{\X -10}
+  \def\y{\Y +120}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{12}{4}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +35,\y -25);
+  
+  \def\x{\X +40}
+  \def\y{\Y +120}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{10}{4}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +35,\y -25);
+  \draw  (\x +10,\y -5) -- (\x -15,\y -25);
+  
+  \def\x{\X +90}
+  \def\y{\Y +120}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{8}{4}$};
+  
+  \draw  (\x +10,\y -5) -- (\x -15,\y -25);
+  
+  \def\x{\X -10}
+  \def\y{\Y +160}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{16}{5}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +10,\y -25);
+  \draw  (\x +10,\y -5) -- (\x -40,\y -25);
+  
+  \def\x{\X -10}
+  \def\y{\Y +200}
+    
+  \draw  (\x +10,\y +5) circle [radius=10cm] node {$\frac{20}{6}$};
+  
+  \draw  (\x +10,\y -5) -- (\x +10,\y -25);
 \end{tikzpicture}
- \caption{Cochain complexes with coning maps}
- \label{figure3:Figure 3}
+  \caption{The numbers \(h(G)\) for all cut-minimal graphs on 6 vertices}
+  \label{figure3:Figure 3}
 \end{figure}

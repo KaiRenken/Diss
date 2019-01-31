@@ -69,7 +69,7 @@ In \cite{1} there was the simplicial complex \(\mathcal{C}^1(n)\) introduced, co
 \item A set of vertices forms a simplex of \(\mathcal{C}^1(n)\), if and only if the corresponding graph is cut-minimal.
 \end{itemize}
 
-The complex \(\mathcal{C}^1(n)\) contains all relevant information about the cut-minimal graphs on a certain number of vertices so it might be useful to study its topological and simplicial structure.\\
+The complex \(\mathcal{C}^1(n)\) contains all relevant information about the structure of cut-minimal graphs on a certain number of vertices so it might be useful to study its topological and simplicial structure.\\
 The first thing to note is that the dimension of \(\mathcal{C}^1(n)\) is obviously one more than the maximal number of edges a cut-minimal graphs can have which obviously coincides with the number \(C_{max}(\Delta^{[n]},1)\) by Lemma \ref{lemma16}.
 \\
 Let us now determine the number \(C_{max}(\Delta^{[n]},1)\) explicitly.
@@ -192,9 +192,9 @@ Two graphs \(G=([n],E)\) and \(G'=([n],E')\) are called \textbf{isomorphic}, if 
 \begin{rem}
 Note, that an isomorphism of graphs preserves all properties, which are studied in this chapter, especially cut-minimality and the constant \(h(G)\), studied in the next section.
 \end{rem}
-Figure \ref{figure1:Figure 2} illustrates, how the isomorphism classes of cut-minimal graphs on \(6\) vertices are arranged, where the connecting lines represent the relations between the classes refering to the deletion or addition of edges. Note, that the choosen representatives in the figure do not always satisfy the property of being a deletion or an addition of the shown representative of a class below or above, but in this case there is always another representative in the class which does. We see that beside the class of maximal cut-minimal graphs constructed in the proof of Proposition \ref{proposition3}, we have three more classes of maximal cut-minimal graphs here.
+Figure \ref{figure2:Figure 2} illustrates, how the isomorphism classes of cut-minimal graphs on \(6\) vertices are arranged, where the connecting lines represent the relations between the classes refering to the deletion or addition of edges. Note, that the choosen representatives in the figure do not always satisfy the property of being a deletion or an addition of the shown representative of a class below or above, but in this case there is always another representative in the class which does. We see that beside the class of maximal cut-minimal graphs constructed in the proof of Proposition \ref{proposition3}, we have three more classes of maximal cut-minimal graphs here.
 
-\input{Chapters/Figure1.tex}
+\input{Chapters/Figure2.tex}
 
 Except for the maximal cut-minimal graphs with maximum number of edges we do not know anything about the remaining classes of cut-minimal graphs until now. The following statements now approach this challenge by providing new classes of cut-minimal graphs in general which do not appear as deletions of those largest maximal cut-minimal graphs.
 
@@ -280,14 +280,14 @@ so it is not cut-minimal and we have \(C_{min}(n)\leq\left\lceil\frac{n}{2}\righ
 On the other hand if we have a graph \(G=([n],E)\) with \(|E|=\left\lceil\frac{n}{2}\right\rceil-1\), then it must be cut-minimal, since \(\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get \(C_{min}(n)\geq\left\lceil\frac{n}{2}\right\rceil\) and we are done.
 \end{proof}
 \end{thm}
-Obviously, \(\mathcal{C}M(n)\) contains all possible simplices of dimension lower than \(C_{min}(n)\), which leads to the following observation.
+Obviously, \(\mathcal{C}M(n)\) contains all simplices of dimension lower than \(C_{min}(n)\), which leads to the following observation.
 \begin{cor}
 \(H_k(\mathcal{C}M(n))\cong 0\) for all \(1\leq k\leq\left\lceil\frac{n}{2}\right\rceil-3\)
 \begin{proof}
 By Theorem \ref{theorem2} \(\mathcal{C}M(n)\) has a full \(k\)-skeleton for all \(k\leq\left\lceil\frac{n}{2}\right\rceil-2\) and we are done. 
 \end{proof}
 \end{cor}
-Since adding a vertex to a cut-minimal graph will never destroy its cut-minimality, we can define the following natural inclusion.
+Since adding a vertex to a cut-minimal graph will always preserve its property to be cut-minimal, we can define the following natural inclusion.
 \begin{defi}
 For every \(n\in\mathbb{N}\) define:
 \begin{align}
@@ -370,9 +370,9 @@ h_1(\Delta^{[n]}):=h(G)
 \]
 where \(G\) is some Cheeger graph on \(n\) vertices.
 \end{defi}
-We already know by \cite{1} that \(\frac{n}{3}\leq h_1(\Delta{[n]})\leq\left\lceil\frac{n}{3}\right\rceil\) and the lower bound is archieved if \(n\) is not a power of \(2\). If two graphs \(G\) and \(G'\) belong to the same isomorphism class, we obviously have \(|T(G)|=|T(G')|\) and \(h(G)=h(G')\), so taking up the example from the preceding section, Figure \ref{figure2:Figure 3} shows the numbers \(h(G)\) for all cut-minimal graphs on \(6\) vertices with the same partially ordering as in Figure \ref{figure1:Figure 2} and we can see that there is one Cheeger graph attaining the Cheeger constant \(\frac{8}{4}\).
+We already know by \cite{1} that \(\frac{n}{3}\leq h_1(\Delta{[n]})\leq\left\lceil\frac{n}{3}\right\rceil\) and the lower bound is archieved if \(n\) is not a power of \(2\). If two graphs \(G\) and \(G'\) belong to the same isomorphism class, we obviously have \(|T(G)|=|T(G')|\) and \(h(G)=h(G')\), so taking up the example from the preceding section, Figure \ref{figure3:Figure 3} shows the numbers \(h(G)\) for all cut-minimal graphs on \(6\) vertices with the same partially ordering as in Figure \ref{figure2:Figure 2} and we can see that there is one Cheeger graph attaining the Cheeger constant \(\frac{8}{4}\).
 
-\input{Chapters/Figure2.tex}
+\input{Chapters/Figure3.tex}
 
 \subsection{Structure theory of Cheeger graphs}
 
@@ -494,7 +494,7 @@ h(G_e)<h(G)
 \end{proof}
 \end{prop}
 \begin{expl}
-Let \(G=([n],E)\) be a simple graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\deg_G(v_1)=\deg_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
+Let \(G=([n],E)\) be a graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\deg_G(v_1)=\deg_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
 \[
 2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G=4(|E|-1)-2(2|E|-1)=-2<0
 \]

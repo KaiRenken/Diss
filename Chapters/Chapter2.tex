@@ -1,10 +1,10 @@
 % Chapter 2
 
-\chapter{High-dimensional cosystoles}
+\chapter{High-dimensional cosystoles and Cheeger constants}
 
 \label{Chapter2}
 
-When we want to determine whether a cochain is a cosystole or not until now we only have the original definition of cosystolicity, which does not seem to be very useful. In this chapter we want to develop tools to get hands on this problem, especially by estimating the cosystolic norm in various situations and investigating the structure how cosystoles in certain simplicial complexes are arranged.
+When we want to determine whether a cochain is a cosystole or not (or in other words, to determine the cosystolic norm of a cochain) until now we only have the original definition of cosystolicity, which does not seem to be very useful. In this chapter we want to develop tools to get hands on this problem, especially by estimating the cosystolic norm in various situations and investigating the structure how cosystoles in certain simplicial complexes are arranged. Furthermore, at the end of this chaper we will develop some interesting statements about the shape of Cheeger cosystoles.
 
 \section{Piercing sets and the cycle detection theorem}
 
@@ -19,7 +19,7 @@ For a \(v\in V\) and an \(F\in\mathcal{F}\) we say that \(F\) \textbf{is pierced
 Let \(V:=\left\{1,2,3,4,5\right\}\) and \(\mathcal{F}:=\left\{\{1,2\}\{2,3,4\},\{1,5\},\{2,4,5\}\right\}\), then we have \(\tau(\mathcal{F})=2\), since for example \(P:=\left\{2,5\right\}\) is a minimal piercing set of \(\mathcal{F}\).
 \end{expl}
 
-Later we will often talk about piercing numbers and piercing sets of families of \(k\)-chains, which we define as follows:
+Later we will talk about piercing numbers and piercing sets of families of \(k\)-chains, which we define as follows:
 
 \begin{defi}
 Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{piercing sets} and the \textbf{piercing number} of \(\mathcal{F}\) are defined as the piercing sets and the piercing number of the family \(\left\{\supp(F)\text{ : }F\in\mathcal{F}\right\}\).
@@ -63,7 +63,7 @@ Consider the cochain
 \[
 \varphi=\left(\{1,2,4\}+\{2,5,6\}+\{3,4,6\}+\{2,4,6\}\right)^*\in C^2(\Delta^{[6]})
 \]
-(Figure \ref{figure5:Figure 1} illustrates how the support of this cochain can be imagined) and the family of cycles
+(Figure \ref{figure1:Figure 1} illustrates how the support of this cochain can be imagined) and the family of cycles
 \begin{align*}
 \mathcal{F}=\{&\{1,2,3\}+\{1,2,4\}+\{1,4,3\}+\{2,4,3\},\\
 &\{1,2,5\}+\{1,2,6\}+\{1,5,6\}+\{2,5,6\},\\
@@ -71,10 +71,11 @@ Consider the cochain
 &\{1,3,5\}+\{1,3,6\}+\{1,4,5\}+\{1,4,6\}+\\
 &\{2,3,5\}+\{2,3,6\}+\{2,4,5\}+\{2,4,6\}\}\subset C_2(\Delta^{[6]}).
 \end{align*}
-It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=4\), so we get \(\|\varphi\|_{csy}\geq 4\) by the cycle detection theorem. We can immediately see, that \(\varphi\) is a cosystole, either by the fact, that we always have \(\|\varphi\|_{csy}\leq \|\varphi\|\), so in our case we have \(\|\varphi\|=4=\|\varphi\|_{csy}\), or by using the preceding corollary, since the supports of the cycles in \(\mathcal{F}\) are pairwise disjoint.
+It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=4\), so we get \(\|\varphi\|_{csy}\geq 4\) by the cycle detection theorem. We can immediately see, that \(\varphi\) is a cosystole, either by the fact, that we always have \(\|\varphi\|_{csy}\leq \|\varphi\|\), so in our case we have \(\|\varphi\|=4=\|\varphi\|_{csy}\), or by using the preceding corollary, since the supports of the cycles in \(\mathcal{F}\) are pairwise disjoint.\\
+Note, that \(\varphi\) is even a Cheeger cosystole, since we have \(\|\varphi\|_{exp}=\frac{6}{4}\), so we know that for the case \(n=6\) and \(k=2\) the lower bound of the estimate \ref{equation1} is archieved, even if \(k+2\) does not devide \(n\).
 \end{expl}
 
-\input{Chapters/Figure5.tex}
+\input{Chapters/Figure1.tex}
 
 To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
 For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
@@ -404,5 +405,20 @@ Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\a
 \]
 \begin{proof}
 
+\end{proof}
+\end{prop}
+
+\section{On Cheeger cosystoles when k+2 does not devide n}
+
+In \cite{4} and \cite{6} Meshulam and Kozlov gave examples of Cheeger cosystoles in \(C^k(\Delta^{[n]})\) when \(k+2\) devides \(n\). Recall, that is this case the Cheeger constant is explicitly determined by \(h_k(\Delta^{[n]})=\frac{n}{k+2}\). For the case when \(k+2\) does not devide \(n\), we can still explore some interesting properties about Cheeger cosystoles in terms of their norm.
+
+\begin{prop}
+Let \(\varphi\in C^k(\Delta^{[n]})\) be a Cheeger cosystole, such that \(\|\varphi\|_{exp}=\frac{n}{k+2}\), then \(k+2\) divides \(n\) or \(k+2\) devides \(\|\varphi\|\).
+\begin{proof}
+We have \(\|\delta^k(\varphi)\|=\frac{n\|\varphi\|}{k+2}\), since
+\[
+\frac{\|\delta^k(\varphi)\|}{\|\varphi\|}=\|\varphi\|_{exp}=\frac{n}{k+2}=\frac{n\|\varphi\|}{(k+2)\|\varphi\|}=\frac{\frac{n\|\varphi\|}{k+2}}{\|\varphi\|},
+\]
+but \(\|\delta^k(\varphi)\|\) is a natural number, so \(k+2\) must devide \(n\) or \(\|\varphi\|\).
 \end{proof}
 \end{prop}
