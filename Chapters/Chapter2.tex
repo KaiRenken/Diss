@@ -130,11 +130,11 @@ On the other hand \(\Delta_{\mathcal{F}}\) is a complete simplex on \(\left|V\ri
 
 We can now reformulate the question of determining the piercing number \(\tau(\mathcal{F})\) by asking for the dimension of \(\Delta_{\mathcal{F}}\), since we have the equality:
 \[
-\tau(\mathcal{F})=\left| V\right|-dim(\Delta_{\mathcal{F}})-1
+\tau(\mathcal{F})=\left| V\right|-\dim(\Delta_{\mathcal{F}})-1
 \]
 Since our main interest in this section will be to investigate the piercing complex of \(\mathcal{T}_{\varphi}\) for a given cochain \(\varphi\in C^k(X)\) (where \(X\) is some simplicial complex) we will use a shorter notation for this piercing complex and set \(\Delta_{\varphi}:=\Delta_{\mathcal{T}_{\varphi}}\). Then the preceding formula turns to:
 \[
-\tau(\mathcal{T}_{\varphi})=|X^{(k)}|-dim(\Delta_{\varphi})-1
+\tau(\mathcal{T}_{\varphi})=|X^{(k)}|-\dim(\Delta_{\varphi})-1
 \]
 
 % TO BE CHECKED !!!
@@ -148,7 +148,7 @@ Since our main interest in this section will be to investigate the piercing comp
 %\begin{thm}
 %Let \(n\geq k+3\) and \(\varphi\in C^k(X)\), then we have:
 %\[
-%H_{dim(\Delta_{\varphi})}(\Delta_{\varphi})\cong 0
+%H_{\dim(\Delta_{\varphi})}(\Delta_{\varphi})\cong 0
 %\]
 %\begin{proof}
 %Let \(\sigma\in\Delta_{\varphi}\) be a maximal simplex (i.e. for all \(v\in X^{(k)}\setminus\sigma\), we have \(\sigma\cup\{v\}\notin\Delta_{\varphi}\)). Then \(X^{(k)}\setminus\sigma\) is a minimal piercing set of \(\mathcal{T}_{\varphi}\) (i.e. for all \(v\in X^{(k)}\setminus\sigma\) we have that \(X^{(k)}\setminus (\sigma\cup\{v\})\) is not a piercing set of \(\mathcal{T}_{\varphi}\). Now, let \(v\in\sigma\) and \(w\in X^{(k)}\setminus\sigma\), such that \((\sigma\setminus\{v\})\cup\{w\}\in\Delta_{\varphi}\), and let
@@ -171,13 +171,7 @@ Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), then we have:
 \tilde{H}_i(\Delta_{\varphi})\cong 0\quad\text{for all }i\leq k-1
 \]
 \begin{proof}
-\begin{align*}
-& \varphi\in C^k(X) \\
-\Longrightarrow \quad & \text{For all }\sigma\in \supp(\delta^k(\varphi))\text{ we have }\left|\supp(\partial_k(\sigma))\right|=k+2 \\
-\Longrightarrow \quad & \text{For all }S\subset X^{(k)}\text{ such that }\left|S\right|\leq k+1\text{ we have that } \\ & X^{(k)}\setminus S\text{ is a piercing set of }\mathcal{T}_{\varphi} \\
-\Longrightarrow \quad & \Delta_{\varphi}\text{ has a full }k\text{-skeleton} \\
-\Longrightarrow \quad & \tilde{H}_i(\Delta_{\varphi})\cong 0\text{ for all }i\leq k-1
-\end{align*}
+Let \(\varphi\in C^k(X)\) be chosen arbitrarily. Then for all \(\sigma\in \supp(\delta^k(\varphi))\) we have \(\left|\supp(\partial_k(\sigma))\right|=k+2\). Therefore, for all \(S\subset X^{(k)}\) such that \(\left|S\right|\leq k+1\) we have that \(X^{(k)}\setminus S\) is a piercing set of \(\mathcal{T}_{\varphi}\). This just means, that \(\Delta_{\varphi}\) has a full \(k\)-skeleton, so we immediately get \(\tilde{H}_i(\Delta_{\varphi})\cong 0\) for all \(i\leq k-1\).
 \end{proof}
 \end{thm}
 
@@ -215,6 +209,8 @@ Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(
 \]
 where we set \(\bar{\mathcal{F}}:=\left\{V\setminus F\text{ : }F\in\mathcal{F}\right\}\).
 \begin{proof}
+
+
 We have:
 \begin{align*}
   & \sigma\in\Delta\left[\bar{\mathcal{F}}\right]^{\lor} \\
@@ -236,7 +232,7 @@ Let \(X\) be a finite simplicial complex and \(\varphi\in C^k(X)\), then we have
 \begin{proof}
 For all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) we have \(|\supp(\partial_k(\sigma))|=k+2\), so we get:
 \[
-dim(\Delta[\bar{\mathcal{T}}_{\varphi}])=|X^{(k)}|-(k+2)-1=|X^{(k)}|-k-3
+\dim(\Delta[\bar{\mathcal{T}}_{\varphi}])=|X^{(k)}|-(k+2)-1=|X^{(k)}|-k-3
 \]
 Now, there exist no two simplices of dimension \(|X^{(k)}|-k-3\) in \(\Delta[\bar{\mathcal{T}}_{\varphi}]\),\\
 such that they have a face in common, so we have:
@@ -254,9 +250,26 @@ where the first isomorphy is true, because we consider homology / cohomology ove
 \section{Large cosystoles of a simplex}
 
 In this section we focus our investigations onto the question, what is the largest norm, a cosystole can attain when the underlying simplicial complex is a complete simplex, where the first statement we make is still valid for general simplicial complexes.\\
-For any simplicial complex \(X\) and any \(1\leq k\leq dim(X)\), we define the following number (the largest norm, a cosystole can attain):
+Let us first introduce a simplicial complex which represents all the information about cosystoles we need.
+
+\begin{defi}
+Let \(X\) be a simplicial complex and \(1\leq k\leq \dim(X)\). Then the simplicial complex
+\[
+\mathcal{C}_k(X):=\left\{S\subseteq X^{(k)}\text{ : }\left(\sum\limits_{\sigma\in S}\sigma\right)^*\text{ is a cosystole}\right\}
+\]
+is called the \textbf{k-cosystolic complex} of \(X\).
+\end{defi}
+
+Obviously, \(\mathcal{C}_k(X)\) defines a simplicial complex, since removing a simplex from the support of a cosystole and considering the corresponding cochain again preserves cosystolicity.\\
+Now, for any simplicial complex \(X\) and any \(1\leq k\leq \dim(X)\), we define the following number (the largest norm, a cosystole can attain):
 \[
 C_{max}(X,k):=\max\left\{\|\varphi\|_{csy}\text{ : }\varphi\in C^k(X)\right\}
+\]
+Note, that we have the relation \(\dim(\mathcal{C}_k(X))=C_{max}(X,k)-1\).\\
+\\
+For the sake of completeness we still define the following number of the smallest norm a non-cosystolic cochain can attain:
+\[
+C_{min}(X,k):=\min\left\{\|\varphi\|\text{ : }\varphi\in C^k(X)\text{, }\|\varphi\|>\|\varphi\|_{csy}\right\}
 \]
 
 \begin{lem}\label{lemma10}
@@ -284,7 +297,7 @@ Obviously, we have \(|\mathcal{T}_n^k|=\binom{n}{k+2}\), so since any simplex \(
 
 Using the preceding lemma we can determine a lower bound of the maximal size of the \(1\)-dimensional cosystoles in a simplex. A more elementary proof of this estimate is given as Proposition \ref{proposition3}) in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
 
-\begin{thm}\label{theorem10}
+\begin{prop}\label{proposition112}
 \(C_{max}(\Delta^{[n]},1)\geq\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor\)
 \begin{proof}
 Asking for the smallest piercing set of \(\mathcal{T}_n^1\) is equivalent to asking for the largest triangle-free graph (i.e. a graph on \(n\) vertices, containing as many edges as posssible, but no complete graph on \(3\) vertices as a subgraph) and taking the complement. Mantel's theorem (see \cite{7}) says, that a triangle-free graph on \(n\) vertices has at most \(\left\lfloor\frac{n^2}{4}\right\rfloor\) edges, so we immediately get:
@@ -293,7 +306,7 @@ Asking for the smallest piercing set of \(\mathcal{T}_n^1\) is equivalent to ask
 \]
 and by Lemma \ref{lemma10} we are done.
 \end{proof}
-\end{thm}
+\end{prop}
 
 Unfortunately, determining the piercing number of \(\mathcal{T}_n^k\) for \(k\geq 2\), or equivalently, determining the largest \(k\)-uniform hypergraph on \(n\)-vertices, containing no complete \(k\)-uniform hypergraph on \(k+2\) vertices as a subhypergraph, seems to be very difficult (see \cite{7}), so we can not use the preceding procedure to say something about \(C_{max}(\Delta^{[n]},k)\) for larger \(k\)'s in general.\\
 Eventhough, we can exactly determine this number for the ultimate and the penultimate proper dimension as follows.

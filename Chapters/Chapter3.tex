@@ -1,10 +1,10 @@
 % Chapter 3
 
-\chapter{Cut-minimal graphs and Cheeger graphs}
+\chapter{Cut-minimal graphs and Cheeger graphs of a simplex}
 
 \label{Chapter3}
 
-In this chapter we start from the work of Kozlov (see \cite{1}) in which a graph theoretical approach to the first Cheeger constant of a simplex was developed. In the course of this approach the so called cut-minimal graphs appeared, which exactly describe first dimensional cosystoles in a very intuitive way. Beside the benefit for the research on Cheeger constants, we think that exploring cut-minimal graphs could provide interesting structures which might be enlightening and helpful in other braches of combinatorics and topology as well. As a consequence of the first main result of this chapter (Theorem \ref{theorem1}) we will determinine the dimension and partly the homology of a simplicial complex, which contains all information about the cut-minimal graphs on a certain number of vertices. In the second part of this chapter, we face the research on the first Cheeger constant of a simplex by investigating combinatorial properties of the Cheeger graphs which are exactly those cut-minimal graphs that determine this constant.
+In this chapter we start from the work of Kozlov (see \cite{1}) in which a graph theoretical approach to the first Cheeger constant of a simplex was developed. In the course of this approach the so called cut-minimal graphs appeared, which exactly describe first dimensional cosystoles in a very intuitive way. As a consequence of the first main result of this chapter (Theorem \ref{theorem1}) we will determinine the dimension and partly the homology of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\). In the second part of this chapter, we face the research on the first Cheeger constant of a simplex by investigating combinatorial properties of the Cheeger graphs which are exactly those cut-minimal graphs that determine this constant.
 
 \section{Cut-minimal graphs}
 
@@ -32,47 +32,29 @@ which is equivalent to
 \end{defi}
 
 Note, that there is a one-to-one correspondence between the graphs on \(n\) vertices and the \(1\)-chains (more precisely the elements of \(C_1(\Delta^{[n]})\)) as follows:\\
-For a graph \(G=([n],E)\) set \(c_G:=\sum\limits_{e\in E}e\in C_1(\Delta^{[n]})\) and for a chain \(c\in C_1(\Delta^{[n]})\) set \(G_c:=([n],E)\), with \(E:=\supp(c)\). Considering characteristic cochains we also get a one-to-one corresponsing between graphs on \(n\) vertices and \(1\)-cochains and we observe the following relation:
-
-\begin{lem}\label{lemma16}
-A graph \(G=([n],E)\) is cut-minimal if and only if the corresponding cochain \(c_G^*\) is a cosystole.
-\begin{proof}
-%FILL IN PROOF
-\end{proof}
-\end{lem}
+For a graph \(G=([n],E)\) set \(c_G:=\sum\limits_{e\in E}e\in C_1(\Delta^{[n]})\) and for a chain \(c\in C_1(\Delta^{[n]})\) set \(G_c:=([n],E)\), with \(E:=\supp(c)\). Considering characteristic cochains we also get a one-to-one corresponsing between graphs on \(n\) vertices and \(1\)-cochains and it is easy to see that a graph \(G=([n],E)\) is cut-minimal if and only if the corresponding cochain \(c_G^*\) is a cosystole.
 
 \begin{rem}\label{remark1}
 In fact for a graph \(G\) to be cut-minimal we only need to require the preceding condition holding for all \(S\subset [n]\), such that \(1\leq|S|\leq\frac{n}{2}\), since for all \(S\subset [n]\) we have \(E_G(S,[n]\setminus S)=E_G([n]\setminus S,S)\) and \(NE_G(S,[n]\setminus S)=NE_G([n]\setminus S,S)\).
 \end{rem}
 
 \begin{expl}
-A graph \(G=([n],E)\) forming a circle by the edge set\\
+A simple cycle respresented by the graph \(G=([n],E)\) with\\
 \(E:=\{(i,i+1)\: :\: 1\leq i\leq n-1\}\cup\{(n,1)\}\) is cut-minimal for all \(n\geq 7\) as follows. One can easily see that for all \(S\subset [n]\), such that \(|S|\leq\frac{n}{2}\), we have \(|E_G(S,[n]\setminus S)|\leq 2|S|\) and the inequality \(2|S|\leq\frac{|S|(n-|S|)}{2}\) holds for all \(n\geq |S|+4\), so by \(|S|\leq\frac{n}{2}\) the statement is true for all \(n\geq 7\).
 \end{expl}
 
 \begin{defi}
-For any \(n,k\in\mathbb{N}\) we define the set of all cut-minimal graphs on \(n\) vertices:
+For any \(n\geq 1\) we define the set of all cut-minimal graphs on \(n\) vertices:
 \[
-CMG(n):=\{G=([n],E)\: :\: G\text{ is cut-minimal}\},
-\]
-and its subsets of all cut-minimal graphs on \(n\) vertices and \(k\) edges:
-\[
-CMG_k(n):=\{G=([n],E)\: :\: G\text{ is cut-minimal and }|E|=k\}.
+CMG(n):=\{G=([n],E)\: :\: G\text{ is cut-minimal}\}
 \]
 \end{defi}
 
 \subsection{Maximal cut-minimal graphs}
-In \cite{1} there was the simplicial complex \(\mathcal{C}^1(n)\) introduced, constructed as follows:
 
-\begin{itemize}
-\item The unordered pairs \((i,j)\) (where \(i,j\in [n]\text{, }i\neq j\)) form the vertices of \(\mathcal{C}^1(n)\).
-\item A set of vertices forms a simplex of \(\mathcal{C}^1(n)\), if and only if the corresponding graph is cut-minimal.
-\end{itemize}
+Let us study the the topological and simplicial structure of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\) which was, more generally, already introduced in the preceding chapter. Understanding this complex will help us to explore combinatorial properties of the cut-minimal graphs on a certain number of vertices.\\
+The first thing we will do is to determine the maximum number of edges, a cut-minimal graph on a certain number of vertices can have, which immediately gives us the dimension of \(\mathcal{C}_1(\Delta^{[n]})\).
 
-The complex \(\mathcal{C}^1(n)\) contains all relevant information about the structure of cut-minimal graphs on a certain number of vertices so it might be useful to study its topological and simplicial structure.\\
-The first thing to note is that the dimension of \(\mathcal{C}^1(n)\) is obviously one more than the maximal number of edges a cut-minimal graphs can have which obviously coincides with the number \(C_{max}(\Delta^{[n]},1)\) by Lemma \ref{lemma16}.
-\\
-Let us now determine the number \(C_{max}(\Delta^{[n]},1)\) explicitly.
 \begin{prop}\label{proposition3}
 \(C_{max}(\Delta^{[n]},1)\geq\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}\)
 \begin{proof}
@@ -114,6 +96,9 @@ where the inequality comes from:
 Hence, the constructed graph is cut-minimal.
 \end{proof}
 \end{prop}
+
+Note, that we already proved the equivalent statement as Proposition \ref{proposition112}, since a simple calculation immediately shows that \(\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}=\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor\). Eventhough, it seemed to be worth to state this alternative proof, as it gets along with pure combinatorics, without using any algebraic properties.
+
 \begin{rem}
 For further proofs and calculations it might be helpful to keep mind that we have:
 \begin{align}
@@ -121,6 +106,9 @@ For further proofs and calculations it might be helpful to keep mind that we hav
 &\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}=\frac{n^2-2n}{4},&\text{ for }n\text{ even.}\notag
 \end{align}
 \end{rem}
+
+Now, we are able to state the main theorem of this section, saying that the preceding estimate is even an upper bound.
+
 \begin{thm}\label{theorem1}
 \(C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}\)
 \begin{proof}
@@ -153,7 +141,15 @@ C_{max}(\Delta^{[n]},1)&\leq\frac{n^2-n}{4}-\frac{n-1}{4}\notag\\
 Hence, we have \(C_{max}(\Delta^{[n]},1)\leq\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}\) in general and by Proposition \ref{proposition3} we are done.
 \end{proof}
 \end{thm}
-Note, that the proof of Proposition \ref{proposition3} even contains a description of the shape of a cut-minimal graph with the maximum number of edges, which furthermore provides information about how a top dimensional simplex is embedded in \(\mathcal{C}^1(n)\). Now the following theorem does not only represent a first statement about the homology of \(\mathcal{C}^1(n)\), but even shows that the construction in the proof of Proposition \ref{proposition3} is the only possible shape of such graphs (top dimensional simplices respectively). Let us first define some basic terminology, which we will mainly need in the next section, but it might already be helpful at this point to know exactly what we mean by deleting or adding edges in a graph.
+
+A formula for the dimension of \(\mathcal{C}_1(\Delta^{[n]})\) follows immediately from the preceding theorem.
+
+\begin{cor}
+\(\dim(\mathcal{C}_1(\Delta^{[n]})=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}-1\)
+\end{cor}
+
+Note, that the proof of Proposition \ref{proposition3} even contains a description of the shape of a cut-minimal graph with the maximum number of edges, which furthermore provides information about how a top dimensional simplex is embedded in \(\mathcal{C}_1(\Delta^{[n]})\). Now, the following theorem, which was developed in \cite{10}, does not only represent a first statement about the homology of \(\mathcal{C}_1(\Delta^{[n]})\), but even shows that the construction in the proof of Proposition \ref{proposition3} is the only possible shape of such graphs (top dimensional simplices respectively). Let us first define some basic terminology, which we will mainly need in the next section, but it might already be helpful at this point to know exactly what we mean by deleting or adding edges in a graph.
+
 \begin{defi}
 For a graph \(G=([n],E)\) and a family of edges \(e_1,\ldots,e_k\in E\) we define the \textbf{deletion} of \(e_1,\ldots,e_k\) in \(G\) as:
 \[
@@ -164,34 +160,42 @@ For a graph \(G=([n],E)\) and a family of edges \(e_1,\ldots,e_k\in NE_G([n],[n]
 G^{e_1,\ldots,e_k}:=([n],E\cup\{e_1,\ldots,e_k\}),
 \]
 \end{defi}
+
 \begin{thm}\label{theorem3}
-\(H_{C_{max}(\Delta^{[n]},1)-1}(\mathcal{C}^1(n))\cong 0\)
+\(H_{\dim(\mathcal{C}_1(\Delta^{[n]})}(\mathcal{C}_1(\Delta^{[n]}))\cong 0\)
 \begin{proof}
-We will first show, that a top dimensional simplex in \(\mathcal{C}^1(n)\) can only be represented as a graph of the type we constructed in the proof of Proposition \ref{proposition3}.\\
-Let \(n\) be even. If we set \(n=2t+2\), then by the number \(C_{max}(\Delta^{[n]},1)\) and cut-minimality, the graph \(G\) corresponding to a top dimensional simplex in \(\mathcal{C}^1(n)\) must be \(t\)-regular. Furthermore for any three vertices \(v,w,u\in [n]\) by cut-minimality we have:
+We will first show, that a top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) can only be represented as a graph of the type we constructed in the proof of Proposition \ref{proposition3}.\\
+Let \(n\) be even. If we set \(n=2t+2\), then by the number \(C_{max}(\Delta^{[n]},1)\) and cut-minimality, the graph \(G\) corresponding to a top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) must be \(t\)-regular. Furthermore for any three vertices \(v,w,u\in [n]\) by cut-minimality we have:
 \[
 E_G(\{v,w,u\},[n]\setminus\{v,w,u\})\leq\frac{3(2t-1)}{2}=3t-\frac{3}{2},
 \]
-so by \(t\)-regularity among any three vertices at least two of them must be adjacent. Now choose a vertex \(v\in [n]\) and set \(A\) to be the set consisting of all vertices, which are not adjacent to \(v\). Then we have \(|A|=t+1\) by \(t\)-regularity and by the preceding result any two vertices in \(A\) have to be adjacent. Thus, \(A\) provides a complete graph on \(t+1\) vertices, so by \(t\)-regularity \([n]\setminus A\) must also provide a complete graph on \(t+1\) vertices. Hence, every top dimensional simplex in \(\mathcal{C}^1(n)\) (for \(n\) even) corresponds to a graph of that shape.\\
+so by \(t\)-regularity among any three vertices at least two of them must be adjacent. Now choose a vertex \(v\in [n]\) and set \(A\) to be the set consisting of all vertices, which are not adjacent to \(v\). Then we have \(|A|=t+1\) by \(t\)-regularity and by the preceding result any two vertices in \(A\) have to be adjacent. Thus, \(A\) provides a complete graph on \(t+1\) vertices, so by \(t\)-regularity \([n]\setminus A\) must also provide a complete graph on \(t+1\) vertices. Hence, every top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) (for \(n\) even) corresponds to a graph of that shape.\\
 Let now \(n\) be odd. If we set \(n=2t+3\), then by the number \(C_{max}(\Delta^{[n]},1)\) and cut-minimality there exist at least \(t+2\) vertices having degree \(t+1\). Let \(A\) denote the set of these vertices. For any \(v,w\in A\) we have:
 \[
 E_G(\{v,w\},[n]\setminus\{v,w\})\leq\frac{2(2t+3-2)}{2}=2t+1<2t+2=\deg_G(v)+\deg_G(w),
 \]
-so all vertices from \(A\) are adjacent. By cut-minimality again we have \(|A|=t+2\), so \(A\) provides a complete graph on \(t+2\) vertices. The number of remaining edges \(\binom{t+1}{2}\) shows, that the remaining \(t+1\) vertices must also provide a complete graph, which is disjoint from the first one, because any other constellation would destroy cut-minimality. So, again every top dimensional simplex in \(\mathcal{C}^1(n)\) corresponds to a graph of the requested type.\\
-Now we see that deleting an edge from such a graph (which is the same as deleting a vertex from a top dimensional simplex) produces a graph corresponding to a simplex which appears as a face of one top dimensional simplex, but can not be a face of another top dimensional simplex, since we can not construct a graph of the requested type by adding an edge at any other place than the place where we just deleted it. So, all top dimensional simplices are at most connected via simplices of codimension 2, which implies that \(\mathcal{C}^1(n)\) can be continiously retracted to a complex of codimension 1 and so homology in top dimension vanishes.
+so all vertices from \(A\) are adjacent. By cut-minimality again we have \(|A|=t+2\), so \(A\) provides a complete graph on \(t+2\) vertices. The number of remaining edges \(\binom{t+1}{2}\) shows, that the remaining \(t+1\) vertices must also provide a complete graph, which is disjoint from the first one, because any other constellation would destroy cut-minimality. So, again every top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) corresponds to a graph of the requested type.\\
+Now we see that deleting an edge from such a graph (which is the same as deleting a vertex from a top dimensional simplex) produces a graph corresponding to a simplex which appears as a face of one top dimensional simplex, but can not be a face of another top dimensional simplex, since we can not construct a graph of the requested type by adding an edge at any other place than the place where we just deleted it. So, all top dimensional simplices are at most connected via simplices of codimension 2, which implies that \(\mathcal{C}_1(\Delta^{[n]})\) can be continiously retracted to a complex of codimension 1 and so homology in top dimension vanishes.
 \end{proof}
 \end{thm}
+
 \begin{defi}
 A cut-minimal graph \(G=([n],E)\) is called \textbf{maximal}, if for all\\
 \(e\in NE_G([n],[n])\) the addition \(G^e\) is not cut-minimal. We denote the set of all maximal cut-minimal graphs on \(n\) vertices by \(MAX(n)\).
 \end{defi}
-Since a deletion of a cut-minimal graph is cut-minimal itself, it turnes out that we only have to determine all maximal cut-minimal graphs to find all cut-minimal graphs.
+Since deleting in edge in a cut-minimal graph produces a cut-minimal graph again, it turnes out that we only have to determine all maximal cut-minimal graphs to find all cut-minimal graphs.
 \begin{defi}
-Two graphs \(G=([n],E)\) and \(G'=([n],E')\) are called \textbf{isomorphic}, if there exists a map \(f:[n]\rightarrow [n]\), such that \((i,j)\in E\) if and only if \((f(i),f(j))\in E'\).
+Two graphs \(G=([n],E)\) and \(G'=([n],E')\) are called \textbf{isomorphic}, if there exists a map \(f:[n]\rightarrow [n]\), such that \((i,j)\in E\) if and only if \((f(i),f(j))\in E'\).\\
+For a graph \(G=([n],E)\) the \textbf{isomorphism class} of \(G\) is the set
+\[
+\left\{G'=([n],E')\text{ : }G'\text{ and }G\text{ are isomorphic}\right\}
+\]
 \end{defi}
+
 \begin{rem}
-Note, that an isomorphism of graphs preserves all properties, which are studied in this chapter, especially cut-minimality and the constant \(h(G)\), studied in the next section.
+Note, that an isomorphism of graphs preserves most properties studied in this chapter, especially cut-minimality and the constant \(h(G)\), studied in the next section.
 \end{rem}
+
 Figure \ref{figure2:Figure 2} illustrates, how the isomorphism classes of cut-minimal graphs on \(6\) vertices are arranged, where the connecting lines represent the relations between the classes refering to the deletion or addition of edges. Note, that the choosen representatives in the figure do not always satisfy the property of being a deletion or an addition of the shown representative of a class below or above, but in this case there is always another representative in the class which does. We see that beside the class of maximal cut-minimal graphs constructed in the proof of Proposition \ref{proposition3}, we have three more classes of maximal cut-minimal graphs here.
 
 \input{Chapters/Figure2.tex}
@@ -236,8 +240,9 @@ Hence, we have:
 \]
 \end{proof}
 \end{lem}
+
 \begin{prop}
-Let \(G=([n],E)\) be a simple graph and let the largest connected component of \(G\) not contain more than \(\frac{n}{2}\) vertices. Then \(G\) is cut-minimal.
+Let the largest connected component of a graph \(G=([n],E)\) not contain more than \(\frac{n}{2}\) vertices, then \(G\) is cut-minimal.
 \begin{proof}
 Let \(C_1,\ldots,C_t\subset [n]\) be the connected components of \(G\) and let \(S\subset [n]\), \(S_i:=S\cap C_i\) and \(U_i:=C_i\setminus S_i\). Then we have:
 \[
@@ -262,40 +267,37 @@ but this follows directly from Lemma \ref{lemma8}, since by the assumption \(|C_
 \end{proof}
 \end{prop}
 
-Let us now define and determine the counterpart of the number \(C_{max}(\Delta^{[n]},1)\), namely the minimal number of  edges, a non-cut-minimal graph can have.
-\begin{defi}
-For any \(n\geq 2\) we define the number:
-\[
-C_{min}(n):=\min\limits_{\substack{G=([n],E),\\G\text{ is not cut-minimal}}}|E|
-\]
-\end{defi}
+Let us now and determine the counterpart of the number \(C_{max}(\Delta^{[n]},1)\), namely the minimal number of edges, a non-cut-minimal graph can have, as it was already (more generally) defined in the preceding chapter.
+
 \begin{thm}\label{theorem2}
-\(C_{min}(n)=\left\lceil\frac{n}{2}\right\rceil\)
+\(C_{min}(\Delta^{[n]},1)=\left\lceil\frac{n}{2}\right\rceil\)
 \begin{proof}
 We can always find a graph \(G=([n],E)\) with \(\left\lceil\frac{n}{2}\right\rceil\) edges, such that for a vertex \(v\in [n]\) we have
 \[
 E_G(\{v\},[n]\setminus\{v\})=\left\lceil\frac{n}{2}\right\rceil>\left\lfloor\frac{n-1}{2}\right\rfloor,
 \]
-so it is not cut-minimal and we have \(C_{min}(n)\leq\left\lceil\frac{n}{2}\right\rceil\).\\
-On the other hand if we have a graph \(G=([n],E)\) with \(|E|=\left\lceil\frac{n}{2}\right\rceil-1\), then it must be cut-minimal, since \(\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get \(C_{min}(n)\geq\left\lceil\frac{n}{2}\right\rceil\) and we are done.
+so it is not cut-minimal and we have \(C_{min}(\Delta^{[n]},1)\leq\left\lceil\frac{n}{2}\right\rceil\).\\
+On the other hand if we have a graph \(G=([n],E)\) with \(|E|=\left\lceil\frac{n}{2}\right\rceil-1\), then it must be cut-minimal, since \(\left\lceil\frac{n}{2}\right\rceil-1=\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get \(C_{min}(\Delta^{[n]},1)\geq\left\lceil\frac{n}{2}\right\rceil\) and we are done.
 \end{proof}
 \end{thm}
-Obviously, \(\mathcal{C}M(n)\) contains all simplices of dimension lower than \(C_{min}(n)\), which leads to the following observation.
+
+Obviously, \(\mathcal{C}_1(\Delta^{[n]})\) contains all simplices of dimension lower than \(C_{min}(\Delta^{[n]},1)\), which leads to the following observation.
+
 \begin{cor}
-\(H_k(\mathcal{C}M(n))\cong 0\) for all \(1\leq k\leq\left\lceil\frac{n}{2}\right\rceil-3\)
+\(H_k(\mathcal{C}_1(\Delta^{[n]}))\cong 0\) for all \(1\leq k\leq\left\lceil\frac{n}{2}\right\rceil-3\)
 \begin{proof}
-By Theorem \ref{theorem2} \(\mathcal{C}M(n)\) has a full \(k\)-skeleton for all \(k\leq\left\lceil\frac{n}{2}\right\rceil-2\) and we are done. 
+By Theorem \ref{theorem2} \(\mathcal{C}_1(\Delta^{[n]})\) has a full \(k\)-skeleton for all \(k\leq\left\lceil\frac{n}{2}\right\rceil-2\) and we are done. 
 \end{proof}
 \end{cor}
-Since adding a vertex to a cut-minimal graph will always preserve its property to be cut-minimal, we can define the following natural inclusion.
-\begin{defi}
-For every \(n\in\mathbb{N}\) define:
+
+Since adding a vertex to a cut-minimal graph will always preserve its property to be cut-minimal, we can define the following natural inclusion:
 \begin{align}
 i_n\quad :\quad CMG(n)&\longrightarrow CMG(n+1)\notag \\
 ([n],E)&\longmapsto ([n+1],E)\notag
 \end{align}
-\end{defi}
+
 Furthermore, we see that maximality of cut-minimal graphs always becomes destroyed by adding a vertex to them.
+
 \begin{prop}
 Let \(G\in MAX(n)\), then we have \(i_n(G)\notin MAX(n+1)\).
 \begin{proof}
@@ -328,7 +330,8 @@ Hence, \(G'\) is cut-minimal and \(i_n(G)\notin MAX(n+1)\).
 \end{prop}
 
 \section{Cheeger graphs}
-In this chapter we want to recall the notion of Cheeger graphs and the first Cheeger constant of a simplex as introduced in \cite{1} but then not try to determine the Cheeger constant for certain simplices more precisely but investigate the combinatorial structure of Cheeger graphs and develop some methods which might help to check if a given cut-minimal graph is a Cheeger graph or not.
+
+In this section we want to recall the notion of Cheeger graphs as introduced in \cite{1} and study some interesting properties concerning the combinatorial structure of Cheeger graphs, which might be helpful on our way to determine the first Cheeger constant of a simplex \(\Delta^{[n]}\) when \(n\) is not a power of \(2\).
 
 \subsection{Basic definitions and properties}
 The following definition is completely adopted from \cite{1}.
@@ -374,7 +377,7 @@ We already know by \cite{1} that \(\frac{n}{3}\leq h_1(\Delta{[n]})\leq\left\lce
 
 \input{Chapters/Figure3.tex}
 
-\subsection{Structure theory of Cheeger graphs}
+\subsection{A restriction on the size of connected components in Cheeger graphs}
 
 \begin{prop}
 Let \(G=([n],E)\) be a Cheeger graph. Then \(G\) must have a connected component of size at least \(n-\left\lceil\frac{n}{3}\right\rceil\).
@@ -390,179 +393,181 @@ which is equivalent to
 \end{proof}
 \end{prop}
 
-We will now investigate how the set \(T(G)\) (and so the constant \(h(G)\) as well) changes when we delete or add one or more edges in a given graph \(G\). This will give us some methods to determine that a given graph satisfying certain conditions is not a Cheeger graph.
-\begin{defi}
-Let \(G=([n],E)\) be a simple graph. For an edge \(e\in E\) we define the numbers:
-\[
-\psi_e^G:=|\{e'\in E\: :\: e'\text{ and }e\text{ share a vertex}\}|,
-\]
-where two edges \(e=(v_1,v_2)\) and \(e'=(v_3,v_4)\) are said to be sharing a vertex, if \(|(v_1,v_2)\cap (v_3,v_4)|=1\) and
-\[
-\phi_e^G:=|\{A\subseteq E\: :\: A\text{ is a triangle in }G\text{ and }e\in A\}|,
-\]
-where a triangle is a set of the type \(A=\{(v_1,v_2),(v_2,v_3),(v_3,v_1)\}\). If \(G\) contains no triangle, which is equivalent to \(\sum\limits_{e\in E}\phi_e^G=0\), then we call \(G\) \textbf{triangle-free}.
-\end{defi}
-\begin{lem}\label{lemma2}
-Let \(G=([n],E)\) be a cut-minimal graph and \(e\in E\), then we have:
-\begin{equation}
-\psi_e^G\leq
-\begin{cases}
-n-3,&\text{ for }n\text{ odd}\notag\\
-n-4,&\text{ for }n\text{ even}\notag
-\end{cases}
-\end{equation}
-and
-\begin{equation}
-\phi_e^G\leq
-\begin{cases}
-\frac{n-3}{2},&\text{ for }n\text{ odd}\notag\\
-\frac{n-4}{2},&\text{ for }n\text{ even}\notag
-\end{cases}
-\end{equation}
-\begin{proof}
-Let \(e:=(v_1,v_2)\), then we have \(\deg_G(v_1),\deg(v_2)\leq\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get:
-\[
-\psi_e^G=\deg_G(v_1)+\deg_G(v_2)-2\leq2\left\lfloor\frac{n-1}{2}\right\rfloor-2
-\]
-Since \(2\left\lfloor\frac{n-1}{2}\right\rfloor=n-1\) for \(n\) odd and \(n-2\) for \(n\) even we get the claimed result.\\
-The second part follows directly from the first one, since for each triangle containing \(e\), we have exactly two edges sharing a vertex with \(e\).
-\end{proof}
-\end{lem}
-Since a Cheeger graph \(G\) can be characterized by the property that neither deleting edges from it nor adding edges to it (provided that the corresponding graph is still cut-minimal) nor a combination of both actions can decrease the number \(h(G)\), it might be helpful to know more about how those actions change \(h(G)\). The next Lemma gives exactly this information and the following statements then develop conditions which being satisfied by a certain graph guarantee that it is not a Cheeger graph.
-\begin{lem}\label{lemma1}
-Let \(G=([n],E)\) be a simple graph, \(e\in E\) and \(e'\in NE_G([n],[n])\). Then we have:
-\begin{enumerate}
-\item \(|T(G)|\leq |E|(n-2)-2\psi_e^G+2\phi_e^G\)
-\item \(|T(G_e)|=|T(G)|-(n-2)+2(\psi_e^G-2\phi_e^G)\)
-\item \(|T(G^{e'})|=|T(G)|+(n-2)-2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}})\)
-\end{enumerate}
-\begin{proof}
-(1) The maximum number \(|T(G)|\) can become is obviously \(|E|(n-2)\), namely in the case when no two edges share a vertex. Now for an edge\\
-\(e=(v_1,v_2)\in E\) contained in a triangle \(\{(v_1,v_2),(v_1,v_3),(v_2,v_3)\}\), we have \(\tau_e(v_3)=\frac{1}{3}\) instead of \(1\), so \(t(e)\) decreases at least by \(\frac{2}{3}\).
-By 3 edges participating at each triangle, we then overall lose at least \(2\phi_e^G\).\\
-If we have two edges \((v_1,v_2),(v_2,v_3)\in E\), such that \((v_1,v_3)\notin E\), meaning two edges which share a vertex but which are not contained in the same triangle, then we get \(\tau_{(v_1,v_2)}(v_3)=\tau_{(v_2,v_3)}(v_1)=0\) instead of \(1\), so overall we lose at least \(2(\psi_e^G-2\phi_e^G)\), since \(\psi_e^G-2\phi_e^G\) is the number of edges which share a vertex with \(e\) but which are not contained in the same triangle with \(e\).\\
-All in all we get:
-\[
-|T(G)|\leq|E|(n-2)-2\phi_e^G-2(\psi_e^G-2\phi_e^G)=|E|(n-2)-2\psi_e^G+2\phi_e^G
-\]
-(2) The maximum number by which \(|T(G)|\) can decrease when deleting \(e\) from \(G\) is \(n-2\). This is the case when \(e\) is not connected to the rest of the graph. We do not have to consider the case when \(e\) is contained in a triangle because even though \(t(e)\) is smaller than \(n-2-\frac{2}{3}\) then, the numbers \(t(e')\) and \(t(e'')\) refering to the other two edges \(e'\) and \(e''\) contained in the triangle also decrease by \(\frac{1}{3}\) when deleting \(e\).
-So, we still have to consider the case, when we have an edge \(e'\) sharing a vertex with \(e\) but not being contained in the same triangle with \(e\). Then \(|T(G)|\) decreases by one less than \(n-2\) and even increases by 1 when deleting \(e\), since \(t(e')\) increases by 1.\\
-Hence, we get:
-\[
-|T(G_e)|=|T(G)|-(n-2)+2(\psi_e^G-2\phi_e^G)
-\]
-(3) By part (2) of this Lemma we have:
-\[
-|T(G)|=|T(G_{e'}^{e'})|=|T(G^{e'})|-(n-2)+2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}})
-\]
-which is equivalent to:
-\[
-|T(G^{e'})|=|T(G)|+(n-2)-2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}}).
-\]
-\end{proof}
-\end{lem}
-\begin{prop}\label{proposition1}
-Let \(G=([n],E)\) be a simple graph. If there exists an edge \(e\in E\), such that \(2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G<0\), then we have \(h(G_e)<h(G)\).
-\begin{proof}
-By Lemma \ref{lemma1} (1) we get:
-\begin{doublespace}
-\begin{align}
-&\quad\quad\quad\:\, |E|(n-2)-(2\psi_e^G-2\phi_e^G)\geq |T(G)|\notag\\
-&\Longleftrightarrow\quad |E||T(G)|-|E|(n-2)+(2\psi_e^G-2\phi_e^G)\leq |T(G)|(|E|-1)\notag\\
-&\Longleftrightarrow\quad \frac{|E||T(G)|-|E|(n-2)+(2\psi_e^G-2\phi_e^G)}{|E|(|E|-1)}\leq\frac{|T(G)|(|E|-1)}{|E|(|E|-1)}\notag\\
-&\Longleftrightarrow\quad \frac{|T(G)|-(n-2)}{|E|-1}+\frac{2\psi_e^G-2\phi_e^G}{|E|(|E|-1)}\leq\frac{|T(G)|}{|E|}=h(G)
-\end{align}
-\end{doublespace}
-and by Lemma \ref{lemma1} (2) we get:
-\begin{align}
-h(G_e)=\frac{|T(G)|-(n-2)}{|E|-1}+\frac{2\psi_e^G-4\phi_e^G}{|E|-1}
-\end{align}
-Now consider:
-\begin{doublespace}
-\begin{align}
-&\quad\quad\quad\:\, 2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G<0\notag\\
-&\Longleftrightarrow\quad 2(|E|-1)\psi_e^G-(4|E|-2)\phi_e^G<0\notag\\
-&\Longleftrightarrow\quad 2(|E|-1)\psi_e^G-4|E|\phi_e^G+2\phi_e^G<0\notag\\
-&\Longleftrightarrow\quad 2|E|\psi_e^G-4|E|\phi_e^G<2\psi_e^G-2\phi_e^G\notag\\
-&\Longleftrightarrow\quad \frac{2\psi_e^G-4\phi_e^G}{|E|-1}<\frac{2\psi_e^G-2\phi_e^G}{|E|(|E|-1)}\notag
-\end{align}
-\end{doublespace}
-So, by (1) and (2) we have:
-\[
-h(G_e)<h(G)
-\]
-\end{proof}
-\end{prop}
-\begin{expl}
-Let \(G=([n],E)\) be a graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\deg_G(v_1)=\deg_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
-\[
-2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G=4(|E|-1)-2(2|E|-1)=-2<0
-\]
-and by Proposition \ref{proposition1} we get:
-\[
-h(G_e)<h(G),
-\]
-so \(G\) can not be a Cheeger graph.
-\end{expl}
-Now we want to generalize the second and third part of Lemma \ref{lemma1} to a situation where we consider more than only one edge being deleted or added.
-\begin{lem}\label{lemma3}
-Let \(G=([n],E)\) be a simple graph and \(e_1,\ldots,e_k\in E\), then we have:
-\[
-|T(G_{e_1,\ldots,e_k})|=|T(G)|-k(n-2)+2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})
-\]
-In this formula we set \(G_{e_0}=G\) to avoid writing it in a more complicated way.\\
-For \(e_1,\ldots,e_k\in NE_G([n],[n])\) we have:
-\[
-|T(G^{e_1,\ldots,e_k})|=|T(G)|+k(n-2)-2(\sum\limits_{i=1}^k\psi_{e_i}^{G^{e_1,\ldots,e_i}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G^{e_1,\ldots,e_i}})
-\]
-\begin{proof}
-By Lemma \ref{lemma1} (2) we get:
-\begin{align}
-|T(G_{e_1,\ldots,e_k})|&=|T(G_{e_1,\ldots,e_{k-1}})|-(n-2)+2(\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}})\notag\\
-&=|T(G_{e_1,\ldots,e_{k-2}})|-(n-2)+2(\psi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}-2\phi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}})\notag\\
-&\quad-(n-2)+2(\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}})\notag\\
-&=|T(G_{e_1,\ldots,e_{k-2}})|-2(n-2)\notag\\
-&\quad+2(\psi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}+\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2(\phi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}+\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}))\notag
-\end{align}
-so inductively we have:
-\[
-|T(G_{e_1,\ldots,e_k})|=|T(G)|-k(n-2)+2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})
-\]
-The second part works analogously using Lemma \ref{lemma1} (3). 
-\end{proof}
-\end{lem}
-\begin{prop}\label{proposition2}
-Let \(G=([n],E)\) be a simple graph. If there exist edges \(e_1,\ldots,e_k\in E\) and \(e\in E\) such that:
-\[
-\frac{2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})}{|E|-k}<\frac{k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)},
-\]
-then we have:
-\[
-h(G_{e_1,\ldots,e_k})<h(G)
-\]
-\begin{proof}
-By Lemma \ref{lemma1} (1) we get:
-\begin{doublespace}
-\begin{align}
-&\quad\quad\quad\:\, |E|(n-2)-(2\psi_e^G-2\phi_e^G)\geq |T(G)|\notag\\
-&\Longleftrightarrow\quad |E||T(G)|-k|E|(n-2)+k(2\psi_e^G-2\phi_e^G)\leq |T(G)|(|E|-k)\notag\\
-&\Longleftrightarrow\quad \frac{|E||T(G)|-k|E|(n-2)+k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)}\leq\frac{|T(G)|(|E|-k)}{|E|(|E|-k)}\notag\\
-&\Longleftrightarrow\quad \frac{|T(G)|-k(n-2)}{|E|-k}+\frac{k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)}\leq\frac{|T(G)|}{|E|}=h(G)
-\end{align}
-\end{doublespace}
-and Lemma \ref{lemma3} gives us:
-\[
-h(G_{e_1,\ldots,e_k})=\frac{|T(G)|-k(n-2)}{|E|-k}+\frac{2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})}{|E|-k}
-\]
-So, by (3) and the assumption we have:
-\[
-h(G_{e_1,\ldots,e_k})<h(G)
-\]
-\end{proof}
-\end{prop}
+%We will now investigate how the set \(T(G)\) (and so the constant \(h(G)\) as well) changes when we delete or add one or more edges in a given graph \(G\). This will give us some methods to determine that a given graph satisfying certain conditions is not a Cheeger graph.
+%\begin{defi}
+%Let \(G=([n],E)\) be a simple graph. For an edge \(e\in E\) we define the numbers:
+%\[
+%\psi_e^G:=|\{e'\in E\: :\: e'\text{ and }e\text{ share a vertex}\}|,
+%\]
+%where two edges \(e=(v_1,v_2)\) and \(e'=(v_3,v_4)\) are said to be sharing a vertex, if \(|(v_1,v_2)\cap (v_3,v_4)|=1\) and
+%\[
+%\phi_e^G:=|\{A\subseteq E\: :\: A\text{ is a triangle in }G\text{ and }e\in A\}|,
+%\]
+%where a triangle is a set of the type \(A=\{(v_1,v_2),(v_2,v_3),(v_3,v_1)\}\). If \(G\) contains no triangle, which is equivalent to \(\sum\limits_{e\in E}\phi_e^G=0\), then we call \(G\) \textbf{triangle-free}.
+%\end{defi}
+%\begin{lem}\label{lemma2}
+%Let \(G=([n],E)\) be a cut-minimal graph and \(e\in E\), then we have:
+%\begin{equation}
+%\psi_e^G\leq
+%\begin{cases}
+%n-3,&\text{ for }n\text{ odd}\notag\\
+%n-4,&\text{ for }n\text{ even}\notag
+%\end{cases}
+%\end{equation}
+%and
+%\begin{equation}
+%\phi_e^G\leq
+%\begin{cases}
+%\frac{n-3}{2},&\text{ for }n\text{ odd}\notag\\
+%\frac{n-4}{2},&\text{ for }n\text{ even}\notag
+%\end{cases}
+%\end{equation}
+%\begin{proof}
+%Let \(e:=(v_1,v_2)\), then we have \(\deg_G(v_1),\deg(v_2)\leq\left\lfloor\frac{n-1}{2}\right\rfloor\), so we get:
+%\[
+%\psi_e^G=\deg_G(v_1)+\deg_G(v_2)-2\leq2\left\lfloor\frac{n-1}{2}\right\rfloor-2
+%\]
+%Since \(2\left\lfloor\frac{n-1}{2}\right\rfloor=n-1\) for \(n\) odd and \(n-2\) for \(n\) even we get the claimed result.\\
+%The second part follows directly from the first one, since for each triangle containing \(e\), we have exactly two edges sharing a vertex with \(e\).
+%\end{proof}
+%\end{lem}
+%Since a Cheeger graph \(G\) can be characterized by the property that neither deleting edges from it nor adding edges to it (provided that the corresponding graph is still cut-minimal) nor a combination of both actions can decrease the number \(h(G)\), it might be helpful to know more about how those actions change \(h(G)\). The next Lemma gives exactly this information and the following statements then develop conditions which being satisfied by a certain graph guarantee that it is not a Cheeger graph.
+%\begin{lem}\label{lemma1}
+%Let \(G=([n],E)\) be a simple graph, \(e\in E\) and \(e'\in NE_G([n],[n])\). Then we have:
+%\begin{enumerate}
+%\item \(|T(G)|\leq |E|(n-2)-2\psi_e^G+2\phi_e^G\)
+%\item \(|T(G_e)|=|T(G)|-(n-2)+2(\psi_e^G-2\phi_e^G)\)
+%\item \(|T(G^{e'})|=|T(G)|+(n-2)-2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}})\)
+%\end{enumerate}
+%\begin{proof}
+%(1) The maximum number \(|T(G)|\) can become is obviously \(|E|(n-2)\), namely in the case when no two edges share a vertex. Now for an edge\\
+%\(e=(v_1,v_2)\in E\) contained in a triangle \(\{(v_1,v_2),(v_1,v_3),(v_2,v_3)\}\), we have \(\tau_e(v_3)=\frac{1}{3}\) instead of \(1\), so \(t(e)\) decreases at least by \(\frac{2}{3}\).
+%By 3 edges participating at each triangle, we then overall lose at least \(2\phi_e^G\).\\
+%If we have two edges \((v_1,v_2),(v_2,v_3)\in E\), such that \((v_1,v_3)\notin E\), meaning two edges which share a vertex but which are not contained in the same triangle, then we get \(\tau_{(v_1,v_2)}(v_3)=\tau_{(v_2,v_3)}(v_1)=0\) instead of \(1\), so overall we lose at least \(2(\psi_e^G-2\phi_e^G)\), since \(\psi_e^G-2\phi_e^G\) is the number of edges which share a vertex with \(e\) but which are not contained in the same triangle with \(e\).\\
+%All in all we get:
+%\[
+%|T(G)|\leq|E|(n-2)-2\phi_e^G-2(\psi_e^G-2\phi_e^G)=|E|(n-2)-2\psi_e^G+2\phi_e^G
+%\]
+%(2) The maximum number by which \(|T(G)|\) can decrease when deleting \(e\) from \(G\) is \(n-2\). This is the case when \(e\) is not connected to the rest of the graph. We do not have to consider the case when \(e\) is contained in a triangle because even though \(t(e)\) is smaller than \(n-2-\frac{2}{3}\) then, the numbers \(t(e')\) and \(t(e'')\) refering to the other two edges \(e'\) and \(e''\) contained in the triangle also decrease by \(\frac{1}{3}\) when deleting \(e\).
+%So, we still have to consider the case, when we have an edge \(e'\) sharing a vertex with \(e\) but not being contained in the same triangle with \(e\). Then \(|T(G)|\) decreases by one less than \(n-2\) and even increases by 1 when deleting \(e\), since \(t(e')\) increases by 1.\\
+%Hence, we get:
+%\[
+%|T(G_e)|=|T(G)|-(n-2)+2(\psi_e^G-2\phi_e^G)
+%\]
+%(3) By part (2) of this Lemma we have:
+%\[
+%|T(G)|=|T(G_{e'}^{e'})|=|T(G^{e'})|-(n-2)+2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}})
+%\]
+%which is equivalent to:
+%\[
+%|T(G^{e'})|=|T(G)|+(n-2)-2(\psi_{e'}^{G^{e'}}-2\phi_{e'}^{G^{e'}}).
+%\]
+%\end{proof}
+%\end{lem}
+%\begin{prop}\label{proposition1}
+%Let \(G=([n],E)\) be a simple graph. If there exists an edge \(e\in E\), such that \(2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G<0\), then we have \(h(G_e)<h(G)\).
+%\begin{proof}
+%By Lemma \ref{lemma1} (1) we get:
+%\begin{doublespace}
+%\begin{align}
+%&\quad\quad\quad\:\, |E|(n-2)-(2\psi_e^G-2\phi_e^G)\geq |T(G)|\notag\\
+%&\Longleftrightarrow\quad |E||T(G)|-|E|(n-2)+(2\psi_e^G-2\phi_e^G)\leq |T(G)|(|E|-1)\notag\\
+%&\Longleftrightarrow\quad \frac{|E||T(G)|-|E|(n-2)+(2\psi_e^G-2\phi_e^G)}{|E|(|E|-1)}\leq\frac{|T(G)|(|E|-1)}{|E|(|E|-1)}\notag\\
+%&\Longleftrightarrow\quad \frac{|T(G)|-(n-2)}{|E|-1}+\frac{2\psi_e^G-2\phi_e^G}{|E|(|E|-1)}\leq\frac{|T(G)|}{|E|}=h(G)
+%\end{align}
+%\end{doublespace}
+%and by Lemma \ref{lemma1} (2) we get:
+%\begin{align}
+%h(G_e)=\frac{|T(G)|-(n-2)}{|E|-1}+\frac{2\psi_e^G-4\phi_e^G}{|E|-1}
+%\end{align}
+%Now consider:
+%\begin{doublespace}
+%\begin{align}
+%&\quad\quad\quad\:\, 2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G<0\notag\\
+%&\Longleftrightarrow\quad 2(|E|-1)\psi_e^G-(4|E|-2)\phi_e^G<0\notag\\
+%&\Longleftrightarrow\quad 2(|E|-1)\psi_e^G-4|E|\phi_e^G+2\phi_e^G<0\notag\\
+%&\Longleftrightarrow\quad 2|E|\psi_e^G-4|E|\phi_e^G<2\psi_e^G-2\phi_e^G\notag\\
+%&\Longleftrightarrow\quad \frac{2\psi_e^G-4\phi_e^G}{|E|-1}<\frac{2\psi_e^G-2\phi_e^G}{|E|(|E|-1)}\notag
+%\end{align}
+%\end{doublespace}
+%So, by (1) and (2) we have:
+%\[
+%h(G_e)<h(G)
+%\]
+%\end{proof}
+%\end{prop}
+%\begin{expl}
+%Let \(G=([n],E)\) be a graph containing a triangle, which is only connected to the rest of the graph via one vertex or isolated, meaning a set \(\{(v_1,v_2),(v_2,v_3),(v_1,v_3)\}\subseteq E\), such that \(\deg_G(v_1)=\deg_G(v_2)=2\), then \(G\) is not a Cheeger graph as follows. We set \(e:=(v_1,v_2)\), then we have \(\phi_e^G=1\) and \(\psi_e^G=2\). This gives us:
+%\[
+%2(|E|-1)\psi_e^G-2(2|E|-1)\phi_e^G=4(|E|-1)-2(2|E|-1)=-2<0
+%\]
+%and by Proposition \ref{proposition1} we get:
+%\[
+%h(G_e)<h(G),
+%\]
+%so \(G\) can not be a Cheeger graph.
+%\end{expl}
+%Now we want to generalize the second and third part of Lemma \ref{lemma1} to a situation where we consider more than only one edge being deleted or added.
+%\begin{lem}\label{lemma3}
+%Let \(G=([n],E)\) be a simple graph and \(e_1,\ldots,e_k\in E\), then we have:
+%\[
+%|T(G_{e_1,\ldots,e_k})|=|T(G)|-k(n-2)+2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})
+%\]
+%In this formula we set \(G_{e_0}=G\) to avoid writing it in a more complicated way.\\
+%For \(e_1,\ldots,e_k\in NE_G([n],[n])\) we have:
+%\[
+%|T(G^{e_1,\ldots,e_k})|=|T(G)|+k(n-2)-2(\sum\limits_{i=1}^k\psi_{e_i}^{G^{e_1,\ldots,e_i}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G^{e_1,\ldots,e_i}})
+%\]
+%\begin{proof}
+%By Lemma \ref{lemma1} (2) we get:
+%\begin{align}
+%|T(G_{e_1,\ldots,e_k})|&=|T(G_{e_1,\ldots,e_{k-1}})|-(n-2)+2(\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}})\notag\\
+%&=|T(G_{e_1,\ldots,e_{k-2}})|-(n-2)+2(\psi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}-2\phi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}})\notag\\
+%&\quad-(n-2)+2(\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}})\notag\\
+%&=|T(G_{e_1,\ldots,e_{k-2}})|-2(n-2)\notag\\
+%&\quad+2(\psi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}+\psi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}-2(\phi_{e_{k-1}}^{G_{e_1,\ldots,e_{k-2}}}+\phi_{e_k}^{G_{e_1,\ldots,e_{k-1}}}))\notag
+%\end{align}
+%so inductively we have:
+%\[
+%|T(G_{e_1,\ldots,e_k})|=|T(G)|-k(n-2)+2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})
+%\]
+%The second part works analogously using Lemma \ref{lemma1} (3). 
+%\end{proof}
+%\end{lem}
+%\begin{prop}\label{proposition2}
+%Let \(G=([n],E)\) be a simple graph. If there exist edges \(e_1,\ldots,e_k\in E\) and \(e\in E\) such that:
+%\[
+%\frac{2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})}{|E|-k}<\frac{k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)},
+%\]
+%then we have:
+%\[
+%h(G_{e_1,\ldots,e_k})<h(G)
+%\]
+%\begin{proof}
+%By Lemma \ref{lemma1} (1) we get:
+%\begin{doublespace}
+%\begin{align}
+%&\quad\quad\quad\:\, |E|(n-2)-(2\psi_e^G-2\phi_e^G)\geq |T(G)|\notag\\
+%&\Longleftrightarrow\quad |E||T(G)|-k|E|(n-2)+k(2\psi_e^G-2\phi_e^G)\leq |T(G)|(|E|-k)\notag\\
+%&\Longleftrightarrow\quad \frac{|E||T(G)|-k|E|(n-2)+k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)}\leq\frac{|T(G)|(|E|-k)}{|E|(|E|-k)}\notag\\
+%&\Longleftrightarrow\quad \frac{|T(G)|-k(n-2)}{|E|-k}+\frac{k(2\psi_e^G-2\phi_e^G)}{|E|(|E|-k)}\leq\frac{|T(G)|}{|E|}=h(G)
+%\end{align}
+%\end{doublespace}
+%and Lemma \ref{lemma3} gives us:
+%\[
+%h(G_{e_1,\ldots,e_k})=\frac{|T(G)|-k(n-2)}{|E|-k}+\frac{2(\sum\limits_{i=1}^k\psi_{e_i}^{G_{e_1,\ldots,e_{i-1}}}-2\sum\limits_{i=1}^k\phi_{e_i}^{G_{e_1,\ldots,e_{i-1}}})}{|E|-k}
+%\]Structure theory of Cheeger graphs
+%So, by (3) and the assumption we have:
+%\[
+%h(G_{e_1,\ldots,e_k})<h(G)
+%\]
+%\end{proof}
+%\end{prop}
 
 \subsection{Adding vertices to Cheeger graphs}
-After we studied how adding or deleting edges in a cut-minimal graph \(G\) affects its constant \(h(G)\) we are now interested in the consequences of adding a vertex to \(G\). We will find out that in the most cases the property of being a Cheeger graph will be destroyed by this action. Using this knowledge we can construct a lower bound on the number of edges in Cheeger graphs holding in the most cases.
+
+Based on the fact that adding a vertex to a cut-minimal graph will always result in a cut-minimal graph again, we will now study the consequences of adding a vertex to a Cheeger graph. It will turn out that in most cases the resulting graph will not be a Cheeger graph anymore. Using this fact we will be able to find a lower bound on the number of edges in Cheeger graphs holding in the most cases.
+
 \begin{lem}\label{lemma4}
 Let \(G=([n],E)\) be a cut-minimal graph, then we have:
 \[
