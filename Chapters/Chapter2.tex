@@ -352,10 +352,55 @@ If \(n\) is odd then by the construction of \(\varphi\) there exists exactly one
 \end{proof}
 \end{thm}
 
+\section{Embeddings of cosystoles}
+
+When searching for cosystoles another approach is to consider cochains, which are already proven to be cosystolic and try to, roughly speaking, change or extend them to create new cosystoles. The most obvious way to do this is just to add a vertex to the underlying simplex by the embedding:
+
+\begin{align*}
+i_n^k\text{ : }C^k(\Delta^{[n]})&\longrightarrow C^k(\Delta^{[n+1]})\notag\\
+\varphi&\longmapsto\left(\sum\limits_{\sigma\in\supp(\varphi)}\sigma\right)^*
+\end{align*}
+
+The first observation is, that cosystolicity is preserved by this embedding.
+
+\begin{lem}\label{lemma132}
+Let \(\varphi\in C^k(\Delta^{[n]})\) be a cosystole, then \(i_n^k(\varphi)\in C^k(\Delta^{[n+1]})\) is a cosystole.
+\begin{proof}
+Let \(\phi\in C^{k-1}(\Delta^{[n+1]})\) and consider the partition \(\supp(\phi)=C_1\cup C_2\) with\\
+\(C_1:=\left\{\sigma\in\supp(\phi)\text{ : }n+1\in\sigma\right\}\) and \(C_2=\left\{\sigma\in\supp(\phi)\text{ : }n+1\notin\sigma\right\}\). Now set \(\phi_1:=C_1^*\) and \(\phi_2:=C_2^*\), then we have
+\[
+\delta^{k-1}(\phi)+i_n^k(\varphi)=\delta^{k-1}(\phi_1)+\delta^{k-1}(\phi_2)+i_n^k(\varphi),
+\]
+but \(\|\delta^{k-1}(\phi_2)+i_n^k(\varphi)\|\geq\|i_n^k(\varphi)\|\) holds by assumption and\\
+\(\supp(\delta^{k-1}(\phi_1))\cap\supp(i_n^k(\varphi))=\emptyset\) holds by the construction of \(\psi_1\), so we get
+\[
+\|\delta^{k-1}(\phi)+i_n^k(\varphi)\|\geq\|i_n^k(\varphi)\|
+\]
+and we are done.
+\end{proof}
+\end{lem}
+
+Furthermore, if \(\varphi\) is a cosystole, the coboundary expansions of \(\varphi\) and \(i_n^k(\varphi)\) are related as follows.
+
+\begin{prop}\label{proposition113}
+Let \(\varphi\in C^k(\Delta^{[n]})\) be a cosystole, then we have:
+\[
+\|i_n^k(\varphi)\|_{exp}=\|\varphi\|_{exp}+1
+\]
+\begin{proof}
+By Lemma \ref{lemma132} we know that \(i_n^k(\varphi)\) is a cosystole and we have \(\|\delta^k(i_n^k(\varphi))\|=\|\delta^k(\varphi)\|+\|\varphi\|\), since for every simplex \(\sigma\) in the support of \(\varphi\), we get the additional simplex \((\sigma,n+1)\) in the support of \(\delta^k(i_n^k(\varphi))\). Hence, we have:
+\[
+\|i_n^k(\varphi)\|_{exp}=\frac{\|\delta^k(\varphi)\|+\|\varphi\|}{\|\varphi\|}=\|\varphi\|_{exp}+1
+\]
+\end{proof}
+\end{prop}
+
 \section{Multi-suspensions}
 
+Another approach to create new cosystoles is to not only include a cochain into a higher dimensional simplex, but even increase the dimension of the cochain's support, which can be realized by the so called multi-suspensions.
+
 \begin{defi}
-Let \(d\geq 1\), then we call
+Let \(0\leq k\leq n-1\) and \(d\geq 1\), then we call
 \begin{align}
 \sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
 \varphi&\longmapsto\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag

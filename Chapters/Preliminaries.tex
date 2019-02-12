@@ -42,9 +42,9 @@ is called the \(k\)-th \textbf{boundary map}. (Recall, that the boundary maps ha
 \\
 The \(k\)-th \textbf{homology group} of \(X\) is then defined as:
 \[
-H_k(X):=\frac{\text{Ker}(\partial_{k-1})}{\text{Im}(\partial_k)},
+H_k(X):=\frac{\ker(\partial_{k-1})}{\im(\partial_k)},
 \]
-where the elements from \(\text{Ker}(\partial_{k-1})\) are called k-\textbf{cycles} and the elements from \(\text{Im}(\partial_k)\) are called k-\textbf{boundaries}.\\
+where the elements from \(\ker(\partial_{k-1})\) are called k-\textbf{cycles} and the elements from \(\im(\partial_k)\) are called k-\textbf{boundaries}.\\
 Dualizing this concept, we get the \(k\)-th \textbf{cochain group} of \(X\) by
 \[
 C^k(X):=C^k(X,\mathbb{Z}_2):=\left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2\text{ : }\varphi\text{ is a linear map}\right\},
@@ -52,7 +52,7 @@ C^k(X):=C^k(X,\mathbb{Z}_2):=\left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2\text{ 
 whose elements are called \(k\)-\textbf{cochains}, the \(k\)-th \textbf{coboundary map}\\
 \(\delta^k:C^k(X)\rightarrow C^{k+1}(X)\) by \(\delta^k(\varphi):=\varphi\circ\partial_k\), and the \(k\)-th cohomology group of \(X\) by:
 \[
-H^k(X):=\frac{\text{Ker}(\delta^k)}{\text{Im}(\delta^{k-1})}
+H^k(X):=\frac{\ker(\delta^k)}{\im(\delta^{k-1})}
 \]
 Furthermore, the sequence
 \[

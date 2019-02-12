@@ -28,12 +28,13 @@ The quotient
 \]
 is called the \textbf{coboundary expansion} of \(\varphi\) and
 \[
-h_k(X):=\min\limits_{\varphi\in C^k(X)\text{, }\delta^k(\varphi)\neq 0}\|\varphi\|_{exp}
+h_k(X):=\min_{\substack{\varphi\in C^k(X)\\\varphi\notin\im(\delta^{k-1})}}\|\varphi\|_{exp}
 \]
 is called the \(k\)-th \textbf{Cheeger constant} of \(X\).\\
 \\
 A cosystole \(\varphi\in C^k(X)\) is called a \textbf{Cheeger cosystole} if \(h_k(X)=\|\varphi\|_{exp}\).\\
 \\
+We could even define the Cheeger constants more generally for polyhedral complexes (see \cite{6}), but in this thesis we will only focus simplicial complexes.\\
 Note, that the classical Cheeger constant of a graph coincides with the \(0\)-th Cheeger constant \(h_0(X)\). For larger \(k\)'s the value of \(h_k(X)\) is not even known for all standard simplices \(X=\Delta^{[n]}\). By now we only have the estimate
 
 \begin{equation}\label{equation1}
@@ -42,5 +43,9 @@ Note, that the classical Cheeger constant of a graph coincides with the \(0\)-th
 
 that was proven by Wallach and Meshulam (see \cite{4}), so we have the exact value \(h_k(\Delta^{[n]})=\frac{n}{k+2}\) when \(k+2\) devides \(n\). In \cite{1} Kozlov showed that the upper bound is archieved when \(k=n-3\), so we have \(h_{n-3}(\Delta^{[n]})=2\) and furthermore he showed that \(h_1(\Delta^{[n]})=\frac{n}{3}\) even holds for every \(n\) that is not a power of \(2\).\\
 \\
-In the first part of this thesis we will develop some theory about the cosystolic norm of cochains, since a better understanding of cosystoles seems to be the key knowledge to determine the Cheeger constants. In the second part we will focus on the special case of \(1\)-cosystoles and the first Cheeger constant, where we have an interesting graph theoretical approach introduced by Kozlov in \cite{1}, that seems to be suited well to investigate cosystoles in a combinatorial way.
+The classical \(0\)-th Cheeger constant of a graph is still pretty easy to understand intuitively, whereas the higher-dimensional generalizations raise the question what a measure of connectivity could mean in those cases. The following observation might help the reader to develop this intuition. For a graph \(G=(V,E)\) the classical Cheeger constant \(h(G)\) equals \(0\) if and only if \(G\) is disconnected, since for any non-empty proper subset of vertices \(A\subset V\), the set \(\delta(A)\) is empty, if and only if there is no edge between \(A\) and \(V\setminus A\). More generally, for a simplicial complex \(X\), the \(k\)-th Cheeger constant \(h_k(X)\) equals zero, if and only if the \(k\)-th homology group \(H_k(X)\) of \(X\) is not trivial, as follows:\\
+For any cochain \(\varphi\in C^k(X)\) we have \(\|\varphi\|_{csy}>0\) if and only if \(\varphi\notin\im(\delta^{k-1})\) and \(\delta^k(\varphi)=0\) if and only if \(\varphi\in\ker(\delta^k)\), but the existence of a cochain satisfying these two properties is equivalent to \(\im(\delta^{k-1})\subsetneq\ker(\delta^k)\), which just means that \(H^k(X)\neq 0\).\\
+So, we have to study the Cheeger constants of those simplicial complexes whose homology vanishes and the most obvious example of those complexes is the standard simplex \(\Delta^{[n]}\).\\
+\\
+In the first part of this thesis we will develop some theory about the cosystolic norm of cochains, since a better understanding of cosystoles seems to be the key knowledge to determine the Cheeger constants. In the second part we will focus on the special case of \(1\)-cosystoles and the first Cheeger constant, where we have an interesting graph theoretical approach introduced by Kozlov in \cite{1}, that seems to be suited well to investigate those cosystoles in a combinatorial way. The last chapter adresses an interesting purely combinatorial observation about partitioning consecutive numbers, which is not directly related to the topic of Cheeger constants, but arose during our research and might be helpful in other branches of combinatorics.
 

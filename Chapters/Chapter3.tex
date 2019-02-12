@@ -290,13 +290,15 @@ By Theorem \ref{theorem2} \(\mathcal{C}_1(\Delta^{[n]})\) has a full \(k\)-skele
 \end{proof}
 \end{cor}
 
-Since adding a vertex to a cut-minimal graph will always preserve its property to be cut-minimal, we can define the following natural inclusion:
+Since adding a vertex to a cut-minimal graph will always preserve its property to be cut-minimal (see Lemma \ref{lemma132}), we can define the following natural embedding:
+
 \begin{align}
 i_n\quad :\quad CMG(n)&\longrightarrow CMG(n+1)\notag \\
 ([n],E)&\longmapsto ([n+1],E)\notag
 \end{align}
 
-Furthermore, we see that maximality of cut-minimal graphs always becomes destroyed by adding a vertex to them.
+Note, that the embedding \(i_n\) is just the graphic version of the more general embedding \(i_n^k\) for cochains from the preceding chapter, restricted to cut-minimal graphs.\\
+Now, the first thing we see is that maximality of cut-minimal graphs always becomes destroyed by embedding them.
 
 \begin{prop}
 Let \(G\in MAX(n)\), then we have \(i_n(G)\notin MAX(n+1)\).
@@ -564,23 +566,20 @@ which is equivalent to
 %\end{proof}
 %\end{prop}
 
-\subsection{Adding vertices to Cheeger graphs}
+\subsection{Embeddings of Cheeger graphs}
 
-Based on the fact that adding a vertex to a cut-minimal graph will always result in a cut-minimal graph again, we will now study the consequences of adding a vertex to a Cheeger graph. It will turn out that in most cases the resulting graph will not be a Cheeger graph anymore. Using this fact we will be able to find a lower bound on the number of edges in Cheeger graphs holding in the most cases.
+Based on the fact that adding a vertex to a cut-minimal graph will always result in a cut-minimal graph again from the preceding section, we will now study the consequences of adding a vertex to a Cheeger graph. It will turn out that in most cases the resulting graph will not be a Cheeger graph anymore. Using this fact we will be able to find a lower bound on the number of edges in Cheeger graphs holding in the most cases.\\
+The following lemma is just the graphic version of Lemma \ref{lemma132}.
 
 \begin{lem}\label{lemma4}
 Let \(G=([n],E)\) be a cut-minimal graph, then we have:
 \[
 h(i_n(G))=h(G)+1
 \]
-\begin{proof}
-Adding an isolated vertex to a graph \(G=([n],E)\) obviously increases \(|T(G)|\) by \(|E|\), so we get:
-\[
-h(i_n(G))=\frac{|T(G)|+|E|}{|E|}=\frac{|T(G)|}{|E|}+\frac{|E|}{|E|}=h(G)+1
-\]
-\end{proof}
 \end{lem}
+
 A direct consequence of this relation is that if \(n\) is not divisible by 3, Cheeger graphs in \(CMG(n)\) can not appear as an embedding of graphs from \(CMG(n-1)\).
+
 \begin{prop}\label{proposition4}
 For all \(G\in CMG(n)\), such that \(3\nmid n\) the graph\\
 \(i_n(G)\in CMG(n+1)\) is not a Cheeger graph.
@@ -590,11 +589,7 @@ We only need to consider Cheeger graphs in \(CMG(n)\), since for any\\
 \[
 h(i_n(G'))=h(G')+1<h(G)+1=h(i_n(G))
 \]
-Let now \(G\in CMG(n)\) be a Cheeger graph. Then by a result from \cite{1} we get:
-\[
-\frac{n}{3}\leq h(G)\leq\left\lceil\frac{n}{3}\right\rceil
-\]
-which implies that:
+Let now \(G\in CMG(n)\) be a Cheeger graph. Then by the estimate \(\frac{n}{3}\leq h(G)\leq\left\lceil\frac{n}{3}\right\rceil\) we get
 \[
 h(i_n(G))=h(G)+1\geq\frac{n}{3}+1\geq\left\lceil\frac{n+1}{3}\right\rceil,
 \]
@@ -605,7 +600,9 @@ h_1(\Delta^{[n+1]})\leq\left\lceil\frac{n+1}{3}\right\rceil<h(i_n(G))
 \]
 \end{proof}
 \end{prop}
+
 We even have a similar version of the previous statement if \(n\) is divisible by 3 with the restriction that \(n+1\) must not be a power of 2.
+
 \begin{prop}\label{proposition5}
 Let \(G\in CMG(n)\), such that \(3\mid n\) and \(n+1\neq2^t\) for some \(t\in\mathbb{N}\). Then \(i_n(G)\) is not a Cheeger graph.
 \begin{proof}
@@ -616,7 +613,9 @@ h(i_n(G))>h_1(\Delta^{[n+1]})
 \]
 \end{proof}
 \end{prop}
+
 Combining the last two statements, we can calculate a lower bound for the number of edges in Cheeger graphs, except for the case when the number of vertices \(n\) is a power of 2 and \(n-1\) is divisible by 3.
+
 \begin{prop}
 Let \(G=([n],E)\) be a Cheeger graph, such that \(n\) is not a power of 2 or \(n-1\) is not divisible by 3. Then we have \(|E|\geq\left\lceil\frac{n-1}{2}\right\rceil\).
 \begin{proof}
@@ -626,11 +625,13 @@ Assume we have \(|E|<\left\lceil\frac{n-1}{2}\right\rceil\). Then by Theorem \re
 
 \subsection{The case when n is a power of 2}
 
-From \cite{1} we know that if \(h(n)>\frac{n}{3}\) can only be true, when \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such numbers \(n\). The following useful fact was also given in \cite{1}:
+From \cite{1} we know that \(h(n)>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation \(A_v:=\{w\in [n]\text{ : }(v,w)\in E\}\), so we have \(|A_v|=\deg_G(v)\). The following useful fact was given by Kozlov (see \cite{1}).
 
 \begin{lem}\label{lemma11:2}
-Let \(G=([n],E)\) be a cut-minimal graph, then we have \(h(n)=\frac{n}{3}\) if and only if for each vertex \(v\in [n]\) we have \(|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|\), with \(A_v:=\{w\in [n]\text{ : }(v,w)\in E\}\).
+Let \(G=([n],E)\) be a cut-minimal graph, then we have \(h(n)=\frac{n}{3}\) if and only if for each vertex \(v\in [n]\) we have \(|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|\).
 \end{lem}
+
+We can now make a statement about the possible degrees a vertex in a Cheeger graph on \(n=2^t\) vertices can attain, assuming the Cheeger constant in this case is exactly \(\frac{n}{3}\).
 
 \begin{prop}
 Let \(n=2^t\) and \(G=([n],E)\) be a cut-minimal graph, such that \(h(G)=\frac{n}{3}\). Then for each vertex \(v\in [n]\) we have \(|A_v|\in\left\{0\leq i\leq\frac{n-2}{2}\text{ : }n\text{ is even }\right\}\setminus\{2\}\).
@@ -646,3 +647,8 @@ Now, assume there exists a \(v\in [n]\), such that \(|A_v|=2\), then by Lemma \r
 so there must exist a \(w\in A_v\), such that \(|A_w|\geq\frac{n-2}{2}=\frac{2^t-2}{2}=2^{t-1}-1\), but \(2^{t-1}-1\) is odd and \(|A_w|\) can not be strictly bigger than \(\frac{n-2}{2}\), which leads to a contradiction.
 \end{proof}
 \end{prop}
+
+\begin{expl}
+In \cite{1} Kozlov already used the fact, that a vertex in such a graph can not attain an odd degree to prove the equality \(h(8)>\frac{8}{3}\). Applying the preceding slightly stronger proposition we get this result immediately, since then every vertex in a Cheeger graph\\
+\(G=([8],E)\), such that \(h(G)=\frac{8}{3}\) must attain degree \(0\), which is obviously not possible.
+\end{expl}
