@@ -27,3 +27,8 @@
 \contentsline {section}{\numberline {4.1}Preliminaries}{33}{section.91}
 \contentsline {section}{\numberline {4.2}The main theorem}{34}{section.96}
 \contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.99}
+\contentsline {section}{\numberline {5.1}Applying the cycle detection theorem}{37}{section.100}
+\contentsline {section}{\numberline {5.2}Find maximal cosystoles of a simplex}{38}{section.102}
+\contentsline {section}{\numberline {5.3}The case when n is a power of 2}{38}{section.103}
+\contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles}{38}{section.104}
+\contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{38}{section.105}
