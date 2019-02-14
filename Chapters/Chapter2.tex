@@ -83,7 +83,7 @@ For a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
 \mathcal{T}_{\varphi}:=\left\{\partial_k(\sigma)\text{ : }\sigma\in \supp(\delta^k(\varphi))\right\}
 \]
 
-\begin{prop}
+\begin{prop}\label{proposition1a}
 Let \(\varphi\in C^k(X)\), then we have:
 \[
 \|\varphi\|_{csy}\geq\tau(\mathcal{T}_{\varphi})
@@ -271,19 +271,12 @@ For the sake of completeness we still define the following number of the smalles
 \[
 C_{min}(X,k):=\min\left\{\|\varphi\|\text{ : }\varphi\in C^k(X)\text{, }\|\varphi\|>\|\varphi\|_{csy}\right\}
 \]
-
-\begin{lem}\label{lemma10}
-If \(k\) is odd, then we have:
+Let us introduce to following family of cycles:
 \[
-C_{max}(X,k)\geq\tau(\mathcal{T}_{\varphi}),
+\mathcal{T}_n^k:=\left\{\partial_k(\sigma)\text{ : }\sigma\in\binom{[n]}{k+2}\right\}
 \]
-with \(\varphi=\left(\sum\limits_{\sigma\in X^{(k)}}\sigma\right)^*\).
-\begin{proof}
-Since \(k\) is odd we have \(\langle\varphi,c\rangle=1\) for all \(c\in\mathcal{T}_{\varphi}\), so by the cycle detection theorem we get \(\|\varphi\|_{csy}\geq\tau(\mathcal{T}_{\varphi})\) and we are done.
-\end{proof}
-\end{lem}
-
-A direct consequence of the preceding lemma is the following estimate. For simplicity we want to introduce the notation \(\mathcal{T}_n^k:=\mathcal{T}_{\varphi}\) for \(\varphi:=\left(\sum\limits_{\sigma\in\binom{[n]}{k+1}}\sigma\right)^*\).
+Note, that if \(k\) is odd, then \(\mathcal{T}_n^k\) is exactly the same as \(\mathcal{T}_{\varphi}\) for the cochain \(\varphi=\left(\sum\limits_{\sigma\in\binom{[n]}{k+1}}\sigma\right)^*\).
+We can use it now to determine a lower bound for the number \(C_{max}(\Delta^{[n]},k)\) if \(k\) is odd. 
 
 \begin{prop}\label{proposition11}
 Let \(k\) be odd, then we have:
@@ -291,11 +284,11 @@ Let \(k\) be odd, then we have:
 C_{max}(\Delta^{[n]},k)\geq \left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil
 \]
 \begin{proof}
-Obviously, we have \(|\mathcal{T}_n^k|=\binom{n}{k+2}\), so since any simplex \(\sigma\in\binom{[n]}{k+1}\) intersects the support of exactly \(n-k-1\) cycles from \(\mathcal{T}_n^k\), any piercing set of \(\mathcal{T}_n^k\) must contain at least \(\left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil\) elements and by Lemma \ref{lemma10} we are done.
+Since any simplex \(\sigma\in\binom{[n]}{k+1}\) intersects the support of exactly \(n-k-1\) cycles from \(\mathcal{T}_n^k\) if \(k\) is odd, any piercing set of \(\mathcal{T}_n^k\) must contain at least \(\left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil\) elements and by Proposition \ref{proposition1a} we are done.
 \end{proof}
 \end{prop}
 
-Using the preceding lemma we can determine a lower bound of the maximal size of the \(1\)-dimensional cosystoles in a simplex. A more elementary proof of this estimate is given as Proposition \ref{proposition3}) in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
+For the \(1\)-dimensional case we can even find a better estimate, since we are able to determine the piercing number of \(\mathcal{T}_n^1\) exactly. A more elementary proof of this estimate is given as Proposition \ref{proposition3}) in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
 
 \begin{prop}\label{proposition112}
 \(C_{max}(\Delta^{[n]},1)\geq\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor\)
@@ -304,12 +297,12 @@ Asking for the smallest piercing set of \(\mathcal{T}_n^1\) is equivalent to ask
 \[
 \tau(\mathcal{T}_n^1)=\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor
 \]
-and by Lemma \ref{lemma10} we are done.
+and by Proposition \ref{proposition1a} we are done.
 \end{proof}
 \end{prop}
 
 Unfortunately, determining the piercing number of \(\mathcal{T}_n^k\) for \(k\geq 2\), or equivalently, determining the largest \(k\)-uniform hypergraph on \(n\)-vertices, containing no complete \(k\)-uniform hypergraph on \(k+2\) vertices as a subhypergraph, seems to be very difficult (see \cite{7}), so we can not use the preceding procedure to say something about \(C_{max}(\Delta^{[n]},k)\) for larger \(k\)'s in general.\\
-Eventhough, we can exactly determine this number for the ultimate and the penultimate proper dimension as follows.
+Nevertheless, we can exactly determine this number for the ultimate and the penultimate proper dimension as follows.
 
 \begin{thm}\label{theorem7}
 \(C_{max}(\Delta^{[n]},n-2)=1\), for all \(n\geq 3\)
@@ -321,7 +314,7 @@ Now, let \(\sigma_1,\sigma_2\in\binom{[n]}{n-1}\) be chosen arbitrarily again (\
 \end{thm}
 
 \begin{lem}\label{lemma12}
-For \(n\geq 4\) we have:
+Let \(n\geq 4\), then we have:
 \[
 \tau(\mathcal{T}_n^{n-3})=\left\lceil\frac{n}{2}\right\rceil
 \]
@@ -344,7 +337,7 @@ For \(\sigma,\sigma'\in\binom{[n]}{n-2}\) the condition \(\left|\sigma\cap\sigma
 \(C_{max}(\Delta^{[n]},n-3)=\left\lfloor\frac{n}{2}\right\rfloor\), for all \(n\geq 4\)
 \begin{proof}
 Let \(S\subset\binom{[n]}{n-2}\) be a minimal piercing set of \(\mathcal{T}_n^{n-3}\) as constructed in the proof of Lemma \ref{lemma12} and \(\varphi:=S^*\in C^{n-3}(\Delta^{[n]})\).\\
-If \(n\) is even, then \(n-3\) is odd, so using Lemma \ref{lemma10} and Lemma \ref{lemma12} we have:
+If \(n\) is even, then \(n-3\) is odd, so apply Proposition \ref{proposition1a} and Lemma \ref{lemma12} and we get:
 \[
 C_{max}(\Delta^{[n]},n-3)\geq\tau(\mathcal{T}_n^{n-3})=\frac{n}{2}
 \]
@@ -460,6 +453,16 @@ Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\)
 Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
 \[
 \|\sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
+\]
+\begin{proof}
+
+\end{proof}
+\end{prop}
+
+\begin{prop}
+Let \(\varphi\in C^k(\Delta^{[n]})\) and \(d\geq 1\), then we have:
+\[
+\|\delta^{k+1}(\sus_{n,k}^d(\varphi))\|=d\cdot\|\delta^k(\varphi)\|
 \]
 \begin{proof}
 
