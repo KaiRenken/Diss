@@ -409,7 +409,7 @@ Another approach to create new cosystoles is to not only include a cochain into 
 Let \(0\leq k\leq n-1\) and \(d\geq 1\), then we call
 \begin{align}
 \sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
-\varphi&\longmapsto\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
+\varphi&\longmapsto\left(\sum\limits_{m=n+1}^{n+d}\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
 \end{align}
 the \textbf{suspension map of degree d}. Note, that \(\sus_{n,k}^d\) can also be easily defined on chain complexes by:
 \begin{align}
@@ -419,7 +419,7 @@ c&\longmapsto\sum\limits_{\sigma\in \supp(\sus_{n,k}^d(c^*))}\sigma\notag
 \end{defi}
 
 \begin{lem}\label{lemma11}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for each \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
+Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
 \begin{proof}
 For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
 \[
@@ -472,13 +472,20 @@ Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\a
 \end{proof}
 \end{prop}
 
+\begin{lem}\label{lemma251}
+\(\sus_{n,k+1}^d\circ\delta^k=\delta^{k+1}\circ\sus_{n,k}^d\)
+\begin{proof}
+
+\end{proof}
+\end{lem}
+
 \begin{prop}
 Let \(\varphi\in C^k(\Delta^{[n]})\) and \(d\geq 1\), then we have:
 \[
 \|\delta^{k+1}(\sus_{n,k}^d(\varphi))\|=d\cdot\|\delta^k(\varphi)\|
 \]
 \begin{proof}
-
+Since we obviously have \(\|\sus_{n,k}^d(\varphi)\|=d\cdot\|\varphi\|\) using Lemma \ref{lemma251} we are done.
 \end{proof}
 \end{prop}
 

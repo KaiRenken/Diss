@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  25 FEB 2019 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  25 FEB 2019 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1778,13 +1778,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BB0C5CC5326F537FB982BC878E0A101D;6990.
+(rerunfilecheck)             Checksum: A9164D1C40B78D7B3A1E97DA7E64DC4A;6991.
  ) 
 Here is how much of TeX's memory you used:
- 33924 strings out of 494927
- 682793 string characters out of 6177949
- 719300 words of memory out of 5000000
- 36420 multiletter control sequences out of 15000+600000
+ 33926 strings out of 494927
+ 682811 string characters out of 6177949
+ 719322 words of memory out of 5000000
+ 36421 multiletter control sequences out of 15000+600000
  82998 words of font info for 176 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  64i,20n,78p,10377b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1801,10 +1801,10 @@ mri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (57 pages, 413258 bytes).
+Output written on main.pdf (57 pages, 413543 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
- 621 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 623 compressed objects within 7 object streams
+ 179 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

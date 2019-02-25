@@ -13,22 +13,22 @@
 \contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{10}{section.32}
 \contentsline {section}{\numberline {2.4}Embeddings of cosystoles}{13}{section.41}
 \contentsline {section}{\numberline {2.5}Multi-suspensions}{14}{section.44}
-\contentsline {section}{\numberline {2.6}On Cheeger cosystoles when k+2 does not devide n}{16}{section.50}
-\contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{17}{chapter.52}
-\contentsline {section}{\numberline {3.1}Cut-minimal graphs}{17}{section.53}
-\contentsline {subsection}{\numberline {3.1.1}Basic definitions and properties}{17}{subsection.54}
-\contentsline {subsection}{\numberline {3.1.2}Maximal cut-minimal graphs}{18}{subsection.59}
-\contentsline {section}{\numberline {3.2}Cheeger graphs}{27}{section.75}
-\contentsline {subsection}{\numberline {3.2.1}Basic definitions and properties}{27}{subsection.76}
-\contentsline {subsection}{\numberline {3.2.2}A restriction on the size of connected components in Cheeger graphs}{28}{subsection.80}
-\contentsline {subsection}{\numberline {3.2.3}Embeddings of Cheeger graphs}{29}{subsection.82}
-\contentsline {subsection}{\numberline {3.2.4}The case when n is a power of 2}{30}{subsection.87}
-\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{33}{chapter.93}
-\contentsline {section}{\numberline {4.1}Preliminaries}{33}{section.94}
-\contentsline {section}{\numberline {4.2}The main theorem}{34}{section.99}
-\contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.102}
-\contentsline {section}{\numberline {5.1}Applying the cycle detection theorem}{37}{section.103}
-\contentsline {section}{\numberline {5.2}Find maximal cosystoles of a simplex}{38}{section.105}
-\contentsline {section}{\numberline {5.3}The shape of Cheeger graphs if n is a power of 2}{38}{section.106}
-\contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{39}{section.107}
-\contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{39}{section.108}
+\contentsline {section}{\numberline {2.6}On Cheeger cosystoles when k+2 does not devide n}{16}{section.51}
+\contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{17}{chapter.53}
+\contentsline {section}{\numberline {3.1}Cut-minimal graphs}{17}{section.54}
+\contentsline {subsection}{\numberline {3.1.1}Basic definitions and properties}{17}{subsection.55}
+\contentsline {subsection}{\numberline {3.1.2}Maximal cut-minimal graphs}{18}{subsection.60}
+\contentsline {section}{\numberline {3.2}Cheeger graphs}{27}{section.76}
+\contentsline {subsection}{\numberline {3.2.1}Basic definitions and properties}{27}{subsection.77}
+\contentsline {subsection}{\numberline {3.2.2}A restriction on the size of connected components in Cheeger graphs}{28}{subsection.81}
+\contentsline {subsection}{\numberline {3.2.3}Embeddings of Cheeger graphs}{29}{subsection.83}
+\contentsline {subsection}{\numberline {3.2.4}The case when n is a power of 2}{30}{subsection.88}
+\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{33}{chapter.94}
+\contentsline {section}{\numberline {4.1}Preliminaries}{33}{section.95}
+\contentsline {section}{\numberline {4.2}The main theorem}{34}{section.100}
+\contentsline {chapter}{\numberline {5}Perspectives}{37}{chapter.103}
+\contentsline {section}{\numberline {5.1}Applying the cycle detection theorem}{37}{section.104}
+\contentsline {section}{\numberline {5.2}Find maximal cosystoles of a simplex}{38}{section.106}
+\contentsline {section}{\numberline {5.3}The shape of Cheeger graphs if n is a power of 2}{38}{section.107}
+\contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{39}{section.108}
+\contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{39}{section.109}
