@@ -271,7 +271,20 @@ For the sake of completeness we still define the following number of the smalles
 \[
 C_{min}(X,k):=\min\left\{\|\varphi\|\text{ : }\varphi\in C^k(X)\text{, }\|\varphi\|>\|\varphi\|_{csy}\right\}
 \]
-Let us introduce to following family of cycles:
+
+\begin{prop}\label{proposition231}
+\(C_{min}(\Delta^{[n]},k)\leq\left\lceil\frac{n-k+1}{2}\right\rceil\)
+\begin{proof}
+Let \(\sigma=[k]\) and
+\[
+\varphi=\left(\sum\limits_{i=k+1}^{\left\lceil\frac{n-k+1}{2}\right\rceil+k}(\sigma,i)\right)^*\in C^k(\Delta^{[n]}),
+\]
+then we have \(\|\varphi\|=\left\lceil\frac{n-k+1}{2}\right\rceil\), but \(\|\varphi\|_{csy}\leq\left\lfloor\frac{n-k+1}{2}\right\rfloor-1\), since\\
+\(\|\delta^{k-1}(\sigma^*)+\varphi\|=\left\lfloor\frac{n-k+1}{2}\right\rfloor-1\), so we are done.
+\end{proof}
+\end{prop}
+
+Let us now return to the largest possible cosystolic norm and introduce the following family of cycles:
 \[
 \mathcal{T}_n^k:=\left\{\partial_k(\sigma)\text{ : }\sigma\in\binom{[n]}{k+2}\right\}
 \]
