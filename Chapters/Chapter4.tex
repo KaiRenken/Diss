@@ -71,10 +71,11 @@ We have one box in the first line and one more in every following line. Now, we 
 \end{figure}
 
 The interesting question which will be answered by our main theorem is, if there is always a possibility to reorder the lines of a Young tableau of the first type without having to split them to build a Young tableau of the second type, provided that the numbers of boxes are the same. The question, how many different Young tableaux of this type exist, meaning Young tableaux consisting of a fixed number of boxes such that based on any line the following line has one box more, has already been answered in \cite{5}. Namely, for every odd divisor of the number of boxes, there exists exactly one Young tableau of this type.\\
-Note, that in this paper we set \(\mathbb{N}\) to be the set of natural numbers without \(0\) and a sequence of consecutive numbers always denotes a sequence\\
-\(n_1,\ldots,n_t\in\mathbb{N}\text{ (or }\mathbb{Z})\), such that \(n_{i+1}=n_i+1\). Furthermore, we use the notation \([n]:=1,2,3,\ldots,n\).
+Note, that in this chapter we set \(\mathbb{N}\) to be the set of natural numbers without \(0\) and a sequence of consecutive numbers always denotes a sequence\\
+\(n_1,\ldots,n_t\in\mathbb{N}\text{ (or }\mathbb{Z})\), such that \(n_{i+1}=n_i+1\).
 \begin{lem}\label{lemma14}
-Let \(n,a,b\in\mathbb{N}\), such that \(n<a\leq b\) and \(\sum\limits_{i=1}^ni=\sum\limits_{i=a}^bi\). Then we have \(n\geq 2(b-a+1)\).
+Let \(n,a,b\in\mathbb{N}\), such that \(n<a\leq b\) and \(\sum\limits_{i=1}^ni=\sum\limits_{i=a}^bi\). Then we have\\
+\(n\geq 2(b-a+1)\).
 \begin{proof}
 Note, that \(b-a+1\) is the number of summands in \(\sum\limits_{i=a}^bi\). Then we have:
 \begin{align}
@@ -109,7 +110,7 @@ where \((y_{i+2},y_{i+2}')=(y_i-1,y_i'+1)\) for all \(i=1,\ldots,m-2\). Obviousl
 \section{The main theorem}
 
 \begin{thm}\label{theorem11}
-Let \(n,a,b\in\mathbb{N}\) (\(b\geq a\)), such that \(\sum\limits_{i=1}^ni=\sum\limits_{i=a}^bi\), then for every \(a\leq t\leq b\) there exists a subset \(U_t\subseteq [n]\), such that \(U_i\cap U_j=\emptyset\) for all \(i\neq j\),\\
+Let \(n,a,b\in\mathbb{N}\) (\(b\geq a\)), such that \(\sum\limits_{i=1}^ni=\sum\limits_{i=a}^bi\), then for every \(a\leq t\leq b\) there exists a subset \(U_t\subseteq [n]\), such that \(U_i\cap U_j=\emptyset\) for all \(i\neq j\) we have\\
 \([n]=\bigcup\limits_{a\leq t\leq b}U_t\) and \(\sum\limits_{i\in U_t}i=t\).
 \begin{proof}
 Without loss of generality let \(a>n\). Otherwise, we have \(U_t=\{t\}\) for all \(a\leq t\leq n\) and \(\sum\limits_{i=1}^{a-1}i=\sum\limits_{i=n+1}^bi\), so the remaining problem is reduced to the requested case, since we have \(n+1>a-1\).\\
