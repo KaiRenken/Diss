@@ -109,6 +109,19 @@ Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1
 It is easy to check that we get \(\tau(\mathcal{T}_{\varphi})=3\), but as shown in Example \ref{example1} we have \(\|\varphi\|_{csy}=4\).
 \end{expl}
 
+Nevertheless, we conjecture that for the \(1\)-dimensional case equality holds, since removing a simplex from the support of a \(1\)-cosystole \(\varphi\) can never result in a piercing set of \(\mathcal{T}_{\varphi}\) as the following lemma shows.
+
+\begin{lem}\label{lemma211}
+Let \(\varphi\in C^1(\Delta^{[n]})\) be a cosystole, \(P\subseteq\binom{[n]}{2}\) and \(\sigma\in\binom{[n]}{2}\), such that \(P=\supp(\varphi)\setminus\sigma\). Then \(P\) is not a piercing set of \(\mathcal{T}_{\varphi}\).
+\begin{proof}
+Assume \(P\) is a piercing set of \(\mathcal{T}_{\varphi}\), and denote \(\sigma=\{v_1,v_2\}\), then for all \(v\in[n]\) there exists a \(w\in\sigma\) such that \(\{v,w\}\in\supp(\varphi)\), since otherwise we would have \(\partial_1((\sigma,v))\in\mathcal{T}_{\varphi}\) but \(\supp(\partial_1((\sigma,v)))\cap P=\emptyset\), so \(P\) would not be a piercing set of \(\mathcal{T}_{\varphi}\). It follows that there exists a \(w\in\sigma\) such that
+\[
+\|\delta^0(w^*)\|\geq\left\lceil\frac{n-2}{2}\right\rceil+1=\left\lceil\frac{n-2}{2}+1\right\rceil=\left\lceil\frac{n}{2}\right\rceil>\left\lfloor\frac{n-1}{2}\right\rfloor,
+\]
+so \(\varphi\) is not cosystolic and we are done.
+\end{proof}
+\end{lem}
+
 It seems to be very difficult to determine the piercing number of \(\mathcal{T}_{\varphi}\) explicitely, but the concept of piercing complexes might be useful on the way to solve this problem.
 
 \section{Piercing complexes}
@@ -301,7 +314,21 @@ Since any simplex \(\sigma\in\binom{[n]}{k+1}\) intersects the support of exactl
 \end{proof}
 \end{prop}
 
-For the \(1\)-dimensional case we can even find a better estimate, since we are able to determine the piercing number of \(\mathcal{T}_n^1\) exactly. A more elementary proof of this estimate is given as Proposition \ref{proposition3}) in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
+We also have a recursive formula providing a lower bound for \(C_{max}(\Delta^{[n]},k)\).
+
+\begin{prop}\label{proposition232}
+\(C_{max}(\Delta^{[n]},k)\leq C_{max}(\Delta^{[n-1]},k)+C_{max}(\Delta^{[n-1]},k-1)\)
+\begin{proof}
+Let \(\varphi\in C^k(\Delta^{[n]})\) be an arbitrary cochain, \(\phi_1\in C^k(\Delta^{[n-1]})\) and \(\phi_2\in C^k(\Delta^{[n]})\), such that \(\supp(\phi_1)=\{\sigma\in\supp(\varphi)\text{ : }n\notin\sigma\}\) and\\
+\(\supp(\phi_2)=\{\sigma\in\supp(\varphi)\text{ : }n\in\sigma\}\). Without loss of generality let \(\phi_1\) be a cosystole. Otherwise, just add a coboundary to \(\varphi\), such that \(\phi_1\) becomes cosystolic. Now, we can identify \(\phi_2\) with a cochain \(\phi_2'\in C^{k-1}(\Delta^{[n-1]})\) by removing the vertex \(n\) from every simplex in its support. Adding a coboundary to \(\phi_2'\) is equivalent to adding the coboundary of a cochain \(\psi\in C^{k-1}(\Delta^{[n]})\) to \(\phi_2\), where every simplex in the support of \(\psi\) contains the vertex \(n\). Fortunately, the support of such a coboundary is always disjoint to the support of \(\phi_1\), so we have
+\[
+\|\varphi\|_{csy}\leq\|\phi_1\|_{csy}+\|\phi_2'\|_{csy}\leq C_{max}(\Delta^{[n-1]},k)+C_{max}(\Delta^{[n-1]},k-1),
+\]
+and we are done.
+\end{proof}
+\end{prop}
+
+For the \(1\)-dimensional case we can find better estimates, since we are able to determine the piercing number of \(\mathcal{T}_n^1\) exactly. A more elementary proof of the following estimate is given as Proposition \ref{proposition3} in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
 
 \begin{prop}\label{proposition112}
 \(C_{max}(\Delta^{[n]},1)\geq\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor\)
@@ -401,93 +428,94 @@ By Lemma \ref{lemma132} we know that \(i_n^k(\varphi)\) is a cosystole and we ha
 \end{proof}
 \end{prop}
 
-\section{Multi-suspensions}
-
-Another approach to create new cosystoles is to not only include a cochain into a higher dimensional simplex, but even increase the dimension of the cochain's support, which can be realized by the so called multi-suspensions.
-
-\begin{defi}
-Let \(0\leq k\leq n-1\) and \(d\geq 1\), then we call
-\begin{align}
-\sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
-\varphi&\longmapsto\left(\sum\limits_{m=n+1}^{n+d}\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
-\end{align}
-the \textbf{suspension map of degree d}. Note, that \(\sus_{n,k}^d\) can also be easily defined on chain complexes by:
-\begin{align}
-\sus_{n,k}^d:C_k(\Delta^{[n]})&\longrightarrow C_{k+1}(\Delta^{[n+d]})\notag\\
-c&\longmapsto\sum\limits_{\sigma\in \supp(\sus_{n,k}^d(c^*))}\sigma\notag
-\end{align}
-\end{defi}
-
-\begin{lem}\label{lemma11}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
-\begin{proof}
-For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
-\[
-\partial_k\left((\sigma,j)\right)=\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma
-\]
-So, we get
-\begin{align*}
-\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)\right)&=\sum\limits_{\sigma\in \supp(\alpha_i)}\partial_k\left((\sigma,j)\right)\\
-&=\sum\limits_{\sigma\in \supp(\alpha_i)}\left(\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma\right)\\
-&=\left(\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\alpha_i\\
-&=0+\alpha_i\\
-&=\alpha_i,
-\end{align*}
-since we have
-\[
-\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}\sigma'=\partial_{k-1}(\alpha_i)=0
-\]
-for all \(i=1,\ldots,t\).\\
-Thus, for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\),
-\[
-\alpha_{i,j}:=\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i
-\]
-defines a cycle, since we have
-\[
-\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0.
-\]
-Furthermore, we get
-\begin{align}
-\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
-&=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
-&=1,\notag
-\end{align}
-since we have
-\[\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}\sigma\right\rangle=1.
-\]
-\end{proof}
-\end{lem}
-
-\begin{defi}
-Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0:=\emptyset\) and for each \(i=1,\ldots,m\) set \(P_i:=\left\{F\in\mathcal{F}\text{ : }F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P:=(|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
-\end{defi}
-
-\begin{prop}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
-\[
-\|\sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
-\]
-\begin{proof}
-
-\end{proof}
-\end{prop}
-
-\begin{lem}\label{lemma251}
-\(\sus_{n,k+1}^d\circ\delta^k=\delta^{k+1}\circ\sus_{n,k}^d\)
-\begin{proof}
-
-\end{proof}
-\end{lem}
-
-\begin{prop}
-Let \(\varphi\in C^k(\Delta^{[n]})\) and \(d\geq 1\), then we have:
-\[
-\|\delta^{k+1}(\sus_{n,k}^d(\varphi))\|=d\cdot\|\delta^k(\varphi)\|
-\]
-\begin{proof}
-Since we obviously have \(\|\sus_{n,k}^d(\varphi)\|=d\cdot\|\varphi\|\) using Lemma \ref{lemma251} we are done.
-\end{proof}
-\end{prop}
+%
+%\section{Multi-suspensions}
+%
+%Another approach to create new cosystoles is to not only include a cochain into a higher dimensional simplex, but even increase the dimension of the cochain's support, which can be realized by the so called multi-suspensions.
+%
+%\begin{defi}
+%Let \(0\leq k\leq n-1\) and \(d\geq 1\), then we call
+%\begin{align}
+%\sus_{n,k}^d:C^k(\Delta^{[n]})&\longrightarrow C^{k+1}(\Delta^{[n+d]})\notag\\
+%\varphi&\longmapsto\left(\sum\limits_{m=n+1}^{n+d}\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*\notag
+%\end{align}
+%the \textbf{suspension map of degree d}. Note, that \(\sus_{n,k}^d\) can also be easily defined on chain complexes by:
+%\begin{align}
+%\sus_{n,k}^d:C_k(\Delta^{[n]})&\longrightarrow C_{k+1}(\Delta^{[n+d]})\notag\\
+%c&\longmapsto\sum\limits_{\sigma\in \supp(\sus_{n,k}^d(c^*))}\sigma\notag
+%\end{align}
+%\end{defi}
+%
+%\begin{lem}\label{lemma11}
+%Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\) for all \(i=1,\ldots,t\). Then for \(d\geq 1\) there exists a family of cycles \(\mathcal{F}'=\left\{\alpha_{1,1}',\ldots,\alpha_{t,d}'\right\}\subset C_{k+1}(\Delta^{[n+d]})\), such that \(\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}'\right\rangle=1\) for all \(i=1,\ldots,t\) and \(j=1,\ldots,d\).
+%\begin{proof}
+%For each \(i=1,\ldots,t\) let \(c_i\in C_{k+1}(\Delta^{[n]})\), such that \(\partial_k(c_i)=\alpha_i\). For a simplex \(\sigma\in\binom{[n]}{k+1}\) and some \(n+1\leq j\leq n+d\) we have
+%\[
+%\partial_k\left((\sigma,j)\right)=\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma
+%\]
+%So, we get
+%\begin{align*}
+%\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)\right)&=\sum\limits_{\sigma\in \supp(\alpha_i)}\partial_k\left((\sigma,j)\right)\\
+%&=\sum\limits_{\sigma\in \supp(\alpha_i)}\left(\left(\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\sigma\right)\\
+%&=\left(\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}(\sigma',j)\right)+\alpha_i\\
+%&=0+\alpha_i\\
+%&=\alpha_i,
+%\end{align*}
+%since we have
+%\[
+%\sum\limits_{\sigma\in \supp(\alpha_i)}\quad\sum\limits_{\sigma'\in \supp(\partial_{k-1}(\sigma))}\sigma'=\partial_{k-1}(\alpha_i)=0
+%\]
+%for all \(i=1,\ldots,t\).\\
+%Thus, for all \(i=1,\ldots,t\) and \(j=n+1,\ldots,n+d\),
+%\[
+%\alpha_{i,j}:=\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i
+%\]
+%defines a cycle, since we have
+%\[
+%\partial_k\left(\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right)=\alpha_i+\alpha_i=0.
+%\]
+%Furthermore, we get
+%\begin{align}
+%\left\langle \sus_{n,k}^d(\varphi),\alpha_{i,j}\right\rangle&=\left\langle\left(\sum\limits_{m=n+1}^d\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,m)\right)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
+%&=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}(\sigma,j)\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}(\sigma,j)+c_i\right\rangle\notag\\
+%&=1,\notag
+%\end{align}
+%since we have
+%\[\left\langle\varphi,\alpha_i\right\rangle=\left\langle\left(\sum\limits_{\sigma\in \supp(\varphi)}\sigma\right)^*,\sum\limits_{\sigma\in \supp(\alpha_i)}\sigma\right\rangle=1.
+%\]
+%\end{proof}
+%\end{lem}
+%
+%\begin{defi}
+%Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0:=\emptyset\) and for each \(i=1,\ldots,m\) set \(P_i:=\left\{F\in\mathcal{F}\text{ : }F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P:=(|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
+%\end{defi}
+%
+%\begin{prop}
+%Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
+%\[
+%\|\sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P\text{ : }\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
+%\]
+%\begin{proof}
+%
+%\end{proof}
+%\end{prop}
+%
+%\begin{lem}\label{lemma251}
+%\(\sus_{n,k+1}^d\circ\delta^k=\delta^{k+1}\circ\sus_{n,k}^d\)
+%\begin{proof}
+%
+%\end{proof}
+%\end{lem}
+%
+%\begin{prop}
+%Let \(\varphi\in C^k(\Delta^{[n]})\) and \(d\geq 1\), then we have:
+%\[
+%\|\delta^{k+1}(\sus_{n,k}^d(\varphi))\|=d\cdot\|\delta^k(\varphi)\|
+%\]
+%\begin{proof}
+%Since we obviously have \(\|\sus_{n,k}^d(\varphi)\|=d\cdot\|\varphi\|\) using Lemma \ref{lemma251} we are done.
+%\end{proof}
+%\end{prop}
 
 \section{On Cheeger cosystoles when k+2 does not devide n}\label{section26}
 

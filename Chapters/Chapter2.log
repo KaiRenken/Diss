@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  11 FEB 2019 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  25 MAR 2019 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2528,7 +2528,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.53 \begin{cor}
-                
+                \label{corollary1}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2963,6 +2963,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 \newlabel{theorem9}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{corollary1}{{}{\thepage 
+                                          }}
+l.60 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{corollary1}{{}{}}
 ]
 
 ! LaTeX Error: Environment expl undefined.
