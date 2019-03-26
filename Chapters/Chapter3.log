@@ -1,11 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  12 FEB 2019 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.22)  26 MAR 2019 09:50
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**Chapter3.tex
-(./Chapter3.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 9 languages loaded.
+**./Chapter3.tex
+(Chapter3.tex
+LaTeX2e <2018-12-01>
 ! Undefined control sequence.
 l.3 \chapter
             {Cut-minimal graphs and Cheeger graphs of a simplex}
@@ -720,12 +717,12 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 7--8
 
 
 Overfull \hbox (35.83371pt too wide) in paragraph at lines 7--8
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 ! Undefined control sequence.
 l.9 \section
-            {Cut-minimal graphs}
+            {Basic definitions and properties of cut-minimal graphs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -739,51 +736,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 \section{C
-              ut-minimal graphs}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no C in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no s in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
-[]
- []
-
-! Undefined control sequence.
-l.12 \subsection
-                {Basic definitions and properties}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \subsection{B
-                  asic definitions and properties}
+l.9 \section{B
+              asic definitions and properties of cut-minimal graphs}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -815,6 +769,25 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -899,7 +872,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.13 ... intuition for it can be found in \cite{1}
+l.10 ... intuition for it can be found in \cite{1}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -908,17 +881,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `1' on page  undefined on input line 13.
+LaTeX Warning: Citation `1' on page  undefined on input line 10.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 12--14
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--11
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 12--14
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 9--11
 [] 
  []
 
@@ -929,7 +902,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 \begin{defi}
+l.12 \begin{defi}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -942,7 +915,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 C
+l.13 C
       onsider a graph \(G=([n],E)\). For any subsets \(A,B\subset [n]\), def...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -985,33 +958,33 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
+Overfull \hbox (20.0pt too wide) in paragraph at lines 13--14
 []
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 16--17
+Overfull \hbox (18.418pt too wide) in paragraph at lines 13--14
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 16--17
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 13--14
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (30.58675pt too wide) in paragraph at lines 16--17
-\OML/cmm/m/it/10 A; B \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (30.58675pt too wide) in paragraph at lines 13--14
+\OML/cmm/m/it/10 A; B \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 16--17
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 13--14
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 ! Undefined control sequence.
-l.18 E_G(A,B):=\{(v,w)\in E\: :\: v\in A\text
+l.15 E_G(A,B):=\{(v,w)\in E\: :\: v\in A\text
                                              {, }w\in B\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1020,7 +993,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (176.84119pt too wide) detected at line 19
+Overfull \hbox (176.84119pt too wide) detected at line 16
 \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A; B\OT1/cmr/m/n/10 ) := 
 \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v; w\OT1/cmr/m/n/10 ) \OMS/
 cmsy/m/n/10 2 \OML/cmm/m/it/10 E  \OT1/cmr/m/n/10 :  \OML/cmm/m/it/10 v \OMS/cm
@@ -1032,7 +1005,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.22 NE_G(A,B):=\{(v,w)\notin E\: :\: v\in A\text
+l.19 NE_G(A,B):=\{(v,w)\notin E\: :\: v\in A\text
                                                  {, }w\in B\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1041,7 +1014,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (185.96616pt too wide) detected at line 23
+Overfull \hbox (185.96616pt too wide) detected at line 20
 \OML/cmm/m/it/10 NE[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A; B\OT1/cmr/m/n/10 ) :=
  \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v; w\OT1/cmr/m/n/10 ) [] \
 OML/cmm/m/it/10 E  \OT1/cmr/m/n/10 :  \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2 \OM
@@ -1080,44 +1053,44 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 23--25
+Overfull \hbox (18.418pt too wide) in paragraph at lines 20--22
   $\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 23--25
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 20--22
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 23--25
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 20--22
 \OT1/cmr/bx/n/10 cut-
  []
 
 
-Overfull \hbox (40.72893pt too wide) in paragraph at lines 23--25
+Overfull \hbox (40.72893pt too wide) in paragraph at lines 20--22
 \OT1/cmr/bx/n/10 minimal
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 23--25
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 20--22
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 23--25
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 20--22
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (147.84541pt too wide) detected at line 27
+Overfull \hbox (147.84541pt too wide) detected at line 24
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1
 /cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n \OML/cmm/m/
-it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j ^^T j\OML/cmm/m/it/10 NE[]\OT1/cmr/m
-/n/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]
- \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/c
-mm/m/it/10 ;
+it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j  j\OML/cmm/m/it/10 NE[]\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \
+OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/cmm
+/m/it/10 ;
  []
 
 Missing character: There is no w in font nullfont!
@@ -1140,10 +1113,10 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 
-Overfull \hbox (130.34578pt too wide) detected at line 31
+Overfull \hbox (130.34578pt too wide) detected at line 28
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1
 /cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n \OML/cmm/m/
-it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j ^^T []\OML/cmm/m/it/10 :
+it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j  []\OML/cmm/m/it/10 :
  []
 
 
@@ -1153,7 +1126,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{defi}
+l.29 \end{defi}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1166,7 +1139,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 N
+l.31 N
       ote, that there is a one-to-one correspondence between the graphs on \...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1323,7 +1296,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
-l.35 ...})\) set \(G_c:=([n],E)\), with \(E:=\supp
+l.32 ...})\) set \(G_c:=([n],E)\), with \(E:=\supp
                                                   (c)\). Considering charact...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1520,105 +1493,105 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 34--36
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--33
 []
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 34--36
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 34--36
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (37.71564pt too wide) in paragraph at lines 34--36
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (37.71564pt too wide) in paragraph at lines 31--33
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 34--36
+Overfull \hbox (18.418pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 34--36
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (24.38684pt too wide) in paragraph at lines 34--36
+Overfull \hbox (24.38684pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (31.20587pt too wide) in paragraph at lines 34--36
+Overfull \hbox (31.20587pt too wide) in paragraph at lines 31--33
 [] \OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (37.71564pt too wide) in paragraph at lines 34--36
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (37.71564pt too wide) in paragraph at lines 31--33
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (13.77196pt too wide) in paragraph at lines 34--36
+Overfull \hbox (13.77196pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (37.71564pt too wide) in paragraph at lines 34--36
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (37.71564pt too wide) in paragraph at lines 31--33
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (25.26953pt too wide) in paragraph at lines 34--36
+Overfull \hbox (25.26953pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 34--36
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (21.29161pt too wide) in paragraph at lines 34--36
+Overfull \hbox (21.29161pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 E \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (12.10536pt too wide) in paragraph at lines 34--36
+Overfull \hbox (12.10536pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 34--36
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 34--36
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 34--36
+Overfull \hbox (18.418pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 34--36
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 31--33
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (11.05354pt too wide) in paragraph at lines 34--36
+Overfull \hbox (11.05354pt too wide) in paragraph at lines 31--33
 \OML/cmm/m/it/10 c[]$
  []
 
@@ -1629,7 +1602,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \begin{rem}
+l.34 \begin{rem}
                 \label{remark1}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1642,7 +1615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 I
+l.35 I
       n fact for a graph \(G\) to be cut-minimal we only need to require the...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1769,98 +1742,98 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \end{rem}
+l.36 \end{rem}
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 38--40
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--37
 []
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 38--40
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 38--40
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 35--37
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 38--40
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 35--37
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (15.55553pt too wide) in paragraph at lines 38--40
-\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 35--37
+\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (22.8194pt too wide) in paragraph at lines 38--40
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j ^^T
+Overfull \hbox (22.8194pt too wide) in paragraph at lines 35--37
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (7.34332pt too wide) in paragraph at lines 38--40
+Overfull \hbox (7.34332pt too wide) in paragraph at lines 35--37
 []$
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 38--40
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 35--37
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 38--40
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 35--37
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (45.15193pt too wide) in paragraph at lines 38--40
+Overfull \hbox (45.15193pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML/
 cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (21.15273pt too wide) in paragraph at lines 38--40
+Overfull \hbox (21.15273pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (34.55476pt too wide) in paragraph at lines 38--40
+Overfull \hbox (34.55476pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/
 cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (21.19438pt too wide) in paragraph at lines 38--40
+Overfull \hbox (21.19438pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 S; S\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (54.2769pt too wide) in paragraph at lines 38--40
+Overfull \hbox (54.2769pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 NE[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML
 /cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (21.15273pt too wide) in paragraph at lines 38--40
+Overfull \hbox (21.15273pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (43.67973pt too wide) in paragraph at lines 38--40
+Overfull \hbox (43.67973pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 NE[]\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS
 /cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (21.19438pt too wide) in paragraph at lines 38--40
+Overfull \hbox (21.19438pt too wide) in paragraph at lines 35--37
 \OML/cmm/m/it/10 S; S\OT1/cmr/m/n/10 )$
  []
 
@@ -1871,7 +1844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 \begin{expl}
+l.38 \begin{expl}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1884,7 +1857,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 A
+l.39 A
        simple cycle respresented by the graph \(G=([n],E)\) with\\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2061,157 +2034,157 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \end{expl}
+l.41 \end{expl}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 42--45
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--42
 []
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 42--45
+Overfull \hbox (18.418pt too wide) in paragraph at lines 39--42
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 42--45
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$ 
  []
 
 
-Overfull \hbox (21.29161pt too wide) in paragraph at lines 42--45
+Overfull \hbox (21.29161pt too wide) in paragraph at lines 39--42
 \OML/cmm/m/it/10 E \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (28.00139pt too wide) in paragraph at lines 42--45
+Overfull \hbox (28.00139pt too wide) in paragraph at lines 39--42
 \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; i \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (14.44441pt too wide) in paragraph at lines 42--45
+Overfull \hbox (14.44441pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 1)  :
  []
 
 
-Overfull \hbox (15.55553pt too wide) in paragraph at lines 42--45
-\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 39--42
+\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (14.00064pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (14.00064pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (13.78015pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (13.78015pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 42--45
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g [
  []
 
 
-Overfull \hbox (33.22461pt too wide) in paragraph at lines 42--45
+Overfull \hbox (33.22461pt too wide) in paragraph at lines 39--42
 \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; \OT1/cmr/m/n/10 1)\OMS/c
 msy/m/n/10 g$
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 42--45
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 7$
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 42--45
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (22.8194pt too wide) in paragraph at lines 42--45
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j ^^T
+Overfull \hbox (22.8194pt too wide) in paragraph at lines 39--42
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (7.34332pt too wide) in paragraph at lines 42--45
+Overfull \hbox (7.34332pt too wide) in paragraph at lines 39--42
 []$
  []
 
 
-Overfull \hbox (47.92972pt too wide) in paragraph at lines 42--45
+Overfull \hbox (47.92972pt too wide) in paragraph at lines 39--42
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1
 /cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (23.93051pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j ^^T
+Overfull \hbox (23.93051pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (17.2639pt too wide) in paragraph at lines 42--45
+Overfull \hbox (17.2639pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j$
  []
 
 
-Overfull \hbox (27.81941pt too wide) in paragraph at lines 42--45
-\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j ^^T
+Overfull \hbox (27.81941pt too wide) in paragraph at lines 39--42
+\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (39.92952pt too wide) in paragraph at lines 42--45
+Overfull \hbox (39.92952pt too wide) in paragraph at lines 39--42
 []$
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (20.04169pt too wide) in paragraph at lines 42--45
+Overfull \hbox (20.04169pt too wide) in paragraph at lines 39--42
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 42--45
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 4$
  []
 
 
-Overfull \hbox (22.8194pt too wide) in paragraph at lines 42--45
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j ^^T
+Overfull \hbox (22.8194pt too wide) in paragraph at lines 39--42
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 S\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (7.34332pt too wide) in paragraph at lines 42--45
+Overfull \hbox (7.34332pt too wide) in paragraph at lines 39--42
 []$
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 42--45
-\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 39--42
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 42--45
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10 7$
  []
 
@@ -2222,7 +2195,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \begin{defi}
+l.43 \begin{defi}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2235,7 +2208,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 F
+l.44 F
       or any \(n\geq 1\) we define the set of all cut-minimal graphs on \(n\...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2295,27 +2268,27 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 47--48
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--45
 []
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 47--48
-\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 44--45
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 47--48
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 47--48
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 44--45
 \OML/cmm/m/it/10 n$
  []
 
 ! Undefined control sequence.
-l.49 CMG(n):=\{G=([n],E)\: :\: G\text
+l.46 CMG(n):=\{G=([n],E)\: :\: G\text
                                      { is cut-minimal}\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2324,7 +2297,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (208.47504pt too wide) detected at line 50
+Overfull \hbox (208.47504pt too wide) detected at line 47
 \OML/cmm/m/it/10 CMG\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ) := \OM
 S/cmsy/m/n/10 f\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = ([\OML/cmm/m/it/10 n\OT1/cm
 r/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/cmr/m/n/10 )  :  \OML/cmm/m/it/10 G[]\OMS/cm
@@ -2338,15 +2311,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \end{defi}
+l.48 \end{defi}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.53 \subsection
-                {Maximal cut-minimal graphs}
+l.50 \section
+             {Maximal cut-minimal graphs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2360,8 +2333,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \subsection{M
-                  aximal cut-minimal graphs}
+l.50 \section{M
+               aximal cut-minimal graphs}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2390,7 +2363,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 53--54
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--51
 []
  []
 
@@ -2401,7 +2374,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 L
+l.52 L
       et us study the the topological and simplicial structure of the simpli...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2803,18 +2776,18 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 55--57
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--54
 []
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 55--57
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 52--54
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 55--57
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$ 
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 52--54
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$ 
  []
 
 
@@ -2824,7 +2797,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \begin{prop}
+l.55 \begin{prop}
                  \label{proposition3}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2837,14 +2810,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \(
+l.56 \(
        C_{max}(\Delta^{[n]},1)\geq\binom{\left\lceil\frac{n}{2}\right\rceil}...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.59 \(C_{max}(\Delta^{[n]},1)\geq\binom
+l.56 \(C_{max}(\Delta^{[n]},1)\geq\binom
                                         {\left\lceil\frac{n}{2}\right\rceil}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2853,7 +2826,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.59 ...ft\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.56 ...ft\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2868,7 +2841,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \begin{proof}
+l.57 \begin{proof}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3142,7 +3115,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.61 ...er by one vertex. In total we get \(\binom
+l.58 ...er by one vertex. In total we get \(\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3151,7 +3124,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.61 ...ft\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.58 ...ft\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3241,7 +3214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \begin{align}
+l.60 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3252,13 +3225,13 @@ Missing character: There is no E in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.64 |E_
+l.61 |E_
         G(S,[n]\setminus S)|&=|A|(\frac{n}{2}-|A|)+|B|(\frac{n}{2}-|B|)\notag\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.64 |E_G(S,[n]\setminus S)|&
+l.61 |E_G(S,[n]\setminus S)|&
                              =|A|(\frac{n}{2}-|A|)+|B|(\frac{n}{2}-|B|)\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3268,7 +3241,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.64 ...frac{n}{2}-|A|)+|B|(\frac{n}{2}-|B|)\notag
+l.61 ...frac{n}{2}-|A|)+|B|(\frac{n}{2}-|B|)\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3279,7 +3252,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.65 &
+l.62 &
       =\frac{n|A|}{2}-|A|^2+\frac{n|B|}{2}-|B|^2\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3289,7 +3262,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.65 ...{n|A|}{2}-|A|^2+\frac{n|B|}{2}-|B|^2\notag
+l.62 ...{n|A|}{2}-|A|^2+\frac{n|B|}{2}-|B|^2\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3300,7 +3273,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.66 &
+l.63 &
       =\frac{n|S|}{2}-(|A|^2+|B|^2)\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3310,7 +3283,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.66 &=\frac{n|S|}{2}-(|A|^2+|B|^2)\notag
+l.63 &=\frac{n|S|}{2}-(|A|^2+|B|^2)\notag
                                          \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3321,7 +3294,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.67 &
+l.64 &
       \leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3331,7 +3304,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.67 &\leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag
+l.64 &\leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag
                                               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3342,7 +3315,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.68 &
+l.65 &
       =\frac{|S|(n-|S|)}{2},\notag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3352,7 +3325,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.68 &=\frac{|S|(n-|S|)}{2},\notag
+l.65 &=\frac{|S|(n-|S|)}{2},\notag
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3367,7 +3340,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 \end{align}
+l.66 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3376,7 +3349,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69 \end{align}
+l.66 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3419,14 +3392,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \begin{align}
+l.68 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.72 &
+l.69 &
       \quad\quad\quad\:\, (|A|-|B|)^2\geq 0\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3438,13 +3411,13 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.72 &\quad\quad\quad\:
+l.69 &\quad\quad\quad\:
                        \, (|A|-|B|)^2\geq 0\notag\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.72 &\quad\quad\quad\:\, (|A|-|B|)^2\geq 0\notag
+l.69 &\quad\quad\quad\:\, (|A|-|B|)^2\geq 0\notag
                                                  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3455,7 +3428,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.73 &
+l.70 &
       \Longleftrightarrow\quad |A|^2-2|A||B|+|B|^2\geq 0\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3465,7 +3438,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.73 ...arrow\quad |A|^2-2|A||B|+|B|^2\geq 0\notag
+l.70 ...arrow\quad |A|^2-2|A||B|+|B|^2\geq 0\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3476,7 +3449,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.74 &
+l.71 &
       \Longleftrightarrow\quad \frac{|A|^2}{2}-|A||B|+\frac{|B|^2}{2}\geq 0\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3486,7 +3459,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.74 ...|^2}{2}-|A||B|+\frac{|B|^2}{2}\geq 0\notag
+l.71 ...|^2}{2}-|A||B|+\frac{|B|^2}{2}\geq 0\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3497,7 +3470,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.75 &
+l.72 &
       \Longleftrightarrow\quad |A|^2+|B|^2\geq\frac{|A|^2}{2}+|A||B|+\frac{|...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3507,7 +3480,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.75 ...rac{|A|^2}{2}+|A||B|+\frac{|B|^2}{2}\notag
+l.72 ...rac{|A|^2}{2}+|A||B|+\frac{|B|^2}{2}\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3518,7 +3491,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.76 &
+l.73 &
       \Longleftrightarrow\quad |A|^2+|B|^2\geq\frac{|S|^2}{2}.\notag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3528,7 +3501,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.76 ...quad |A|^2+|B|^2\geq\frac{|S|^2}{2}.\notag
+l.73 ...quad |A|^2+|B|^2\geq\frac{|S|^2}{2}.\notag
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3543,7 +3516,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \end{align}
+l.74 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3552,7 +3525,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.77 \end{align}
+l.74 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3582,7 +3555,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \begin{align}
+l.76 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3593,13 +3566,13 @@ Missing character: There is no E in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.80 |E_
+l.77 |E_
         G(S,[n]\setminus S)|&=|A|(\frac{n+1}{2}-|A|)+|B|(\frac{n-1}{2}-|B|)\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.80 |E_G(S,[n]\setminus S)|&
+l.77 |E_G(S,[n]\setminus S)|&
                              =|A|(\frac{n+1}{2}-|A|)+|B|(\frac{n-1}{2}-|B|)\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3609,7 +3582,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.80 ...{n+1}{2}-|A|)+|B|(\frac{n-1}{2}-|B|)\notag
+l.77 ...{n+1}{2}-|A|)+|B|(\frac{n-1}{2}-|B|)\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3620,7 +3593,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.81 &
+l.78 &
       =\frac{n|A|}{2}+\frac{|A|}{2}-|A|^2+\frac{n|B|}{2}-\frac{|B|}{2}-|B|^2...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3630,7 +3603,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.81 ...2+\frac{n|B|}{2}-\frac{|B|}{2}-|B|^2\notag
+l.78 ...2+\frac{n|B|}{2}-\frac{|B|}{2}-|B|^2\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3641,7 +3614,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.82 &
+l.79 &
       =\frac{n|S|}{2}-(|A|^2+|B|^2-\frac{|A|-|B|}{2})\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3651,7 +3624,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.82 ...}{2}-(|A|^2+|B|^2-\frac{|A|-|B|}{2})\notag
+l.79 ...}{2}-(|A|^2+|B|^2-\frac{|A|-|B|}{2})\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3662,7 +3635,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.83 &
+l.80 &
       \leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3672,7 +3645,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.83 &\leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag
+l.80 &\leq\frac{n|S|}{2}-\frac{|S|^2}{2}\notag
                                               \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3683,7 +3656,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.84 &
+l.81 &
       =\frac{|S|(n-|S|)}{2},\notag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3693,7 +3666,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.84 &=\frac{|S|(n-|S|)}{2},\notag
+l.81 &=\frac{|S|(n-|S|)}{2},\notag
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3708,7 +3681,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 \end{align}
+l.82 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3717,7 +3690,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.85 \end{align}
+l.82 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3760,14 +3733,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \begin{align}
+l.84 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.88 &
+l.85 &
       \quad\quad\quad\:\, (|A|-|B|)^2-(|A|-|B|)\geq 0\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3779,13 +3752,76 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.88 &\quad\quad\quad\:
+l.85 &\quad\quad\quad\:
                        \, (|A|-|B|)^2-(|A|-|B|)\geq 0\notag\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.88 ...quad\:\, (|A|-|B|)^2-(|A|-|B|)\geq 0\notag
+l.85 ...quad\:\, (|A|-|B|)^2-(|A|-|B|)\geq 0\notag
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.86 &
+      \Longleftrightarrow\quad (|A|-|B|)^2-|A|+|B|\geq 0\notag\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.86 ...arrow\quad (|A|-|B|)^2-|A|+|B|\geq 0\notag
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.87 &
+      \Longleftrightarrow\quad |A|^2+|B|^2-|A|+|B|\geq 2|A||B|\notag\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.87 ...quad |A|^2+|B|^2-|A|+|B|\geq 2|A||B|\notag
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.88 &
+      \Longleftrightarrow\quad \frac{|A|^2}{2}+\frac{|B|^2}{2}-\frac{|A|}{2}...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.88 ...rac{|A|}{2}+\frac{|B|}{2}\geq |A||B|\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3797,7 +3833,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.89 &
-      \Longleftrightarrow\quad (|A|-|B|)^2-|A|+|B|\geq 0\notag\\
+      \Longleftrightarrow\quad |A|^2+|B|^2-\frac{|A|}{2}+\frac{|B|}{2}\geq \...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3806,7 +3842,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.89 ...arrow\quad (|A|-|B|)^2-|A|+|B|\geq 0\notag
+l.89 ...2}+\frac{2|A||B|}{2}+\frac{|B|^2}{2}\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3818,7 +3854,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.90 &
-      \Longleftrightarrow\quad |A|^2+|B|^2-|A|+|B|\geq 2|A||B|\notag\\
+      \Longleftrightarrow\quad |A|^2+|B|^2-\frac{|A|-|B|}{2}\geq\frac{(|A|+|...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3827,7 +3863,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.90 ...quad |A|^2+|B|^2-|A|+|B|\geq 2|A||B|\notag
+l.90 ...|A|-|B|}{2}\geq\frac{(|A|+|B|)^2}{2}\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3839,69 +3875,6 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.91 &
-      \Longleftrightarrow\quad \frac{|A|^2}{2}+\frac{|B|^2}{2}-\frac{|A|}{2}...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.91 ...rac{|A|}{2}+\frac{|B|}{2}\geq |A||B|\notag
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.92 &
-      \Longleftrightarrow\quad |A|^2+|B|^2-\frac{|A|}{2}+\frac{|B|}{2}\geq \...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.92 ...2}+\frac{2|A||B|}{2}+\frac{|B|^2}{2}\notag
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.93 &
-      \Longleftrightarrow\quad |A|^2+|B|^2-\frac{|A|-|B|}{2}\geq\frac{(|A|+|...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.93 ...|A|-|B|}{2}\geq\frac{(|A|+|B|)^2}{2}\notag
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.94 &
       \Longleftrightarrow\quad |A|^2+|B|^2-\frac{|A|-|B|}{2}\geq\frac{|S|^2}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3911,7 +3884,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.94 ...frac{|A|-|B|}{2}\geq\frac{|S|^2}{2}.\notag
+l.91 ...frac{|A|-|B|}{2}\geq\frac{|S|^2}{2}.\notag
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3926,7 +3899,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{align}
+l.92 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3935,7 +3908,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95 \end{align}
+l.92 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3989,7 +3962,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \end{proof}
+l.94 \end{proof}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4002,682 +3975,682 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \end{prop}
+l.95 \end{prop}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (89.69794pt too wide) in paragraph at lines 59--99
-[]$\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
- 1) \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (89.69794pt too wide) in paragraph at lines 56--96
+[]$\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1
+) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 59--99
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 59--99
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (21.41663pt too wide) in paragraph at lines 59--99
-\OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (21.41663pt too wide) in paragraph at lines 56--96
+\OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 59--99
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (26.9722pt too wide) in paragraph at lines 59--99
+Overfull \hbox (26.9722pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 V[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.78778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (16.78778pt too wide) in paragraph at lines 56--96
 []$
  []
 
 
-Overfull \hbox (10.86111pt too wide) in paragraph at lines 59--99
+Overfull \hbox (10.86111pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 V[]$
  []
 
 
-Overfull \hbox (16.78778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (16.78778pt too wide) in paragraph at lines 56--96
 []$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 59--99
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 59--99
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 59--99
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 56--96
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 59--99
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (20.83331pt too wide) in paragraph at lines 59--99
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (13.375pt too wide) in paragraph at lines 59--99
+Overfull \hbox (13.375pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 \
  []
 
 
-Overfull \hbox (10.86111pt too wide) in paragraph at lines 59--99
+Overfull \hbox (10.86111pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 V[]$
  []
 
 
-Overfull \hbox (21.4201pt too wide) in paragraph at lines 59--99
+Overfull \hbox (21.4201pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 B \OT1/cmr/m/n/10 :=
  []
 
 
-Overfull \hbox (11.70833pt too wide) in paragraph at lines 59--99
+Overfull \hbox (11.70833pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 59--99
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (37.76999pt too wide) in paragraph at lines 59--99
+Overfull \hbox (37.76999pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/
 cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (23.93051pt too wide) in paragraph at lines 59--99
+Overfull \hbox (23.93051pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (32.06561pt too wide) in paragraph at lines 59--99
+Overfull \hbox (32.06561pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ([] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ) +
  []
 
 
-Overfull \hbox (32.6524pt too wide) in paragraph at lines 59--99
+Overfull \hbox (32.6524pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ([] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (17.53128pt too wide) in paragraph at lines 59--99
+Overfull \hbox (17.53128pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )[] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.88504pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.88504pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (26.25412pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (26.25412pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (18.12851pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.12851pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.1642pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.1642pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (29.20842pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.20842pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/
 cmr/m/n/10 +
  []
 
 
-Overfull \hbox (22.01741pt too wide) in paragraph at lines 59--99
+Overfull \hbox (22.01741pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (25.1642pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.1642pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (16.3459pt too wide) in paragraph at lines 59--99
+Overfull \hbox (16.3459pt too wide) in paragraph at lines 56--96
 [][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (42.7073pt too wide) in paragraph at lines 59--99
+Overfull \hbox (42.7073pt too wide) in paragraph at lines 56--96
 []\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j ^^@
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j  
  []
 
 
-Overfull \hbox (32.57292pt too wide) in paragraph at lines 59--99
+Overfull \hbox (32.57292pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )[] \OMS/
-cmsy/m/n/10 ^^U
+cmsy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 0[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (39.47578pt too wide) in paragraph at lines 59--99
+Overfull \hbox (39.47578pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 jj\OML/cm
 m/m/it/10 B\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (28.68402pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^U
+Overfull \hbox (28.68402pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 0[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (24.84454pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (24.84454pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (34.47577pt too wide) in paragraph at lines 59--99
+Overfull \hbox (34.47577pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 B\OMS/c
 msy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (27.99133pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (27.99133pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 0[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (28.68402pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^U
+Overfull \hbox (28.68402pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] 
  []
 
 
-Overfull \hbox (24.84454pt too wide) in paragraph at lines 59--99
+Overfull \hbox (24.84454pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (34.47577pt too wide) in paragraph at lines 59--99
+Overfull \hbox (34.47577pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 B\OMS/c
 msy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (17.43582pt too wide) in paragraph at lines 59--99
+Overfull \hbox (17.43582pt too wide) in paragraph at lines 56--96
 [][] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (28.68402pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^U
+Overfull \hbox (28.68402pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] 
  []
 
 
-Overfull \hbox (19.12369pt too wide) in paragraph at lines 59--99
+Overfull \hbox (19.12369pt too wide) in paragraph at lines 56--96
 []\OML/cmm/m/it/10 :$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 59--99
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (37.76999pt too wide) in paragraph at lines 59--99
+Overfull \hbox (37.76999pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/
 cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (23.93051pt too wide) in paragraph at lines 59--99
+Overfull \hbox (23.93051pt too wide) in paragraph at lines 56--96
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (42.19066pt too wide) in paragraph at lines 59--99
+Overfull \hbox (42.19066pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ([] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ) +
  []
 
 
-Overfull \hbox (42.88855pt too wide) in paragraph at lines 59--99
+Overfull \hbox (42.88855pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ([] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (17.53128pt too wide) in paragraph at lines 59--99
+Overfull \hbox (17.53128pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )[] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.88504pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.88504pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (20.94171pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (20.94171pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (26.25412pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (26.25412pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (21.31079pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (21.31079pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (18.12851pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.12851pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.1642pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.1642pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (29.20842pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.20842pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/
 cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.90631pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.90631pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (34.43582pt too wide) in paragraph at lines 59--99
+Overfull \hbox (34.43582pt too wide) in paragraph at lines 56--96
 []\OT1/cmr/m/n/10 )[] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (25.1642pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.1642pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (16.3459pt too wide) in paragraph at lines 59--99
+Overfull \hbox (16.3459pt too wide) in paragraph at lines 56--96
 [][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--99
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (42.7073pt too wide) in paragraph at lines 59--99
+Overfull \hbox (42.7073pt too wide) in paragraph at lines 56--96
 []\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j ^^@
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j  
  []
 
 
-Overfull \hbox (29.79521pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.79521pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )[] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j ^^@
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j  
  []
 
 
-Overfull \hbox (28.08679pt too wide) in paragraph at lines 59--99
+Overfull \hbox (28.08679pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 ) \OMS/cm
-sy/m/n/10 ^^U
+sy/m/n/10 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 0[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (24.72229pt too wide) in paragraph at lines 59--99
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j ^^@
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 56--96
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j  
  []
 
 
-Overfull \hbox (29.79521pt too wide) in paragraph at lines 59--99
+Overfull \hbox (29.79521pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )[] \OMS/
-cmsy/m/n/10 ^^@
+cmsy/m/n/10  
  []
 
 
-Overfull \hbox (20.83339pt too wide) in paragraph at lines 59--99
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (24.19789pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j ^^U
+Overfull \hbox (24.19789pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--99
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 0[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.90631pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.90631pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (20.83339pt too wide) in paragraph at lines 59--99
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (24.19789pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j ^^U
+Overfull \hbox (24.19789pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j 
  []
 
 
-Overfull \hbox (31.69798pt too wide) in paragraph at lines 59--99
+Overfull \hbox (31.69798pt too wide) in paragraph at lines 56--96
 \OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 jj\OML/cm
 m/m/it/10 B\OMS/cmsy/m/n/10 j[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (24.84454pt too wide) in paragraph at lines 59--99
+Overfull \hbox (24.84454pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.21362pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (25.21362pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (20.94171pt too wide) in paragraph at lines 59--99
+Overfull \hbox (20.94171pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (24.0885pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (24.0885pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (26.69797pt too wide) in paragraph at lines 59--99
+Overfull \hbox (26.69797pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 B\OMS/c
 msy/m/n/10 j[] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.90631pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.90631pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (20.94171pt too wide) in paragraph at lines 59--99
+Overfull \hbox (20.94171pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (24.0885pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (24.0885pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (24.84454pt too wide) in paragraph at lines 59--99
+Overfull \hbox (24.84454pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (36.06084pt too wide) in paragraph at lines 59--99
+Overfull \hbox (36.06084pt too wide) in paragraph at lines 56--96
 [] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (17.43582pt too wide) in paragraph at lines 59--99
+Overfull \hbox (17.43582pt too wide) in paragraph at lines 56--96
 [][] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.90631pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.90631pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (41.10243pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (41.10243pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (40.58868pt too wide) in paragraph at lines 59--99
+Overfull \hbox (40.58868pt too wide) in paragraph at lines 56--96
 [][] 
  []
 
 
-Overfull \hbox (18.3334pt too wide) in paragraph at lines 59--99
+Overfull \hbox (18.3334pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 ([])
  []
 
 
-Overfull \hbox (25.31952pt too wide) in paragraph at lines 59--99
+Overfull \hbox (25.31952pt too wide) in paragraph at lines 56--96
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j[] \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (25.90631pt too wide) in paragraph at lines 59--99
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[] ^^@
+Overfull \hbox (25.90631pt too wide) in paragraph at lines 56--96
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j[]  
  []
 
 
-Overfull \hbox (41.10243pt too wide) in paragraph at lines 59--99
-[] \OMS/cmsy/m/n/10 ^^U
+Overfull \hbox (41.10243pt too wide) in paragraph at lines 56--96
+[] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (19.12369pt too wide) in paragraph at lines 59--99
+Overfull \hbox (19.12369pt too wide) in paragraph at lines 56--96
 []\OML/cmm/m/it/10 :$
  []
 
@@ -4689,7 +4662,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 
+l.96 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4699,7 +4672,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> \newlabel{Chapter3}{{}{\thepage 
                                         }}
-l.99 
+l.96 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4708,11 +4681,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 \newlabel{Chapter3}{{}{}}
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+{C:/Users/Kai Renken/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 ! Undefined control sequence.
 <write> \newlabel{remark1}{{}{\thepage 
                                        }}
-l.99 
+l.96 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4724,7 +4697,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \newlabel{proposition3}{{}{\thepage 
                                             }}
-l.99 
+l.96 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4741,8 +4714,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 N
-       ote, that we already proved the equivalent statement as Proposition \...
+l.97 N
+      ote, that we already proved the equivalent statement as Proposition \r...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4809,7 +4782,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...ence `proposition112' on page \thepage 
                                                   \space undefined\on@line .
-l.100 ...ement as Proposition \ref{proposition112}
+l.97 ...tement as Proposition \ref{proposition112}
                                                   , since a simple calculati...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4818,8 +4791,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition112' on page  undefined on input line 100.
-
+LaTeX Warning: Reference `proposition112' on page  undefined on input line 97.
 
 Missing character: There is no , in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -4866,7 +4838,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.100 ...lculation immediately shows that \(\binom
+l.97 ...alculation immediately shows that \(\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4875,7 +4847,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.100 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.97 ...ft\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4884,7 +4856,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.100 ...lfloor\frac{n}{2}\right\rfloor}{2}=\binom
+l.97 ...\lfloor\frac{n}{2}\right\rfloor}{2}=\binom
                                                   {n}{2}-\left\lfloor\frac{n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5020,32 +4992,32 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 100--101
+Overfull \hbox (20.0pt too wide) in paragraph at lines 97--98
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 100--101
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 97--98
 []
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 100--101
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (32.3433pt too wide) in paragraph at lines 100--101
+Overfull \hbox (32.3433pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10 2 =
  []
 
 
-Overfull \hbox (18.78017pt too wide) in paragraph at lines 100--101
-\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (18.78017pt too wide) in paragraph at lines 97--98
+\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (21.80176pt too wide) in paragraph at lines 100--101
+Overfull \hbox (21.80176pt too wide) in paragraph at lines 97--98
 []$
  []
 
@@ -5056,8 +5028,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \begin{rem}
-                 
+l.99 \begin{rem}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -5069,7 +5041,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 F
+l.100 F
        or further proofs and calculations it might be helpful to keep mind t...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5150,14 +5122,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \begin{align}
+l.101 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.105 &
+l.102 &
        \binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fra...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5167,7 +5139,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.105 &\binom
+l.102 &\binom
              {\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fra...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5178,13 +5150,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.105 &\binom{\left
+l.102 &\binom{\left
                    \lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fra...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.105 &\binom{\left\lceil\frac{n}{2}\right\rceil}
+l.102 &\binom{\left\lceil\frac{n}{2}\right\rceil}
                                                  {2}+\binom{\left\lfloor\fra...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5193,7 +5165,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.105 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.102 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5202,7 +5174,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.105 ...{2}\right\rfloor}{2}=\frac{n^2-2n+1}{4},&
+l.102 ...{2}\right\rfloor}{2}=\frac{n^2-2n+1}{4},&
                                                   \text{ for }n\text{ odd, a...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5212,7 +5184,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.105 ...ight\rfloor}{2}=\frac{n^2-2n+1}{4},&\text
+l.102 ...ight\rfloor}{2}=\frac{n^2-2n+1}{4},&\text
                                                   { for }n\text{ odd, and}\n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5221,7 +5193,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.105 ...2}=\frac{n^2-2n+1}{4},&\text{ for }n\text
+l.102 ...2}=\frac{n^2-2n+1}{4},&\text{ for }n\text
                                                   { odd, and}\notag \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5230,7 +5202,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.105 ...}{4},&\text{ for }n\text{ odd, and}\notag
+l.102 ...}{4},&\text{ for }n\text{ odd, and}\notag
                                                    \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5241,7 +5213,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.106 &
+l.103 &
        \binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fra...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5251,7 +5223,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.106 &\binom
+l.103 &\binom
              {\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fra...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5260,7 +5232,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.106 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.103 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5269,7 +5241,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.106 ...n}{2}\right\rfloor}{2}=\frac{n^2-2n}{4},&
+l.103 ...n}{2}\right\rfloor}{2}=\frac{n^2-2n}{4},&
                                                   \text{ for }n\text{ even.}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -5279,7 +5251,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.106 ...\right\rfloor}{2}=\frac{n^2-2n}{4},&\text
+l.103 ...\right\rfloor}{2}=\frac{n^2-2n}{4},&\text
                                                   { for }n\text{ even.}\notag
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5288,7 +5260,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.106 ...}{2}=\frac{n^2-2n}{4},&\text{ for }n\text
+l.103 ...}{2}=\frac{n^2-2n}{4},&\text{ for }n\text
                                                   { even.}\notag
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5297,7 +5269,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.106 ...-2n}{4},&\text{ for }n\text{ even.}\notag
+l.103 ...-2n}{4},&\text{ for }n\text{ even.}\notag
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5312,7 +5284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \end{align}
+l.104 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5321,7 +5293,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.107 \end{align}
+l.104 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5332,7 +5304,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.107 \end{align}
+l.104 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5347,44 +5319,44 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \end{rem}
+l.105 \end{rem}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 103--109
+Overfull \hbox (20.0pt too wide) in paragraph at lines 100--106
 []
  []
 
 
-Overfull \hbox (31.23222pt too wide) in paragraph at lines 103--109
+Overfull \hbox (31.23222pt too wide) in paragraph at lines 100--106
 [] \OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (32.3433pt too wide) in paragraph at lines 103--109
+Overfull \hbox (32.3433pt too wide) in paragraph at lines 100--106
 []\OT1/cmr/m/n/10 2 =
  []
 
 
-Overfull \hbox (98.80077pt too wide) in paragraph at lines 103--109
+Overfull \hbox (98.80077pt too wide) in paragraph at lines 100--106
 []\OML/cmm/m/it/10 ; []n[][] 
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 103--109
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 100--106
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (32.3433pt too wide) in paragraph at lines 103--109
+Overfull \hbox (32.3433pt too wide) in paragraph at lines 100--106
 []\OT1/cmr/m/n/10 2 =
  []
 
 
-Overfull \hbox (75.77992pt too wide) in paragraph at lines 103--109
+Overfull \hbox (75.77992pt too wide) in paragraph at lines 100--106
 []\OML/cmm/m/it/10 ; []n[]$
  []
 
@@ -5395,7 +5367,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 N
+l.107 N
        ow, we are able to state the main theorem of this section, saying tha...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5499,7 +5471,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 110--111
+Overfull \hbox (20.0pt too wide) in paragraph at lines 107--108
 []
  []
 
@@ -5510,7 +5482,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \begin{thm}
+l.109 \begin{thm}
                  \label{theorem1}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5523,14 +5495,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \(
+l.110 \(
         C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.113 \(C_{max}(\Delta^{[n]},1)=\binom
+l.110 \(C_{max}(\Delta^{[n]},1)=\binom
                                       {\left\lceil\frac{n}{2}\right\rceil}{2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5539,7 +5511,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.113 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.110 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5554,7 +5526,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \begin{proof}
+l.111 \begin{proof}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5629,33 +5601,33 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (89.69794pt too wide) in paragraph at lines 113--116
-[]$\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
- 1) =
+Overfull \hbox (89.69794pt too wide) in paragraph at lines 110--113
+[]$\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1
+) =
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 113--116
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 110--113
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 113--116
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 110--113
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (27.02393pt too wide) in paragraph at lines 113--116
+Overfull \hbox (27.02393pt too wide) in paragraph at lines 110--113
 []$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 113--116
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 110--113
 \OML/cmm/m/it/10 n$
  []
 
 ! Undefined control sequence.
-l.117 ...right\rfloor}{2}=\frac{n^2-2n}{4}=2\binom
+l.114 ...right\rfloor}{2}=\frac{n^2-2n}{4}=2\binom
                                                   {\frac{n}{2}}{2}=\binom{\l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5664,7 +5636,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.117 ...n^2-2n}{4}=2\binom{\frac{n}{2}}{2}=\binom
+l.114 ...n^2-2n}{4}=2\binom{\frac{n}{2}}{2}=\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5673,7 +5645,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.117 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.114 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5682,9 +5654,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (259.77728pt too wide) detected at line 118
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
- \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 = [] = 2[]2 = []2 + []2
+Overfull \hbox (259.77728pt too wide) detected at line 115
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1) \
+OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 = [] = 2[]2 = []2 + []2
  []
 
 Missing character: There is no I in font nullfont!
@@ -5745,14 +5717,14 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 118--120
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 115--117
  $\OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (196.10754pt too wide) detected at line 122
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
- \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 = [] = []\OML/cmm/m/it/10 ;
+Overfull \hbox (196.10754pt too wide) detected at line 119
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1) \
+OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 = [] = []\OML/cmm/m/it/10 ;
  []
 
 Missing character: There is no b in font nullfont!
@@ -5810,7 +5782,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.123 ...e right hand side is bigger than \(\binom
+l.120 ...e right hand side is bigger than \(\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5819,7 +5791,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.123 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.120 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6048,59 +6020,58 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 122--126
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 119--123
             $[]\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 122--126
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 119--123
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (59.14243pt too wide) in paragraph at lines 122--126
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
-$
+Overfull \hbox (59.14243pt too wide) in paragraph at lines 119--123
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
  []
 
 
-Overfull \hbox (22.4395pt too wide) in paragraph at lines 122--126
+Overfull \hbox (22.4395pt too wide) in paragraph at lines 119--123
 []$
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 122--126
+Overfull \hbox (18.418pt too wide) in paragraph at lines 119--123
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 122--126
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 119--123
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (14.6504pt too wide) in paragraph at lines 122--126
+Overfull \hbox (14.6504pt too wide) in paragraph at lines 119--123
 \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 122--126
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 119--123
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (45.4042pt too wide) in paragraph at lines 122--126
+Overfull \hbox (45.4042pt too wide) in paragraph at lines 119--123
 [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 122--126
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 119--123
 []$
  []
 
 ! Undefined control sequence.
-l.127 ...frac{n^2-3n}{4}<\frac{n^2-2n+1}{4}=\binom
+l.124 ...frac{n^2-3n}{4}<\frac{n^2-2n+1}{4}=\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6109,7 +6080,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.127 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.124 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6118,9 +6089,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (262.97037pt too wide) detected at line 128
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j ^^T [] \OT1/cmr/m/n/10 =
- [] \OML/cmm/m/it/10 < [] \OT1/cmr/m/n/10 = []2 + []2
+Overfull \hbox (262.97037pt too wide) detected at line 125
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j  [] \OT1/cmr/m/n/10 = [
+] \OML/cmm/m/it/10 < [] \OT1/cmr/m/n/10 = []2 + []2
  []
 
 Missing character: There is no a in font nullfont!
@@ -6221,58 +6192,58 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 128--130
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 125--127
         $[]$
  []
 
 
-Overfull \hbox (61.9706pt too wide) in paragraph at lines 128--130
+Overfull \hbox (61.9706pt too wide) in paragraph at lines 125--127
 \OML/cmm/m/it/10 v[]; [] ; v[] \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 128--130
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 125--127
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (35.04913pt too wide) in paragraph at lines 128--130
+Overfull \hbox (35.04913pt too wide) in paragraph at lines 125--127
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v; v[]\OT1/cmr/m/n/10 ) []
  []
 
 
-Overfull \hbox (7.95831pt too wide) in paragraph at lines 128--130
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 125--127
 \OML/cmm/m/it/10 E$
  []
 
 
-Overfull \hbox (14.00064pt too wide) in paragraph at lines 128--130
+Overfull \hbox (14.00064pt too wide) in paragraph at lines 125--127
 \OML/cmm/m/it/10 i \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (44.80154pt too wide) in paragraph at lines 128--130
+Overfull \hbox (44.80154pt too wide) in paragraph at lines 125--127
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; [] ; []$
  []
 
 
-Overfull \hbox (48.37471pt too wide) in paragraph at lines 128--130
+Overfull \hbox (48.37471pt too wide) in paragraph at lines 125--127
 [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v[]\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 128--130
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 125--127
 []$
  []
 
 
-Overfull \hbox (266.79541pt too wide) detected at line 132
+Overfull \hbox (266.79541pt too wide) detected at line 129
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OML/c
 mm/m/it/10 v; v[]\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm
 /m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n f\OML/cmm/m/it/10 v; v[]\OMS/cms
 y/m/n/10 g\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 = 2[] = \OML/cmm/
-m/it/10 n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 > n \OMS/cmsy
-/m/n/10 ^^@ \OT1/cmr/m/n/10 2 = []\OML/cmm/m/it/10 ;
+m/it/10 n \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 > n \OMS/cmsy/m
+/n/10   \OT1/cmr/m/n/10 2 = []\OML/cmm/m/it/10 ;
  []
 
 Missing character: There is no s in font nullfont!
@@ -6463,7 +6434,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 \begin{align}
+l.131 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6473,13 +6444,13 @@ Missing character: There is no C in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.135 C_
+l.132 C_
         {max}(\Delta^{[n]},1)&\leq\frac{n^2-n}{4}-\frac{n-1}{4}\notag\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.135 C_{max}(\Delta^{[n]},1)&
+l.132 C_{max}(\Delta^{[n]},1)&
                               \leq\frac{n^2-n}{4}-\frac{n-1}{4}\notag\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -6489,7 +6460,88 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.135 ...)&\leq\frac{n^2-n}{4}-\frac{n-1}{4}\notag
+l.132 ...)&\leq\frac{n^2-n}{4}-\frac{n-1}{4}\notag
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.133 &
+       =\frac{n^2-2n+1}{4}\notag\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.133 &=\frac{n^2-2n+1}{4}\notag
+                                \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.134 &
+       =\frac{(n-1)^2}{4}\notag\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.134 &=\frac{(n-1)^2}{4}\notag
+                               \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.135 &
+       =\binom{\frac{n+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.135 &=\binom
+              {\frac{n+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 &=\binom{\frac{n+1}{2}}{2}+\binom
+                                       {\frac{n-1}{2}}{2}\notag\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 ...+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag
                                                   \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6501,87 +6553,6 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.136 &
-       =\frac{n^2-2n+1}{4}\notag\\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.136 &=\frac{n^2-2n+1}{4}\notag
-                                \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.137 &
-       =\frac{(n-1)^2}{4}\notag\\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.137 &=\frac{(n-1)^2}{4}\notag
-                               \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.138 &
-       =\binom{\frac{n+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag\\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.138 &=\binom
-              {\frac{n+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.138 &=\binom{\frac{n+1}{2}}{2}+\binom
-                                       {\frac{n-1}{2}}{2}\notag\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.138 ...+1}{2}}{2}+\binom{\frac{n-1}{2}}{2}\notag
-                                                  \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.139 &
        =\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fr...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -6591,7 +6562,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.139 &=\binom
+l.136 &=\binom
               {\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\fr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6600,7 +6571,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.139 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.136 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6609,7 +6580,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.139 ...\lfloor\frac{n}{2}\right\rfloor}{2}\notag
+l.136 ...\lfloor\frac{n}{2}\right\rfloor}{2}\notag
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6624,7 +6595,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end{align}
+l.137 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6633,7 +6604,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.140 \end{align}
+l.137 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -6654,7 +6625,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.141 ... have \(C_{max}(\Delta^{[n]},1)\leq\binom
+l.138 ... have \(C_{max}(\Delta^{[n]},1)\leq\binom
                                                   {\left\lceil\frac{n}{2}\ri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6663,7 +6634,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.141 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.138 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6699,7 +6670,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `proposition3' on page \thepage 
                                                   \space undefined\on@line .
-l.141 ...ral and by Proposition \ref{proposition3}
+l.138 ...ral and by Proposition \ref{proposition3}
                                                    we are done.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6708,7 +6679,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition3' on page  undefined on input line 141.
+LaTeX Warning: Reference `proposition3' on page  undefined on input line 138.
 
 Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -6727,7 +6698,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 \end{proof}
+l.139 \end{proof}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6740,111 +6711,110 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.143 \end{thm}
+l.140 \end{thm}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 132--144
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 129--141
  $\OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 132--144
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 129--141
 []$
  []
 
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 132--144
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 129--141
 []$
  []
 
 
-Overfull \hbox (62.55072pt too wide) in paragraph at lines 132--144
-[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10 
-^^T
+Overfull \hbox (62.55072pt too wide) in paragraph at lines 129--141
+[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (30.2173pt too wide) in paragraph at lines 132--144
-[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (30.2173pt too wide) in paragraph at lines 129--141
+[] \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (17.57947pt too wide) in paragraph at lines 132--144
+Overfull \hbox (17.57947pt too wide) in paragraph at lines 129--141
 [][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 132--144
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 129--141
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (36.55067pt too wide) in paragraph at lines 132--144
+Overfull \hbox (36.55067pt too wide) in paragraph at lines 129--141
 [][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 132--144
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 129--141
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (27.73233pt too wide) in paragraph at lines 132--144
+Overfull \hbox (27.73233pt too wide) in paragraph at lines 129--141
 [][] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 132--144
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 129--141
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.24619pt too wide) in paragraph at lines 132--144
+Overfull \hbox (30.24619pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (22.57948pt too wide) in paragraph at lines 132--144
+Overfull \hbox (22.57948pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2[] 
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 132--144
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 129--141
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 132--144
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 132--144
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (69.69794pt too wide) in paragraph at lines 132--144
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
- \OMS/cmsy/m/n/10 ^^T
+Overfull \hbox (69.69794pt too wide) in paragraph at lines 129--141
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1) \
+OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 132--144
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (21.7878pt too wide) in paragraph at lines 132--144
+Overfull \hbox (21.7878pt too wide) in paragraph at lines 129--141
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 132--144
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 129--141
 []
  []
 
@@ -6855,7 +6825,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 A
+l.142 A
         formula for the dimension of \(\mathcal{C}_1(\Delta^{[n]})\) follows...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6929,13 +6899,13 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 145--146
+Overfull \hbox (20.0pt too wide) in paragraph at lines 142--143
 []
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 145--146
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 142--143
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
@@ -6945,7 +6915,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 \begin{cor}
+l.144 \begin{cor}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -6958,14 +6928,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \(
+l.145 \(
         \dim(\mathcal{C}_1(\Delta^{[n]})=\binom{\left\lceil\frac{n}{2}\right...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.148 \(\dim(\mathcal{C}_1(\Delta^{[n]})=\binom
+l.145 \(\dim(\mathcal{C}_1(\Delta^{[n]})=\binom
                                                {\left\lceil\frac{n}{2}\right...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6974,7 +6944,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.148 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
+l.145 ...t\lceil\frac{n}{2}\right\rceil}{2}+\binom
                                                   {\left\lfloor\frac{n}{2}\r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6989,29 +6959,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{cor}
+l.146 \end{cor}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (86.94484pt too wide) in paragraph at lines 148--150
-[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[]) =
+Overfull \hbox (86.94484pt too wide) in paragraph at lines 145--147
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([]) =
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 148--150
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 145--147
 []\OT1/cmr/m/n/10 2 +
  []
 
 
-Overfull \hbox (29.5656pt too wide) in paragraph at lines 148--150
-[]\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (29.5656pt too wide) in paragraph at lines 145--147
+[]\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 148--150
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 145--147
 \OT1/cmr/m/n/10 1$
  []
 
@@ -7022,7 +6992,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 N
+l.148 N
        ote, that the proof of Proposition \ref{proposition3} even contains a...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7061,7 +7031,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `proposition3' on page \thepage 
                                                   \space undefined\on@line .
-l.151 ...e proof of Proposition \ref{proposition3}
+l.148 ...e proof of Proposition \ref{proposition3}
                                                    even contains a descripti...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7070,7 +7040,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition3' on page  undefined on input line 151.
+LaTeX Warning: Reference `proposition3' on page  undefined on input line 148.
 
 Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -7279,7 +7249,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.151 ...theorem, which was developed in \cite{10}
+l.148 ...theorem, which was developed in \cite{10}
                                                   , does not only represent ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7288,7 +7258,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `10' on page  undefined on input line 151.
+LaTeX Warning: Citation `10' on page  undefined on input line 148.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -7403,7 +7373,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `proposition3' on page \thepage 
                                                   \space undefined\on@line .
-l.151 ...e proof of Proposition \ref{proposition3}
+l.148 ...e proof of Proposition \ref{proposition3}
                                                    is the only possible shap...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7412,7 +7382,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition3' on page  undefined on input line 151.
+LaTeX Warning: Reference `proposition3' on page  undefined on input line 148.
 
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -7654,32 +7624,32 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 151--152
+Overfull \hbox (20.0pt too wide) in paragraph at lines 148--149
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 151--152
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 148--149
 []
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 151--152
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 148--149
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 151--152
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 148--149
 []
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 151--152
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 148--149
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 151--152
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 148--149
 []
  []
 
@@ -7690,7 +7660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \begin{defi}
+l.150 \begin{defi}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7703,7 +7673,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 F
+l.151 F
        or a graph \(G=([n],E)\) and a family of edges \(e_1,\ldots,e_k\in E\...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7754,53 +7724,53 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 154--155
+Overfull \hbox (20.0pt too wide) in paragraph at lines 151--152
 []
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 154--155
+Overfull \hbox (18.418pt too wide) in paragraph at lines 151--152
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 154--155
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 151--152
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (50.38528pt too wide) in paragraph at lines 154--155
+Overfull \hbox (50.38528pt too wide) in paragraph at lines 151--152
 \OML/cmm/m/it/10 e[]; [] ; e[] \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (7.95831pt too wide) in paragraph at lines 154--155
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 151--152
 \OML/cmm/m/it/10 E$
  []
 
 
-Overfull \hbox (23.95822pt too wide) in paragraph at lines 154--155
+Overfull \hbox (23.95822pt too wide) in paragraph at lines 151--152
 \OT1/cmr/bx/n/10 dele-
  []
 
 
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 154--155
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 151--152
 \OT1/cmr/bx/n/10 tion
  []
 
 
-Overfull \hbox (40.94089pt too wide) in paragraph at lines 154--155
+Overfull \hbox (40.94089pt too wide) in paragraph at lines 151--152
 \OML/cmm/m/it/10 e[]; [] ; e[]$
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 154--155
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 151--152
 \OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (142.66829pt too wide) detected at line 157
+Overfull \hbox (142.66829pt too wide) detected at line 154
 \OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 := ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\O
 ML/cmm/m/it/10 ; E \OMS/cmsy/m/n/10 n f\OML/cmm/m/it/10 e[]; [] ; e[]\OMS/cmsy/
 m/n/10 g\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
@@ -7851,54 +7821,54 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 157--159
+Overfull \hbox (18.418pt too wide) in paragraph at lines 154--156
    $\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 157--159
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 154--156
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (50.38528pt too wide) in paragraph at lines 157--159
+Overfull \hbox (50.38528pt too wide) in paragraph at lines 154--156
 \OML/cmm/m/it/10 e[]; [] ; e[] \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (58.57095pt too wide) in paragraph at lines 157--159
+Overfull \hbox (58.57095pt too wide) in paragraph at lines 154--156
 \OML/cmm/m/it/10 NE[]\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ])$
  []
 
 
-Overfull \hbox (15.8124pt too wide) in paragraph at lines 157--159
+Overfull \hbox (15.8124pt too wide) in paragraph at lines 154--156
 \OT1/cmr/bx/n/10 ad-
  []
 
 
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 157--159
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 154--156
 \OT1/cmr/bx/n/10 di-
  []
 
 
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 157--159
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 154--156
 \OT1/cmr/bx/n/10 tion
  []
 
 
-Overfull \hbox (40.94089pt too wide) in paragraph at lines 157--159
+Overfull \hbox (40.94089pt too wide) in paragraph at lines 154--156
 \OML/cmm/m/it/10 e[]; [] ; e[]$
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 157--159
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 154--156
 \OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (144.33496pt too wide) detected at line 161
+Overfull \hbox (144.33496pt too wide) detected at line 158
 \OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 := ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\O
 ML/cmm/m/it/10 ; E \OMS/cmsy/m/n/10 [ f\OML/cmm/m/it/10 e[]; [] ; e[]\OMS/cmsy/
 m/n/10 g\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
@@ -7911,7 +7881,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \end{defi}
+l.159 \end{defi}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7924,7 +7894,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164 \begin{thm}
+l.161 \begin{thm}
                  \label{theorem3}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7937,7 +7907,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \(
+l.162 \(
         H_{\dim(\mathcal{C}_1(\Delta^{[n]})}(\mathcal{C}_1(\Delta^{[n]}))\co...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7950,7 +7920,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 \begin{proof}
+l.163 \begin{proof}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8076,7 +8046,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `proposition3' on page \thepage 
                                                   \space undefined\on@line .
-l.167 ...e proof of Proposition \ref{proposition3}
+l.164 ...e proof of Proposition \ref{proposition3}
                                                   .\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8085,7 +8055,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition3' on page  undefined on input line 167.
+LaTeX Warning: Reference `proposition3' on page  undefined on input line 164.
 
 Missing character: There is no . in font nullfont!
 Missing character: There is no L in font nullfont!
@@ -8255,84 +8225,83 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (129.35005pt too wide) in paragraph at lines 165--169
-[]$\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^
-A[])) []
+Overfull \hbox (129.35005pt too wide) in paragraph at lines 162--166
+[]$\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([
+])) []
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 165--169
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 162--166
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 165--169
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 162--166
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 165--169
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 162--166
 [] 
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 165--169
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 162--166
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 165--169
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 162--166
 \OML/cmm/m/it/10 n \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.38893pt too wide) in paragraph at lines 165--169
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 162--166
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 165--169
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 162--166
 \OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (59.14243pt too wide) in paragraph at lines 165--169
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
-$
+Overfull \hbox (59.14243pt too wide) in paragraph at lines 162--166
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 165--169
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 162--166
 \OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 165--169
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 162--166
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 165--169
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 162--166
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (36.69206pt too wide) in paragraph at lines 165--169
+Overfull \hbox (36.69206pt too wide) in paragraph at lines 162--166
 \OML/cmm/m/it/10 v; w; u \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 165--169
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 162--166
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (211.62773pt too wide) detected at line 171
+Overfull \hbox (211.62773pt too wide) detected at line 168
 \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v; w; u
 \OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cm
 r/m/n/10 ] \OMS/cmsy/m/n/10 n f\OML/cmm/m/it/10 v; w; u\OMS/cmsy/m/n/10 g\OT1/c
-mr/m/n/10 ) \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 = 3\OML/cmm/m/it/10 t \OMS/
-cmsy/m/n/10 ^^@ []\OML/cmm/m/it/10 ;
+mr/m/n/10 ) \OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 = 3\OML/cmm/m/it/10 t \OMS/cm
+sy/m/n/10   []\OML/cmm/m/it/10 ;
  []
 
 Missing character: There is no s in font nullfont!
@@ -8861,175 +8830,174 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 171--174
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 168--171
   $\OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (14.6504pt too wide) in paragraph at lines 171--174
+Overfull \hbox (14.6504pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (5.20601pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.20601pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 v$
  []
 
 
-Overfull \hbox (23.6111pt too wide) in paragraph at lines 171--174
+Overfull \hbox (23.6111pt too wide) in paragraph at lines 168--171
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 171--174
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 171--174
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (16.55794pt too wide) in paragraph at lines 171--174
+Overfull \hbox (16.55794pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 n
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 171--174
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 168--171
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 171--174
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 171--174
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (16.55786pt too wide) in paragraph at lines 171--174
+Overfull \hbox (16.55786pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 n \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.38893pt too wide) in paragraph at lines 171--174
+Overfull \hbox (16.38893pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 3$
  []
 
 
-Overfull \hbox (59.14243pt too wide) in paragraph at lines 171--174
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (^^A[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)
-$
+Overfull \hbox (59.14243pt too wide) in paragraph at lines 168--171
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 171--174
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 168--171
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (26.52307pt too wide) in paragraph at lines 171--174
+Overfull \hbox (26.52307pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 v; w \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 171--174
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 168--171
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (333.86473pt too wide) detected at line 176
+Overfull \hbox (333.86473pt too wide) detected at line 173
 \OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v; w\OM
 S/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m
 /n/10 ] \OMS/cmsy/m/n/10 n f\OML/cmm/m/it/10 v; w\OMS/cmsy/m/n/10 g\OT1/cmr/m/n
-/10 ) \OMS/cmsy/m/n/10 ^^T [] \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 t \OT1/cmr/m/
-n/10 + 1 \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 t \OT1/cmr/m/n/10
- + 2 = [][](\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ) + [][](\OML/cmm/m/it/10 w\OT1/c
-mr/m/n/10 )\OML/cmm/m/it/10 ;
+/10 ) \OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 t \OT1/cmr/m/n/
+10 + 1 \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
+ 2 = [][](\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ) + [][](\OML/cmm/m/it/10 w\OT1/cmr
+/m/n/10 )\OML/cmm/m/it/10 ;
  []
 
 Missing character: There is no s in font nullfont!
@@ -9150,7 +9118,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.177 ...s. The number of remaining edges \(\binom
+l.174 ...s. The number of remaining edges \(\binom
                                                   {t+1}{2}\) shows, that the...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9898,7 +9866,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \end{proof}
+l.176 \end{proof}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -9911,70 +9879,70 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 \end{thm}
+l.177 \end{thm}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 176--181
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 173--178
     $\OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (23.6111pt too wide) in paragraph at lines 176--181
+Overfull \hbox (23.6111pt too wide) in paragraph at lines 173--178
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 176--181
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 173--178
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 176--181
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 173--178
 \OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 176--181
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 173--178
 \OML/cmm/m/it/10 A$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 176--181
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 173--178
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 176--181
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 173--178
 \OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (25.83328pt too wide) in paragraph at lines 176--181
+Overfull \hbox (25.83328pt too wide) in paragraph at lines 173--178
 []\OT1/cmr/m/n/10 2$
  []
 
 
-Overfull \hbox (11.38892pt too wide) in paragraph at lines 176--181
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 173--178
 \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 176--181
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 173--178
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 176--181
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 173--178
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (35.83371pt too wide) in paragraph at lines 176--181
-\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (^^A[])$
+Overfull \hbox (35.83371pt too wide) in paragraph at lines 173--178
+\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 ([])$
  []
 
 
@@ -9984,7 +9952,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 \begin{defi}
+l.179 \begin{defi}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -9997,7 +9965,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.183 A
+l.180 A
         cut-minimal graph \(G=([n],E)\) is called \textbf{maximal}, if for a...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -10128,7 +10096,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \end{defi}
+l.182 \end{defi}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -10300,7 +10268,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \begin{defi}
+l.184 \begin{defi}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -10389,174 +10357,174 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 183--190
+Overfull \hbox (20.0pt too wide) in paragraph at lines 180--187
 []
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 183--190
+Overfull \hbox (18.418pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 183--190
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (25.07623pt too wide) in paragraph at lines 183--190
+Overfull \hbox (25.07623pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 max-
  []
 
 
-Overfull \hbox (7.02774pt too wide) in paragraph at lines 183--190
+Overfull \hbox (7.02774pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 i-
  []
 
 
-Overfull \hbox (18.36794pt too wide) in paragraph at lines 183--190
+Overfull \hbox (18.36794pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 mal
  []
 
 
-Overfull \hbox (14.10066pt too wide) in paragraph at lines 183--190
+Overfull \hbox (14.10066pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (58.57095pt too wide) in paragraph at lines 183--190
+Overfull \hbox (58.57095pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 NE[]\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ])$
  []
 
 
-Overfull \hbox (12.1566pt too wide) in paragraph at lines 183--190
+Overfull \hbox (12.1566pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G[]$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 183--190
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (41.14125pt too wide) in paragraph at lines 183--190
+Overfull \hbox (41.14125pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 MAX\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 183--190
+Overfull \hbox (18.418pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 183--190
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (21.22356pt too wide) in paragraph at lines 183--190
+Overfull \hbox (21.22356pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (34.544pt too wide) in paragraph at lines 183--190
+Overfull \hbox (34.544pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E[]\OT1
 /cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (17.31378pt too wide) in paragraph at lines 183--190
+Overfull \hbox (17.31378pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 iso-
  []
 
 
-Overfull \hbox (23.90266pt too wide) in paragraph at lines 183--190
+Overfull \hbox (23.90266pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 mor-
  []
 
 
-Overfull \hbox (21.08322pt too wide) in paragraph at lines 183--190
+Overfull \hbox (21.08322pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 phic
  []
 
 
-Overfull \hbox (11.52776pt too wide) in paragraph at lines 183--190
+Overfull \hbox (11.52776pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 f \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (24.33565pt too wide) in paragraph at lines 183--190
+Overfull \hbox (24.33565pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (11.55792pt too wide) in paragraph at lines 183--190
+Overfull \hbox (11.55792pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (29.80223pt too wide) in paragraph at lines 183--190
+Overfull \hbox (29.80223pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i; j\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (7.95831pt too wide) in paragraph at lines 183--190
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 E$
  []
 
 
-Overfull \hbox (57.30235pt too wide) in paragraph at lines 183--190
+Overfull \hbox (57.30235pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/
 m/n/10 )\OML/cmm/m/it/10 ; f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 
 )) \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (10.76387pt too wide) in paragraph at lines 183--190
+Overfull \hbox (10.76387pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 E[]$ 
  []
 
 
-Overfull \hbox (18.418pt too wide) in paragraph at lines 183--190
+Overfull \hbox (18.418pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.73845pt too wide) in paragraph at lines 183--190
+Overfull \hbox (31.73845pt too wide) in paragraph at lines 180--187
 \OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; E\OT1/c
 mr/m/n/10 )$
  []
 
 
-Overfull \hbox (17.31378pt too wide) in paragraph at lines 183--190
+Overfull \hbox (17.31378pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 iso-
  []
 
 
-Overfull \hbox (23.90266pt too wide) in paragraph at lines 183--190
+Overfull \hbox (23.90266pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 mor-
  []
 
 
-Overfull \hbox (30.09149pt too wide) in paragraph at lines 183--190
+Overfull \hbox (30.09149pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 phism
  []
 
 
-Overfull \hbox (22.96788pt too wide) in paragraph at lines 183--190
+Overfull \hbox (22.96788pt too wide) in paragraph at lines 180--187
 \OT1/cmr/bx/n/10 class
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 183--190
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 180--187
 \OML/cmm/m/it/10 G$
  []
 
 ! Undefined control sequence.
-l.191 \left\{G'=([n],E')\text
+l.188 \left\{G'=([n],E')\text
                              { : }G'\text{ and }G\text{ are isomorphic}\right\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10567,7 +10535,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \text 
                       
-l.191 \left\{G'=([n],E')\text{ : }G'\text
+l.188 \left\{G'=([n],E')\text{ : }G'\text
                                          { and }G\text{ are isomorphic}\right\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10576,7 +10544,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.191 ...G'=([n],E')\text{ : }G'\text{ and }G\text
+l.188 ...G'=([n],E')\text{ : }G'\text{ and }G\text
                                                   { are isomorphic}\right\}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10585,7 +10553,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (171.04036pt too wide) detected at line 192
+Overfull \hbox (171.04036pt too wide) detected at line 189
 []
  []
 
@@ -10596,7 +10564,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \end{defi}
+l.190 \end{defi}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -10609,7 +10577,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 \begin{rem}
+l.192 \begin{rem}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -10622,7 +10590,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 N
+l.193 N
        ote, that an isomorphism of graphs preserves most properties studied ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -10772,19 +10740,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \end{rem}
+l.194 \end{rem}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 196--198
+Overfull \hbox (20.0pt too wide) in paragraph at lines 193--195
 []
  []
 
 
-Overfull \hbox (21.40187pt too wide) in paragraph at lines 196--198
+Overfull \hbox (21.40187pt too wide) in paragraph at lines 193--195
 \OML/cmm/m/it/10 h\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 )$
  []
 
@@ -10795,7 +10763,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 F
+l.196 F
        igure \ref{figure2:Figure 2} illustrates, how the isomorphism classes...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -10810,7 +10778,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...ce `figure2:Figure 2' on page \thepage 
                                                   \space undefined\on@line .
-l.199 Figure \ref{figure2:Figure 2}
+l.196 Figure \ref{figure2:Figure 2}
                                     illustrates, how the isomorphism classes...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10820,7 +10788,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `figure2:Figure 2' on page  undefined on input line 19
-9.
+6.
 
 Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -11299,7 +11267,7 @@ Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `proposition3' on page \thepage 
                                                   \space undefined\on@line .
-l.199 ...e proof of Proposition \ref{proposition3}
+l.196 ...e proof of Proposition \ref{proposition3}
                                                   , we have three more class...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11308,7 +11276,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `proposition3' on page  undefined on input line 199.
+LaTeX Warning: Reference `proposition3' on page  undefined on input line 196.
 
 Missing character: There is no , in font nullfont!
 Missing character: There is no w in font nullfont!
@@ -11365,22 +11333,22 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 199--200
+Overfull \hbox (20.0pt too wide) in paragraph at lines 196--197
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 199--200
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 196--197
 []
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 199--200
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 196--197
 \OT1/cmr/m/n/10 6$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 199--200
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 196--197
 []
  []
 
@@ -11394,17 +11362,17 @@ Enter file name:
 ! Emergency stop.
 <read *> 
          
-l.201 \input{Chapters/Figure2.tex}
-                                  ^^M
+l.198 \input{Chapters/Figure2.tex}
+                                  
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 37 strings out of 494927
- 391 string characters out of 6177949
- 69398 words of memory out of 5000000
- 3370 multiletter control sequences out of 15000+600000
- 3948 words of font info for 15 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 20i,8n,26p,839b,113s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29 strings out of 492946
+ 416 string characters out of 3135510
+ 80695 words of memory out of 3000000
+ 4021 multiletter control sequences out of 15000+200000
+ 3948 words of font info for 15 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 20i,8n,27p,841b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

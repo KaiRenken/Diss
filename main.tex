@@ -138,7 +138,7 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 %----------------------------------------------------------------------------------------
 
 \begin{declaration}
-\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+%\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
 \noindent Ich, \authorname, versichere hiermit, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet habe. Alle Stellen, die ich wörtlich oder sinngemäß aus anderen Werken entnommen habe, habe ich unter Angabe der Quellen als solche kenntlich gemacht.\\ \\ \\
  
 \noindent Unterschrift:\\
@@ -155,7 +155,7 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+%\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 The central interest of this thesis is to develop tools to get hands on the cosystolic norm of a cochain, a value which is important to determine the Cheeger constants of a simplicial complex. We develop a general theory about the cosystolic norm of a cochain, in which we establish an interesting connection between that norm and the piercing number of a certain set system (see Chapter \ref{Chapter2}). In Chapter \ref{Chapter3} we restrict our research to \(1\)-dimensional cosystoles of a simplex which are slightly easier to understand, so we can provide more explicit results for that case, including the explicit determination of the largest \(1\)-dimensional cosystoles of a simplex and a rough insight, how all cosystoles of a simplex in a certain dimension can be arranged in the so-called cosystolic complex. In Chapter \ref{Chapter4} we solve a beautiful combinatorial ordering problem, which is not directly related to the main subject of this thesis but arose during considerations about that and should be worth to be provided to the reader as well.
 \end{abstract}
 
@@ -164,7 +164,7 @@ The central interest of this thesis is to develop tools to get hands on the cosy
 %----------------------------------------------------------------------------------------
 
 \begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+%\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
 I want to thank my whole family, who always encouraged me on my academic way and especially my mum Angela Schneider who always found the right cheering as well as hard words, that helped me through all the hard times that arose on this way. I want to thank my project advisor Prof. Dr. Dmitry Feichtner-Kozlov, who introduced me to the beautiful subject of Cheeger constants as well as all my colleages at the University of Bremen who brightened every day at the office and my friends, who brightened every day at home, in countless nights at the bars of Bremen or in the nature to recover from hard work. Espacially, I want to thank Fabian Redecker, who has been a reliable companion through my whole life. At the end I want to thank Hannah Söger for her unconditional love and support at all times.
 \end{acknowledgements}
 
@@ -190,9 +190,9 @@ I want to thank my whole family, who always encouraged me on my academic way and
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
-\pagenumbering{Roman}
+%\pagenumbering{Roman}
 \include{Chapters/Preliminaries}
-\pagenumbering{arabic}
+%\pagenumbering{arabic}
 \include{Chapters/Introduction}
 \include{Chapters/Chapter2} 
 \include{Chapters/Chapter3}
@@ -217,7 +217,9 @@ I want to thank my whole family, who always encouraged me on my academic way and
 %\printbibliography[heading=bibintoc]
 
 %----------------------------------------------------------------------------------------
+\pagenumbering{Roman}
 \begin{thebibliography}{1}
+\addchaptertocentry{Bibliography}
 \bibitem{1}
 Dmitry N. Kozlov, \textit{The first Cheeger constant of a simplex}, Graphs and Combinatorics (2017) 33: 1543. https://doi.org/10.1007/s00373-017-1853-9
 \bibitem{2}

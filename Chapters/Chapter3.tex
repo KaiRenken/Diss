@@ -6,10 +6,7 @@
 
 In this chapter we start from the work of Kozlov (see \cite{1}) in which a graph theoretical approach to the first Cheeger constant of a simplex was developed. In the course of this approach the so called cut-minimal graphs appeared, which exactly describe first dimensional cosystoles in a very intuitive way. As a consequence of the first main result of this chapter (Theorem \ref{theorem1}) we will determinine the dimension and partly the homology of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\). In the second part of this chapter, we face the research on the first Cheeger constant of a simplex by investigating combinatorial properties of the Cheeger graphs which are exactly those cut-minimal graphs that determine this constant.
 
-\section{Cut-minimal graphs}
-
-
-\subsection{Basic definitions and properties}
+\section{Basic definitions and properties of cut-minimal graphs}
 The following definition and some words about motivation and intuition for it can be found in \cite{1}.
 
 \begin{defi}
@@ -50,7 +47,7 @@ CMG(n):=\{G=([n],E)\: :\: G\text{ is cut-minimal}\}
 \]
 \end{defi}
 
-\subsection{Maximal cut-minimal graphs}
+\section{Maximal cut-minimal graphs}
 
 Let us study the the topological and simplicial structure of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\) which was, more generally, already introduced in the preceding chapter. Understanding this complex will help us to explore combinatorial properties of the cut-minimal graphs on a certain number of vertices.\\
 The first thing we will do is to determine the maximum number of edges, a cut-minimal graph on a certain number of vertices can have, which immediately gives us the dimension of \(\mathcal{C}_1(\Delta^{[n]})\).
@@ -198,11 +195,11 @@ Note, that an isomorphism of graphs preserves most properties studied in this ch
 
 Figure \ref{figure2:Figure 2} illustrates, how the isomorphism classes of cut-minimal graphs on \(6\) vertices are arranged, where the connecting lines represent the relations between the classes refering to the deletion or addition of edges. Note, that the choosen representatives in the figure do not always satisfy the property of being a deletion or an addition of the shown representative of a class below or above, but in this case there is always another representative in the class which does. We see that beside the class of maximal cut-minimal graphs constructed in the proof of Proposition \ref{proposition3}, we have three more classes of maximal cut-minimal graphs here.
 
+\newpage
+
 \input{Chapters/Figure2.tex}
 
 Except for the maximal cut-minimal graphs with maximum number of edges we do not know anything about the remaining classes of cut-minimal graphs until now. The following statements now approach this challenge by providing new classes of cut-minimal graphs in general which do not appear as deletions of those largest maximal cut-minimal graphs.
-
-\newpage
 
 \begin{lem}\label{lemma8}
 Let \(u_1,\ldots,u_t,s_1,\ldots,s_t\in\mathbb{N}\cup\{0\}\), such that for all \(i=1,\ldots,t\) we have:
@@ -328,11 +325,8 @@ Hence, \(G'\) is cut-minimal and \(i_n(G)\notin MAX(n+1)\).
 \end{proof}
 \end{prop}
 
-\section{Cheeger graphs}\label{section32}
+\section{Basic definitions and properties of Cheeger graphs}
 
-In this section we want to recall the notion of Cheeger graphs as introduced in \cite{1} and study some interesting properties concerning the combinatorial structure of Cheeger graphs, which might be helpful on our way to determine the first Cheeger constant of a simplex \(\Delta^{[n]}\) when \(n\) is not a power of \(2\).
-
-\subsection{Basic definitions and properties}
 The following definition is completely adopted from \cite{1}.
 \begin{defi}\label{definition1}
 Consider a graph \(G=([n],E)\), then we set:
@@ -376,7 +370,7 @@ We already know by \cite{1} that \(\frac{n}{3}\leq h_1(\Delta{[n]})\leq\left\lce
 
 \input{Chapters/Figure3.tex}
 
-\subsection{A restriction on the size of connected components in Cheeger graphs}
+\section{A restriction on the size of connected components in Cheeger graphs}
 
 \begin{prop}
 Let \(G=([n],E)\) be a Cheeger graph. Then \(G\) must have a connected component of size at least \(n-\left\lceil\frac{n}{3}\right\rceil\).
@@ -563,7 +557,7 @@ which is equivalent to
 %\end{proof}
 %\end{prop}
 
-\subsection{Embeddings of Cheeger graphs}
+\section{Embeddings of Cheeger graphs}
 
 Based on the fact that adding a vertex to a cut-minimal graph will always result in a cut-minimal graph again from the preceding section, we will now study the consequences of adding a vertex to a Cheeger graph. It will turn out that in most cases the resulting graph will not be a Cheeger graph anymore. Using this fact we will be able to find a lower bound on the number of edges in Cheeger graphs holding in the most cases.\\
 The following lemma is just the graphic version of Lemma \ref{lemma132}.
@@ -620,7 +614,7 @@ Assume we have \(|E|<\left\lceil\frac{n-1}{2}\right\rceil\). Then by Theorem \re
 \end{proof}
 \end{prop}
 
-\subsection{The case when n is a power of 2}
+\section{The case when n is a power of 2}
 
 From \cite{1} we know that \(h(n)>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation \(A_v:=\{w\in [n]\text{ : }(v,w)\in E\}\), so we have \(|A_v|=\deg_G(v)\). The following useful fact was given by Kozlov (see \cite{1}).
 
