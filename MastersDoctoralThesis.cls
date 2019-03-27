@@ -357,18 +357,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 		#1%added to be able to have abstract more than one page long
 		\thispagestyle{plain}
 		\begin{center}
-			{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
-			\bigskip
 			{\huge\textit{\abstractname} \par}
-			\bigskip
-			{\normalsize \facname \par}% Faculty name
-			{\normalsize \deptname \par}% Department name
-			\bigskip
-			{\normalsize \degreename\par}% Degree name
-			\bigskip
-			{\normalsize\bfseries \@title \par}% Thesis title
-			\medskip
-			{\normalsize \byname{} \authorname \par}% Author name
 			\bigskip
 		\end{center}
 	}
@@ -401,6 +390,31 @@ KOMA-script documentation for details.}]{fancyhdr}
 {
 	\vfill\null
 }
+
+%----------------------------------------------------------------------------------------
+%	ZUSAMMENFASSUNG PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\DeclareDocumentCommand{\abstractauthorfont}{}{}
+\DeclareDocumentCommand{\abstracttitlefont}{}{}
+\newcommand{\vonname}{by}
+\newcommand{\zusammenname}{Zusammenfassung}
+\providecaptionname{german,ngerman,austrian,naustrian}{\vonname}{von}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\vonname}{by}
+
+	\DeclareDocumentEnvironment{Zusammenfassung}{ O{\null\vfill} }{
+		\checktoopen
+		\tttypeout{\zusammenname}
+		#1%added to be able to have abstract more than one page long
+		\thispagestyle{plain}
+		\begin{center}
+			{\huge\textit{\zusammenname} \par}
+			\bigskip
+		\end{center}
+	}
+	{
+		\vfill\null
+	}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS PAGE DESIGN

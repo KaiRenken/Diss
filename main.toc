@@ -1,30 +1,32 @@
-\babel@toc {english}{}
-\contentsline {chapter}{\numberline {0}Preliminaries}{1}{chapter.5}% 
-\contentsline {section}{\numberline {0.1}Simplicial complexes}{1}{section.6}% 
-\contentsline {section}{\numberline {0.2}Chain- / Cochain complexes \& Homology / Cohomology}{2}{section.7}% 
-\contentsline {section}{\numberline {0.3}Graphs \& Hypergraphs}{3}{section.8}% 
-\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.9}% 
-\contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.11}% 
-\contentsline {section}{\numberline {2.1}Piercing sets and the cycle detection theorem}{9}{section.12}% 
-\contentsline {section}{\numberline {2.2}Piercing complexes}{12}{section.23}% 
-\contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{14}{section.32}% 
-\contentsline {section}{\numberline {2.4}Embeddings of cosystoles}{18}{section.42}% 
-\contentsline {section}{\numberline {2.5}On Cheeger cosystoles when k+2 does not devide n}{19}{section.45}% 
-\contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{21}{chapter.47}% 
-\contentsline {section}{\numberline {3.1}Basic definitions and properties of cut-minimal graphs}{21}{section.48}% 
-\contentsline {section}{\numberline {3.2}Maximal cut-minimal graphs}{22}{section.53}% 
-\contentsline {section}{\numberline {3.3}Basic definitions and properties of Cheeger graphs}{31}{section.69}% 
-\contentsline {section}{\numberline {3.4}A restriction on the size of connected components in Cheeger graphs}{33}{section.73}% 
-\contentsline {section}{\numberline {3.5}Embeddings of Cheeger graphs}{33}{section.75}% 
-\contentsline {section}{\numberline {3.6}The case when n is a power of 2}{34}{section.80}% 
-\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{37}{chapter.86}% 
-\contentsline {section}{\numberline {4.1}Preliminaries}{37}{section.87}% 
-\contentsline {section}{\numberline {4.2}The main theorem}{38}{section.92}% 
-\contentsline {chapter}{\numberline {5}Perspectives}{41}{chapter.95}% 
-\contentsline {section}{\numberline {5.1}Applying the cycle detection theorem}{41}{section.96}% 
-\contentsline {section}{\numberline {5.2}Find maximal cosystoles of a simplex}{42}{section.98}% 
-\contentsline {section}{\numberline {5.3}The shape of Cheeger graphs if n is a power of 2}{42}{section.99}% 
-\contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{43}{section.100}% 
-\contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{43}{section.101}% 
-\contentsline {section}{\numberline {5.6}Probabilistic approaches}{43}{section.102}% 
-\contentsline {chapter}{Bibliography}{I}{appendix*.103}% 
+\select@language {english}
+\contentsline {chapter}{\numberline {0}Preliminaries}{1}{chapter.6}
+\contentsline {section}{\numberline {0.1}Simplicial complexes}{1}{section.7}
+\contentsline {section}{\numberline {0.2}Chain- / Cochain complexes \& Homology / Cohomology}{2}{section.8}
+\contentsline {section}{\numberline {0.3}Graphs \& Hypergraphs}{3}{section.9}
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.10}
+\contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.12}
+\contentsline {section}{\numberline {2.1}Piercing sets and the cycle detection theorem}{9}{section.13}
+\contentsline {section}{\numberline {2.2}Piercing complexes}{12}{section.24}
+\contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{14}{section.33}
+\contentsline {section}{\numberline {2.4}Embeddings of cosystoles}{18}{section.43}
+\contentsline {section}{\numberline {2.5}On Cheeger cosystoles when k+2 does not devide n}{19}{section.46}
+\contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{21}{chapter.48}
+\contentsline {section}{\numberline {3.1}Basic definitions and properties of cut-minimal graphs}{21}{section.49}
+\contentsline {section}{\numberline {3.2}Maximal cut-minimal graphs}{22}{section.54}
+\contentsline {section}{\numberline {3.3}Basic definitions and properties of Cheeger graphs}{31}{section.70}
+\contentsline {section}{\numberline {3.4}A restriction on the size of connected components in Cheeger graphs}{32}{section.74}
+\contentsline {section}{\numberline {3.5}Embeddings of Cheeger graphs}{33}{section.76}
+\contentsline {section}{\numberline {3.6}The case when n is a power of 2}{34}{section.81}
+\contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{37}{chapter.87}
+\contentsline {section}{\numberline {4.1}Preliminaries}{37}{section.88}
+\contentsline {section}{\numberline {4.2}The main theorem}{38}{section.93}
+\contentsline {chapter}{\numberline {5}Perspectives}{41}{chapter.96}
+\contentsline {section}{\numberline {5.1}Applying the cycle detection theorem}{41}{section.97}
+\contentsline {section}{\numberline {5.2}Find maximal cosystoles of a simplex}{42}{section.99}
+\contentsline {section}{\numberline {5.3}The shape of Cheeger graphs if n is a power of 2}{42}{section.100}
+\contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{43}{section.101}
+\contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{43}{section.102}
+\contentsline {section}{\numberline {5.6}Probabilistic approaches}{43}{section.103}
+\contentsline {chapter}{\numberline {A}Source code for the Cheeger Tool Box (CTB)}{45}{appendix.104}
+\contentsline {chapter}{\numberline {B}Source code for 'Partitioning Consecutive Numbers' (PCN)}{57}{appendix.670}
+\contentsline {chapter}{Bibliography}{I}{appendix*.1019}
