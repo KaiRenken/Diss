@@ -1,8 +1,5 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {0}Preliminaries}{1}{chapter.6}
-\contentsline {section}{\numberline {0.1}Simplicial complexes}{1}{section.7}
-\contentsline {section}{\numberline {0.2}Chain- / Cochain complexes \& Homology / Cohomology}{2}{section.8}
-\contentsline {section}{\numberline {0.3}Graphs \& Hypergraphs}{3}{section.9}
+\contentsline {chapter}{Preliminaries}{1}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.10}
 \contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.12}
 \contentsline {section}{\numberline {2.1}Piercing sets and the cycle detection theorem}{9}{section.13}
@@ -27,6 +24,6 @@
 \contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{43}{section.101}
 \contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{43}{section.102}
 \contentsline {section}{\numberline {5.6}Probabilistic approaches}{43}{section.103}
-\contentsline {chapter}{\numberline {A}Source code for the Cheeger Tool Box (CTB)}{45}{appendix.104}
+\contentsline {chapter}{\numberline {A}Source code for the 'Cheeger Tool Box' (CTB)}{45}{appendix.104}
 \contentsline {chapter}{\numberline {B}Source code for 'Partitioning Consecutive Numbers' (PCN)}{57}{appendix.670}
 \contentsline {chapter}{Bibliography}{I}{appendix*.1019}

@@ -284,7 +284,8 @@
 \ofoot{}% Outer footer
 \pagestyle{thesisSimple}
 \providepairofpagestyles[thesisSimple]{thesis}{%
-	\automark*[section]{}%
+	\automark[chapter]{chapter}
+	%\automark*[section]{}%
 }
 \providepairofpagestyles[thesisSimple]{review}{%
 	\ofoot[\shorttitle/\authorname]{\shorttitle/\authorname}
@@ -534,7 +535,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 bookmarksopen=true,
 bookmarksopenlevel=0,
 hypertexnames=false,
-colorlinks=true,% Set to false to disable coloring links
+colorlinks=false,% Set to false to disable coloring links
 citecolor=magenta,% The color of citations
 linkcolor=red,% The color of references to document elements (sections, figures, etc)
 urlcolor=mdtRed,% The color of hyperlinks (URLs)

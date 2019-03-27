@@ -2,6 +2,9 @@
 
 \label{AppendixB}
 
+The program \textit{Partitioning Consecutive Numbers (PCN)} realizes the algorithm presented in Chapter \ref{Chapter4} as a console application written in C++11. To use it, the reader should just save the single files in an ordering as shown in the labellings underneath each code block and build all files. Then just type \textit{PCN} followed by three arguments seperated by a space character into the console. The first argument is the number \(n\) representing the sum from \(1\) to \(n\), the second and the third argument are the numbers \(a\) and \(b\) representing the sum from \(a\) to \(b\). Make sure, that the conditions of Theorem \ref{theorem11} are satisfied, meaning \(a\leq b\) and the sum from \(1\) to \(n\) should equal the sum from \(a\) to \(b\). Then the program produces a matrix whose lines respresent the parts of the partition of \([n]\), such that each line sums up to a number between \(a\) and \(b\). The entries of the matrix which are not used become filled with zeros.\\
+\\
+
 \lstinputlisting[language=C++]{PCN/sources/PCN.cpp}
 
 \lstinputlisting[language=C++]{PCN/headers/Matrix.h}

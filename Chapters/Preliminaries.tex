@@ -1,13 +1,16 @@
 % Preliminaries
-\setcounter{chapter}{-1}
 
-\chapter{Preliminaries}
+\addcontentsline{toc}{chapter}{Preliminaries}
+\manualmark
+\markboth{Preliminaries}{Preliminaries}
+
+\chapter*{Preliminaries}
 
 \label{Preliminaries}
 
 Let us shortly recall some basic algebraic and combinatorial concepts, which we will use within this thesis.
 
-\section{Simplicial complexes}
+\section*{Simplicial complexes}
 
 Let \(S\) be some set (whose elements are called \textbf{vertices}) and \(X\subseteq 2^S\) a family of subsets of \(S\) (we will use the notation \(2^S\) for the power set of \(S\) within the whole thesis), such that for all \(\sigma\in X\) and all \(\sigma'\subseteq\sigma\) we have \(\sigma'\in X\). Then we call \(X\) an \textbf{(abstract) simplicial complex}. We just use the notation "simplicial complex" in this thesis, because we will only consider abstract simplicial complexes and are not interested in their geometric realization.\\
 \\
@@ -26,7 +29,7 @@ For a simplicial complex \(X\) we call \(\dim(X):=\max\left\{\left|\sigma\right|
 A simplicial complex is called \textbf{finite} if its vertex set is finite and \textbf{finite dimensional} if its dimension is finite.\\
 The most frequently considered simplicial complex in this thesis will be the complex induced by the standard simplex on \(n\)-vertices. It can be considered as the complete power set of \([n]:=\left|\left\{i\in\mathbb{N}\text{ : }1\leq i\leq n\right\}\right|\) and we will denote it by \(\Delta^{[n]}:=2^{[n]}\).
 
-\section{Chain- / Cochain complexes \& Homology / Cohomology}
+\section*{Chain- / Cochain complexes \& Homology / Cohomology}
 
 Let \(X\) be a simplicial complex and \(0\leq k\leq \dim(X)\), then
 \[
@@ -77,7 +80,8 @@ Furthermore, we define the support of a chain \(c\in C_k(X)\) as \(\supp(c):=\su
 Note, that for simplicity we will omit natural inclusion maps of the type\\
 \(i:\Delta^{[n]}\longrightarrow\Delta^{[n+d]}\) for some \(n,d\in\mathbb{N}\) when calculating with chains / cochains, so that for \(\varphi\in C^k(\Delta^{[n]})\text{, }\psi\in C^k(\Delta^{[n+d]})\) we will write \(\varphi+\psi\in C^k(\Delta^{[n+d]})\) instead of \(i(\varphi)+\psi\in C^k(\Delta^{[n+d]})\). It should always be clear from the context what we mean.
 
-\section{Graphs \& Hypergraphs}
+
+\section*{Graphs \& Hypergraphs}
 
 Let \(V\) be some set and \(E\subseteq\binom{V}{2}\) (we will always use the notation\\
 \(\binom{V}{k}:=\left\{S\in 2^V\text{ : }\left|S\right|=k\right\}\) to denote the set of all subsets of cardinality \(k\) of a set \(V\)). Then the pair \(G=\left(V,E\right)\) is called a \textbf{(simple) graph}, where the elements of \(V\) are called \textbf{vertices} and the elements of \(E\) are called \textbf{edges}. Since we only consider simple graphs (undirected graphs with no loops or double edges) in this thesis, we will just call them graphs. Even though we only consider undirected graphs, we want to stick to the common notation and denote an edge by \(e=(v,w)\) instead of using set brackets \(e=\{v,w\}\).\\
@@ -86,3 +90,5 @@ According to the terminology of simplicial complexes we call a graph \textbf{fin
 A graph \(G=(V,E)\) is called \textbf{complete}, if \(E=\binom{V}{2}\) and a graph \(G'=(V',E')\) is called a \textbf{subgraph} of \(G=(V,E)\), if \(V'\subseteq V\) and \(E'\subseteq E\). Furthermore, we call a subgraph \(G'=(V',E')\) of \(G=(V,E)\) a \textbf{spanning subgraph} if \(E'\subseteq E\) and \(V'=V\).\\
 Let \(G=(V,E)\) be a graph, then \(\deg_G(v):=\left|\left\{w\in V\text{ : }(v,w)\in E\right\}\right|\) is called the \textbf{degree} of the vertex \(v\in V\).\\
 A \textbf{hypergraph} is a pair \(H=(V,E)\), where the edge set \(E\subseteq 2^V\) can be any set of subsets of \(V\). Note, that every simplicial complex is a hypergraph, but not every hypergraph is a simplicial complex, since subsets of an edge do not have to be an edge in a hypergraph. If all edges of a hypergraph have the same cardinality \(k\), then we call it a \(k\)-\textbf{uniform hypergraph}. Analogously to the terminology of graphs, a hypergraph \(H'=(V',E')\) is called a \textbf{subhypergraph} of the hypergraph \(H=(V,E)\), if \(V'\subseteq V\) and \(E'\subseteq E\).
+
+\automark[chapter]{chapter}

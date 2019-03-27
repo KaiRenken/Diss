@@ -1,6 +1,9 @@
-\chapter{Source code for the Cheeger Tool Box (CTB)}
+\chapter{Source code for the 'Cheeger Tool Box' (CTB)}
 
 \label{AppendixA}
+
+The \textit{Cheeger Tool Box (CTB)} is a software library written in C++11, containing methods to handle some important tasks concerning the topic of Cheeger constants of a simplex, such as calculating the cosystolic norm and the coboundary expansion of a given cochain or calculating the \(k\)-th Cheeger constant of a simplex on \(n\) vertices. A cochain \(\varphi\in C^k(\Delta^{[n]})\) is always represented as a column vector with \(\binom{n}{k+1}\) (i.e. a matrix of one column and  \(\binom{n}{k+1}\) lines, such that every entry \(i\) is either \(1\) or \(0\), depending on if the \(i\)-th simplex in the uniform \(k\)-skeleton of \(\Delta^{[n]}\) is contained in the support of \(\varphi\). Here, the simplices of the uniform \(k\)-skeleton of \(\Delta^{[n]}\) are indexed lexicographically based on the contained vertices, which are indexed from \(1\) to \(n\).\\
+To use the library, the reader should just save the single files in an ordering as shown in the labellings underneath each code block and include the header files into his own code. Note, that by now the methods only use the basic definitions of cosystolicity and Cheeger constants for the calculation. The interested reader is invited to use more results from theoretical research to improve its performance.\\
 
 \lstinputlisting[language=C++]{CTB/headers/Matrix.h}
 
