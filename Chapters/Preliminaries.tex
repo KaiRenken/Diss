@@ -10,75 +10,82 @@
 
 Let us shortly recall some basic algebraic and combinatorial concepts, which we will use within this thesis.
 
-\section*{Simplicial complexes}
+\section*{Simplicial Complexes}
 
 Let \(S\) be some set (whose elements are called \textbf{vertices}) and \(X\subseteq 2^S\) a family of subsets of \(S\) (we will use the notation \(2^S\) for the power set of \(S\) within the whole thesis), such that for all \(\sigma\in X\) and all \(\sigma'\subseteq\sigma\) we have \(\sigma'\in X\). Then we call \(X\) an \textbf{(abstract) simplicial complex}. We just use the notation "simplicial complex" in this thesis, because we will only consider abstract simplicial complexes and are not interested in their geometric realization.\\
 \\
-An element of a simplicial complex \(X\) is called \textbf{simplex} and a \textbf{face} of a simplex \(\sigma\in X\) is a simplex \(\sigma'\in X\), such that \(\sigma'\subset\sigma\) and \(\left|\sigma'\right|=\left|\sigma\right|-1\). Furthermore, we denote the \(k\)-\textbf{skeleton} of a simplicial complex \(X\) by
+An element of cardinality \(k\) of a simplicial complex \(X\) is called \(k\)-\textbf{simplex} and a \textbf{face} of a \(k\)-simplex \(\sigma\in X\) is a (\(k-1\))-simplex \(\sigma'\in X\), such that \(\sigma'\subset\sigma\). Furthermore, we denote the \(k\)-\textbf{skeleton} of a simplicial complex \(X\) by
 \[
-X(k):=\left\{\sigma\in X\text{ : }\left|\sigma\right|\leq k+1\right\},
+X(k):=\left\{\sigma\in X\;\text{:}\;\left|\sigma\right|\leq k+1\right\},
 \]
 and the \textbf{uniform} \(k\)-\textbf{skeleton} of \(X\) by
 \[
-X^{(k)}:=\left\{\sigma\in X\text{ : }\left|\sigma\right|=k+1\right\}
+X^{(k)}:=\left\{\sigma\in X\;\text{:}\;\left|\sigma\right|=k+1\right\}
 \]
 \\
-Let \(\sigma\subset S\) be a simplex and \(s\in S\setminus\sigma\), then the simplex constructed by adding \(s\) to \(\sigma\) is denoted by \((\sigma,s):=\sigma\cup\left\{s\right\}\).\\
-For a simplicial complex \(X\) we call \(\dim(X):=\max\left\{\left|\sigma\right|-1\text{ : }\sigma\in X\right\}\) the \textbf{dimension} of \(X\) (if it exists).
+Let \(\sigma\subset S\) be a simplex and \(s\in S\setminus\sigma\), then the simplex constructed by "adding" \(s\) to \(\sigma\) is denoted by \((\sigma,s):=\sigma\cup\left\{s\right\}\).\\
+For a simplicial complex \(X\) and a simplex \(\sigma\in X\) we call \(\dim(\sigma):=|\sigma|-1\) the \textbf{dimension} of \(\sigma\) and \(\dim(X):=\max\left\{\dim(\sigma)\text{ : }\sigma\in X\right\}\) the \textbf{dimension} of \(X\) (if it exists). Furthermore, for simplices \(\sigma\) and \(\sigma'\), such that \(\sigma'\subseteq\sigma\) the \textbf{codimension} of \(\sigma'\) in \(\sigma\) is defined as \(\dim(\sigma)-\dim(\sigma')\). 
 \\
 A simplicial complex is called \textbf{finite} if its vertex set is finite and \textbf{finite dimensional} if its dimension is finite.\\
-The most frequently considered simplicial complex in this thesis will be the complex induced by the standard simplex on \(n\)-vertices. It can be considered as the complete power set of \([n]:=\left|\left\{i\in\mathbb{N}\text{ : }1\leq i\leq n\right\}\right|\) and we will denote it by \(\Delta^{[n]}:=2^{[n]}\).
+The most frequently considered simplicial complex in this thesis will be the complex induced by the standard simplex on \(n\) vertices. It can be considered as the complete power set of \([n]:=\left|\left\{i\in\mathbb{N}\text{ : }1\leq i\leq n\right\}\right|\) and we will denote it by \(\Delta^{[n]}:=2^{[n]}\).
 
-\section*{Chain- / Cochain complexes \& Homology / Cohomology}
+\section*{Co- / Chain Complexes \& Co- / Homology}
 
-Let \(X\) be a simplicial complex and \(0\leq k\leq \dim(X)\), then
+Let \(X\) be a simplicial complex, then
 \[
-C_k(X,\mathbb{Z}_2):=\left\{\sum\limits_{i\in I}c_i\sigma_i\text{ : }\sigma_i\in X\text{, }c_i\in\mathbb{Z}_2\right\}
+C_k(X,\mathbb{Z}_2):=\left\{\sum\limits_{i\in I}c_i\sigma_i\:\text{ : }\:\sigma_i\in X^{(k)}\text{, }c_i\in\mathbb{Z}_2\right\}
 \]
 is called the \(k\)-th \textbf{chain group} of \(X\), where \(I\) is some index set. (The elements of \(C_k(X,\mathbb{Z}_2)\) are called \(k\)-\textbf{chains})\\
 Note, that in general we have more possible coefficient systems than \(\mathbb{Z}_2\) and \(X\) can be any topological space, but we will restrict ourselves to simplicial complexes in this thesis. Furthermore, since we only consider chain groups with \(\mathbb{Z}_2\)-coefficients in this thesis, we will use the notation \(C_k(X):=C_k(X,\mathbb{Z}_2)\).\\
 The linear map \(\partial_k:C_{k+1}(X)\rightarrow C_k(X)\) defined on a simplex \(\sigma=(v_0,\ldots,v_{k+1})\in X\) as
 \[
-\partial_k(\sigma)=\sum\limits_{i=0}^{k+1}(-1)^i(v_0,\ldots,v_{i-1},v_{i+1},\ldots,v_{k+1})
+\partial_k(\sigma):=\sum\limits_{i=0}^{k+1}(-1)^i(v_0,\ldots,v_{i-1},v_{i+1},\ldots,v_{k+1})
 \]
-is called the \(k\)-th \textbf{boundary map}. (Recall, that the boundary maps have the property \(\partial_k\circ\partial_{k+1}=0\))\\
+is called the \(k\)-th \textbf{boundary map}. Note, that the boundary maps have the property \(\partial_{k-1}\circ\partial_k=0\), so we always have \(\im(\partial_k)\subseteq\ker(\partial_{k-1})\).\\
 \\
-The \(k\)-th \textbf{homology group} of \(X\) is then defined as:
+The \(k\)-th \textbf{homology group} of \(X\) is defined as
 \[
 H_k(X):=\frac{\ker(\partial_{k-1})}{\im(\partial_k)},
 \]
-where the elements from \(\ker(\partial_{k-1})\) are called k-\textbf{cycles} and the elements from \(\im(\partial_k)\) are called k-\textbf{boundaries}.\\
+where the elements in \(\ker(\partial_{k-1})\) are called k-\textbf{cycles} and the elements in \(\im(\partial_k)\) are called k-\textbf{boundaries}.\\
 Dualizing this concept, we get the \(k\)-th \textbf{cochain group} of \(X\) by
 \[
 C^k(X):=C^k(X,\mathbb{Z}_2):=\left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2\text{ : }\varphi\text{ is a linear map}\right\},
 \]
 whose elements are called \(k\)-\textbf{cochains}, the \(k\)-th \textbf{coboundary map}\\
-\(\delta^k:C^k(X)\rightarrow C^{k+1}(X)\) by \(\delta^k(\varphi):=\varphi\circ\partial_k\), and the \(k\)-th cohomology group of \(X\) by:
+\(\delta^k:C^k(X)\rightarrow C^{k+1}(X)\) by \(\delta^k(\varphi):=\varphi\circ\partial_k\), and the \(k\)-th \textbf{cohomology group} of \(X\) by
 \[
 H^k(X):=\frac{\ker(\delta^k)}{\im(\delta^{k-1})}
 \]
+Note, that \(\delta^k\circ\delta^{k-1}=0\) holds again which implies that we have \(\im(\delta^{k-1})\subseteq\ker(\delta^k)\).\\
 Furthermore, the sequence
 \[
-\cdots\xlongrightarrow{\partial_{k+1}} C_{k+1}(X)\xlongrightarrow{\partial_k} C_k(X)\xlongrightarrow{\partial_{k-1}} C_{k-1}(X)\xlongrightarrow{\partial_{k-2}}\cdots
+\cdots\xlongrightarrow{\partial_{k+1}} C_{k+1}(X)\xlongrightarrow{\partial_k} C_k(X)\xlongrightarrow{\partial_{k-1}} C_{k-1}(X)\xlongrightarrow{\partial_{k-2}}\cdots\xlongrightarrow{\partial_0} C_0(X)\xlongrightarrow{\partial_{-1}}\left\{0\right\}
 \]
 is called a \textbf{chain complex} and
 \[
-\cdots\xlongrightarrow{\delta^{k-2}} C^{k-1}(X)\xlongrightarrow{\delta^{k-1}} C^k(X)\xlongrightarrow{\delta^k} C^{k+1}(X)\xlongrightarrow{\delta^{k+1}}\cdots
+\left\{0\right\}\xlongrightarrow{\delta^{-1}}C^0(X)\xlongrightarrow{\delta^0}\cdots\xlongrightarrow{\delta^{k-2}} C^{k-1}(X)\xlongrightarrow{\delta^{k-1}} C^k(X)\xlongrightarrow{\delta^k} C^{k+1}(X)\xlongrightarrow{\delta^{k+1}}\cdots
 \]
 is called a \textbf{cochain complex}.\\
 \\
-Since, we are working with \(\mathbb{Z}_2\)-coeficients only, there is a very intuitive way to talk about chains (cochains, respectively). A \(k\)-chain is a linear combination of simplices with coefficients in \(\mathbb{Z}_2\), so it can just be considered as a subset of the uniform \(k\)-skeleton of the underlying simplicial complex \(X\). Furthermore, there is a one-to-one correspondence between chains and cochains, so to every chain \(c\in C_k(X)\) we can associate its characteristic cochain we denote by \(c^*\in C^k(X)\) and for every cochain \(\varphi\in C^k(X)\) there exists a unique chain \(c\in C_k(X)\), such that we have \(c^*=\varphi\).\\
+Let us still introduce the concept of reduced homology / cohomology. If we consider the augmented chain complex
+\[
+\cdots\xlongrightarrow{\partial_{k+1}} C_{k+1}(X)\xlongrightarrow{\partial_k} C_k(X)\xlongrightarrow{\partial_{k-1}} C_{k-1}(X)\xlongrightarrow{\partial_{k-2}}\cdots\xlongrightarrow{\partial_0} C_0(X)\xlongrightarrow{\varepsilon}\mathbb{Z}_2\longrightarrow \left\{0\right\},
+\]
+with \(\varepsilon\left(\sum\limits_{i\in I}c_i\sigma_i\right):=\sum\limits_{i\in I}c_i\) instead of the ordinary chain complex, then we call the corresponding homology groups the \textbf{reduced homology groups} of \(X\) and denote them by \(\tilde{H}_k(X)\). Note, that only the \(0\)-th reduced homology group differs from the ordinary \(0\)-th homology group, such that we have \(H_0(X)\cong\tilde{H}_0(X)\oplus\mathbb{Z}_2\) and \(H_k(X)\cong\tilde{H}_k(X)\) for all \(k\geq 1\). Dualizing this concept one can define reduced cohomology analogously.\\
+\\
+Since, we are working with \(\mathbb{Z}_2\)-coeficients only, there is a very intuitive way to talk about chains (cochains, respectively). A \(k\)-chain is a linear combination of \(k\)-simplices with coefficients in \(\mathbb{Z}_2\), so it can just be considered as a subset of the uniform \(k\)-skeleton of the underlying simplicial complex \(X\). Furthermore, there is a one-to-one correspondence between chains and cochains, so to every chain \(c\in C_k(X)\) we can associate its characteristic cochain which we denote by \(c^*\in C^k(X)\) and for every cochain \(\varphi\in C^k(X)\) there exists a unique chain \(c\in C_k(X)\), such that we have \(c^*=\varphi\).\\
 Let \(c\in C_k(X)\) be some chain and \(\varphi\in C^k(X)\) some cochain, then we denote the \textbf{evaluation} of \(\varphi\) on \(c\) as
 \[
 \left\langle\varphi,c\right\rangle:=\varphi(c)\in\mathbb{Z}_2,
 \]
 and the \textbf{support} of \(\varphi\) as
 \[
-\supp(\varphi):=\left\{\sigma\in X\text{ : }\left\langle\varphi,\sigma\right\rangle=1\right\}
+\supp(\varphi):=\left\{\sigma\in X^{(k)}\text{ : }\left\langle\varphi,\sigma\right\rangle=1\right\}
 \]
 Furthermore, we define the support of a chain \(c\in C_k(X)\) as \(\supp(c):=\supp(c^*)\).\\
 Note, that for simplicity we will omit natural inclusion maps of the type\\
-\(i:\Delta^{[n]}\longrightarrow\Delta^{[n+d]}\) for some \(n,d\in\mathbb{N}\) when calculating with chains / cochains, so that for \(\varphi\in C^k(\Delta^{[n]})\text{, }\psi\in C^k(\Delta^{[n+d]})\) we will write \(\varphi+\psi\in C^k(\Delta^{[n+d]})\) instead of \(i(\varphi)+\psi\in C^k(\Delta^{[n+d]})\). It should always be clear from the context what we mean.
+\(i:\Delta^{[n]}\longrightarrow\Delta^{[n+d]}\) for some \(n,d\in\mathbb{N}\) when adding chains / cochains, so that for \(\varphi\in C^k(\Delta^{[n]})\text{, }\psi\in C^k(\Delta^{[n+d]})\) we will write \(\varphi+\psi\in C^k(\Delta^{[n+d]})\) instead of \(i(\varphi)+\psi\in C^k(\Delta^{[n+d]})\). From the context it should always be clear what we mean.
 
 
 \section*{Graphs \& Hypergraphs}

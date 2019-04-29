@@ -24,7 +24,7 @@ Even though we can not determine all cosystoles by this "disjoint cycles" method
 Finding large families of cycles with pairwise disjoint supports is a problem, that has been for example approached by Peter Keevash (see \cite{11}), who determined the number of vertices \(n\), for which it is possible to partition the uniform \(k\)-skeleton of \(\Delta^{[n]}\), such that every part is the boundary of a (\(k+1\))-simplex.\\
 For the case of cut-minimal graphs it might be easier to find large families of edge-disjoint cycles, but since we are not only interested in finding cut-minimal graphs but Cheeger graphs, we still have to handle the challenge of constructing graphs \(G\) by choosing edges in those cycles, such that the number \(T(G)\) becomes as small as possible.
 
-\section{Find maximal cosystoles of a simplex}
+\section{Finding maximal cosystoles of a simplex}
 
 In Theorem \ref{theorem1} we determined the maximum number of edges a cut-minimal graph can have and even discovered the unique (up to isomorphy) shape of such a graph. It always consists of two disjoint as equally large as possible complete graphs. For higher-dimensional cosystoles by now we have no idea about the largest possible norm and how those cosystoles look like. Perhaps, it might be possible to find a lower bound for the maximal norm of a cosystole in general by choosing an adequate family of cycles and using the cycle detection theorem.
 
@@ -43,3 +43,5 @@ Another approach for further research which we totally omitted in this thesis is
 \section{Probabilistic approaches}
 
 Another approach which we totally omitted in this thesis is to use results from probability theory to archieve exact answers to our questions. For example the question, if the cosystolic norm of every cochain can be determined by the cycle detection theorem might be solved in the following way. If we determined the probability of a randomly chosen cochain \(\varphi\in C^k(\Delta^{[n]})\) to be cosystolic and the probability of a ramdomly chosen cochain \(\varphi\in C^k(\Delta^{[n]})\) to provide the smallest piercing set of \(\mathcal{T}_{\varphi}\) as its support, we would get the number of cochains which satisfy each of these properties as expectancy values. If they equaled, we would have proven the conjecture. In fact, we would not even need the exact values of those probabilities. Estimations in the right direction would suffice since we know that any cochain \(\varphi\in C^k(\Delta^{[n]})\) which is not a cosystole can not provide the smallest piercing set for \(\mathcal{T}_{\varphi}\) as its support.
+
+\section{Weighted Cheeger constants}

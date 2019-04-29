@@ -40,14 +40,14 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 \tikzstyle{labeled}=[execute at begin node=$\scriptstyle,
    execute at end node=$]
 
-\newtheorem{defi}{Definition}
-\newtheorem{lem}{Lemma}
-\newtheorem{conj}{Conjecture}
-\newtheorem{rem}{Remark}
-\newtheorem{prop}{Proposition}
-\newtheorem{thm}{Theorem}
-\newtheorem{cor}{Corollary}
-\newtheorem{expl}{Example}
+\newtheorem{defi}{Definition}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{expl}{Example}[section]
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
@@ -79,7 +79,7 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Cosystoles and Cheeger constants of the simplex} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\thesistitle{Cosystoles and Cheeger Constants of the Simplex} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 \supervisor{Prof. Dr. Dmitry \textsc{Feichtner-Kozlov}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Dr. rer. nat.} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
@@ -148,28 +148,11 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 \end{titlepage}
 
 %----------------------------------------------------------------------------------------
-%	DECLARATION PAGE
-%----------------------------------------------------------------------------------------
-
-\begin{declaration}
-%\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
-\noindent Ich, \authorname, versichere hiermit, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet habe. Alle Stellen, die ich wörtlich oder sinngemäß aus anderen Werken entnommen habe, habe ich unter Angabe der Quellen als solche kenntlich gemacht.\\ \\ \\
- 
-\noindent Unterschrift:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
-\noindent Datum:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
-\end{declaration}
-
-\cleardoublepage
-
-%----------------------------------------------------------------------------------------
 %	ZUSAMMENFASSUNG
 %----------------------------------------------------------------------------------------
 
 \begin{Zusammenfassung}
-Das zentrale Thema dieser Arbeit ist, Methoden zu entwickeln, um die kosystolische Norm und die Korandausdehnung einer Kokette bestimmen oder zumindest besser abschätzen zu können. Diese Werte sind die Grundlage für die Bestimmung der Cheeger-Konstanten eines simplizialen Komplexes. Wir entwickeln eine allgemeine Theorie zur kosystolischen Norm von Koketten, in der wir unter anderem eine interessante Verbindung zwischen jener Norm und der Piercing-Zahl eines bestimmten Mengensystems untersuchen (siehe Kapitel \ref{Chapter2}). In Kapitel \ref{Chapter3} beschränken wir unsere Untersuchungen auf eindimensionale Kosystolen eines Simplexes, welche ein wenig einfacher zu verstehen sind, sodass wir in diesem Fall oft bessere Resultate liefern können, unter anderem die explizite Bestimmung der größten eindimensionalen Kosystolen eines Simplexes und einen ungefähre Übersicht, wie alle \(1\)-Kosystolen eines Simplexes im sogenannten kosystolischen Komplex angeordnet sind. In Kapitel \ref{Chapter4} lösen wir ein schönes kombinatorisches Anordnungsproblem, welches nicht in direktem Zusammenhang mit dem Rest dieser Arbeit steht, aber während grundlegener Überlegungen darüber aufkam und interessant genug sein sollte, dem Leser ebenso zur Verfügung gestellt zu werden. In Anhang \ref{AppendixA} stellen wir dem Leser den Quelltext zu einer Softwarebibliothek zur Verfügung, die einige der Probleme bezüglich kosystolischer Normen und Cheeger-Konstanten algorithmisch umsetzt und in Anhang \ref{AppendixB} geben wir einen Algorithmus zur konkreten Berechnung der Lösungen des Anordnungsproblems aus Kapitel \ref{Chapter4} an.
+Das zentrale Thema dieser Arbeit ist, Methoden zu entwickeln, um die kosystolische Norm und die Korandausdehnung einer Kokette bestimmen oder zumindest besser abschätzen zu können. Diese Werte sind die Grundlage für die Bestimmung der Cheeger-Konstanten eines simplizialen Komplexes. Wir entwickeln eine allgemeine Theorie zur kosystolischen Norm von Koketten, in der wir unter anderem eine interessante Verbindung zwischen jener Norm und der Piercing-Zahl eines bestimmten Mengensystems untersuchen (siehe Kapitel \ref{Chapter2}). In Kapitel \ref{Chapter3} beschränken wir unsere Untersuchungen auf eindimensionale Kosystolen eines Simplexes, welche ein wenig einfacher zu verstehen sind, sodass wir in diesem Fall oft bessere Resultate liefern können, unter anderem die explizite Bestimmung der größten eindimensionalen Kosystolen eines Simplexes und eine ungefähre Übersicht, wie alle \(1\)-Kosystolen eines Simplexes im sogenannten kosystolischen Komplex angeordnet sind. In Kapitel \ref{Chapter4} lösen wir ein schönes kombinatorisches Anordnungsproblem, welches nicht in direktem Zusammenhang mit dem Rest dieser Arbeit steht, aber während grundlegener Überlegungen darüber aufkam und interessant genug sein sollte, dem Leser ebenso zur Verfügung gestellt zu werden. In Anhang \ref{AppendixA} stellen wir dem Leser den Quelltext zu einer Softwarebibliothek zur Verfügung, die einige der Probleme bezüglich kosystolischer Normen und Cheeger-Konstanten algorithmisch umsetzt und in Anhang \ref{AppendixB} geben wir einen Algorithmus zur konkreten Berechnung der Lösungen des Anordnungsproblems aus Kapitel \ref{Chapter4} an.
 \end{Zusammenfassung}
 
 %----------------------------------------------------------------------------------------
@@ -231,6 +214,8 @@ I want to thank my family, who always encouraged me on my academic way and espec
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
+\pagenumbering{Roman}
+
 \include{AppendixA}
 
 \include{AppendixB}
@@ -242,7 +227,6 @@ I want to thank my family, who always encouraged me on my academic way and espec
 %\printbibliography[heading=bibintoc]
 
 %----------------------------------------------------------------------------------------
-\pagenumbering{Roman}
 \begin{thebibliography}{1}
 \addchaptertocentry{Bibliography}
 \bibitem{1}
