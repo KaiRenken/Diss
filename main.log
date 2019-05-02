@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  2 MAY 2019 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  2 MAY 2019 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1935,7 +1935,7 @@ texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 508167 bytes).
+Output written on main.pdf (75 pages, 508315 bytes).
 PDF statistics:
  1885 PDF objects out of 2073 (max. 8388607)
  1775 compressed objects within 18 object streams
