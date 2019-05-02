@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  29 APR 2019 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.9.27)  2 MAY 2019 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1677,18 +1677,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--79
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--26
+(./Chapters/Figure7.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
 
@@ -1699,39 +1689,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 32--39
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--39
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
+Underfull \hbox (badness 10000) in paragraph at lines 44--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
+Underfull \hbox (badness 10000) in paragraph at lines 44--50
 
  []
 
-[6]) [7]
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--69
+
+ []
+
+[7]) [8]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex [8
-
-
-
-]
+ (./Chapters/Chapter2.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 14.
 1: chapter
 1: chapter
-[9] [10] (./Chapters/Figure1.tex
+[9
+
+
+
+] [10] (./Chapters/Figure1.tex
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 32.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -1906,13 +1911,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B867FE8BC658F56499892C5ADC8B636;6817.
+(rerunfilecheck)             Checksum: 6898AD63B47580A9B6C38067D3B20BDB;6818.
  ) 
 Here is how much of TeX's memory you used:
- 37122 strings out of 494927
- 726102 string characters out of 6177949
- 1008055 words of memory out of 5000000
- 38616 multiletter control sequences out of 15000+600000
+ 37166 strings out of 494927
+ 726721 string characters out of 6177949
+ 1008696 words of memory out of 5000000
+ 38656 multiletter control sequences out of 15000+600000
  81798 words of font info for 175 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  64i,21n,80p,10377b,2079s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1930,10 +1935,10 @@ texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 503110 bytes).
+Output written on main.pdf (75 pages, 508167 bytes).
 PDF statistics:
- 1883 PDF objects out of 2073 (max. 8388607)
- 1773 compressed objects within 18 object streams
- 1106 named destinations out of 1200 (max. 500000)
+ 1885 PDF objects out of 2073 (max. 8388607)
+ 1775 compressed objects within 18 object streams
+ 1107 named destinations out of 1200 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
