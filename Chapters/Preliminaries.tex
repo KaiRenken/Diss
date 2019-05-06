@@ -16,46 +16,46 @@ Let \(S\) be some set (whose elements are called \textbf{vertices}) and \(X\subs
 \\
 An element of cardinality \(k\) of a simplicial complex \(X\) is called \(k\)-\textbf{simplex} and a \textbf{face} of a \(k\)-simplex \(\sigma\in X\) is a (\(k-1\))-simplex \(\sigma'\in X\), such that \(\sigma'\subset\sigma\). Furthermore, we denote the \(k\)-\textbf{skeleton} of a simplicial complex \(X\) by
 \[
-X(k):=\left\{\sigma\in X\;\text{:}\;\left|\sigma\right|\leq k+1\right\},
+X(k)\coloneqq \left\{\sigma\in X\;\text{:}\;\left|\sigma\right|\leq k+1\right\},
 \]
 and the \textbf{uniform} \(k\)-\textbf{skeleton} of \(X\) by
 \[
-X^{(k)}:=\left\{\sigma\in X\;\text{:}\;\left|\sigma\right|=k+1\right\}
+X^{(k)}\coloneqq \left\{\sigma\in X\;\text{:}\;\left|\sigma\right|=k+1\right\}
 \]
 \\
-Let \(\sigma\subset S\) be a simplex and \(s\in S\setminus\sigma\), then the simplex constructed by "adding" \(s\) to \(\sigma\) is denoted by \((\sigma,s):=\sigma\cup\left\{s\right\}\).\\
-For a simplicial complex \(X\) and a simplex \(\sigma\in X\) we call \(\dim(\sigma):=|\sigma|-1\) the \textbf{dimension} of \(\sigma\) and \(\dim(X):=\max\left\{\dim(\sigma)\text{ : }\sigma\in X\right\}\) the \textbf{dimension} of \(X\) (if it exists). Furthermore, for simplices \(\sigma\) and \(\sigma'\), such that \(\sigma'\subseteq\sigma\) the \textbf{codimension} of \(\sigma'\) in \(\sigma\) is defined as \(\dim(\sigma)-\dim(\sigma')\). 
+Let \(\sigma\subset S\) be a simplex and \(s\in S\setminus\sigma\), then the simplex constructed by "adding" \(s\) to \(\sigma\) is denoted by \((\sigma,s)\coloneqq \sigma\cup\left\{s\right\}\).\\
+For a simplicial complex \(X\) and a simplex \(\sigma\in X\) we call \(\dim(\sigma)\coloneqq |\sigma|-1\) the \textbf{dimension} of \(\sigma\) and \(\dim(X)\coloneqq \max\left\{\dim(\sigma):\sigma\in X\right\}\) the \textbf{dimension} of \(X\) (if it exists). Furthermore, for simplices \(\sigma\) and \(\sigma'\), such that \(\sigma'\subseteq\sigma\) the \textbf{codimension} of \(\sigma'\) in \(\sigma\) is defined as \(\dim(\sigma)-\dim(\sigma')\). 
 \\
 A simplicial complex is called \textbf{finite} if its vertex set is finite and \textbf{finite dimensional} if its dimension is finite.\\
-The most frequently considered simplicial complex in this thesis will be the complex induced by the standard simplex on \(n\) vertices. It can be considered as the complete power set of \([n]:=\left|\left\{i\in\mathbb{N}\text{ : }1\leq i\leq n\right\}\right|\) and we will denote it by \(\Delta^{[n]}:=2^{[n]}\).
+The most frequently considered simplicial complex in this thesis will be the complex induced by the standard simplex on \(n\) vertices. It can be considered as the complete power set of \([n]\coloneqq \left|\left\{i\in\mathbb{N}:1\leq i\leq n\right\}\right|\) and we will denote it by \(\Delta^{[n]}\coloneqq 2^{[n]}\).
 
 \section*{Co- / Chain Complexes \& Co- / Homology}
 
 Let \(X\) be a simplicial complex, then
 \[
-C_k(X,\mathbb{Z}_2):=\left\{\sum\limits_{i\in I}c_i\sigma_i\:\text{ : }\:\sigma_i\in X^{(k)}\text{, }c_i\in\mathbb{Z}_2\right\}
+C_k(X,\mathbb{Z}_2)\coloneqq \left\{\sum\limits_{i\in I}c_i\sigma_i\::\:\sigma_i\in X^{(k)}\text{, }c_i\in\mathbb{Z}_2\right\}
 \]
 is called the \(k\)-th \textbf{chain group} of \(X\), where \(I\) is some index set. (The elements of \(C_k(X,\mathbb{Z}_2)\) are called \(k\)-\textbf{chains})\\
-Note, that in general we have more possible coefficient systems than \(\mathbb{Z}_2\) and \(X\) can be any topological space, but we will restrict ourselves to simplicial complexes in this thesis. Furthermore, since we only consider chain groups with \(\mathbb{Z}_2\)-coefficients in this thesis, we will use the notation \(C_k(X):=C_k(X,\mathbb{Z}_2)\).\\
+Note, that in general we have more possible coefficient systems than \(\mathbb{Z}_2\) and \(X\) can be any topological space, but we will restrict ourselves to simplicial complexes in this thesis. Furthermore, since we only consider chain groups with \(\mathbb{Z}_2\)-coefficients in this thesis, we will use the notation \(C_k(X)\coloneqq C_k(X,\mathbb{Z}_2)\).\\
 The linear map \(\partial_k:C_{k+1}(X)\rightarrow C_k(X)\) defined on a simplex \(\sigma=(v_0,\ldots,v_{k+1})\in X\) as
 \[
-\partial_k(\sigma):=\sum\limits_{i=0}^{k+1}(-1)^i(v_0,\ldots,v_{i-1},v_{i+1},\ldots,v_{k+1})
+\partial_k(\sigma)\coloneqq \sum\limits_{i=0}^{k+1}(-1)^i(v_0,\ldots,v_{i-1},v_{i+1},\ldots,v_{k+1})
 \]
 is called the \(k\)-th \textbf{boundary map}. Note, that the boundary maps have the property \(\partial_{k-1}\circ\partial_k=0\), so we always have \(\im(\partial_k)\subseteq\ker(\partial_{k-1})\).\\
 \\
 The \(k\)-th \textbf{homology group} of \(X\) is defined as
 \[
-H_k(X):=\frac{\ker(\partial_{k-1})}{\im(\partial_k)},
+H_k(X)\coloneqq \frac{\ker(\partial_{k-1})}{\im(\partial_k)},
 \]
 where the elements in \(\ker(\partial_{k-1})\) are called k-\textbf{cycles} and the elements in \(\im(\partial_k)\) are called k-\textbf{boundaries}.\\
 Dualizing this concept, we get the \(k\)-th \textbf{cochain group} of \(X\) by
 \[
-C^k(X):=C^k(X,\mathbb{Z}_2):=\left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2\text{ : }\varphi\text{ is a linear map}\right\},
+C^k(X)\coloneqq C^k(X,\mathbb{Z}_2)\coloneqq \left\{\varphi:C_k(X)\rightarrow\mathbb{Z}_2:\varphi\text{ is a linear map}\right\},
 \]
 whose elements are called \(k\)-\textbf{cochains}, the \(k\)-th \textbf{coboundary map}\\
-\(\delta^k:C^k(X)\rightarrow C^{k+1}(X)\) by \(\delta^k(\varphi):=\varphi\circ\partial_k\), and the \(k\)-th \textbf{cohomology group} of \(X\) by
+\(\delta^k:C^k(X)\rightarrow C^{k+1}(X)\) by \(\delta^k(\varphi)\coloneqq \varphi\circ\partial_k\), and the \(k\)-th \textbf{cohomology group} of \(X\) by
 \[
-H^k(X):=\frac{\ker(\delta^k)}{\im(\delta^{k-1})}
+H^k(X)\coloneqq \frac{\ker(\delta^k)}{\im(\delta^{k-1})}
 \]
 Note, that \(\delta^k\circ\delta^{k-1}=0\) holds again which implies that we have \(\im(\delta^{k-1})\subseteq\ker(\delta^k)\).\\
 Furthermore, the sequence
@@ -72,18 +72,18 @@ Let us still introduce the concept of reduced homology / cohomology. If we consi
 \[
 \cdots\xlongrightarrow{\partial_{k+1}} C_{k+1}(X)\xlongrightarrow{\partial_k} C_k(X)\xlongrightarrow{\partial_{k-1}} C_{k-1}(X)\xlongrightarrow{\partial_{k-2}}\cdots\xlongrightarrow{\partial_0} C_0(X)\xlongrightarrow{\varepsilon}\mathbb{Z}_2\longrightarrow \left\{0\right\},
 \]
-with \(\varepsilon\left(\sum\limits_{i\in I}c_i\sigma_i\right):=\sum\limits_{i\in I}c_i\) instead of the ordinary chain complex, then we call the corresponding homology groups the \textbf{reduced homology groups} of \(X\) and denote them by \(\tilde{H}_k(X)\). Note, that only the \(0\)-th reduced homology group differs from the ordinary \(0\)-th homology group, such that we have \(H_0(X)\cong\tilde{H}_0(X)\oplus\mathbb{Z}_2\) and \(H_k(X)\cong\tilde{H}_k(X)\) for all \(k\geq 1\). Dualizing this concept one can define reduced cohomology analogously.\\
+with \(\varepsilon\left(\sum\limits_{i\in I}c_i\sigma_i\right)\coloneqq \sum\limits_{i\in I}c_i\) instead of the ordinary chain complex, then we call the corresponding homology groups the \textbf{reduced homology groups} of \(X\) and denote them by \(\tilde{H}_k(X)\). Note, that only the \(0\)-th reduced homology group differs from the ordinary \(0\)-th homology group, such that we have \(H_0(X)\cong\tilde{H}_0(X)\oplus\mathbb{Z}_2\) and \(H_k(X)\cong\tilde{H}_k(X)\) for all \(k\geq 1\). Dualizing this concept one can define reduced cohomology analogously.\\
 \\
 Since, we are working with \(\mathbb{Z}_2\)-coeficients only, there is a very intuitive way to talk about chains (cochains, respectively). A \(k\)-chain is a linear combination of \(k\)-simplices with coefficients in \(\mathbb{Z}_2\), so it can just be considered as a subset of the uniform \(k\)-skeleton of the underlying simplicial complex \(X\). Even boundaries and coboundaries can be imagined very intuitively as the support of a boundary of a chain exactly consists of those simplices which are contained in an odd number of simplices from the support of the chain and the support of a coboundary exactly exists of those simplices which contain an odd number of simplices from the support of the cochain. Furthermore, there is a one-to-one correspondence between chains and cochains, so to every chain \(c\in C_k(X)\) we can associate its characteristic cochain which we denote by \(c^*\in C^k(X)\) and for every cochain \(\varphi\in C^k(X)\) there exists a unique chain \(c\in C_k(X)\), such that we have \(c^*=\varphi\).\\
 Let \(c\in C_k(X)\) be some chain and \(\varphi\in C^k(X)\) some cochain, then we denote the \textbf{evaluation} of \(\varphi\) on \(c\) as
 \[
-\left\langle\varphi,c\right\rangle:=\varphi(c)\in\mathbb{Z}_2,
+\left\langle\varphi,c\right\rangle\coloneqq \varphi(c)\in\mathbb{Z}_2,
 \]
 and the \textbf{support} of \(\varphi\) as
 \[
-\supp(\varphi):=\left\{\sigma\in X^{(k)}\text{ : }\left\langle\varphi,\sigma\right\rangle=1\right\}
+\supp(\varphi)\coloneqq \left\{\sigma\in X^{(k)}:\left\langle\varphi,\sigma\right\rangle=1\right\}
 \]
-Furthermore, we define the support of a chain \(c\in C_k(X)\) as \(\supp(c):=\supp(c^*)\).\\
+Furthermore, we define the support of a chain \(c\in C_k(X)\) as \(\supp(c)\coloneqq \supp(c^*)\).\\
 Note, that for simplicity we will omit natural inclusion maps of the type\\
 \(i:\Delta^{[n]}\longrightarrow\Delta^{[n+d]}\) for some \(n,d\in\mathbb{N}\) when adding chains / cochains, so that for \(\varphi\in C^k(\Delta^{[n]})\text{, }\psi\in C^k(\Delta^{[n+d]})\) we will write \(\varphi+\psi\in C^k(\Delta^{[n+d]})\) instead of \(i(\varphi)+\psi\in C^k(\Delta^{[n+d]})\). From the context it should always be clear what we mean.
 
@@ -91,10 +91,10 @@ Note, that for simplicity we will omit natural inclusion maps of the type\\
 \section*{Graphs \& Hypergraphs}
 
 Let \(V\) be some set and \(E\subseteq\binom{V}{2}\) (we will always use the notation\\
-\(\binom{V}{k}:=\left\{S\in 2^V\text{ : }\left|S\right|=k\right\}\) to denote the set of all subsets of cardinality \(k\) of a set \(V\)). Then the pair \(G=\left(V,E\right)\) is called a \textbf{(simple) graph}, where the elements of \(V\) are called \textbf{vertices} and the elements of \(E\) are called \textbf{edges}. Since we only consider simple graphs (undirected graphs with no loops or double edges) in this thesis, we will just call them graphs. Even though we only consider undirected graphs, we want to stick to the common notation and denote an edge by \(e=(v,w)\) instead of using set brackets \(e=\{v,w\}\). In a graph \(G=(V,E)\) two vertices \(v_1,v_2\in V\) are called \textbf{adjacent} if we have \((v_1,v_2)\in E\).\\
+\(\binom{V}{k}\coloneqq \left\{S\in 2^V:\left|S\right|=k\right\}\) to denote the set of all subsets of cardinality \(k\) of a set \(V\)). Then the pair \(G=\left(V,E\right)\) is called a \textbf{(simple) graph}, where the elements of \(V\) are called \textbf{vertices} and the elements of \(E\) are called \textbf{edges}. Since we only consider simple graphs (undirected graphs with no loops or double edges) in this thesis, we will just call them graphs. Even though we only consider undirected graphs, we want to stick to the common notation and denote an edge by \(e=(v,w)\) instead of using set brackets \(e=\{v,w\}\). In a graph \(G=(V,E)\) two vertices \(v_1,v_2\in V\) are called \textbf{adjacent} if we have \((v_1,v_2)\in E\).\\
 Note, that a graph can be considered as a \(1\)-dimensional simplicial complex, where \(V\) is the \(0\)-skeleton and \(E\) is the uniform \(1\)-skeleton.\\
 According to the terminology of simplicial complexes we call a graph \textbf{finite}, if the number of vertices is finite.\\
-A graph \(G=(V,E)\) is called \textbf{complete}, if \(E=\binom{V}{2}\) and a graph \(G'=(V',E')\) is called a \textbf{subgraph} of \(G=(V,E)\), if \(V'\subseteq V\) and \(E'\subseteq E\). Furthermore, we call a subgraph \(G'=(V',E')\) of \(G=(V,E)\) a \textbf{spanning subgraph} if \(E'\subseteq E\) and \(V'=V\). For every vertex \(v\in V\) of a graph \(G=(V,E)\) we call \(\deg_G(v):=\left|\left\{w\in V\text{ : }(v,w)\in E\right\}\right|\) the \textbf{degree} of \(v\) and \(G\) is called \(t\)-\textbf{regular} if we have \(\deg_G(v)=t\) for every \(v\in V\). Let \(S\subseteq V\) be a subset of vertices of a graph \(G=(V,E)\) then \(S\) is a \textbf{connected component} of \(G\) if for each pair of vertices \(v,v'\in V\) there exist vertices \(v_1,\ldots,v_k\in S\) such that \((v,v_1),(v_1,v_2),\ldots,(v_{k-1},v_k),(v_k,v')\in E\) and for each pair of vertices \(v\in S\) and \(w\in V\setminus S\) we have \((v,w)\notin E\). A graph is called \textbf{connected} if it has only one connected compotent.\\
+A graph \(G=(V,E)\) is called \textbf{complete}, if \(E=\binom{V}{2}\) and a graph \(G'=(V',E')\) is called a \textbf{subgraph} of \(G=(V,E)\), if \(V'\subseteq V\) and \(E'\subseteq E\). Furthermore, we call a subgraph \(G'=(V',E')\) of \(G=(V,E)\) a \textbf{spanning subgraph} if \(E'\subseteq E\) and \(V'=V\). For every vertex \(v\in V\) of a graph \(G=(V,E)\) we call \(\deg_G(v)\coloneqq \left|\left\{w\in V:(v,w)\in E\right\}\right|\) the \textbf{degree} of \(v\) and \(G\) is called \(t\)-\textbf{regular} if we have \(\deg_G(v)=t\) for every \(v\in V\). Let \(S\subseteq V\) be a subset of vertices of a graph \(G=(V,E)\) then \(S\) is a \textbf{connected component} of \(G\) if for each pair of vertices \(v,v'\in V\) there exist vertices \(v_1,\ldots,v_k\in S\) such that \((v,v_1),(v_1,v_2),\ldots,(v_{k-1},v_k),(v_k,v')\in E\) and for each pair of vertices \(v\in S\) and \(w\in V\setminus S\) we have \((v,w)\notin E\). A graph is called \textbf{connected} if it has only one connected compotent.\\
 A \textbf{hypergraph} is a pair \(H=(V,E)\), where the edge set \(E\subseteq 2^V\) can be any set of subsets of \(V\). Note, that every simplicial complex is a hypergraph, but not every hypergraph is a simplicial complex, since subsets of an edge do not have to be an edge in a hypergraph. If all edges of a hypergraph have the same cardinality \(k\), then we call it a \(k\)-\textbf{uniform hypergraph}. Analogously to the terminology of graphs, a hypergraph \(H'=(V',E')\) is called a \textbf{subhypergraph} of the hypergraph \(H=(V,E)\), if \(V'\subseteq V\) and \(E'\subseteq E\).
 
 \automark[chapter]{chapter}
