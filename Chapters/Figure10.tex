@@ -1,0 +1,43 @@
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+       thick,
+       acteur/.style={
+         circle,
+         fill=black,
+         thick,
+         inner sep=2pt,
+         minimum size=0.2cm
+       }
+     ]
+
+       \node (v) at (-3.5,0) [acteur,label=below:$4$]{};
+       \node (w1) at (-5,2) [acteur,label=left:$6$]{}; 
+       \node (w2) at (-4,2) [acteur,label=above:$6$]{}; 
+       \node (w3) at (-3,2) [acteur,label=above:$6$]{};
+       \node (w4) at (-2,2) [acteur,label=above:$6$]{};
+       \node (u2) at (-6.5,4) [acteur,label=above:$6$]{};
+  	   \node (u3) at (-5.5,4) [acteur,label=above:$6$]{};
+  	   \node (u4) at (-4.5,4) [acteur,label=above:$6$]{};
+  	   \node (u5) at (-3.5,4) [acteur,label=above:$6$]{};
+  	   \node (u1) at (-7.5,4) [acteur,label=above:$6$]{};
+  	   
+       \draw (v) -- (w1);
+       \draw (v) -- (w2);
+       \draw (v) -- (w3);
+       \draw (v) -- (w4);
+       
+       \draw (w1) -- (u1);
+       \draw (w1) -- (u2);
+       \draw (w1) -- (u3);
+       \draw (w1) -- (u4);
+       \draw (w1) -- (u5);
+       
+       \draw (u1) -- (u2);
+       \draw (u3) -- (u4);
+       
+
+\end{tikzpicture}
+  \caption{The case $f=3$}
+  \label{figure10:Figure 10}
+\end{figure}

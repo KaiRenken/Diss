@@ -5,7 +5,7 @@
 \label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 \section{Preliminaries}
-As an introducing example to the main theorem we want to prove later, consider the following "staircase shaped" Young tableau:
+As an introducing example to the main theorem we want to prove later, consider the following "staircase shaped" Young tableau, where the numbers just used to label the lines of boxes:
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}[scale=0.5, line width=0.5pt]
@@ -70,7 +70,7 @@ We have one box in the first line and one more in every following line. Now, we 
   \label{figure5:Figure 5}
 \end{figure}
 
-The interesting question which will be answered by our main theorem is, if there is always a possibility to reorder the lines of a Young tableau of the first type without having to split them to build a Young tableau of the second type, provided that the numbers of boxes are the same. The question, how many different Young tableaux of this type exist, meaning Young tableaux consisting of a fixed number of boxes such that based on any line the following line has one box more, has already been answered in \cite{5}. Namely, for every odd divisor of the number of boxes, there exists exactly one Young tableau of this type.\\
+The interesting question which will be answered by our main theorem is, if there is always a possibility to reorder the lines of a Young tableau of the first type without having to split them to build a Young tableau of the second type, provided that the numbers of boxes are the same. More formally this means that we are asking if, assuming the sum of natural numbers from \(1\) to \(n\) equals the sum of the natural numbers from \(a\) to \(b\) for some \(n,a,b\in\mathbb{N}\), it is always possible to partition the numbers from \(1\) to \(n\) such that for every \(a\leq t\leq b\) there exists a part of this partition which sums up to \(t\). The question, how many different Young tableaux of this type exist, meaning Young tableaux consisting of a fixed number of boxes such that based on any line the following line has one box more, has already been answered in \cite{5}. Namely, for every odd divisor of the number of boxes, there exists exactly one Young tableau of this type.\\
 Note, that in this chapter we set \(\mathbb{N}\) to be the set of natural numbers without \(0\) and a sequence of consecutive numbers always denotes a sequence\\
 \(n_1,\ldots,n_t\in\mathbb{N}\text{ (or }\mathbb{Z})\), such that \(n_{i+1}=n_i+1\).
 \begin{lem}\label{lemma14}

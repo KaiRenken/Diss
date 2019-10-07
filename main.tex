@@ -11,6 +11,8 @@
 \usepackage{setspace}
 \usepackage{extarrows}
 \usepackage{listings}
+\usepackage{makeidx}
+\usepackage{float}
 
 \lstset{
   basicstyle=\footnotesize,        % the size of the fonts that are used for the code
@@ -80,10 +82,10 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Cosystoles and Cheeger Constants of the Simplex} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\thesistitle{Cosystoles and Cheeger Constants\\of the Simplex} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 \supervisor{Prof. Dr. Dmitry \textsc{Feichtner-Kozlov}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
-\degree{Dr. rer. nat.} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\degree{Doktor der Naturwissenschaften (Dr. rer. nat.)} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
 \author{Kai Michael \textsc{Renken}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
@@ -91,7 +93,7 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
 \university{\href{http://www.uni-bremen.de}{Universität Bremen}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 \department{\href{http://alta.uni-bremen.de}{ALTA - Institute for Algebra, Geometry, Topology and their Applications}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{{CALTOP}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\group{{Fachbereich 3}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
 \faculty{\href{http://fb3.uni-bremen.de}{Fachbereich 3 - Mathematik und Informatik}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
@@ -99,6 +101,8 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
 \hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 }
+
+\makeindex
 
 \begin{document}
 
@@ -136,9 +140,9 @@ edge[every join]#1(\tikzchaincurrent)\fi}}}
  
 \vfill
 
-\large \textit{Dissertation zur Erlangung des Doktorgrades \degreename}\\[0.3cm] % University requirement text
-\textit{in der Forschungsgruppe}\\[0.4cm]
-\groupname\\\deptname\\[2cm] % Research group name and department name
+\large \textit{Dissertation zur Erlangung des akademischen Grades \\ \degreename}\\[0.3cm] % University requirement text
+\textit{}\\[0.4cm]
+\facname\\[2cm] % Research group name and department name
  
 \vfill
 
@@ -169,10 +173,9 @@ The central interest of this thesis is to develop tools to get hands on the cosy
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\begin{acknowledgements}
-%\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-I want to thank my family, who always encouraged me on my academic way and especially my mum Angela Schneider who always found the right cheering as well as hard words, that helped me through all the hard times that arose on this way. I also want to thank my project advisor Prof. Dr. Dmitry Feichtner-Kozlov, who introduced me to the beautiful subject of Cheeger constants as well as all my colleages at the University of Bremen who brightened every day at the office with enlightening discussions and a warm, welcoming athmosphere. Espacially, I thank Fabian Redecker, who has been a reliable companion through my whole academic and private life. And at the end, very special thanks to Hannah Söger for her love and support at all times.
-\end{acknowledgements}
+%\begin{acknowledgements}
+%I want to thank my family, who always encouraged me on my academic way and especially my mum Angela Schneider who always found the right cheering as well as hard words, that helped me through all the hard times that arose on this way. I also want to thank my project advisor Prof. Dr. Dmitry Feichtner-Kozlov, who introduced me to the beautiful subject of Cheeger constants as well as all my colleages at the University of Bremen who brightened every day at the office with enlightening discussions and a warm, welcoming athmosphere. Espacially, I thank Fabian Redecker, who has been a reliable companion through my whole academic and private life. And at the end, very special thanks to Hannah Söger for her love and support at all times.
+%\end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -250,5 +253,7 @@ Vol. 5, No. 1 (1882), pp. 251-330
 \bibitem{10} Dmitry N. Kozlov, \textit{Personal communication}, University of Bremen, 2017
 \bibitem{11} Peter Keevash, \textit{The existence of designs},\\http://people.maths.ox.ac.uk/keevash/papers/designsI.pdf, 2018
 \end{thebibliography}
+
+\printindex
 
 \end{document}  

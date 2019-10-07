@@ -419,11 +419,11 @@ Assume we have \(|E|<\left\lceil\frac{n-1}{2}\right\rceil\). Then by Theorem \re
 
 \section{The case when n is a power of 2}
 
-From \cite{1} (Corollary 4.3) we know that \(h(n)>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation\\
+From \cite{1} (Corollary 4.3) we know that \(h(\Delta^{[n]})>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation\\
 \(A_v\coloneqq \{w\in [n]:(v,w)\in E\}\), so we have \(|A_v|=\deg_G(v)\). The following useful fact was given by Kozlov (see \cite{1}, Section 6.3).
 
 \begin{lem}\label{lemma11:2}
-Let \(G=([n],E)\) be a cut-minimal graph, then we have \(h(n)=\frac{n}{3}\) if and only if for each vertex \(v\in [n]\) we have \(|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|\).
+Let \(G=([n],E)\) be a cut-minimal graph, then we have \(h(G)=\frac{n}{3}\) if and only if for each vertex \(v\in [n]\) we have \(|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|\).
 \end{lem}
 
 We can now make a statement about the possible degrees a vertex in a Cheeger graph on \(n=2^t\) vertices can attain, assuming the first Cheeger constant exactly equals \(\frac{n}{3}\).
@@ -441,26 +441,139 @@ But \(2^{t-1}-1\) is always odd, so we get:
 \end{equation}
 Now, assume there exists a \(v\in [n]\), such that \(|A_v|=2\), then by Lemma \ref{lemma11:2} we have
 \[
-|E(A_v\text{, }[n]\setminus A_v)|=|NE(A_v\text{, }[n]\setminus A_v)|=\frac{2(n-2)}{2}=n-2,
+|E(A_v\text{, }[n]\setminus A_v)|=\frac{2(n-2)}{2}=n-2,
 \]
 so there must exist a \(w\in A_v\), such that \(|A_w|\geq\frac{n-2}{2}=\frac{2^t-2}{2}=2^{t-1}-1\), but this is a contradiction to \ref{equation2}.
 \end{proof}
 \end{prop}
 
 \begin{expl}
-In \cite{1} (Section 6.3) Kozlov already used the fact, that a vertex in a graph satisfying the conditions of the preceding proposition can not attain an odd degree to prove the strict bound \(h(8)>\frac{8}{3}\). Applying the preceding slightly stronger proposition we get this result immediately, since then every vertex in a Cheeger graph \(G=([8],E)\), satisfying \(h(G)=\frac{8}{3}\) must attain degree \(0\), which obviously leads to a contradiction.
+In \cite{1} (Section 6.3) Kozlov already used the fact, that a vertex in a graph satisfying the conditions of the preceding proposition can not attain an odd degree to prove the strict bound \(h(\Delta^{[8]})>\frac{8}{3}\). Applying the preceding slightly stronger proposition we get this result immediately, since then every vertex in a Cheeger graph \(G=([8],E)\), satisfying \(h(G)=\frac{8}{3}\) must attain degree \(0\), which obviously leads to a contradiction.
 \end{expl}
 
-We can even say more about how the degrees of adjacent vertices interact in some cases as follows:
+Furthermore, we can make some statements about the graph structure of \(G=([n],E)\) according to the degrees of its vertices if \(n\) is a power of \(2\) and \(h(G)=\frac{n}{3}\).
 
-\begin{lem}
-Let \(n=2^t\) and \(G=([n],E)\) be a cut-minimal graph, such that \(h(G)=\frac{n}{3}\). Then for each vertex \(v\in [n]\), such that \(|A_v|=4\) we have \(|A_w|=\frac{n-4}{2}\) for all \(w\in A_v\).
+\begin{lem}\label{lemma362}
+Let \(n=2^t\) and \(G=([n],E)\) be a cut-minimal graph, such that \(h(G)=\frac{n}{3}\). Then for each vertex \(v\in [n]\), such that \(\deg_G(v)=4\) we have \(\deg_G(w)=\frac{n-4}{2}\) for all \(w\in A_v\) and \(|E(A_v,A_v)|=0\).
 \begin{proof}
-Let \(v\in [n]\) such that \(|A_v|=4\), then by Lemma \ref{lemma11:2} we have
+Let \(v\in [n]\) such that \(\deg_G(v)=4\), then by Lemma \ref{lemma11:2} we have
 \[
-|E(A_v,[n]\setminus A_v)|=\frac{|A_v|(n-|A_v|)}{2}=2^{t+1}-8
+|E(A_v,[n]\setminus A_v)|=\frac{|A_v|(n-|A_v|)}{2}=\frac{4(n-4)}{2},
 \]
-so there must exist a \(w\in A_v\) such that \(|A_w|\geq\frac{2^{t+1}-8}{4}=2^{t-1}-2\). Now, applying Proposition \ref{proposition321} we get that \(|A_w|=2^{t-1}-2=\frac{n-4}{2}\) holds for all \(w\in A_v\).
-
+so since \(\frac{n-4}{2}\) is the maximum possible degree of a vertex in \(G\) by Proposition \ref{proposition321} we have \(\deg_G(w)=\frac{n-4}{2}\) for all \(w\in A_v\) and \(|E(A_v,A_v)|=0\).
 \end{proof}
 \end{lem}
+
+\begin{defi}
+Let \(G=([n],E)\) be a graph, then a subset \(T=\{v,w,u\}\subseteq [n]\) is called a \textbf{triangle} if \((v,w),(v,u),(w,u)\in E\). The number of triangles in \(G\) is denoted by \(t(G)\).
+\end{defi}
+
+The following statement describes the relation among the degrees of the vertices and the number of triangles in a cut-minimal graph \(G\) attaining \(h(G)=\frac{n}{3}\).
+
+\begin{lem}\label{lemma363}
+Let \(G=([n],E)\) be a cut-minimal graph, such that \(h(G)=\frac{n}{3}\), then we have:
+\[
+t(G)=\frac{1}{4}\sum\limits_{v\in [n]}\deg_G(v)^2-\frac{n}{12}\sum\limits_{v\in [n]}\deg_G(v)
+\]
+\begin{proof}
+Rearranging the formula from Definition \ref{definition1} gives
+\[
+|T(G)|=\sum\limits_{v\in [n]}t(v),
+\]
+where for a vertex \(v\in [n]\) we set
+\[
+t(v)\coloneqq\sum\limits_{\begin{subarray}{l}e\in E \\ v\notin e\end{subarray}}\tau_e(v),
+\]
+with \(\tau_e(v)\) defined exactly as in Definition \ref{definition1}.\\
+So, applying Lemma \ref{lemma11:2} we get
+\[
+t(v)=|E|-\frac{\deg_G(v)(n-\deg_G(v))}{2}-\frac{2}{3}t_v,
+\]
+where \(t_v\) denotes the number of triangles which contain \(v\).\\
+Since every triangle contains exactly \(3\) vertices, overall we get:
+\[
+|T(G)|=\sum\limits_{v\in [n]}|E|-\frac{\deg_G(v)(n-\deg_G(v))}{2}-2t(G)
+\]
+Furthermore, we know that \(|E|=\frac{1}{2}\sum\limits_{v\in [n]}\deg_G(v)\) and by assumption we have \(h(G)=\frac{|T(G)|}{|E|}=\frac{n}{3}\), so rearranging the preceding formula gives:
+\[
+t(G)=\frac{1}{4}\sum\limits_{v\in [n]}\deg_G(v)^2-\frac{n}{12}\sum\limits_{v\in [n]}\deg_G(v)
+\]
+\end{proof}
+\end{lem}
+
+Let us now consider the case \(n=16\). This case seems to be much more complicated than the case \(n=8\), but nevertheless we can prove the strict inequality \(h(\Delta^{[16]})>\frac{16}{3}\) and hopefully use some ideas from the proof to get hands on the general conjecture that \(h(\Delta^{[n]})>\frac{n}{3}\) holds if and only if \(n\) is a power of \(2\).
+
+\begin{lem}\label{lemma364}
+Let \(G=([16],E)\) be cut-minimal, such that \(h(G)=\frac{16}{3}\) and \(v\in [16]\), such that \(\deg_G(v)=6\), then we have \(|E(A_v,A_v)|\in\{0,1,2,3\}\), for every \(e=(w,u)\in E(A_v,A_v)\) we have \(\deg_G(w)=6\) and \(\deg_G(u)=6\) and for \(e_1,e_2\in E(A_v,A_v)\) (\(e_1\neq e_2\)) we have \(e_1\cap e_2=\emptyset\).
+\begin{proof}
+By Lemma \ref{lemma11:2} we have \(|E(A_v,[16]\setminus A_v)|=30\) and by Proposition \ref{proposition321} we have \(\deg_G(w)\in\{4,6\}\) for every \(w\in A_v\), so if we have \(\deg_G(w)=6\) for all \(w\in A_v\) we get \(\sum\limits_{w\in A_v}\deg_G(w)=36\) which implies that \(|E(A_v,A_v)|=3\). By the same argument for each vertex \(w\in A_v\) such that \(\deg_G(w)=4\) there is one edge less in \(E(A_v,A_v)\) such that \(|E(A_v,A_v)|=0\) if and only if \(3\) vertices in \(A_v\) attain degree \(4\) and \(3\) vertices in \(A_v\) attaing degree \(6\), since then we have \(\sum\limits_{w\in A_v}\deg_G(w)=30\). Now assume there exists an edge \(e=(w,u)\in E(A_v,A_v)\) such that \(\deg_G(w)=4\), then \((u,v)\in E(A_w,A_w)\) which is a contradiction to Lemma \ref{lemma362}. The proof for \(\deg_G(u)=6\) is analogous. Finally denote \(A_v=\{w_1,w_2,w_3,w_4,w_5,w_6\}\) and assume \((w_1,w_2),(w_2,w_3)\in E(A_v,A_v)\). Then there exists at most one more edge in \(E(A_v,A_v)\) and by the preceding result we have \(\deg_G(w_2)=6\), so setting \(S\coloneqq\{w_1,w_3,w_4,w_5,w_6\}\) gives \(|E(S,[16]\setminus S)|\geq 28>\frac{5(16-5)}{2}\) and \(G\) is not cut-minimal anymore.
+\end{proof}
+\end{lem}
+
+Summarizing the statements of the preceding lemma just means that for a cut-minimal graph \(G=([16],E)\), such that \(h(G)=\frac{16}{3}\), for every \(v\in [16]\) with \(\deg_G(v)=6\) we have one of the following shapes (up to isomorphy) for \(A_v\), where the numbers at the vertices denote their degrees (see Figure \ref{figure8:Figure 8}).
+
+\newpage
+
+\input{Chapters/Figure8.tex}
+
+\begin{lem}\label{lemma365}
+Let \(G=([16],E)\) be a cut-minimal graph, such that \(h(G)=\frac{16}{3}\) and \(T=\{v_1,v_2,v_3\}\subset [16]\) be a triangle, then for every \(w\in [16]\setminus T\) satisfying \(\deg_G(w)\neq 0\) there exists an \(i\in\{1,2,3\}\), such that \((v_i,w)\in E\).
+\begin{proof}
+Assume there exists a \(w\in [16]\setminus T\), such that \((v_i,w)\notin E\) for all \(i=1,2,3\). First consider the case \(\deg_G(w)=6\). There must exist a \(v_i\in T\) such that \(|E(\{v_i\},A_w)|\leq 2\), since otherwise we had a second triangle sharing an edge with \(T\) which is a contradiction to Lemma \ref{lemma364}. Now, set \(S\coloneqq A_w\cup\{v_i\}\), then we have \(|E(S,[16]\setminus S)|\geq 32>\frac{7(16-7)}{2}\), since we have \(|E(A_w,A_w)|=30\) by Lemma \ref{lemma11:2} and \(\deg_G(v_i)=6\) by Lemma \ref{lemma362}. Thus, \(G\) would not be cut-minimal anymore. Now, consider the case \(\deg_G(w)=4\), then by the same argument there must exist a \(v_i\in T\) such that \(|E(\{v_i\},A_w)|\leq 1\) and setting \(S\coloneqq A_w\cup\{v_i\}\) we get \(|E(S,[16]\setminus S)|\geq 28>\frac{5(16-5)}{2}\), since \(|E(A_w,A_w)|=24\) by Lemma \ref{lemma11:2} and \(\deg_G(v_i)=6\) by Lemma \ref{lemma362}. Hence, \(G\) would not be cut-minimal anymore again.
+\end{proof}
+\end{lem}
+
+\begin{lem}\label{lemma366}
+Let \(G=([16],E)\) be a cut-minimal graph, such that \(h(G)=\frac{16}{3}\) and \(T=\{v_1,v_2,v_3\}\subset [16]\) be a triangle, then we have
+\[
+|\{v\in [16]:\deg_G(v)\neq 0\}|=15
+\]
+\begin{proof}
+By Lemma \ref{lemma362} we have \(\deg_G(v_i)=6\) for all \(i=1,2,3\) and by Lemma \ref{lemma364} the sets \(A_{v_i}\setminus T\) are pairwise disjoint, since otherwise we had a second triangle sharing an edge with \(T\), so we have \(|\{v\in [16]:\deg_G(v)\neq 0\}|\geq 15\). But since for every \(w\in [16]\setminus T\), satisfying \(\deg_G(w)\neq 0\) there exists an \(i\in\{1,2,3\}\), such that \((v_i,w)\in E\) by Lemma \ref{lemma365}, we have \(|\{v\in [16]:\deg_G(v)\neq 0\}|=15\).
+\end{proof}
+\end{lem}
+
+\begin{lem}\label{lemma367}
+Let \(G=([16],E)\) be a cut-minimal graph, such that \(h(G)=\frac{16}{3}\) and \(v,w\in [16]\), such that \(\deg_G(v)=\deg_G(w)=4\), then we have \(A_v\cap A_w\neq\emptyset\).
+\begin{proof}
+Assume we have \(A_v\cap A_w=\emptyset\) and set \(S:=A_v\cup\{w\}\). By Lemma \ref{lemma11:2} we get \(|E(S,[16]\setminus S)|=28\), but this is a contradiction to the cut-minimality of \(G\) since we have \(\left\lfloor\frac{5(16-5)}{2}\right\rfloor=27\).
+\end{proof}
+\end{lem}
+
+\begin{lem}\label{lemma368}
+Let \(G=([16],E)\) be a cut-minimal graph, such that \(h(G)=\frac{16}{3}\), \(v\in [16]\) such that \(\deg_G(v)=6\) and \(u\in [16]\setminus (\{v\}\cup A_v)\), such that \(\deg_G(u)=6\), then we have \(|E(\{u\},A_v)|\geq 3\).
+\begin{proof}
+Assume \(|E(\{u\},A_v)|\leq 2\) and set \(S\coloneqq A_v\cup\{u\}\), then by Lemma \ref{lemma11:2} we have \(|E(S,[16]\setminus S)|\geq 32\), but this is a contradiction to the cut-minimality of \(G\) since we have \(\left\lfloor\frac{7(16-7)}{2}\right\rfloor=31\).
+\end{proof}
+\end{lem}
+
+\begin{thm}
+\(h(\Delta^{[16]})>\frac{16}{3}\)
+\begin{proof}
+Assume \(G=([16],E)\) is a cut-minimal graph, such that \(h(G)=\frac{16}{3}\). By Proposition \ref{proposition321} we have \(\deg_G(v)\in\{0,4,6\}\) for every vertex \(v\in [16]\). Then Lemma \ref{lemma363} gives the relation
+
+\begin{equation}\label{equation361}
+t(G)=s-\frac{4}{3}f,
+\end{equation}
+
+where \(s\) denotes the number of vertices attaining degree \(6\) and \(f\) denotes the number of vertices attaining degree \(4\) in \(G\). It follows that \(f\) has to be a multiple of \(3\) and \(s\geq\frac{4}{3}f\), since \(t(G)\) is a positive integer. Since the sum of \(s\) and \(f\) can not exceed \(16\) we will depart the proof into the possible cases \(f=0\), \(f=3\) and \(f=6\).\\
+Let us begin with the case \(f=0\). Let \(v\in [16]\), such that \(\deg_G(v)=6\) and denote \(A_v=\{w_1,w_2,w_3,w_4,w_5,w_6\}\) such that \((w_1,w_2),(w_3,w_4),(w_5,w_6)\in E(A_v,A_v)\) according to Lemma \ref{lemma364}. Now, by Lemma \ref{lemma364} we have \(A_{w_1}=\{v,w_2,u_1,u_2,u_3,u_4\}\) such that \(u_1,u_2,u_3,u_4\notin A_v\cup \{v\}\) and \((v,w_2),(u_1,u_2),(u_3,u_4)\in E(A_{w_1},A_{w_1})\). Setting \(W_1\coloneqq\{w_3,w_4\}\) and \(W_2\coloneqq\{w_5,w_6\}\) we have \(|E(\{u_i\},W_1)|=1\) and\\
+\(|E(\{u_i\},W_2)|=1\) for all \(i=1,2,3,4\) by Lemma \ref{lemma365} and \ref{lemma364}. Analogously, setting \(U_1\coloneqq\{u_1,u_2\}\) and \(U_2\coloneqq\{u_3,u_4\}\) we have \(|E(\{w_i\},U_1)|=1\) and \(|E(\{w_i\},U_2)|=1\) for all \(i=3,4,5,6\) by Lemma \ref{lemma365} and \ref{lemma364}. Thus, there must exist a set \(S=\{w_2,w_i,w_j,u_k,u_l\}\) with \(w_i\in W_1\), \(w_j\in W_2\), \(u_k\in U_1\) and \(u_l\in U_2\), such that \(|E(S,S)|\leq 1\) which implies that \(|E(S,[16]\setminus S)|\geq 28\), so \(G\) is not cut-minimal anymore, since we have \(\left\lfloor\frac{5(16-5)}{2}\right\rfloor=27\). For more clarity Figure \ref{figure9:Figure 9} gives a sketch about the relevant parts of the graph we constructed within the proof.\\
+
+\input{Chapters/Figure9.tex}
+
+Now, consider the case \(f=3\). Let \(v\in [16]\), such that \(\deg_G(v)=4\) and denote \(A_v=\{w_1,w_2,w_3,w_4\}\). By Lemma \ref{lemma362} we have \(\deg_G(w_i)=6\) for all \(i=1,2,3,4\), so by Lemma \ref{lemma362} and \ref{lemma364} we get \(|\{w\in [16]:\deg_G(w)=6\}|>4\). Applying Equation \ref{equation361} there exists a triangle in \(G\), so by Lemma \ref{lemma366} we have\\
+\(|\{v\in [16]:\deg_G(v)\neq 0\}|=15\) and we can apply Equation \ref{equation361} again. Thus, we get \(t(G)=8\). By Lemma \ref{lemma365} and \ref{lemma362} for every triangle \(T\subset [16]\) we have \(|T\cap A_v|=1\), but by Lemma \ref{lemma364} every vertex in \(A_v\) can be contained in at most two triangles, so by \(t(G)=8\) every vertex in \(A_v\) is contained in exactly two triangles, which implies that \(\deg_G(u)=6\) for all \(u\in A_{w_i}\setminus\{v\}\) and all \(i=1,2,3,4\) by Lemma \ref{lemma364}. Now, let \(v'\in [16]\) be another vertex satisfying \(\deg_G(v')=4\), which exists by the assumption \(f=3\). By the preceding result, we have \(A_v\cap A_{v'}=\emptyset\), which is a contradiction to Lemma \ref{lemma367}. Figure \ref{figure10:Figure 10} gives a sketch about the relevant parts of the graph we constructed within the proof again, where the numbers at the vertices denote their degrees.\\
+
+\input{Chapters/Figure10.tex}
+
+Finally, consider the case \(f=6\). According to Equation \ref{equation361} and Lemma \ref{lemma366} we have \(t(G)=0\) or \(t(G)=1\). Let us first consider the case \(t(G)=0\), so let \(v\in [16]\) such that \(\deg_G(v)=6\). Now let \(U=\{u_1,u_2,u_3\}\), such that \(\deg_G(u_i)=4\) and \(U\cap A_v=\emptyset\). Then for every \(w\in A_v\), such that \(\deg_G(w)=6\) we have \(|E(\{w\},U)|=3\) by Lemma \ref{lemma364}. Choose a \(u\in U\), then by Lemma \ref{lemma362} there exists a \(v'\in [16]\setminus (\{v\}\cup A_v\cup U)\), such that \(u\) is adjacent to \(v'\) and \(\deg_G(v')=6\). By Lemma \ref{lemma368} we have \(|E(\{v'\},A_v)|\geq 3\) but \(E(\{v'\},\{w\in A_v:\deg_G(w)=6\})=\emptyset\) since otherwise we had a triangle in \(G\) containing a vertex of degree \(4\) which is a contradiction to Lemma \ref{lemma362}. Thus, we have \(|\{w'\in A_{v'}:\deg_G(w')=4\}|\geq 4\) which is a contradiction to Lemma \ref{lemma364}.\\
+
+\input{Chapters/Figure11.tex}
+
+The case \(t(G)=1\) is almost similar to the preceding case, so let \(v\in [16]\), such that \(\deg_G(v)=6\) and \(|\{w\in A_v:\deg_G(w)=4\}|=3\). According to Lemma \ref{lemma364} such a \(v\) must still exist, since we only have one triangle in \(G\). Again let \(U=\{u_1,u_2,u_3\}\), such that \(\deg_G(u_i)=4\) and \(U\cap A_v=\emptyset\). Then by Lemma \ref{lemma364} again there exists a \(u\in U\) such that \(u\) is adjacent to every \(w\in A_v\) which satisfies \(\deg_G(w)=6\), since at most one of the \(w\in A_v\) which satisfy \(\deg_G(w)=6\) can be contained in a triangle. Now by Lemma \ref{lemma362} there exists a \(v'\in [16]\setminus (\{v\}\cup A_v\cup U)\), such that \(u\) is adjacent to \(v'\) and \(\deg_G(v')=6\) and the rest of the proof is analogous to the preceding case.
+
+\input{Chapters/Figure12.tex}
+
+\end{proof}
+\end{thm}
