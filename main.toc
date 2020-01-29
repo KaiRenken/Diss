@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \contentsline {chapter}{Preliminaries}{1}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.8}
 \contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.11}
@@ -24,6 +24,5 @@
 \contentsline {section}{\numberline {5.4}The shape of Cheeger cosystoles in general}{47}{section.114}
 \contentsline {section}{\numberline {5.5}Cheeger constants for other complexes}{47}{section.115}
 \contentsline {section}{\numberline {5.6}Probabilistic approaches}{48}{section.116}
-\contentsline {chapter}{\numberline {A}Source code for the Cheeger Tool Box (CTB)}{I}{appendix.117}
-\contentsline {chapter}{\numberline {B}Source code for Partitioning Consecutive Numbers (PCN)}{XIII}{appendix.683}
-\contentsline {chapter}{Bibliography}{XXI}{appendix*.1032}
+\contentsline {chapter}{\numberline {A}Source code for Partitioning Consecutive Numbers (PCN)}{I}{appendix.117}
+\contentsline {chapter}{Bibliography}{IX}{appendix*.466}
