@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \contentsline {chapter}{Preliminaries}{1}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.8}
 \contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.11}
