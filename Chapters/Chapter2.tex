@@ -4,24 +4,24 @@
 
 \label{Chapter2}
 
-When we want to determine whether a cochain is a cosystole or not or to determine the cosystolic norm of a cochain by now we only have the original definition of cosystolicity, which does not seem to be very handy. In this chapter we want to develop tools to get hands on this problem, especially by estimating the cosystolic norm in various situations and investigating the structure, how cosystoles in certain simplicial complexes are arranged. Furthermore, at the end of this chaper we will develop some interesting statements about the combinatorial structure of Cheeger cosystoles.
+When we want to determine whether a cochain is a cosystole or not or to determine the cosystolic norm of a cochain by now we only have the original definition of cosystolicity, which does not seem to be very handy. In this chapter we want to develop tools to get hands on this problem, especially by estimating the cosystolic norm in various situations and investigating the structure, how cosystoles in certain simplicial complexes are arranged.
 
-\section{Piercing numbers and the cycle detection theorem}
+\section{Hitting numbers and the cycle detection theorem}
 
-The following definition is adopted from \cite{6} (Definition 2.1).
+In this section we want to study the (by now) most promising approach to get hands on the cosystolic norm by applying the well studied concept of hitting sets. The following definition is adopted from \cite{6} (Definition 2.1). Note, that in the referenced paper Kozlov and Meshulam used the denotation "piercing set" and "piercing number" instead of hitting set and hitting number, which both refer to the same concepts.
 
 \begin{defi}
-Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of finite subsets of \(V\). A subset \(P\subseteq V\) is called a \textbf{piercing set} of \(\mathcal{F}\) if we have \(P\cap F\neq\emptyset\) for all \(F\in\mathcal{F}\). The minimal cardinality which a piercing set of \(\mathcal{F}\) can attain is called the \textbf{piercing number} of \(\mathcal{F}\), denoted by \(\tau(\mathcal{F})\). For \(v\in V\) and \(F\in\mathcal{F}\) we say that \(F\) \textbf{is pierced by} \(v\), if \(v\in F\).
+Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\). A subset \(P\subseteq V\) is called a \textbf{hitting set} of \(\mathcal{F}\) if we have \(P\cap F\neq\emptyset\) for all \(F\in\mathcal{F}\). The minimal cardinality which a hitting set of \(\mathcal{F}\) can attain is called the \textbf{hitting number} of \(\mathcal{F}\), denoted by \(\tau(\mathcal{F})\). For \(v\in V\) and \(F\in\mathcal{F}\) we say that \(F\) \textbf{is hit by} \(v\), if \(v\in F\).
 \end{defi}
 
 \begin{expl}\label{example1}
-Let \(V\coloneqq \left\{1,2,3,4,5\right\}\) and \(\mathcal{F}\coloneqq \left\{\{1,2\}\{2,3,4\},\{1,5\},\{2,4,5\}\right\}\), then we have \(\tau(\mathcal{F})=2\), since for example \(P\coloneqq \left\{2,5\right\}\) is a minimal piercing set of \(\mathcal{F}\).
+Let \(V\coloneqq \left\{1,2,3,4,5\right\}\) and \(\mathcal{F}\coloneqq \left\{\{1,2\}\{2,3,4\},\{1,5\},\{2,4,5\}\right\}\), then we have \(\tau(\mathcal{F})=2\), since for example \(P\coloneqq \left\{2,5\right\}\) is a minimal hitting set of \(\mathcal{F}\).
 \end{expl}
 
-Later we will talk about piercing numbers and piercing sets of families of \(k\)-chains, which we define as follows:
+Later we will talk about hitting numbers and hitting sets of families of \(k\)-chains, which we define as follows:
 
 \begin{defi}
-Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{piercing sets} and the \textbf{piercing number} of \(\mathcal{F}\) are defined as the piercing sets and the piercing number of the family \(\left\{\supp(F):F\in\mathcal{F}\right\}\).
+Let \(X\) be a simplicial complex and \(\mathcal{F}\subseteq C_k(X)\) a family of \(k\)-chains. The \textbf{hitting sets} and the \textbf{hitting number} of \(\mathcal{F}\) are defined as the hitting sets and the hitting number of the family \(\left\{\supp(F):F\in\mathcal{F}\right\}\).
 \end{defi}
 
 In \cite{6} (Theorem 2.2) Kozlov stated the following useful method to bound the cosystolic norm of a cochain.
@@ -39,7 +39,7 @@ Let \(\psi\in C^{k-1}(X)\), then for any \(1\leq i\leq t\) we have:
 &=\langle\varphi,\alpha_i\rangle+\langle\psi,0\rangle\notag\\
 &=\langle\varphi,\alpha_i\rangle=1\notag
 \end{align}
-This means that we have \(\supp(\varphi+\delta^{k-1}(\psi))\cap \supp(\alpha_i)\neq\emptyset\) for all \(1\leq i\leq t\), so \(\supp(\varphi+\delta^{k-1}(\psi))\) is a piercing set of \(\mathcal{F}\) and we get:
+This means that we have \(\supp(\varphi+\delta^{k-1}(\psi))\cap \supp(\alpha_i)\neq\emptyset\) for all \(1\leq i\leq t\), so \(\supp(\varphi+\delta^{k-1}(\psi))\) is a hitting set of \(\mathcal{F}\) and we get:
 \[
 \|\varphi+\delta^{k-1}(\psi)\|=|\supp(\varphi+\delta^{k-1}(\psi))|\geq\tau(\mathcal{F})
 \]
@@ -70,13 +70,13 @@ Consider the cochain
 &\{1,3,5\}+\{1,3,6\}+\{1,4,5\}+\{1,4,6\}+\\
 &\{2,3,5\}+\{2,3,6\}+\{2,4,5\}+\{2,4,6\}\}\subset C_2(\Delta^{[6]})
 \end{align*}
-It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=4\), so we get \(\|\varphi\|_{csy}\geq 4\) by the cycle detection theorem. We can immediately see, that \(\varphi\) is a cosystole, either by the fact, that we always have \(\|\varphi\|_{csy}\leq \|\varphi\|\), so in our case we have \(\|\varphi\|=4=\|\varphi\|_{csy}\), or by using the preceding corollary, since the supports of the cycles in \(\mathcal{F}\) are pairwise disjoint.\\
-Note, that \(\varphi\) is even a Cheeger cosystole, since we have \(\|\varphi\|_{exp}=\frac{6}{4}\), so we know that for the case \(n=6\) and \(k=2\) the lower bound of the estimate \ref{equation1} is archieved, even though \(k+2\) does not divide \(n\).
+It is easy to check that we have \(\left\langle\varphi,\alpha\right\rangle=1\) for all \(\alpha\in\mathcal{F}\) and \(\tau(\mathcal{F})=4\), so we get \(\|\varphi\|_{csy}\geq 4\) by the cycle detection theorem. We can immediately see, that \(\varphi\) is a cosystole, either by the fact that we always have \(\|\varphi\|_{csy}\leq \|\varphi\|\), so in our case we have \(\|\varphi\|=4=\|\varphi\|_{csy}\), or by using the preceding corollary, since the supports of the cycles in \(\mathcal{F}\) are pairwise disjoint.\\
+Note, that \(\varphi\) is even a Cheeger cosystole, since we have \(\|\varphi\|_{exp}=\frac{6}{4}\), so we know that for the example \(n=6\) and \(k=2\) the lower bound of the estimate \ref{equation1} is archieved, even though \(k+2\) does not divide \(n\).
 \end{expl}
 
 \input{Chapters/Figure1.tex}
 
-To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles, such that they have a large piercing number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
+To get the best possible results using the cycle detection theorem, the challenge is now for a certain cochain \(\varphi\) to find families of cycles, such that they have a large hitting number and \(\varphi\) evaluates to \(1\) on every cycle. The following construction seems to be suited well to get hands on this problem.\\
 For a simplicial complex \(X\) and a cochain \(\varphi\in C^k(X)\) we define the following set of cycles:
 \[
 \mathcal{T}_{\varphi}\coloneqq \left\{\partial_k(\sigma):\sigma\in \supp(\delta^k(\varphi))\right\}
@@ -107,13 +107,13 @@ Let \(\varphi\in C^2(\Delta^{[6]})\) be the cosystole from Example \ref{example1
 \end{align*}
 It is easy to check that we get \(\tau(\mathcal{T}_{\varphi})=3\), but as shown in Example \ref{example1} we have \(\|\varphi\|_{csy}=4\).
 \end{expl}
-In particular we see that we can just remove the simplex \(\{2,4,6\}\) from the support of \(\varphi\) is the preceding example and the remaining simplices still form a piercing set of \(\mathcal{T}_{\varphi}\).\\
-Nevertheless, we conjecture that for the \(1\)-dimensional case the equality holds, since removing a simplex from the support of a \(1\)-cosystole \(\varphi\) can never result in a piercing set of \(\mathcal{T}_{\varphi}\) as the following lemma shows.
+In particular we see that we can just remove the simplex \(\{2,4,6\}\) from the support of \(\varphi\) in the preceding example and the remaining simplices still form a hitting set of \(\mathcal{T}_{\varphi}\).\\
+Nevertheless, we conjecture that for the \(1\)-dimensional case the equality holds, since removing a simplex from the support of a \(1\)-cosystole \(\varphi\) can never result in a hitting set of \(\mathcal{T}_{\varphi}\) as the following lemma shows.
 
 \begin{lem}\label{lemma211}
-Let \(\varphi\in C^1(\Delta^{[n]})\) be a cosystole, \(\sigma\in\supp(\varphi)\) and \(P\coloneqq \supp(\varphi)\setminus\{\sigma\}\). Then \(P\) is not a piercing set of \(\mathcal{T}_{\varphi}\).
+Let \(\varphi\in C^1(\Delta^{[n]})\) be a cosystole, \(\sigma\in\supp(\varphi)\) and \(P\coloneqq \supp(\varphi)\setminus\{\sigma\}\). Then \(P\) is not a hitting set of \(\mathcal{T}_{\varphi}\).
 \begin{proof}
-Assume \(P\) is a piercing set of \(\mathcal{T}_{\varphi}\), and denote \(\sigma=\{v_1,v_2\}\), then for all \(v\in[n]\) there exists a \(w\in\sigma\) such that \(\{v,w\}\in\supp(\varphi)\), since otherwise we would have \(\partial_1((\sigma,v))\in\mathcal{T}_{\varphi}\), but \(\supp(\partial_1((\sigma,v)))\cap P=\emptyset\), so \(P\) would not be a piercing set of \(\mathcal{T}_{\varphi}\). It follows that there exists a \(w\in\sigma\), such that
+Assume \(P\) is a hitting set of \(\mathcal{T}_{\varphi}\), and denote \(\sigma=\{v_1,v_2\}\), then for all \(v\in[n]\) there exists a \(w\in\sigma\) such that \(\{v,w\}\in\supp(\varphi)\), since otherwise we would have \(\partial_1((\sigma,v))\in\mathcal{T}_{\varphi}\), but \(\supp(\partial_1((\sigma,v)))\cap P=\emptyset\), so \(P\) would not be a hitting set of \(\mathcal{T}_{\varphi}\). It follows that there exists a \(w\in\sigma\), such that
 \[
 |\supp(\delta^0(w^*))\cap\supp(\varphi)|\geq\left\lceil\frac{n-2}{2}\right\rceil+1=\left\lceil\frac{n-2}{2}+1\right\rceil=\left\lceil\frac{n}{2}\right\rceil>\left\lfloor\frac{n-1}{2}\right\rfloor,
 \]
@@ -122,72 +122,45 @@ so \(\varphi\) is not cosystolic, since for a \(1\)-cosystole \(\varphi\) by def
 \end{proof}
 \end{lem}
 
-The preceding lemma means that assuming there exists a cosystole \(\varphi\in C^1(\Delta^{[n]})\), such that we can find a piercing set for \(\mathcal{T}_{\varphi}\) which is smaller than \(\|\varphi\|\), we will not only need to remove simplices from the support of \(\varphi\) but also add simplices to it to construct this piercing set. But the following statement says that we will need to exchange at least three simplices by two in the previously described way.
+The preceding lemma means that assuming there exists a cosystole \(\varphi\in C^1(\Delta^{[n]})\), such that we can find a hitting set for \(\mathcal{T}_{\varphi}\) which is smaller than \(\|\varphi\|\), we will not only need to remove simplices from the support of \(\varphi\) but also add simplices to it to construct this hitting set. But the following statement says that we will need to exchange at least three simplices by two in the previously described way.
 
 \begin{lem}
 Let \(\varphi\in C^1(\Delta^{[n]})\) be a cosystole and \(\psi\in C^1(\Delta^{[n]})\) such that we have\\
-\(\|\psi\|=3\) and \(|\supp(\psi)\cap\supp(\varphi)|=2\). Then \(P\coloneqq\supp(\varphi + \psi)\) is not a piercing set of \(\mathcal{T}_{\varphi}\).
+\(\|\psi\|=3\) and \(|\supp(\psi)\cap\supp(\varphi)|=2\). Then \(P\coloneqq\supp(\varphi + \psi)\) is not a hitting set of \(\mathcal{T}_{\varphi}\).
 \begin{proof}
-Let \(\{\sigma_1,\sigma_2\}=\supp(\psi)\cap\supp(\varphi)\) and let \(\sigma_3\) be the remaining simplex in \(\supp(\psi)\) which is not contained in the support of \(\varphi\). From the proof of Lemma \ref{lemma211} we see that if \(\varphi\) is a cosystole there exist simplices \(\sigma'_1,\sigma'_2\in \supp(\delta^1(\varphi))\) such that \(\supp(\partial_1(\sigma'_1))\cap\supp(\varphi)=\sigma_1\) and \(\supp(\partial_1(\sigma'_2))\cap\supp(\varphi)=\sigma_2\) holds. So, assuming \(P\) is a piercing set of \(\mathcal{T}_{\varphi}\) we need to have \(\sigma_3\in\supp(\sigma'_1)\cap\supp(\sigma'_2)\). First, consider the case \(\sigma_1\cap\sigma_2=\emptyset\), then we have the situation described in Figure \ref{} 
+Let \(\{\sigma_1,\sigma_2\}=\supp(\psi)\cap\supp(\varphi)\) and let \(\sigma_3\) be the remaining simplex in \(\supp(\psi)\) which is not contained in the support of \(\varphi\). From the proof of Lemma \ref{lemma211} we see that if \(\varphi\) is a cosystole there exist simplices \(\sigma'_1,\sigma'_2\in \supp(\delta^1(\varphi))\) such that \(\supp(\partial_1(\sigma'_1))\cap\supp(\varphi)=\sigma_1\) and \(\supp(\partial_1(\sigma'_2))\cap\supp(\varphi)=\sigma_2\) holds. So, assuming \(P\) is a hitting set of \(\mathcal{T}_{\varphi}\) we need to have \(\sigma_3\in\supp(\sigma'_1)\cap\supp(\sigma'_2)\). First, consider the case \(\sigma_1\cap\sigma_2=\emptyset\), then we have the situation described in Figure \ref{} 
 \end{proof}
 \end{lem}
 
-It seems to be very difficult to determine the piercing number of \(\mathcal{T}_{\varphi}\) explicitely, but the concept of piercing complexes might be useful on the way to solve this problem.
+It seems to be very difficult to determine the hitting number of \(\mathcal{T}_{\varphi}\) explicitely, but the concept of hitting complexes might be useful on the way to solve this problem.
 
-\section{Piercing complexes}
+\section{Hitting complexes}
 
-Let \(V\) be some set, \(\mathcal{F}\subset 2^V\) a family of subsets and \(P\) a piercing set of \(\mathcal{F}\). Then for any \(v\in V\) obviously \(P\cup\{v\}\) is also a piercing set of \(\mathcal{F}\). We can use this fact to construct a simplicial complex, which contains all information about the piercing sets for a given family of sets as follows:
+Let \(V\) be some set, \(\mathcal{F}\subset 2^V\) a family of subsets and \(P\) a hitting set of \(\mathcal{F}\). Then for any \(v\in V\) obviously \(P\cup\{v\}\) is also a hitting set of \(\mathcal{F}\). We can use this fact to construct a simplicial complex, which contains all information about the hitting sets for a given family of sets as follows:
 
 \begin{defi}
-Let \(V\) be a set and \(\mathcal{F}\subset 2^V\) a family of subsets. Then the \textbf{piercing complex} of \(\mathcal{F}\) is defined as:
+Let \(V\) be a set and \(\mathcal{F}\subset 2^V\) a family of subsets. Then the \textbf{hitting complex} of \(\mathcal{F}\) is defined as:
 \[
 \Delta_{\mathcal{F}}\coloneqq \left\{V'\subseteq V:(V\setminus V')\cap F\neq\emptyset,\text{ for all }F\in\mathcal{F}\right\}
 \]
 \end{defi}
-So, \(\Delta_{\mathcal{F}}\) consists of all subsets of \(V\), such that their complements in \(V\) are piercing sets of \(\mathcal{F}\) and indeed, \(\Delta_{\mathcal{F}}\) defines a simplicial complex, since deleting an element from the complement of a piercing set is equivalent to adding an element to a piercing set, which preserves the condition of being a piercing set.\\
-Note, that if \(\mathcal{F}\) is a family of \(k\)-chains, the piercing complex \(\Delta_{\mathcal{F}}\) is just defined as the piercing complex of the family \(\{\supp(F):F\in\mathcal{F}\}\).
+So, \(\Delta_{\mathcal{F}}\) consists of all subsets of \(V\), such that their complements in \(V\) are hitting sets of \(\mathcal{F}\) and indeed, \(\Delta_{\mathcal{F}}\) defines a simplicial complex, since deleting an element from the complement of a hitting set is equivalent to adding an element to a hitting set, which preserves the condition of being a hitting set.\\
+Note, that if \(\mathcal{F}\) is a family of \(k\)-chains, the hitting complex \(\Delta_{\mathcal{F}}\) is just defined as the hitting complex of the family \(\{\supp(F):F\in\mathcal{F}\}\).
 
 \begin{expl}
-Let \(V\) be an arbitrary set and \(\mathcal{F}\coloneqq 2^V\) its power set. Then the piercing complex \(\Delta_{\mathcal{F}}\) is empty, since even the complement of a single vertex \(v\in V\) is not a piercing set of \(\mathcal{F}\). More generally for \(\mathcal{F}\subseteq 2^V\) we have that \(\Delta_{\mathcal{F}}\) is empty if and only if \(\left\{v\right\}\in\mathcal{F}\), for all \(v\in V\).\\
-On the other hand \(\Delta_{\mathcal{F}}\) is a complete simplex on \(\left|V\right|\) vertices if and only if \(\mathcal{F}\) is empty, since only in this case even the empty set is a piercing set of \(\mathcal{F}\).
+Let \(V\) be an arbitrary set and \(\mathcal{F}\coloneqq 2^V\) its power set. Then the hitting complex \(\Delta_{\mathcal{F}}\) is empty, since even the complement of a single vertex \(v\in V\) is not a hitting set of \(\mathcal{F}\). More generally for \(\mathcal{F}\subseteq 2^V\) we have that \(\Delta_{\mathcal{F}}\) is empty if and only if \(\left\{v\right\}\in\mathcal{F}\), for all \(v\in V\). On the other hand \(\Delta_{\mathcal{F}}\) is a complete simplex on \(\left|V\right|\) vertices if and only if \(\mathcal{F}\) is empty, since only in this case even the empty set is a hitting set of \(\mathcal{F}\).
 \end{expl}
 
-We can now reformulate the question of determining the piercing number \(\tau(\mathcal{F})\) by asking for the dimension of \(\Delta_{\mathcal{F}}\), since we have the equality:
+We can now reformulate the question of determining the hitting number \(\tau(\mathcal{F})\) by asking for the dimension of \(\Delta_{\mathcal{F}}\), since we have the equality:
 \[
 \tau(\mathcal{F})=\left| V\right|-\dim(\Delta_{\mathcal{F}})-1
 \]
-Since our main interest in this section will be to investigate the piercing complex of \(\mathcal{T}_{\varphi}\) for a given cochain \(\varphi\in C^k(X)\) (where \(X\) is some simplicial complex) we will use a shorter notation for this piercing complex and set \(\Delta_{\varphi}\coloneqq \Delta_{\mathcal{T}_{\varphi}}\). Then the preceding formula turns to:
+Since our main interest in this section will be to investigate the hitting complex of \(\mathcal{T}_{\varphi}\) for a given cochain \(\varphi\in C^k(X)\) (where \(X\) is some simplicial complex) we will use a shorter notation for this hitting complex and set \(\Delta_{\varphi}\coloneqq \Delta_{\mathcal{T}_{\varphi}}\). Then the preceding formula turns to:
 \[
 \tau(\mathcal{T}_{\varphi})=|X^{(k)}|-\dim(\Delta_{\varphi})-1
 \]
 
-% TO BE CHECKED !!!
-%
-%      |
-%      |
-%      v
-
-%The first interesting observation about \(\Delta_{\varphi}\) is, that its top dimensional homology group vanishes in almost all cases.
-
-%\begin{thm}
-%Let \(n\geq k+3\) and \(\varphi\in C^k(X)\), then we have:
-%\[
-%H_{\dim(\Delta_{\varphi})}(\Delta_{\varphi})\cong 0
-%\]
-%\begin{proof}
-%Let \(\sigma\in\Delta_{\varphi}\) be a maximal simplex (i.e. for all \(v\in X^{(k)}\setminus\sigma\), we have \(\sigma\cup\{v\}\notin\Delta_{\varphi}\)). Then \(X^{(k)}\setminus\sigma\) is a minimal piercing set of \(\mathcal{T}_{\varphi}\) (i.e. for all \(v\in X^{(k)}\setminus\sigma\) we have that \(X^{(k)}\setminus (\sigma\cup\{v\})\) is not a piercing set of \(\mathcal{T}_{\varphi}\). Now, let \(v\in\sigma\) and \(w\in X^{(k)}\setminus\sigma\), such that \((\sigma\setminus\{v\})\cup\{w\}\in\Delta_{\varphi}\), and let
-%\[
-%P_w\coloneqq \left\{c\in\mathcal{T}_{\varphi}:w\in c\text{, }w'\notin c\text{ for all }w'\in X^{(k)}\setminus\sigma\text{, }w'\neq w\right\}
-%\]
-%be the set of cycles from \(\mathcal{T}_{\varphi}\), that were pierced by \(w\) but by no other elements from \(X^{(k)}\setminus\sigma\). Then \(\{v\}\) must be a piercing set of \(P_w\) but since \(v\) and \(w\) are distinct, we get \(\left|P_w\right|=1\).
-%\end{proof}
-%\end{thm}
-
-%      ^
-%      |
-%      |
-%      
-% TO BE CHECKED !!!
+We will now investigate the homology of hitting complexes \(\Delta_{\varphi}\) with the intention to gain a better insight into the structure of the hitting sets of \(\mathcal{T}_{\varphi}\).
 
 \begin{thm}
 Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), then we have:
@@ -195,7 +168,7 @@ Let \(X\) be a simplicial complex and \(\varphi\in C^k(X)\), then we have:
 \tilde{H}_i(\Delta_{\varphi})\cong\{0\}\quad\text{for all }i\leq k-1
 \]
 \begin{proof}
-Let \(\varphi\in C^k(X)\) be chosen arbitrarily. Then for all \(\sigma\in \supp(\delta^k(\varphi))\) we have \(\left|\supp(\partial_k(\sigma))\right|=k+2\). Therefore, for all \(S\subset X^{(k)}\) such that \(\left|S\right|\leq k+1\) we have that \(X^{(k)}\setminus S\) is a piercing set of \(\mathcal{T}_{\varphi}\). This just means, that \(\Delta_{\varphi}\) has a full \(k\)-skeleton, so we immediately get \(\tilde{H}_i(\Delta_{\varphi})\cong 0\) for all \(i\leq k-1\).
+Let \(\varphi\in C^k(X)\) be chosen arbitrarily. Then for all \(\sigma\in \supp(\delta^k(\varphi))\) we have \(\left|\supp(\partial_k(\sigma))\right|=k+2\). Therefore, for all \(S\subset X^{(k)}\) such that \(\left|S\right|\leq k+1\) we have that \(X^{(k)}\setminus S\) is a hitting set of \(\mathcal{T}_{\varphi}\). This just means, that \(\Delta_{\varphi}\) has a full \(k\)-skeleton, so we immediately get \(\tilde{H}_i(\Delta_{\varphi})\cong\{0\}\) for all \(i\leq k-1\).
 \end{proof}
 \end{thm}
 
@@ -219,7 +192,7 @@ Let \(X\) be a simplicial complex on \(n\) vertices and \(X^{\lor}\) its Alexand
 \begin{defi}
 Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\). Then the simplicial complex
 \[
-\Delta\left[\mathcal{F}\right]\coloneqq \left\{\sigma\subseteq V:\text{there exists an }F\in\mathcal{F}\text{ such that }\sigma\subseteq F\right\}
+\Delta\left[\mathcal{F}\right]\coloneqq \left\{\sigma\subseteq F:F\in\mathcal{F}\right\}
 \]
 is called the \textbf{induced complex} of \(\mathcal{F}\). 
 \end{defi}
@@ -239,7 +212,7 @@ We have:
   \Longleftrightarrow \quad & \text{There exists no } F\in\bar{\mathcal{F}}\text{ such that }V\setminus\sigma\subseteq F \\
   \Longleftrightarrow \quad & \text{There exists no } F\in\bar{\mathcal{F}}\text{ such that }(V\setminus\sigma)\cap(V\setminus F)=\emptyset \\
   \Longleftrightarrow \quad & \text{There exists no } F'\in\mathcal{F}\text{ such that }(V\setminus\sigma)\cap F'=\emptyset \\
-  \Longleftrightarrow \quad & V\setminus\sigma\text{ is a piercing set of }\mathcal{F} \\
+  \Longleftrightarrow \quad & V\setminus\sigma\text{ is a hitting set of }\mathcal{F} \\
   \Longleftrightarrow \quad & \sigma\in\Delta_{\mathcal{F}}
  \end{align*}
 \end{proof}
@@ -321,7 +294,7 @@ Let \(k\) be odd, then we have:
 C_{max}(\Delta^{[n]},k)\geq \left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil
 \]
 \begin{proof}
-Since any simplex \(\sigma\in\binom{[n]}{k+1}\) intersects the support of exactly \(n-k-1\) cycles from \(\mathcal{T}_n^k\), any piercing set of \(\mathcal{T}_n^k\) must contain at least \(\left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil\) elements and by Proposition \ref{proposition1a} and Remark \ref{remark2} we are done.
+Since any simplex \(\sigma\in\binom{[n]}{k+1}\) intersects the support of exactly \(n-k-1\) cycles from \(\mathcal{T}_n^k\), any hitting set of \(\mathcal{T}_n^k\) must contain at least \(\left\lceil\frac{\binom{n}{k+2}}{n-k-1}\right\rceil\) elements and by Proposition \ref{proposition1a} and Remark \ref{remark2} we are done.
 \end{proof}
 \end{prop}
 
@@ -338,12 +311,12 @@ and we are done.
 \end{proof}
 \end{prop}
 
-For the \(1\)-dimensional case we can find better estimates, since we are able to determine the piercing number of \(\mathcal{T}_n^1\) exactly. A more elementary proof of the following estimate is given as Proposition \ref{proposition3} in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
+For the \(1\)-dimensional case we can find better estimates, since we are able to determine the hitting number of \(\mathcal{T}_n^1\) exactly. A more elementary proof of the following estimate is given as Proposition \ref{proposition3} in the following chapter, where we will even see, that equality can be reached, shown in Theorem \ref{theorem1}.
 
 \begin{prop}\label{proposition112}
 \(C_{max}(\Delta^{[n]},1)\geq\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor\)
 \begin{proof}
-Asking for the smallest piercing set of \(\mathcal{T}_n^1\) is equivalent to asking for the largest triangle-free graph (i.e. a graph on \(n\) vertices, containing as many edges as posssible, but no complete graph on \(3\) vertices as a subgraph) and considering the complement. Mantel's theorem (see \cite{7}) says, that a triangle-free graph on \(n\) vertices has at most \(\left\lfloor\frac{n^2}{4}\right\rfloor\) edges, so we immediately get
+Asking for the smallest hitting set of \(\mathcal{T}_n^1\) is equivalent to asking for the largest triangle-free graph (i.e. a graph on \(n\) vertices, containing as many edges as posssible, but no complete graph on \(3\) vertices as a subgraph) and considering the complement. Mantel's theorem (see \cite{7}) says, that a triangle-free graph on \(n\) vertices has at most \(\left\lfloor\frac{n^2}{4}\right\rfloor\) edges, so we immediately get
 \[
 \tau(\mathcal{T}_n^1)=\binom{n}{2}-\left\lfloor\frac{n^2}{4}\right\rfloor
 \]
@@ -351,7 +324,7 @@ and by Proposition \ref{proposition1a} and Remark \ref{remark2} we are done.
 \end{proof}
 \end{prop}
 
-Unfortunately, determining the piercing number of \(\mathcal{T}_n^k\) for \(k\geq 2\), or equivalently, determining the largest (\(k+1\))-uniform hypergraph on \(n\)-vertices, containing no complete (\(k+1\))-uniform hypergraph on \(k+2\) vertices as a subhypergraph, seems to be very difficult (see \cite{7}), so we can not use the preceding procedure to say something about \(C_{max}(\Delta^{[n]},k)\) for larger \(k\)'s in general.\\
+Unfortunately, determining the hitting number of \(\mathcal{T}_n^k\) for \(k\geq 2\), or equivalently, determining the largest (\(k+1\))-uniform hypergraph on \(n\)-vertices, containing no complete (\(k+1\))-uniform hypergraph on \(k+2\) vertices as a subhypergraph, seems to be very difficult (see \cite{7}), so we can not use the preceding procedure to say something about \(C_{max}(\Delta^{[n]},k)\) for larger \(k\)'s in general.\\
 Nevertheless, we can exactly determine this number for the ultimate and the penultimate proper dimension as follows.
 
 \begin{thm}\label{theorem7}
@@ -370,7 +343,7 @@ Let \(n\geq 4\), then we have:
 \]
 \begin{proof}
 For each \(\sigma\in\binom{[n]}{n-2}\) there exist exactly two cycles \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\)\\
-(\(\alpha_1\neq\alpha_2\)), such that \(\sigma\in \supp(\alpha_1)\cap \supp(\alpha_2)\), so the largest possible number of cycles from \(\mathcal{T}_n^{n-3}\) that can be pierced by one simplex is two. Furthermore, we have \(\left|\mathcal{T}_n^{n-3}\right|=\binom{n}{n-1}=n\), so we get \(\tau(\mathcal{T}_n^{n-3})\geq\left\lceil\frac{n}{2}\right\rceil\).\\
+(\(\alpha_1\neq\alpha_2\)), such that \(\sigma\in \supp(\alpha_1)\cap \supp(\alpha_2)\), so the largest possible number of cycles from \(\mathcal{T}_n^{n-3}\) that can be hit by one simplex is two. Furthermore, we have \(\left|\mathcal{T}_n^{n-3}\right|=\binom{n}{n-1}=n\), so we get \(\tau(\mathcal{T}_n^{n-3})\geq\left\lceil\frac{n}{2}\right\rceil\).\\
 On the other hand, for all \(\alpha_1,\alpha_2\in\mathcal{T}_n^{n-3}\) there exists a \(\sigma\in\binom{[n]}{n-2}\), such that\\
 \(\sigma\in \supp(\alpha_1)\cap \supp(\alpha_2)\), so we get \(\tau(\mathcal{T}_n^{n-3})\leq\left\lceil\frac{n}{2}\right\rceil\).
 \end{proof}
@@ -386,7 +359,7 @@ For \(\sigma,\sigma'\in\binom{[n]}{n-2}\) the condition \(\left|\sigma\cap\sigma
 \begin{thm}
 \(C_{max}(\Delta^{[n]},n-3)=\left\lfloor\frac{n}{2}\right\rfloor\), for all \(n\geq 4\)
 \begin{proof}
-Let \(S\subset\binom{[n]}{n-2}\) be a minimal piercing set of \(\mathcal{T}_n^{n-3}\) as constructed in the proof of Lemma \ref{lemma12} and \(\varphi\coloneqq S^*\in C^{n-3}(\Delta^{[n]})\).\\
+Let \(S\subset\binom{[n]}{n-2}\) be a minimal hitting set of \(\mathcal{T}_n^{n-3}\) as constructed in the proof of Lemma \ref{lemma12} and \(\varphi\coloneqq S^*\in C^{n-3}(\Delta^{[n]})\).\\
 If \(n\) is even, then \(n-3\) is odd, so apply Proposition \ref{proposition1a}, Remark \ref{remark2} and Lemma \ref{lemma12} and we get:
 \[
 C_{max}(\Delta^{[n]},n-3)\geq\tau(\mathcal{T}_n^{n-3})=\frac{n}{2}
@@ -497,11 +470,11 @@ By Lemma \ref{lemma132} we know that \(i_n^k(\varphi)\) is a cosystole and we ha
 %\end{lem}
 %
 %\begin{defi}
-%Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\) and \(P=(p_1,\ldots,p_m)\) a finite ordered piercing set of \(\mathcal{F}\). Furthermore, set \(P_0\coloneqq \emptyset\) and for each \(i=1,\ldots,m\) set \(P_i\coloneqq \left\{F\in\mathcal{F}:F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P\coloneqq (|P_1|,\ldots,|P_m|)\) is called the \textbf{piercing sequence} of \(P\).
+%Let \(V\) be some set, \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(V\) and \(P=(p_1,\ldots,p_m)\) a finite ordered hitting set of \(\mathcal{F}\). Furthermore, set \(P_0\coloneqq \emptyset\) and for each \(i=1,\ldots,m\) set \(P_i\coloneqq \left\{F\in\mathcal{F}:F\cap\{p_i\}\neq\emptyset\right\}\setminus P_{i-1}\). Then the tuple \(\lambda_P\coloneqq (|P_1|,\ldots,|P_m|)\) is called the \textbf{hitting sequence} of \(P\).
 %\end{defi}
 %
 %\begin{prop}
-%Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered piercing set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
+%Let \(\varphi\in C^k(\Delta^{[n]})\) and \(\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}\subset C_k(\Delta^{[n]})\) be a family of cycles, such that \(\left\langle\varphi,\alpha_i\right\rangle=1\), for all \(i=1,\ldots,t\) and \(P=(p_1,\ldots,p_m)\) an ordered hitting set of \(\mathcal{F}\), such that \(\tau(\mathcal{F})=m\). Then for any \(d\geq 1\) we have:
 %\[
 %\|\sus_{n,k}^d(\varphi)\|_{csy}\geq d\cdot\left|\left\{\beta\in\lambda_P:\beta\geq d\right\}\right|+\sum\limits_{\beta\in\lambda_P\text{, }\beta<d}\beta
 %\]
@@ -542,5 +515,5 @@ but \(\|\delta^k(\varphi)\|\) is a natural number, so since \(k+2\) is prime \(k
 \end{proof}
 \end{prop}
 
-An interesting consequence of the preceding statement is, that for the case when we do not know the Cheeger constant which is exactly when \(k+2\) does not devide \(n\), we would just have to show that the norm of a Cheeger cosystole can not be a multiple of \(k+2\) to prove that the Cheeger constant must be strictly larger than \(\frac{n}{k+2}\).\\ 
+An interesting consequence of the preceding statement is, that for the case when we do not know the Cheeger constant (which is exactly when \(k+2\) does not devide \(n\)) and \(k+2\) is prime, we would just have to show that the norm of a Cheeger cosystole can not be a multiple of \(k+2\) to prove that the Cheeger constant must be strictly larger than \(\frac{n}{k+2}\).\\ 
 This might help especially for the \(1\)-dimensional case studied in the following chapter, since in that case \(k+2=3\) is prime. 
