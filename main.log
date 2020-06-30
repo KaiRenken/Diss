@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  29 JUN 2020 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  30 JUN 2020 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2002,11 +2002,11 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 13.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 30.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
@@ -2017,22 +2017,22 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 74--79
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
 
  []
 
 
-Overfull \hbox (0.44704pt too wide) in paragraph at lines 74--79
+Overfull \hbox (0.44704pt too wide) in paragraph at lines 75--80
 \T1/ppl/m/n/10.95 about chains (cochains, re-spec-tively). A $\OML/zplm/m/it/10
 .95 k$\T1/ppl/m/n/10.95 -chain is a lin-ear com-bi-na-tion of $\OML/zplm/m/it/1
 0.95 k$\T1/ppl/m/n/10.95 -simplices
@@ -2255,13 +2255,18 @@ Underfull \hbox (badness 3302) in paragraph at lines 251--252
 i-na-to-rial Alexan-der Du-al-ity - A
  []
 
-No file main.ind.
+(./main.ind
 1: chapter
 1: chapter
 [9
 
 
 ]
+1: chapter
+1: chapter
+[10
+
+])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
  (./main.aux (./Chapters/Preliminaries.aux) (./Chapters/Introduction.aux)
@@ -2273,10 +2278,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A25B71036BB5A57FFB358E94F7917EE7;6364.
  ) 
 Here is how much of TeX's memory you used:
- 40876 strings out of 494880
- 804507 string characters out of 6179601
+ 40881 strings out of 494880
+ 804563 string characters out of 6179601
  1128291 words of memory out of 5000000
- 42980 multiletter control sequences out of 15000+600000
+ 42982 multiletter control sequences out of 15000+600000
  610390 words of font info for 187 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  64i,21n,102p,10377b,2173s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2294,10 +2299,10 @@ texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (65 pages, 485385 bytes).
+Output written on main.pdf (66 pages, 487421 bytes).
 PDF statistics:
- 1210 PDF objects out of 1440 (max. 8388607)
- 1116 compressed objects within 12 object streams
- 542 named destinations out of 1000 (max. 500000)
+ 1254 PDF objects out of 1440 (max. 8388607)
+ 1159 compressed objects within 12 object streams
+ 543 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 
