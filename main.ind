@@ -1,6 +1,7 @@
 \begin{theindex}
 
   \item Adjacent, \hyperpage{4}
+  \item Alexander duality, \hyperpage{13}
 
   \indexspace
 
@@ -21,6 +22,7 @@
   \item Connected, \hyperpage{4}
   \item Connected component, \hyperpage{4}
   \item Cosystole, \hyperpage{6}
+  \item Cosystolic complex, \hyperpage{15}
   \item Cosystolic form, \hyperpage{6}
   \item Cosystolic norm, \hyperpage{6}
   \item Cycle, \hyperpage{2}
@@ -46,6 +48,7 @@
 
   \indexspace
 
+  \item Hitting complex, \hyperpage{12}
   \item Hitting number, \hyperpage{9}
   \item Hitting set, \hyperpage{9}
   \item Homology, \hyperpage{2}
@@ -53,6 +56,7 @@
 
   \indexspace
 
+  \item Induced complex, \hyperpage{13}
   \item Isomorphic, \hyperpage{4}
   \item Isomorphism class, \hyperpage{4}
 

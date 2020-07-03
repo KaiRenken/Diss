@@ -112,7 +112,7 @@ Nevertheless, we conjecture that for the \(1\)-dimensional case the equality hol
 \begin{lem}\label{lemma211}
 Let \(\varphi\in C^1(\Delta^{[n]})\) be a cosystole, \(\sigma\in\supp(\varphi)\) and \(P\coloneqq \supp(\varphi)\setminus\{\sigma\}\). Then \(P\) is not a hitting set of \(\mathcal{T}_{\varphi}\).
 \begin{proof}
-Assume \(P\) is a hitting set of \(\mathcal{T}_{\varphi}\), and denote \(\sigma=\{v_1,v_2\}\), then for all \(v\in[n]\) there exists a \(w\in\sigma\) such that \(\{v,w\}\in\supp(\varphi)\), since otherwise we would have \(\partial_1((\sigma,v))\in\mathcal{T}_{\varphi}\), but \(\supp(\partial_1((\sigma,v)))\cap P=\emptyset\), so \(P\) would not be a hitting set of \(\mathcal{T}_{\varphi}\). It follows that there exists a \(w\in\sigma\), such that
+Assume \(P\) is a hitting set of \(\mathcal{T}_{\varphi}\), and denote \(\sigma=\{v_1,v_2\}\), then for all \(v\in[n]\setminus\sigma\) there exists a \(w\in\sigma\) such that \(\{v,w\}\in\supp(\varphi)\), since otherwise we would have \(\partial_1((\sigma,v))\in\mathcal{T}_{\varphi}\), but \(\supp(\partial_1((\sigma,v)))\cap P=\emptyset\), so \(P\) would not be a hitting set of \(\mathcal{T}_{\varphi}\). It follows that there exists a \(w\in\sigma\), such that
 \[
 |\supp(\delta^0(w^*))\cap\supp(\varphi)|\geq\left\lceil\frac{n-2}{2}\right\rceil+1=\left\lceil\frac{n-2}{2}+1\right\rceil=\left\lceil\frac{n}{2}\right\rceil>\left\lfloor\frac{n-1}{2}\right\rfloor,
 \]
@@ -129,7 +129,7 @@ It seems to be very difficult to determine the hitting number of \(\mathcal{T}_{
 Let \(V\) be some set, \(\mathcal{F}\subset 2^V\) a family of subsets and \(P\) a hitting set of \(\mathcal{F}\). Then for any \(v\in V\) obviously \(P\cup\{v\}\) is also a hitting set of \(\mathcal{F}\). We can use this fact to construct a simplicial complex, which contains all information about the hitting sets for a given family of sets as follows:
 
 \begin{defi}
-Let \(V\) be a set and \(\mathcal{F}\subset 2^V\) a family of subsets. Then the \textbf{hitting complex} of \(\mathcal{F}\) is defined as:
+Let \(V\) be a set and \(\mathcal{F}\subset 2^V\) a family of subsets. Then the \textbf{hitting complex}\index{Hitting complex} of \(\mathcal{F}\) is defined as:
 \[
 \Delta_{\mathcal{F}}\coloneqq \left\{V'\subseteq V:(V\setminus V')\cap F\neq\emptyset,\text{ for all }F\in\mathcal{F}\right\}
 \]
@@ -167,7 +167,7 @@ Let \(X\) be a simplicial complex on the vertex set \(V\). Then the simplicial c
 \[
 X^{\lor}\coloneqq \left\{\sigma\subseteq V:V\setminus\sigma\notin X\right\}
 \]
-is called the \textbf{Alexander dual} of \(X\).
+is called the \textbf{Alexander dual}\index{Alexander duality} of \(X\).
 \end{defi}
 
 The following theorem can be found in \cite{8} (Theorem 1.1).
@@ -175,7 +175,7 @@ The following theorem can be found in \cite{8} (Theorem 1.1).
 \begin{thm}[The Alexander duality theorem]\label{theorem12}
 Let \(X\) be a simplicial complex on \(n\) vertices and \(X^{\lor}\) its Alexander dual. Then we have:
 \[
-\tilde{H}_i(X)\cong\tilde{H}^{n-i-3}(X)
+\tilde{H}_i(X)\cong\tilde{H}^{n-i-3}(X^{\lor})
 \]
 \end{thm}
 
@@ -184,7 +184,7 @@ Let \(V\) be some set and \(\mathcal{F}\subseteq 2^V\) a family of subsets of \(
 \[
 \Delta\left[\mathcal{F}\right]\coloneqq \left\{\sigma\subseteq F:F\in\mathcal{F}\right\}
 \]
-is called the \textbf{induced complex} of \(\mathcal{F}\). 
+is called the \textbf{induced complex}\index{Induced complex} of \(\mathcal{F}\). 
 \end{defi}
 
 The following statement was developed in \cite{9}.
@@ -240,7 +240,7 @@ Let \(X\) be a simplicial complex and \(1\leq k\leq \dim(X)\). Then the simplici
 \[
 \mathcal{C}_k(X)\coloneqq \left\{S\subseteq X^{(k)}:\left(\sum\limits_{\sigma\in S}\sigma\right)^*\text{ is a cosystole}\right\}
 \]
-is called the \textbf{k-cosystolic complex} of \(X\).
+is called the \textbf{k-cosystolic complex}\index{Cosystolic complex} of \(X\).
 \end{defi}
 
 Obviously, \(\mathcal{C}_k(X)\) defines a simplicial complex since removing a simplex from the support of a cosystole and considering the corresponding cochain again preserves cosystolicity.\\
