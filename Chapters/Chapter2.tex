@@ -214,13 +214,13 @@ Let \(X\) be a finite simplicial complex and \(\varphi\in C^k(X)\), then we have
 \tilde{H}_k(\Delta_{\varphi})\cong\{0\}
 \]
 \begin{proof}
-For all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) we have \(|\supp(\partial_k(\sigma))|=k+2\), so we get:
+Let \(\mathcal{T}'_{\varphi}\coloneqq\{\supp(\phi):\phi\in\mathcal{T}_{\varphi}\}\). For all \(\partial_k(\sigma)\in\mathcal{T}_{\varphi}\) we have \(|\supp(\partial_k(\sigma))|=k+2\), so we get:
 \[
-\dim(\Delta[\bar{\mathcal{T}}_{\varphi}])=|X^{(k)}|-(k+2)-1=|X^{(k)}|-k-3
+\dim(\Delta[\bar{\mathcal{T}'_{\varphi}}])=|X^{(k)}|-(k+2)-1=|X^{(k)}|-k-3
 \]
-Now, there exist no two simplices of dimension \(|X^{(k)}|-k-3\) in \(\Delta[\bar{\mathcal{T}}_{\varphi}]\), such that they have a face in common, since generally in a simplicial complex there can not exist two distinct simplices which differ by only one face. So we have:
+Now, there exist no two simplices of dimension \(|X^{(k)}|-k-3\) in \(\Delta[\bar{\mathcal{T}'_{\varphi}}]\), such that they have a face in common, since generally in a simplicial complex there can not exist two distinct simplices which differ by only one face. So we have:
 \[
-\tilde{H}_{|X^{(k)}|-k-3}(\Delta[\bar{\mathcal{T}}_{\varphi}])\cong\{0\}
+\tilde{H}_{|X^{(k)}|-k-3}(\Delta[\bar{\mathcal{T}'_{\varphi}}])\cong\{0\}
 \]
 By the Alexander duality theorem and Proposition \ref{proposition13} we get
 \[
@@ -229,6 +229,8 @@ By the Alexander duality theorem and Proposition \ref{proposition13} we get
 where the first isomorphy is true, because we consider homology / cohomology over a field and \(\Delta_{\varphi}\) is finite.
 \end{proof}
 \end{thm}
+
+\newpage
 
 \section{Large cosystoles of a simplex}
 
@@ -267,9 +269,9 @@ then we have \(\|\varphi\|=\left\lceil\frac{n-k+1}{2}\right\rceil\), but \(\|\va
 \end{proof}
 \end{prop}
 
-Let us now return to the largest possible cosystolic norm and introduce the following family of cycles:
+Let us now study the largest possible cosystolic norm for cochains in \(C^k(\Delta^{[n]})\) and introduce the following family of cycles:
 \[
-\mathcal{T}_n^k\coloneqq \left\{\partial_k(\sigma):\sigma\in\binom{[n]}{k+2}\right\}
+\mathcal{T}_n^k\coloneqq \left\{\partial_k(\sigma)\in C_k(\Delta^{[n]}):\sigma\in\binom{[n]}{k+2}\right\}
 \]
 
 \begin{rem}\label{remark2}

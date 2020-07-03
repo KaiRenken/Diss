@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {2}On general cosystoles and Cheeger constants}{9}{chapter.11}
 \contentsline {section}{\numberline {2.1}Hitting numbers and the cycle detection theorem}{9}{section.12}
 \contentsline {section}{\numberline {2.2}Hitting complexes}{12}{section.23}
-\contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{14}{section.32}
+\contentsline {section}{\numberline {2.3}Large cosystoles of a simplex}{15}{section.32}
 \contentsline {section}{\numberline {2.4}Embeddings of cosystoles}{18}{section.43}
 \contentsline {section}{\numberline {2.5}On Cheeger cosystoles when k+2 does not divide n}{19}{section.46}
 \contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{21}{chapter.48}
