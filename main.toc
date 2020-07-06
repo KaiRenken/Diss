@@ -10,10 +10,10 @@
 \contentsline {chapter}{\numberline {3}Cut-minimal graphs and Cheeger graphs of a simplex}{21}{chapter.48}
 \contentsline {section}{\numberline {3.1}Basic definitions and properties of cut-minimal graphs}{21}{section.49}
 \contentsline {section}{\numberline {3.2}Maximal cut-minimal graphs}{22}{section.54}
-\contentsline {section}{\numberline {3.3}Basic definitions and properties of Cheeger graphs}{30}{section.68}
-\contentsline {section}{\numberline {3.4}A restriction on the size of connected components in\\ Cheeger graphs}{32}{section.72}
-\contentsline {section}{\numberline {3.5}Embeddings of Cheeger graphs}{32}{section.74}
-\contentsline {section}{\numberline {3.6}The case when n is a power of 2}{33}{section.78}
+\contentsline {section}{\numberline {3.3}Basic definitions and properties of Cheeger graphs}{31}{section.68}
+\contentsline {section}{\numberline {3.4}A restriction on the size of connected components in\\ Cheeger graphs}{33}{section.72}
+\contentsline {section}{\numberline {3.5}Embeddings of Cheeger graphs}{33}{section.74}
+\contentsline {section}{\numberline {3.6}The case when n is a power of 2}{34}{section.78}
 \contentsline {chapter}{\numberline {4}A theorem about partitioning consecutive numbers}{41}{chapter.98}
 \contentsline {section}{\numberline {4.1}Preliminaries}{41}{section.99}
 \contentsline {section}{\numberline {4.2}The main theorem}{43}{section.104}

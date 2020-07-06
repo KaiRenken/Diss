@@ -4,7 +4,7 @@
 
 \label{Chapter3}
 
-In this chapter we start from the work of Kozlov (see \cite{1}) in which a graph theoretical approach to the first Cheeger constant of a simplex was developed. In the course of this approach the so called cut-minimal graphs appeared, which exactly describe \(1\)-cosystoles in a very intuitive way. As a consequence of the first main result of this chapter (Theorem \ref{theorem1}) we will determinine the dimension and partly the homology of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\). In the second part of this chapter, we face the research on the first Cheeger constant of a simplex by investigating combinatorial properties of the Cheeger graphs which are just the graphic version of the \(1\)-Cheeger cosystoles.
+In this chapter we start from the work of Kozlov (see \cite{1}) in which a graph theoretical approach to the first Cheeger constant of a simplex was developed. In the course of this approach the so called cut-minimal graphs appeared, which exactly describe \(1\)-cosystoles in a very intuitive way. As a consequence of the first main result of this chapter (Theorem \ref{theorem1}) we will determinine the dimension and partly the homology of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\). In the second part of this chapter, we face the research on the first Cheeger constant of a simplex by investigating combinatorial properties of the Cheeger graphs which are just the graphic version of the \(1\)-Cheeger cosystoles. In particular, we show that \(h_1(\Delta^{[16]})>\frac{16}{3}\) holds, which strengthens our conjecture that \(h_1(\Delta^{[n]})>\frac{n}{3}\) holds in general for the case when \(n\) is a power of \(2\).
 
 \section{Basic definitions and properties of cut-minimal graphs}
 The following definition and some words about motivation and intuition for it can be found in \cite{1} (Definition 2.3).
@@ -18,7 +18,7 @@ and
 \[
 NE_G(A,B)\coloneqq \{(v,w)\notin E\: :\: v\in A\text{, }w\in B\}
 \]
-A graph \(G=([n],E)\) is called \textbf{cut-minimal}, if for every \(S\subset[n]\) we have
+A graph \(G=([n],E)\) is called \textbf{cut-minimal}\index{Cut-minimal graph}, if for every \(S\subset[n]\) we have
 \[
 |E_G(S,[n]\setminus S)|\leq |NE_G(S,[n]\setminus S)|,
 \]
@@ -41,15 +41,17 @@ A simple cycle respresented by the graph \(G=([n],E)\) with\\
 \end{expl}
 
 \begin{defi}
-For any \(n\geq 1\) we define the set of all cut-minimal graphs on \(n\) vertices:
+For any \(n\geq 3\) we define the set of all cut-minimal graphs on \(n\) vertices:
 \[
 CMG(n)\coloneqq \{G=([n],E)\: :\: G\text{ is cut-minimal}\}
 \]
 \end{defi}
 
+Note, that for \(n\leq 2\) the set \(CMG(n)\) would be empty, so within this chapter we will always assume the number of vertices of cut-minimal graphs to be strictly larger than \(2\) without mentioning it again, since for the cases \(n\geq 2\) all statements we make are trivial.
+
 \section{Maximal cut-minimal graphs}
 
-Let us study the the topological and simplicial structure of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\) which was, more generally, already introduced in the preceding chapter. Understanding this complex will help us to explore combinatorial properties of the cut-minimal graphs on a certain number of vertices.\\
+Let us study the the topological and simplicial structure of the simplicial complex \(\mathcal{C}_1(\Delta^{[n]})\) which was, more generally, already introduced in the preceding chapter. Understanding this complex will help us to explore structural properties of the cut-minimal graphs on a certain number of vertices.\\
 The first thing we will do is to determine the maximum number of edges, a cut-minimal graph on a certain number of vertices can have, which immediately gives us the dimension of \(\mathcal{C}_1(\Delta^{[n]})\).
 
 \begin{prop}\label{proposition3}
@@ -148,7 +150,7 @@ A formula for the dimension of \(\mathcal{C}_1(\Delta^{[n]})\) follows immediate
 We have seen that the proof of Proposition \ref{proposition3} even contains a description of the shape of a cut-minimal graph with the maximum number of edges, which furthermore provides information about how a top dimensional simplex is embedded in \(\mathcal{C}_1(\Delta^{[n]})\). Now, the following theorem which was developed in \cite{10} does not only represent a first statement about the homology of \(\mathcal{C}_1(\Delta^{[n]})\) but even shows that the construction in the proof of Proposition \ref{proposition3} is the only possible shape of such graphs (top dimensional simplices respectively).
 
 \begin{thm}\label{theorem3}
-\(H_{\dim(\mathcal{C}_1(\Delta^{[n]})}(\mathcal{C}_1(\Delta^{[n]}))\cong 0\)
+\(H_{\dim(\mathcal{C}_1(\Delta^{[n]})}(\mathcal{C}_1(\Delta^{[n]}))\cong\{0\}\) for \(\dim(\mathcal{C}_1(\Delta^{[n]})\geq 1\)
 \begin{proof}
 We will first show, that a top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) can only be represented as a graph of the type we constructed in the proof of Proposition \ref{proposition3}.\\
 Let \(n\) be even. If we set \(n=2t+2\), then by the number \(C_{max}(\Delta^{[n]},1)\) and cut-minimality, the graph \(G\) corresponding to a top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) must be \(t\)-regular. Furthermore, for any three pairwise distinct vertices \(v,w,u\in [n]\) by cut-minimality we have
@@ -161,12 +163,12 @@ Let now \(n\) be odd. If we set \(n=2t+3\), then by the number \(C_{max}(\Delta^
 E_G(\{v,w\},[n]\setminus\{v,w\})\leq\frac{2(2t+3-2)}{2}=2t+1<2t+2=\deg_G(v)+\deg_G(w),
 \]
 so all vertices in \(A\) are adjacent. By cut-minimality again we have \(|A|=t+2\), so \(A\) provides a complete graph on \(t+2\) vertices. The number of remaining edges \(\binom{t+1}{2}\) shows, that the remaining \(t+1\) vertices must also provide a complete graph, which is disjoint from the first one, because any other constellation would destroy cut-minimality. Thus, every top dimensional simplex in \(\mathcal{C}_1(\Delta^{[n]})\) corresponds to a graph of the requested type again.\\
-Now we see that deleting an edge from such a graph (which is the same as deleting a vertex from a top dimensional simplex) produces a graph corresponding to a simplex which appears as a face of one top dimensional simplex, but can not be a face of another top dimensional simplex, since we can not construct a graph of the requested type by adding an edge at any other place than the place where we just deleted it. Thus, all top dimensional simplices are at most connected via simplices of codimension 2, which implies that \(\mathcal{C}_1(\Delta^{[n]})\) can be continiously retracted to a complex of codimension 1 and so homology in top dimension vanishes.
+Now we see that deleting an edge from such a graph (which is the same as deleting a vertex from a top dimensional simplex) produces a graph corresponding to a simplex which appears as a face of one top dimensional simplex, but can not be a face of another top dimensional simplex, since we can not construct a graph of the requested type by adding an edge at any other place than the place where we just deleted it. Thus, two distinct top dimensional simplices can only share simplices of codimension 2 (at most), which implies that \(\mathcal{C}_1(\Delta^{[n]})\) can be continiously retracted to a complex of codimension 1 and so homology in top dimension vanishes.
 \end{proof}
 \end{thm}
 
 \begin{defi}
-A cut-minimal graph \(G=([n],E)\) is called \textbf{maximal}, if for all\\
+A cut-minimal graph \(G=([n],E)\) is called \textbf{maximal}\index{Maximal cut-minimal graph}, if for all\\
 \(e\in NE_G([n],[n])\) the graph \(G^e\coloneqq ([n],E\cup\{e\})\) is not cut-minimal. We denote the set of all maximal cut-minimal graphs on \(n\) vertices by \(MAX(n)\).
 \end{defi}
 Since deleting in edge in a cut-minimal graph produces a cut-minimal graph again, it turnes out that we only have to determine all maximal cut-minimal graphs to find all cut-minimal graphs.
@@ -255,7 +257,8 @@ By Proposition \ref{proposition231} we get \(C_{min}(\Delta^{[n]},1)\leq\left\lc
 \end{proof}
 \end{thm}
 
-Obviously, \(\mathcal{C}_1(\Delta^{[n]})\) contains all simplices of dimension lower than \(C_{min}(\Delta^{[n]},1)\), which leads to the following observation.
+Obviously, \(\mathcal{C}_1(\Delta^{[n]})\) contains all simplices of dimension strictly lower than\\
+\(C_{min}(\Delta^{[n]},1)-1\), which leads to the following observation.
 
 \begin{cor}
 \(H_k(\mathcal{C}_1(\Delta^{[n]}))\cong 0\) for all \(1\leq k\leq\left\lceil\frac{n}{2}\right\rceil-3\)

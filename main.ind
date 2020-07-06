@@ -25,6 +25,7 @@
   \item Cosystolic complex, \hyperpage{15}
   \item Cosystolic form, \hyperpage{6}
   \item Cosystolic norm, \hyperpage{6}
+  \item Cut-minimal graph, \hyperpage{21}
   \item Cycle, \hyperpage{2}
   \item Cycle detection theorem, \hyperpage{10}
 
@@ -59,6 +60,10 @@
   \item Induced complex, \hyperpage{13}
   \item Isomorphic, \hyperpage{4}
   \item Isomorphism class, \hyperpage{4}
+
+  \indexspace
+
+  \item Maximal cut-minimal graph, \hyperpage{26}
 
   \indexspace
 
