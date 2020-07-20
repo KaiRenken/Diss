@@ -461,7 +461,7 @@ so since \(\frac{n-4}{2}\) is the maximum possible degree of a vertex in \(G\) b
 \end{lem}
 
 \begin{defi}
-Let \(G=([n],E)\) be a graph, then a subset \(T=\{v,w,u\}\subseteq [n]\) is called a \textbf{triangle} if \((v,w),(v,u),(w,u)\in E\). The number of triangles in \(G\) is denoted by \(t(G)\).
+Let \(G=([n],E)\) be a graph, then a subset \(T=\{v,w,u\}\subseteq [n]\) is called a \textbf{triangle}\index{Triangle} if \((v,w),(v,u),(w,u)\in E\). The number of triangles in \(G\) is denoted by \(t(G)\).
 \end{defi}
 
 The following statement describes the relation among the degrees of the vertices and the number of triangles in a cut-minimal graph \(G\) attaining \(h(G)=\frac{n}{3}\).
@@ -488,7 +488,7 @@ t(v)=|E|-\frac{\deg_G(v)(n-\deg_G(v))}{2}-\frac{2}{3}t_v,
 where \(t_v\) denotes the number of triangles which contain \(v\).\\
 Since every triangle contains exactly \(3\) vertices, overall we get:
 \[
-|T(G)|=\sum\limits_{v\in [n]}|E|-\frac{\deg_G(v)(n-\deg_G(v))}{2}-2t(G)
+|T(G)|=\left(\sum\limits_{v\in [n]}|E|-\frac{\deg_G(v)(n-\deg_G(v))}{2}\right)-2t(G)
 \]
 Furthermore, we know that \(|E|=\frac{1}{2}\sum\limits_{v\in [n]}\deg_G(v)\) and by assumption we have \(h(G)=\frac{|T(G)|}{|E|}=\frac{n}{3}\), so rearranging the preceding formula gives:
 \[
@@ -506,7 +506,7 @@ By Lemma \ref{lemma11:2} we have \(|E(A_v,[16]\setminus A_v)|=30\) and by Propos
 \end{proof}
 \end{lem}
 
-Summarizing the statements of the preceding lemma just means that for a cut-minimal graph \(G=([16],E)\), such that \(h(G)=\frac{16}{3}\), for every \(v\in [16]\) with \(\deg_G(v)=6\) we have one of the following shapes (up to isomorphy) for \(A_v\), where the numbers at the vertices denote their degrees (see Figure \ref{figure8:Figure 8}).
+Summarizing the statements of the preceding lemma just means that for a cut-minimal graph \(G=([16],E)\), such that \(h(G)=\frac{16}{3}\), for every \(v\in [16]\) with \(\deg_G(v)=6\) we have one of the following shapes (up to isomorphism) for \(A_v\), where the numbers at the vertices denote their degrees (see Figure \ref{figure8:Figure 8}).
 
 \newpage
 
