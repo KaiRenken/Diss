@@ -415,7 +415,7 @@ Assume we have \(|E|<\left\lceil\frac{n-1}{2}\right\rceil\). Then by Theorem \re
 
 \section{The case when n is a power of 2}
 
-From \cite{1} (Corollary 4.3) we know that \(h(\Delta^{[n]})>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation\\
+From \cite{1} (Corollary 4.3) we know that \(h_1(\Delta^{[n]})>\frac{n}{3}\) can only be valid, if \(n\) is a power of \(2\). An interesting question is, if this inequality is always strict for such \(n\). For a graph \(G=([n],E)\) and a vertex \(v\in [n]\) let us introduce the notation\\
 \(A_v\coloneqq \{w\in [n]:(v,w)\in E\}\), so we have \(|A_v|=\deg_G(v)\). The following useful fact was given by Kozlov (see \cite{1}, Section 6.3).
 
 \begin{lem}\label{lemma11:2}
@@ -444,7 +444,7 @@ so there must exist a \(w\in A_v\), such that \(|A_w|\geq\frac{n-2}{2}=\frac{2^t
 \end{prop}
 
 \begin{expl}
-In \cite{1} (Section 6.3) Kozlov already used the fact, that a vertex in a graph satisfying the conditions of the preceding proposition can not attain an odd degree to prove the strict bound \(h(\Delta^{[8]})>\frac{8}{3}\). Applying the preceding slightly stronger proposition we get this result immediately, since then every vertex in a Cheeger graph \(G=([8],E)\), satisfying \(h(G)=\frac{8}{3}\) must attain degree \(0\), which obviously leads to a contradiction.
+In \cite{1} (Section 6.3) Kozlov already used the fact, that a vertex in a graph satisfying the conditions of the preceding proposition can not attain an odd degree to prove the strict bound \(h_1(\Delta^{[8]})>\frac{8}{3}\). Applying the preceding slightly stronger proposition we get this result immediately, since then every vertex in a Cheeger graph \(G=([8],E)\), satisfying \(h(G)=\frac{8}{3}\) must attain degree \(0\), which obviously leads to a contradiction.
 \end{expl}
 
 Furthermore, we can make some statements about the graph structure of \(G=([n],E)\) according to the degrees of its vertices if \(n\) is a power of \(2\) and \(h(G)=\frac{n}{3}\).
@@ -497,7 +497,7 @@ t(G)=\frac{1}{4}\sum\limits_{v\in [n]}\deg_G(v)^2-\frac{n}{12}\sum\limits_{v\in 
 \end{proof}
 \end{lem}
 
-Let us now consider the case \(n=16\). This case seems to be much more complicated than the case \(n=8\), but nevertheless we can prove the strict inequality \(h(\Delta^{[16]})>\frac{16}{3}\) and hopefully use some ideas from the proof to get hands on the general conjecture that \(h(\Delta^{[n]})>\frac{n}{3}\) holds if and only if \(n\) is a power of \(2\).
+Let us now consider the case \(n=16\). This case seems to be much more complicated than the case \(n=8\), but nevertheless we can prove the strict inequality \(h_1(\Delta^{[16]})>\frac{16}{3}\) and hopefully use some ideas from the proof to get hands on the general conjecture that \(h_1(\Delta^{[n]})>\frac{n}{3}\) holds if and only if \(n\) is a power of \(2\).
 
 \begin{lem}\label{lemma364}
 Let \(G=([16],E)\) be cut-minimal, such that \(h(G)=\frac{16}{3}\) and \(v\in [16]\), such that \(\deg_G(v)=6\), then we have \(|E(A_v,A_v)|\in\{0,1,2,3\}\), for every \(e=(w,u)\in E(A_v,A_v)\) we have \(\deg_G(w)=6\) and \(\deg_G(u)=6\) and for \(e_1,e_2\in E(A_v,A_v)\) (\(e_1\neq e_2\)) we have \(e_1\cap e_2=\emptyset\).
@@ -544,7 +544,7 @@ Assume \(|E(\{u\},A_v)|\leq 2\) and set \(S\coloneqq A_v\cup\{u\}\), then by Lem
 \end{lem}
 
 \begin{thm}\label{theoremn=16}
-\(h(\Delta^{[16]})>\frac{16}{3}\)
+\(h_1(\Delta^{[16]})>\frac{16}{3}\)
 \begin{proof}
 Assume \(G=([16],E)\) is a cut-minimal graph, such that \(h(G)=\frac{16}{3}\). By Proposition \ref{proposition321} we have \(\deg_G(v)\in\{0,4,6\}\) for every vertex \(v\in [16]\). Then Lemma \ref{lemma363} gives the relation
 

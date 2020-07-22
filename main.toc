@@ -16,15 +16,16 @@
 \contentsline {section}{\numberline {3.6}The case when n is a power of 2}{34}{section.79}
 \contentsline {chapter}{\numberline {4}Alternative generalizations of the classical Cheeger constant}{41}{chapter.99}
 \contentsline {section}{\numberline {4.1}Alternative definitions of the higher dimensional Cheeger constants}{41}{section.100}
-\contentsline {chapter}{\numberline {5}A theorem about partitioning consecutive numbers}{43}{chapter.101}
-\contentsline {section}{\numberline {5.1}Preliminaries}{43}{section.102}
-\contentsline {section}{\numberline {5.2}The main theorem}{45}{section.107}
-\contentsline {chapter}{\numberline {6}Perspectives}{47}{chapter.110}
-\contentsline {section}{\numberline {6.1}Applying the cycle detection theorem}{47}{section.111}
-\contentsline {section}{\numberline {6.2}Finding maximal cosystoles of a simplex}{48}{section.113}
-\contentsline {section}{\numberline {6.3}The shape of Cheeger graphs if n is a power of 2}{48}{section.114}
-\contentsline {section}{\numberline {6.4}The shape of Cheeger cosystoles in general}{49}{section.115}
-\contentsline {section}{\numberline {6.5}Cheeger constants for other complexes}{49}{section.116}
-\contentsline {section}{\numberline {6.6}Probabilistic approaches}{50}{section.117}
-\contentsline {chapter}{\numberline {A}Source code for Partitioning Consecutive Numbers (PCN)}{I}{appendix.118}
-\contentsline {chapter}{Bibliography}{IX}{appendix*.467}
+\contentsline {section}{\numberline {4.2}Relations to the Cheeger constant}{42}{section.104}
+\contentsline {chapter}{\numberline {5}A theorem about partitioning consecutive numbers}{45}{chapter.107}
+\contentsline {section}{\numberline {5.1}Preliminaries}{45}{section.108}
+\contentsline {section}{\numberline {5.2}The main theorem}{47}{section.113}
+\contentsline {chapter}{\numberline {6}Perspectives}{49}{chapter.116}
+\contentsline {section}{\numberline {6.1}Applying the cycle detection theorem}{49}{section.117}
+\contentsline {section}{\numberline {6.2}Finding maximal cosystoles of a simplex}{50}{section.119}
+\contentsline {section}{\numberline {6.3}The shape of Cheeger graphs if n is a power of 2}{50}{section.120}
+\contentsline {section}{\numberline {6.4}The shape of Cheeger cosystoles in general}{51}{section.121}
+\contentsline {section}{\numberline {6.5}Cheeger constants for other complexes}{51}{section.122}
+\contentsline {section}{\numberline {6.6}Probabilistic approaches}{52}{section.123}
+\contentsline {chapter}{\numberline {A}Source code for Partitioning Consecutive Numbers (PCN)}{I}{appendix.124}
+\contentsline {chapter}{Bibliography}{IX}{appendix*.473}
