@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  22 JUL 2020 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  23 JUL 2020 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2193,8 +2193,8 @@ er
 
 
 
-]
-Overfull \hbox (32.69557pt too wide) in paragraph at lines 73--75
+] [42]
+Overfull \hbox (32.69557pt too wide) in paragraph at lines 75--77
 \OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 v[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/i
 t/10.95 w[]\OT1/zplm/m/n/10.95 ) \OMS/zplm/m/n/10.95 2 \OML/zplm/m/it/10.95 B[]
 $ \T1/ppl/m/n/10.95 ($\OML/zplm/m/it/10.95 k[] \OMS/zplm/m/n/10.95 6\OT1/zplm/m
@@ -2212,7 +2212,7 @@ T1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 x[]\OT1/zplm/m/n/10.95 )\OT1/ppl/m/n/10
 lm/m/it/10.95 x[]\OT1/zplm/m/n/10.95 )\OMS/zplm/m/n/10.95 g$
  []
 
-[42]) [43]
+) [43]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex [44
@@ -2332,10 +2332,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A81D3DED60841E999F72879D22B14833;7381.
  ) 
 Here is how much of TeX's memory you used:
- 40913 strings out of 494880
- 804994 string characters out of 6179601
- 1128996 words of memory out of 5000000
- 42991 multiletter control sequences out of 15000+600000
+ 40914 strings out of 494880
+ 805010 string characters out of 6179601
+ 1129023 words of memory out of 5000000
+ 42992 multiletter control sequences out of 15000+600000
  610390 words of font info for 187 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  64i,21n,102p,10377b,2173s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2353,10 +2353,10 @@ texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (72 pages, 502478 bytes).
+Output written on main.pdf (72 pages, 503108 bytes).
 PDF statistics:
- 1324 PDF objects out of 1440 (max. 8388607)
- 1222 compressed objects within 13 object streams
+ 1326 PDF objects out of 1440 (max. 8388607)
+ 1224 compressed objects within 13 object streams
  559 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
