@@ -8,37 +8,47 @@ In the introduction of this thesis, we defined the generalization of the classic
 
 \section{Alternative definitions of the higher dimensional Cheeger constants}
 
-\begin{defi}
+\begin{defi}\label{definition411}
 Let \(X\) be a simplicial complex and \(k\geq 1\). Furthermore, let \(\mathcal{F}\subset C_k(X)\) be a family of cycles, such that their supports are pairwise disjoint (i.e. \(\supp(F)\cap\supp(F')=\emptyset\) for all \(F,F'\in\mathcal{F}\), satisfying \(F\neq F'\)) and let
 \[
-P(\mathcal{F})\coloneqq\{C\subset X^{(k)}:|C\cap\supp(F)|=1\text{ for all }F\in\mathcal{F}\text{ and }C\subset\bigcup\limits_{F\in\mathcal{F}}\supp(F)\}
+P(\mathcal{F})\coloneqq\{\varphi\in C^k(X):|\supp(\varphi)\cap\supp(F)|=1\text{ for all }F\in\mathcal{F}\text{ and }\supp(\varphi)\subset\bigcup\limits_{F\in\mathcal{F}}\supp(F)\}
 \]
 denote the set of all possible choices of one simplex per cycle in the family \(\mathcal{F}\). Then we define
 \[
-\gamma_{\mathcal{F}}\coloneqq\frac{\min\limits_{c\in P(\mathcal{F})}\|\delta^k(c^*)\|}{|\mathcal{F}|}
+\gamma_{\mathcal{F}}\coloneqq\frac{\min\limits_{\varphi\in P(\mathcal{F})}\|\delta^k(\varphi)\|}{|\mathcal{F}|}
 \]
-where \(c^*\) denotes the corresponding cochain to \(c\). The \(k\)-th \textbf{disjoint cycle expansion}\index{Disjoint cycle expansion} of \(X\) is then defined by:
+and we call
 \[
-\gamma_k(X)\coloneqq\min\limits_{\mathcal{F}}\gamma_{\mathcal{F}}
+\gamma_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\gamma_{\mathcal{F}}
 \]
-where the minimum is taken over all families of cycles \(\mathcal{F}\) as defined above.
+the \(k\)-th \textbf{disjoint cycle expansion}\index{Disjoint cycle expansion} of \(X\), where 
+\[
+\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):\mathcal{F}\text{ is a family of cycles, }\supp(F)\cap\supp(F')=\emptyset\text{ for all }F,F'\in\mathcal{F}\text{ satisfying }F\neq F'\}
+\]
+is the collection of all families of cycles in \(C_k(X)\) with pairwise disjoint supports.
 \end{defi}
 
-\begin{defi}
+\begin{defi}\label{definition412}
 Let \(X\) be a simplicial complex and \(k\geq 1\). Furthermore, let \(\mathcal{F}\subset C_k(X)\) be an arbitrary family of cycles and let
 \[
-P'(\mathcal{F})\coloneqq\{C\subset X^{(k)}:|C\cap\supp(F)|\text{ is odd for all }F\in\mathcal{F}\}
+P'(\mathcal{F})\coloneqq\{\varphi\in C^k(X):|\supp(\varphi)\cap\supp(F)|\text{ is odd for all }F\in\mathcal{F}\}
 \]
 Then we define
 \[
-\rho_{\mathcal{F}}\coloneqq\frac{\min\limits_{c\in P'(\mathcal{F})}\|\delta^k(c^*)\|}{\tau(\mathcal{F})}
+\rho_{\mathcal{F}}\coloneqq\frac{\min\limits_{\varphi\in P'(\mathcal{F})}\|\delta^k(\varphi)\|}{\tau(\mathcal{F})}
 \]
-where \(c^*\) denotes the corresponding cochain to \(c\) again. The \(k\)-th \textbf{hitting expansion}\index{Hitting expansion} of \(X\) is then defined by:
+and we call
 \[
 \rho_k(X)\coloneqq\min\limits_{\mathcal{F}}\gamma_{\mathcal{F}}
 \]
-where the minimum is taken over all families of cycles \(\mathcal{F}\) as defined above.
+the \(k\)-th \textbf{hitting expansion}\index{Hitting expansion} of \(X\), where
+\[
+\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):\mathcal{F}\text{ is a family of cycles}\}
+\]
+is the collection of all families of cycles in \(C_k(X)\).
 \end{defi}
+
+\section{Relations to the Cheeger constant}
 
 \begin{prop}\label{proposition411}
 Let \(X\) be a simplicial complex and \(k\geq 1\), then we have:
@@ -46,11 +56,9 @@ Let \(X\) be a simplicial complex and \(k\geq 1\), then we have:
 h_k(X)\leq\rho_k(X)\leq\gamma_k(X)
 \]
 \begin{proof}
-
+Let \(\mathcal{F}\subset C_k(X)\) be a family of cycles with pairwise disjoint supports and \(\varphi\in P(\mathcal{F})\). Then we have \(\varphi\in P'(\mathcal{F})\) and \(\tau(\mathcal{F})=|\mathcal{F}|\) and we immediately get \(\rho_{\mathcal{F}}\leq\gamma_{\mathcal{F}}\), so we have \(\rho_k(X)\leq\gamma_k(X)\). Let now \(\mathcal{F}\subset C_k(X)\) be an arbitrary family of cycles and \(\varphi\in P'(\mathcal{F})\). Then we have \(\langle\varphi,F\rangle=1\) for all \(F\in\mathcal{F}\) so we can use the cycle detection theorem and we get \(\|\varphi\|_{csy}\geq\tau(\mathcal{F})\). This implies \(\|\varphi\|_{exp}\leq\rho_{\mathcal{F}}\) and we have \(h_k(X)\leq\rho_k(X)\).
 \end{proof}
 \end{prop}
-
-\section{Relations to the Cheeger constant}
 
 We will now show that the first disjoint cycle expansion (and thus also the first hitting expansion) of the simplex on \(n\) vertices equals the first Cheeger constant whenever \(n\) is not a power of \(2\).
 
