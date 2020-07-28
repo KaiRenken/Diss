@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {3.5}Embeddings of Cheeger graphs}{33}{section.75}
 \contentsline {section}{\numberline {3.6}The case when n is a power of 2}{34}{section.79}
 \contentsline {chapter}{\numberline {4}Alternative generalizations of the classical Cheeger constant}{41}{chapter.99}
-\contentsline {section}{\numberline {4.1}Alternative definitions of the higher dimensional Cheeger constants}{41}{section.100}
+\contentsline {section}{\numberline {4.1}Disjoint cycle expansion and hitting expansion}{41}{section.100}
 \contentsline {section}{\numberline {4.2}Relations to the Cheeger constant}{42}{section.103}
 \contentsline {chapter}{\numberline {5}A theorem about partitioning consecutive numbers}{45}{chapter.107}
 \contentsline {section}{\numberline {5.1}Preliminaries}{45}{section.108}

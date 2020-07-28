@@ -6,7 +6,7 @@
 
 In the introduction of this thesis, we defined the generalization of the classical Cheeger constant which was already introduced by Linial and Meshulam (see \cite{2}) and later independently by Gromov (see \cite{3}). But that notion is not the only way to generalize the classical Cheeger constant and we do not even know if it is the "best" way to generalize it, concerning the information these constants give about the stability of connectedness of simplicial complexes. In Chapter \ref{Chapter2} we saw that there is a close connection between the cosystolic norm of a cochain and the hitting number of a certain family of cycles, so we will use this connection to introduce other notions of the Cheeger constant which attain the same value as our earlier notion on a large family of complexes, but might be easier to determine in certain situations. These other notions were introduced by Kozlov (see \cite{13}).
 
-\section{Alternative definitions of the higher dimensional Cheeger constants}
+\section{Disjoint cycle expansion and hitting expansion}
 
 \begin{defi}\label{definition411}
 Let \(X\) be a simplicial complex and \(k\geq 1\). Furthermore, let \(\mathcal{F}\subset C_k(X)\) be a family of cycles, such that their supports are pairwise disjoint (i.e. \(\supp(F)\cap\supp(F')=\emptyset\) for all \(F,F'\in\mathcal{F}\), satisfying \(F\neq F'\)) and let
@@ -39,7 +39,7 @@ Then we define
 \]
 and we call
 \[
-\rho_k(X)\coloneqq\min\limits_{\mathcal{F}}\gamma_{\mathcal{F}}
+\rho_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\gamma_{\mathcal{F}}
 \]
 the \(k\)-th \textbf{hitting expansion}\index{Hitting expansion} of \(X\), where
 \[
