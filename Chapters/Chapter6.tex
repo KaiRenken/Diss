@@ -4,16 +4,18 @@
 
 \label{Chapter6}
 
-In the introduction of this thesis, we defined the generalization of the classical Cheeger constant which was already introduced by Linial and Meshulam (see \cite{2}) and later independently by Gromov (see \cite{3}). But that notion is not the only way to generalize the classical Cheeger constant and we do not even know if it is the "best" way to generalize it, concerning the information these constants give about the stability of connectedness of simplicial complexes. In Chapter \ref{Chapter2} we saw that there is a close connection between the cosystolic norm of a cochain and the hitting number of a certain family of cycles, so we will use this connection to introduce other notions of the Cheeger constant which attain the same value as our earlier notion on a large family of complexes, but might be easier to determine in certain situations. These other notions were introduced by Kozlov (see \cite{13}).
+In the introduction we defined the generalization of the classical Cheeger constant which was already introduced by Linial and Meshulam (see \cite{2}) and later independently by Gromov (see \cite{3}). But that notion is not the only way to generalize the classical Cheeger constant and we do not even know if it is the "best" way to generalize it, concerning the information these constants give about the stability of connectedness of simplicial complexes. In Chapter \ref{Chapter2} we saw that there is a close connection between the cosystolic norm of a cochain and the hitting number of a certain family of cycles, so we will use this connection to introduce other notions of the Cheeger constant which attain the same value as our earlier notion on a large family of complexes, but might be easier to determine in certain situations. These other notions were introduced by Kozlov (see \cite{13}).
 
 \section{Disjoint cycle expansion and hitting expansion}
 
 \begin{defi}\label{definition411}
 Let \(X\) be a simplicial complex and \(k\geq 1\). Furthermore, let \(\mathcal{F}\subset C_k(X)\) be a family of cycles, such that their supports are pairwise disjoint (i.e. \(\supp(F)\cap\supp(F')=\emptyset\) for all \(F,F'\in\mathcal{F}\), satisfying \(F\neq F'\)) and let
+\begin{small}
 \[
 P(\mathcal{F})\coloneqq\{\varphi\in C^k(X):|\supp(\varphi)\cap\supp(F)|=1\text{ for all }F\in\mathcal{F}\text{ and }\supp(\varphi)\subset\bigcup\limits_{F\in\mathcal{F}}\supp(F)\}
 \]
-denote the set of all possible choices of one simplex per cycle in the family \(\mathcal{F}\). Then we define
+\end{small}
+denote the set of all cochains constructed by all possible choices of one simplex per cycle in the family \(\mathcal{F}\). Then we define
 \[
 \gamma_{\mathcal{F}}\coloneqq\frac{\min\limits_{\varphi\in P(\mathcal{F})}\|\delta^k(\varphi)\|}{|\mathcal{F}|}
 \]
@@ -21,10 +23,12 @@ and we call
 \[
 \gamma_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\gamma_{\mathcal{F}}
 \]
-the \(k\)-th \textbf{disjoint cycle expansion}\index{Disjoint cycle expansion} of \(X\), where 
+the \(k\)-th \textbf{disjoint cycle expansion}\index{Disjoint cycle expansion} of \(X\), where
+\begin{small}
 \[
-\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):\mathcal{F}\text{ is a family of cycles, }\supp(F)\cap\supp(F')=\emptyset\text{ for all }F,F'\in\mathcal{F}\text{ satisfying }F\neq F'\}
+\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):F\text{ is a cycle and }\supp(F)\cap\supp(F')=\emptyset\text{ for all }F,F'\in\mathcal{F}\:(F\neq F')\}
 \]
+\end{small}
 is the collection of all families of cycles in \(C_k(X)\) with pairwise disjoint supports.
 \end{defi}
 
@@ -39,11 +43,11 @@ Then we define
 \]
 and we call
 \[
-\rho_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\gamma_{\mathcal{F}}
+\rho_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\rho_{\mathcal{F}}
 \]
 the \(k\)-th \textbf{hitting expansion}\index{Hitting expansion} of \(X\), where
 \[
-\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):\mathcal{F}\text{ is a family of cycles}\}
+\mathfrak{C}\coloneqq\{\mathcal{F}\subset C_k(X):F\text{ is a cycle, for all }F\in\mathcal{F}\}
 \]
 is the collection of all families of cycles in \(C_k(X)\).
 \end{defi}
@@ -62,34 +66,88 @@ Let \(\mathcal{F}\subset C_k(X)\) be a family of cycles with pairwise disjoint s
 
 We will now show that the first disjoint cycle expansion (and thus also the first hitting expansion) of the simplex on \(n\) vertices equals the first Cheeger constant whenever \(n\) is not a power of \(2\).
 
-\begin{thm}
-Let $n$ not be a power of $2$, then we have:
+\begin{thm}\label{theorem421}
+Let \(n\) not be a power of \(2\), then we have:
 \[
 \gamma_1(\Delta^{[n]})=\rho_1(\Delta^{[n]})=\frac{n}{3}
 \] 
 \begin{proof}
-Since $n$ is not a power of $2$ we can write it as $n=c(2t+1)$. Now consider the staircase graph $G_n(\lambda)$ given by the partition $\lambda=c\cdot\text{cor}(t)$. Since $G_n(\lambda)$ is bipartite we can partition the vertices of $G_n(\lambda)$ as $[n]=A\cup B\cup C$, with $A=\{v_1,\ldots,v_{ct}\}$, $B=\{w_1,\ldots,w_{ct}\}$ and $C=\{x_1,\ldots,x_c\}$, such that $C$ is the set of all isolated vertices and all edges of $G_n(\lambda)$ are contained in $E_{G_n(\lambda)}(A,B)$.\\
-Construct a family of edge-disjoint cycles of the vertex set $[n]$ as follows:\\
-For all edges $(v_i,w_j)$ satisfying $i+j\leq ct$, such that $(v_{ct-j+1},w_{ct-i+1})$ is not an edge in $G_n(\lambda)$ consider the cycle
+Since \(n\) is not a power of \(2\) we can write it as \(n=c(2t+1)\). Now consider the staircase graph \(G_n(\lambda)\) given by the partition \(\lambda=c\cdot\text{cor}(t)\). For the definition of staircase graphs and partitions, see \cite{1}. Since \(G_n(\lambda)\) is bipartite we can partition the vertices of \(G_n(\lambda)\) as \([n]=A\cup B\cup C\), with \(A=\{v_1,\ldots,v_{ct}\}\), \(B=\{w_1,\ldots,w_{ct}\}\) and \(C=\{x_1,\ldots,x_c\}\), such that \(C\) is the set of all isolated vertices, and all edges of \(G_n(\lambda)\) are contained in \(E_{G_n(\lambda)}(A,B)\). Construct a family of cycles in \(C_1(\Delta^{[n]})\) with pairwise disjoint supports as follows:\\
+For all edges \((v_i,w_j)\) satisfying \(i+j\leq ct\), such that \((v_{ct-j+1},w_{ct-i+1})\) is not an edge in \(G_n(\lambda)\) consider the cycle
 \[
-C_{ij}\coloneqq\{(v_i,w_j),(v_{ct-j+1},w_{ct-i+1}),(v_i,v_{ct-j+1}),(w_j,w_{ct-i+1})\}
+C_{ij}\coloneqq (v_i,w_j)+(v_{ct-j+1},w_{ct-i+1})+(v_i,v_{ct-j+1})+(w_j,w_{ct-i+1})
 \]
-For all edges $e_{ij}=(v_i,w_j)$ satisfying $i+j\leq ct+1$, such that $e'_{ij}=(v_{ct-j+1},w_{ct-i+1})$ is also an edge in $G_n(\lambda)$ (for $i+j=ct+1$ they are equal), the set
+For all edges \(e_{ij}=(v_i,w_j)\) satisfying \(i+j\leq ct+1\), such that \(e'_{ij}=(v_{ct-j+1},w_{ct-i+1})\) is also an edge in \(G_n(\lambda)\) (for \(i+j=ct+1\) they are equal), the set
 \[
 D\coloneqq\{e_{ij}, e'_{ij}:i+j\leq ct+1\text{, }e_{ij}\text{ and }e'_{ij}\text{ are edges in }G_n(\lambda)\}
-\] can be partitioned into $t$ sets $B_1,\ldots,B_t$, each containing $c^2$ edges:
+\] can be partitioned into \(t\) sets \(B_1,\ldots,B_t\), each containing \(c^2\) edges:
 \[
 B_k\coloneqq\{(v_i,w_j):(k-1)c+1\leq i\leq kc\text{, }c(t-k)+1\leq j\leq c(t-k+1)\}
 \]
-Now, each vertex from $A\cup B$ is only contained in edges from exactly one of the sets $B_k$. This means that for any $l=1,\ldots,c$ and any pair of edges $(v_i,w_j)\in B_{k_1}$ and $(v_{i'},w_{j'})\in B_{k_2}$ ($k_1\neq k_2$) the cycles $\{(v_i,w_j),(v_i,x_l),(w_j,x_l)\}$ and $\{(v_{i'},w_{j'}),(v_{i'},x_l),(w_{j'},x_l)\}$ are edge-disjoint. Furthermore, each set $B_k$ itself is a complete balanced bipartite graph (i.e. a graph in which each of the $c$ vertices from $A$ is adjecent to each of the $c$ vertices from $B$) so we can partition it into $c$ sets $B_k^1,\ldots,B_k^c$, such that all edges in $B_k^l$ are disjoint, for every $l=1,\ldots,c$. Thus, the cycles $\{(v_i,w_j),(v_i,x_l),(w_j,x_l)\}$ are edge-disjoint for all $(v_i,w_j)\in B_k^l$. The family of all these cycles united with the cycles $C_{ij}$ we defined before gives a family of edge-disjoint cycles, such that every edge of $G_n(\lambda)$ is contained in exactly one cycle and every cycle containes exactly one of the edges from $G_n(\lambda)$. Since the number of cycles in this family equals the number of edges in $G_n(\lambda)$ and we know that we have $h(G_n(\lambda))=\frac{n}{3}$ by \cite{1} (Theorem 4.2.) we get $\gamma_1(\Delta^{[n]})\leq\frac{n}{3}$ and by Proposition \ref{proposition411} we have $\gamma_1(\Delta^{[n]})=\rho_1(\Delta^{[n]})=\frac{n}{3}$.
+Now, each vertex from \(A\cup B\) is only contained in edges from exactly one of the sets \(B_k\). This means that for any \(l=1,\ldots,c\) and any pair of edges \((v_i,w_j)\in B_{k_1}\) and \((v_{i'},w_{j'})\in B_{k_2}\) (\(k_1\neq k_2\)) the supports of the cycles \((v_i,w_j)+(v_i,x_l)+(w_j,x_l)\) and \((v_{i'},w_{j'})+(v_{i'},x_l)+(w_{j'},x_l)\) are disjoint. Furthermore, each set \(B_k\) itself is a complete balanced bipartite graph (i.e. a graph in which each of the \(c\) vertices from \(A\) is adjacent to each of the \(c\) vertices from \(B\)) so we can partition it into \(c\) sets \(B_k^1,\ldots,B_k^c\), such that all edges in \(B_k^l\) are disjoint, for every \(l=1,\ldots,c\). Thus, the supports of the cycles \((v_i,w_j)+(v_i,x_l)+(w_j,x_l)\) are pairwise disjoint for all \((v_i,w_j)\in B_k^l\). The family of all these cycles united with the cycles \(C_{ij}\) we defined before gives a family of cycles with pairwise disjoint supports, such that every edge of \(G_n(\lambda)\) is contained in exactly one cycle and every cycle containes exactly one of the edges from \(G_n(\lambda)\). Since the number of cycles in this family equals the number of edges in \(G_n(\lambda)\) and we know that we have \(h(G_n(\lambda))=\frac{n}{3}\) by \cite{1} (Theorem 4.2.) we get \(\gamma_1(\Delta^{[n]})\leq\frac{n}{3}\) and by Proposition \ref{proposition411} we have \(\gamma_1(\Delta^{[n]})=\rho_1(\Delta^{[n]})=\frac{n}{3}\).
 \end{proof}
 \end{thm}
+
+\begin{expl}
+
+Let \(n=10\) and consider the staircase graph \(G_{10}(\lambda)\) with \(\lambda=2\cdot\text{cor}(2)\) as shown in Figure \ref{figure13:Figure 13} (\(v_i\) and \(w_j\) are adjacent if and only if there is a box in column \(i\) and row \(j\) and the \(x_i\)'s are isolated vertices). Then, intuitively speaking, for every edge represented by a box for which there is no box on the other side of the diagonal
+\[
+(v_1,w_4),(v_2,w_3),(v_3,w_2),(v_4,w_1)
+\]
+we can "use" the missing boxes to construct cycles for these edges as we did in the first part of the proof of Theorem \ref{theorem421}. This means, we get the family of cycles:
+\begin{align}
+\{&(v_1,w_1)+(v_4,w_4)+(v_1,v_4)+(w_1,w_4),(v_2,w_2)+(v_3,w_3)+(v_2,v_3)+(w_2,w_3),\notag\\
+&(v_1,w_2)+(v_3,w_4)+(v_1,v_3)+(w_2,w_4),(v_2,w_1)+(v_4,w_3)+(v_2,v_4)+(w_1,w_3)\}\notag
+\end{align}
+For the remaining edges, according to the second part of the proof we use the isolated vertices to construct cycles and we get the family of cycles:
+\begin{align}
+\{&(v_1,w_4)+(v_1,x_1)+(w_4,x_1),(v_2,w_3)+(v_2,x_1)+(w_3,x_1),\notag\\
+&(v_3,w_2)+(v_3,x_1)+(w_2,x_1),(v_4,w_1)+(v_4,x_1)+(w_1,x_1),\notag\\
+&(v_1,w_3)+(v_1,x_2)+(w_3,x_2),(v_2,w_4)+(v_2,x_2)+(w_4,x_2),\notag\\
+&(v_3,w_1)+(v_3,x_2)+(w_1,x_2),(v_4,w_2)+(v_4,x_2)+(w_2,x_2)\}\notag
+\end{align}
+Uniting both families gives a family of cycles, whose supports are pairwise disjoint and such that every edge of \(G_{10}(\lambda)\) is contained in the support of exactly one cycle.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=0.5, line width=0.5pt]
+  \draw (0,0) grid (4,1);
+  \draw (0,0) grid (4,2);
+  \draw (0,0) grid (2,3);
+  \draw (0,0) grid (2,4);
+  
+  \node[left] (A) at (1.2,-1) {$v_1$};
+  \node[left] (B) at (2.2,-1) {$v_2$};
+  \node[left] (C) at (3.2,-1) {$v_3$};
+  \node[left] (D) at (4.2,-1) {$v_4$};
+  
+  \node[left] (A') at (1,-0.5) {$\cdot$};
+  \node[left] (B') at (2,-0.5) {$\cdot$};
+  \node[left] (C') at (3,-0.5) {$\cdot$};
+  \node[left] (D') at (4,-0.5) {$\cdot$};
+  
+  \node[left] (F) at (0,0.5) {$w_1\:\cdot$};
+  \node[left] (G) at (0,1.5) {$w_2\:\cdot$};
+  \node[left] (H) at (0,2.5) {$w_3\:\cdot$};
+  \node[left] (I) at (0,3.5) {$w_4\:\cdot$};
+  
+  \node[left] (J) at (6,6) {$\cdot\:x_1$};
+  \node[left] (K) at (7,5) {$\cdot\:x_2$};
+  
+\end{tikzpicture}
+  \caption{The staircase graph $G_{10}(\lambda)$ with $\lambda=2\cdot\text{cor}(2)$}
+  \label{figure13:Figure 13}
+\end{figure}
+
+\end{expl}
 
 The proof of the following statement can be found in \cite{6}.
 
 \begin{thm}
-Let $k+2$ devide $n$, then we have:
+Let \(k+2\) devide \(n\), then we have:
 \[
-\gamma_k(\Delta^{[n]})=\frac{n}{k+2}
+\gamma_k(\Delta^{[n]})=\rho_k(\Delta^{[n]})=\frac{n}{k+2}
 \]
 \end{thm}
+
+By the previous results we see that the hitting expansion and the disjoint cycle expansion coincide with the Cheeger constant for the simplex in all cases, where we know the Cheeger constant exactly. Up to know we do not know any family of complexes for which these constants differ, but nevertheless we can not show that they coincide in general.
