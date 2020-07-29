@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  29 JUL 2020 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  29 JUL 2020 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2155,6 +2155,21 @@ ML/zplm/m/it/10.95 h\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 G\OT1/zplm/m/n/10
  []
 
 [36] (./Chapters/Figure8.tex) [37]
+Overfull \hbox (2.94853pt too wide) in paragraph at lines 555--558
+\OMS/zplm/m/n/10.95 f\OML/zplm/m/it/10.95 w[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/i
+t/10.95 w[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 w[]\OT1/ppl/m/n/10.95 , \O
+ML/zplm/m/it/10.95 u[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 u[]\OMS/zplm/m/
+n/10.95 g$ \T1/ppl/m/n/10.95 with $\OML/zplm/m/it/10.95 w[] \OMS/zplm/m/n/10.95
+ 2 \OML/zplm/m/it/10.95 W[]$\T1/ppl/m/n/10.95 , $\OML/zplm/m/it/10.95 w[] \OMS/
+zplm/m/n/10.95 2 \OML/zplm/m/it/10.95 W[]$\T1/ppl/m/n/10.95 , $\OML/zplm/m/it/1
+0.95 u[] \OMS/zplm/m/n/10.95 2 \OML/zplm/m/it/10.95 U[]$ \T1/ppl/m/n/10.95 and 
+$\OML/zplm/m/it/10.95 u[] \OMS/zplm/m/n/10.95 2 \OML/zplm/m/it/10.95 U[]$\T1/pp
+l/m/n/10.95 , such that $\OMS/zplm/m/n/10.95 j\OML/zplm/m/it/10.95 E[]\OT1/zplm
+/m/n/10.95 (\OML/zplm/m/it/10.95 S\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 S\O
+T1/zplm/m/n/10.95 )\OMS/zplm/m/n/10.95 j ^^T
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 555--558
 
  []
@@ -2323,7 +2338,7 @@ live/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplri8a.pfb>
-Output written on main.pdf (72 pages, 511106 bytes).
+Output written on main.pdf (72 pages, 511249 bytes).
 PDF statistics:
  1337 PDF objects out of 1440 (max. 8388607)
  1234 compressed objects within 13 object streams
