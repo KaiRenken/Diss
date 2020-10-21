@@ -7,6 +7,8 @@
 \newcommand{\supp}{\mathrm{supp}}
 \newcommand{\im}{\mathrm{Im}}
 
+\newtheorem{conj}{Conjecture}[section]
+
 \begin{document}
 \title{Cosystoles and Cheeger Constants of the Simplex}   
 \author{Kai Renken} 
@@ -23,19 +25,10 @@
 The classical Cheeger constant intuitively measures the stability of a connected graph.
 \pause
 \input{Figure1.tex}
-}
-
-\frame{\frametitle{An intuitive approach}
-
-\input{Figure1.tex}
-
 \pause
-
-Deleting the one edge in the middle will give a disconnected graph, consisting of two connected components, each of them consisting of 6 vertices.
-
+Deleting the one edge in the middle will give a disconnected graph, consisting of two connected components, the smallest of them consisting of 5 vertices.\\
 \pause
-
-The Cheeger constant of this graph is $\frac{1}{6}$.
+The Cheeger constant of this graph is $\frac{1}{5}$.
 }
 
 \frame{\frametitle{The definition of the classical Cheeger constant}
@@ -49,6 +42,9 @@ h(G)=\min\left\{\frac{|\delta(A)|}{|A|}:A\subset V, 1\leq |A|\leq\frac{|V|}{2}\r
 \]
 with $\delta(A)\coloneqq\{e=(v,w)\in E:v\in A,w\in V\setminus A\}$.
 \end{Definition}
+\pause
+\input{Figure3.tex}
+
 }
 
 \frame{\frametitle{The classical Cheeger constant of the simplex}
@@ -68,7 +64,7 @@ as follows:
 
 \frame{\frametitle{The classical Cheeger constant of the simplex}
 
-For any subset $A\subset [n]\coloneqq 1,\ldots,n$ we have:
+For any subset $A\subset [n]\coloneqq\{1,\ldots,n\}$ we have:
 \[
 \frac{|\delta(A)|}{|A|}=\frac{|A|(n-|A|)}{|A|}=n-|A|,
 \]
@@ -119,6 +115,7 @@ is called the \textbf{coboundary expansion} of $\varphi$ and
 h_k(X)\coloneqq \min_{\substack{\varphi\in C^k(X)\\\varphi\notin\im(\delta^{k-1})}}\|\varphi\|_{exp}
 \]
 is called the $k$-th \textbf{Cheeger constant} of $X$.\\
+A cosystole $\varphi\in C^k(X)\setminus\im(\delta^{k-1})$ satisfying $\|\varphi\|_{exp}=h_k(X)$ is called a \textbf{Cheeger cosystole}.
 \end{Definition}
 }
 
@@ -261,10 +258,35 @@ C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\le
 
 \section{Cut-minimal graphs and Cheeger graphs of a simplex}
 
-\frame{\frametitle{Basics}
+\frame{\frametitle{Cut-minimal graphs and Cheeger graphs of a simplex}
+\pause
+\begin{Definition}
+Consider a graph $G=([n],E)$. For any subsets $A,B\subset [n]$ define
+\[
+E_G(A,B)\coloneqq \{(v,w)\in E\: :\: v\in A\text{, }w\in B\}
+\]
+and
+\[
+NE_G(A,B)\coloneqq \{(v,w)\notin E\: :\: v\in A\text{, }w\in B\}
+\]
+A graph $G=([n],E)$ is called \textbf{cut-minimal}, if for every $S\subset[n]$ we have
+\[
+|E_G(S,[n]\setminus S)|\leq |NE_G(S,[n]\setminus S)|,
+\]
+which is equivalent to
+\[
+|E_G(S,[n]\setminus S)|\leq\frac{|S|(n-|S|)}{2}
+\]
+\end{Definition}
+}
 
+\frame{\frametitle{Cut-minimal graphs and Cheeger graphs of a simplex}
 
-
+There is a one-to-one correspondence between the cut-minimal graphs on $n$ vertices and the $1$-cosystoles in $C^1(\Delta^{[n]})$.
+\pause
+\begin{Definition}
+A cut-minimal graph which corresponds to a Cheeger cosystole is called a \textbf{Cheeger graph}.
+\end{Definition}
 }
 
 \frame{\frametitle{Maximal cut-minimal graphs}
@@ -274,9 +296,25 @@ C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\le
 }
 
 \frame{\frametitle{The case when $n$ is a power of $2$}
-
-
-
+\pause
+\begin{conj}
+Let $n$ be a power of $2$. Then we have:
+\[
+h_1(\Delta^{[n]})>\frac{n}{3}
+\]
+\end{conj}
+\pause
+\begin{theorem}[Kozlov]
+\[
+h_1(\Delta^{[8]})>\frac{8}{3}
+\]
+\end{theorem}
+\pause
+\begin{theorem}[Renken]
+\[
+h_1(\Delta^{[16]})>\frac{16}{3}
+\]
+\end{theorem}
 }
 
 \section{Alternative generalizations of the classical Cheeger constant}

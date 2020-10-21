@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{On general cosystoles and Cheeger constants}{16}{0}{2}
-\beamer@sectionintoc {3}{Cut-minimal graphs and Cheeger graphs of a simplex}{46}{0}{3}
-\beamer@sectionintoc {4}{Alternative generalizations of the classical Cheeger constant}{49}{0}{4}
+\beamer@sectionintoc {2}{On general cosystoles and Cheeger constants}{15}{0}{2}
+\beamer@sectionintoc {3}{Cut-minimal graphs and Cheeger graphs of a simplex}{45}{0}{3}
+\beamer@sectionintoc {4}{Alternative generalizations of the classical Cheeger constant}{54}{0}{4}
