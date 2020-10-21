@@ -1,0 +1,36 @@
+%ALTA Bamer Class by Jan F. Senge, 2014.
+%
+%Version 1.1
+
+\def\beamer@themerounded@shadow{false}
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+
+\def\beamer@alta@itemshape{circle}
+\DeclareOptionBeamer{itemshape}{\def\beamer@alta@itemshape{#1}}
+
+\def\beamer@alta@enumshape{default}
+\DeclareOptionBeamer{enumshape}{\def\beamer@alta@enumshape{#1}}
+
+\def\beamer@alta@tocshape{square}
+\DeclareOptionBeamer{tocshape}{\def\beamer@alta@tocshape{#1}}
+
+
+
+\ProcessOptionsBeamer\relax
+
+%
+\mode<presentation>
+%
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+
+\setbeamertemplate{itemize items}[\beamer@alta@itemshape]
+\setbeamertemplate{enumerate}[\beamer@alta@enumshape]
+\setbeamertemplate{sections/subsections in toc}[\beamer@alta@tocshape]
+
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,%
+%shadow=\beamer@themerounded@shadow%
+]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+%
+
+\mode<all>

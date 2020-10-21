@@ -1,0 +1,280 @@
+%ALTA Bamer Class by Jan F. Senge, 2014, based on the ZETEM theme written by Kristan Bredies and Dirk Lorenz, 2005
+%
+%Version 1.1
+
+\usepackage{pgf}
+
+\newif\ifbeamer@theme@noheadline
+\newif\ifbeamer@theme@nofootline
+
+\def\beamer@theme@headline@title{}
+\def\beamer@theme@footline@title{}
+\def\beamer@theme@footline@author{}
+\def\beamer@theme@footline@section{\hspace{.75\paperwidth}}
+\def\beamer@theme@footline@number{}
+
+%% new options
+\newif\ifbeamer@theme@hideinstitute
+\beamer@theme@hideinstitutefalse
+\DeclareOptionBeamer{hideinstitute}{\beamer@theme@hideinstitutetrue}
+%
+\newif\ifbeamer@theme@hideuniversity
+\beamer@theme@hideuniversityfalse
+\DeclareOptionBeamer{hideuniversity}{\beamer@theme@hideuniversitytrue}
+%
+\def\beamer@theme@footline@onesection{}
+%
+%% Standard Option defines several packages
+\newif\ifbeamer@standard
+\DeclareOptionBeamer{standard}{
+	\beamer@theme@hideuniversitytrue
+	\def\beamer@theme@headline@title{%
+    		\insertshorttitle}
+	\def\beamer@theme@footline@author{%
+    		\insertshortauthor[width=.18\paperwidth]}
+	\def\beamer@theme@footline@number{%
+		\ifnum \insertframenumber<10
+			{\phantom{0}\insertframenumber\,/\,\inserttotalframenumber}%
+		\else
+			{\insertframenumber\,/\,\inserttotalframenumber}%
+		\fi%
+	}
+	\def\beamer@theme@footline@section{%
+    		\insertsectionnavigationhorizontal{.75\paperwidth}%
+		{\hskip0pt plus1filll}{}%
+	}
+} 
+%END standard
+%%
+%
+\DeclareOptionBeamer{noheadline}{\beamer@theme@noheadlinetrue}
+\DeclareOptionBeamer{headlinetitle}{\def\beamer@theme@headline@title{%
+    \insertshorttitle}}
+\DeclareOptionBeamer{footlinetitle}{\def\beamer@theme@footline@title{%
+    \insertshorttitle}}
+\DeclareOptionBeamer{nofootline}{\beamer@theme@nofootlinetrue}
+\DeclareOptionBeamer{footlineauthor}{\def\beamer@theme@footline@author{%
+    \insertshortauthor[width=.18\paperwidth]}}
+\DeclareOptionBeamer{footlinesection}{\def\beamer@theme@footline@section{%
+    \insertsectionnavigationhorizontal{.75\paperwidth}%
+				      {\hskip0pt plus1filll}{}%
+}}
+\DeclareOptionBeamer{footlinenumber}{\def\beamer@theme@footline@number{%
+	\ifnum \insertframenumber<10
+		{\phantom{0}\insertframenumber\,/\,\inserttotalframenumber}%
+	\else
+		{\insertframenumber\,/\,\inserttotalframenumber}%
+	\fi%
+}}
+\def\isundefined#1{TT\fi\ifx#1\undefined}
+
+\DeclareOptionBeamer{onesection}{\def\beamer@theme@footline@onesection{%
+	\insertsection 
+	\ifx\insertsubsection\empty\else
+		\, : \insertsubsection
+	\fi
+}}
+
+%
+%
+\ProcessOptionsBeamer
+%
+%
+
+\newcommand{\helvet}{\fontfamily{phv}\selectfont}
+\setbeamerfont{institute in head/foot}{series=\helvet}
+
+\def\beamer@theme@headline@institutelogo{}
+\def\institutelogo#1{\def\beamer@theme@headline@institutelogo{
+	\usebeamerfont{institute in head/foot}#1}}
+
+\def\beamer@theme@footline@universitylogo{}
+\def\universitylogo#1{\def\beamer@theme@footline@universitylogo{
+	\usebeamerfont{institute in head/foot}#1}}
+
+\mode<presentation>
+
+\ifbeamer@theme@nofootline
+\defbeamertemplate*{footline}{alta theme}{}
+\else
+\defbeamertemplate*{footline}{alta theme}{%
+%%%%% First PAGE
+\ifnum \insertpagenumber=1
+  \usebeamerfont{subsection in head/foot}%
+  \mbox{}\rlap{%
+    \begin{pgfpicture}{0pt}{0pt}{\paperwidth}{3\baselineskip}%
+      % Grauer Fond
+      \color{coolgray 1}%
+      \pgfrect[fill]{\pgfpoint{0cm}{0cm}}{%
+	\pgfpoint{\paperwidth}{0.5\baselineskip}}
+      \pgfrect[fill]{\pgfpoint{0mm}{0cm}}{%
+	\pgfpoint{.75\paperwidth}{2\baselineskip}}%
+      \color{black}%
+    \end{pgfpicture}%
+  }
+  %% Universitätslogo
+  \rlap{%
+    \raisebox{0.3\baselineskip}{%
+      \mbox{}\hspace{3mm}%
+      \parbox[b]{.75\paperwidth}{%
+	\beamer@theme@footline@universitylogo
+	}}}%
+%
+\else
+%%%%% Second and more PAGE
+  \usebeamerfont{subsection in head/foot}%
+  \mbox{}\rlap{%
+    \begin{pgfpicture}{0pt}{0pt}{\paperwidth}{3\baselineskip}%
+      % Grauer Fond
+      \color{coolgray 1}%
+      \pgfrect[fill]{\pgfpoint{0cm}{0cm}}{%
+	\pgfpoint{\paperwidth}{0.5\baselineskip}}
+      \pgfrect[fill]{\pgfpoint{0mm}{0cm}}{%
+	\pgfpoint{.75\paperwidth}{2\baselineskip}}%
+      \color{black}%
+    \end{pgfpicture}%
+  }
+ {\ifbeamer@theme@hideuniversity%
+ \else%
+%  %% Universitätslogo
+  \rlap{%
+    \raisebox{0.3\baselineskip}{%
+      \mbox{}\hspace{3mm}%
+      \parbox[b]{.75\paperwidth}{%
+      \beamer@theme@footline@universitylogo
+	}}}%
+  \fi}
+%
+  %% Titel in Fusszeile
+  \rlap{\parbox[b]{\paperwidth}{%
+      \center%
+      \raisebox{1\baselineskip}{%
+	\usebeamerfont{title in head/foot}\beamer@theme@footline@title
+  }}}%
+  %% Autor und Foliennummer
+  \rlap{%
+    \raisebox{1\baselineskip}{%
+      \mbox{}\hspace{.75\paperwidth}%
+      \parbox[b]{.25\paperwidth}{%
+	\mbox{}\hspace{.5mm}\beamer@theme@footline@author%
+	\hspace{-2mm}%
+	\beamer@theme@footline@number\mbox{}%
+  }}}%
+  %% Abschnittsleiste
+  \rlap{\raisebox{1\baselineskip}{%
+      \beamer@theme@footline@section%
+  }}%
+  %%
+  \rlap{\parbox[b]{\paperwidth}{%
+      \center%
+      \raisebox{1\baselineskip}{%
+	\usebeamerfont{title in head/foot}\beamer@theme@footline@onesection
+  }}}%
+%
+\fi
+}
+\fi
+
+\newlength{\beamerheadlinerulewidth}
+
+\ifbeamer@theme@noheadline
+\defbeamertemplate*{headline}{alta theme}{}
+\else
+\defbeamertemplate*{headline}{alta theme}{%
+    \ifnum \insertpagenumber=1{
+      \leavevmode%
+			\setlength{\beamerheadlinerulewidth}{\paperwidth}%
+			\addtolength{\beamerheadlinerulewidth}{-6mm}%
+			\usebeamerfont{subsection in head/foot}%
+			\mbox{}\rlap{%
+			\begin{pgfpicture}{0pt}{0pt}{\paperwidth}{3.75\baselineskip}%
+				\pgfsetlinewidth{0pt}%
+			%% waagerechter Strich
+				\pgfrect[fill]{\pgfpoint{3mm}{0cm}}
+				{\pgfpoint{\beamerheadlinerulewidth}{.1\baselineskip}}%
+			\end{pgfpicture}
+			}%
+			%% Institutslogo
+			\rlap{\mbox{}\hspace{0mm}\raisebox{1.5\baselineskip}{%
+			\parbox[c]{1\paperwidth}{%
+			\vspace{0pt}%
+			\hspace{1.5mm}
+			\beamer@theme@headline@institutelogo%
+			\vspace{0pt}%
+			}}}%
+   }\else{
+      \leavevmode%
+      {\ifbeamer@theme@hideinstitute
+      \setlength{\beamerheadlinerulewidth}{\paperwidth}%
+			\addtolength{\beamerheadlinerulewidth}{-6mm}%
+			\usebeamerfont{subsection in head/foot}%
+			\mbox{}\rlap{%
+			\begin{pgfpicture}{0pt}{0pt}{\paperwidth}{1.5\baselineskip}%
+				\pgfsetlinewidth{0pt}%
+			%% waagerechter Strich
+				\pgfrect[fill]{\pgfpoint{3mm}{0cm}}
+				{\pgfpoint{\beamerheadlinerulewidth}{.1\baselineskip}}%
+			\end{pgfpicture}
+			}%
+			%% Titel in Kopfzeile
+			\rlap{\parbox[b]{1\paperwidth}{%
+				\center%
+				\vspace{-1\baselineskip}
+				\raisebox{.5\baselineskip}{%
+				\usebeamerfont{title in head/foot}
+				\scriptsize\beamer@theme@headline@title
+			}}}%
+	\else%
+	      \setlength{\beamerheadlinerulewidth}{\paperwidth}%
+			\addtolength{\beamerheadlinerulewidth}{-6mm}%
+			\usebeamerfont{subsection in head/foot}%
+			\mbox{}\rlap{%
+			\begin{pgfpicture}{0pt}{0pt}{\paperwidth}{3.75\baselineskip}%
+				\pgfsetlinewidth{0pt}%
+			%% waagerechter Strich
+				\pgfrect[fill]{\pgfpoint{3mm}{0cm}}
+				{\pgfpoint{\beamerheadlinerulewidth}{.1\baselineskip}}%
+			\end{pgfpicture}
+			}%
+			%% Institutslogo
+			\rlap{\mbox{}\hspace{0mm}\raisebox{1.5\baselineskip}{%
+			\parbox[c]{1\paperwidth}{%
+			\vspace{0pt}%
+			\hspace{1.5mm}
+			\beamer@theme@headline@institutelogo%
+			\vspace{0pt}%
+			}}}%
+			%% Titel in Kopfzeile
+			\rlap{\hspace{0.25\paperwidth}\parbox[b]{0.75\paperwidth}{%
+				\center%
+				\raisebox{0.5\baselineskip}{%
+				\usebeamerfont{title in head/foot}
+				\scriptsize\beamer@theme@headline@title
+			}}}%
+	\fi}}\fi}\fi
+
+
+% Behebt einen Bug in der Frametitle-Definition in
+% beamerinnerthemedefault 
+\defbeamertemplate*{frametitle}{alta theme}[1][left]{
+  \@tempswafalse%
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \begin{beamercolorbox}[sep=0.3cm,#1,wd=\the\@tempdima]{frametitle}
+    \if@tempswa\else\csname beamer@fte#1\endcsname\fi{%
+      \usebeamerfont{frametitle}\insertframetitle\par}%
+			    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\par}%
+      \fi
+    }%
+    \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+  \end{beamercolorbox}%
+  \vskip-0.3cm%
+}
+
+
+\mode<all>

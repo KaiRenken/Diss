@@ -1,0 +1,166 @@
+%ALTA Bamer Class by Jan F. Senge.
+%
+%Version 1.1
+
+% Optionen für das outer theme
+\DeclareOptionBeamer{noheadline}{\PassOptionsToPackage{noheadline}{beamerouterthemealta}}
+\DeclareOptionBeamer{headlinetitle}{\PassOptionsToPackage{headlinetitle}{beamerouterthemealta}}
+\DeclareOptionBeamer{nofootline}{\PassOptionsToPackage{nofootline}{beamerouterthemealta}}
+\DeclareOptionBeamer{footlinetitle}{\PassOptionsToPackage{footlinetitle}{beamerouterthemealta}}
+\DeclareOptionBeamer{footlineauthor}{\PassOptionsToPackage{footlineauthor}{beamerouterthemealta}}
+\DeclareOptionBeamer{footlinesection}{\PassOptionsToPackage{footlinesection}{beamerouterthemealta}}
+\DeclareOptionBeamer{footlinenumber}{\PassOptionsToPackage{footlinenumber}{beamerouterthemealta}}
+%
+%
+\DeclareOptionBeamer{onesection}{\PassOptionsToPackage{onesection}{beamerouterthemealta}}
+\DeclareOptionBeamer{hideinstitute}{%
+	\PassOptionsToPackage{hideinstitute}{beamerouterthemealta}
+	\usepackage{etoolbox}
+	\makeatletter
+	\pretocmd{\beamer@@@@frame}{%
+  	\addtocounter{framenumber}{1}%
+  	\beamer@calculateheadfoot%
+  	\addtocounter{framenumber}{-1}}{}{}
+	\makeatother
+}
+\DeclareOptionBeamer{hideuniversity}{\PassOptionsToPackage{hideuniversity}{beamerouterthemealta}}
+\DeclareOptionBeamer{standard}{\PassOptionsToPackage{standard}{beamerouterthemealta}}
+%
+%
+%Unilogo which to choose
+\newif\ifbeamer@theme@exzellenz
+\beamer@theme@exzellenzfalse
+\DeclareOptionBeamer{exzellenz}{\beamer@theme@exzellenztrue}
+%
+%
+\newif\ifbeamer@theme@dvi
+\beamer@theme@dvifalse
+\DeclareOptionBeamer{dvi}{\beamer@theme@dvitrue}
+%
+%
+\DeclareOptionBeamer{colortheorem}{
+% Defining different styles for Theorem, Definiton and Lemma
+\let\OLDtheorem=\theorem
+\def\theorem{%
+  \setbeamercolor{block title}{bg=coolgray 1,fg=structure.fg}%
+  \setbeamercolor{block body}{bg=primary}%
+  \OLDtheorem
+}
+\let\OLDdefinition=\definition
+\def\definition{%
+  \setbeamercolor{block title}{bg=coolgray 2,fg=structure.fg}%
+  \setbeamercolor{block body}{bg=primary 2}%
+  \OLDdefinition
+}
+\let\OLDlemma=\lemma
+\def\lemma{%
+  \setbeamercolor{block title}{bg=coolgray 3,fg=structure.fg}%
+  \setbeamercolor{block body}{bg=primary 3}%
+  \OLDlemma
+}
+}
+%
+% Optionen fuer das color theme
+\DeclareOptionBeamer{bright}{\PassOptionsToPackage{bright}{beamercolorthemealta}}
+\DeclareOptionBeamer{dim}{\PassOptionsToPackage{dim}{beamercolorthemealta}}
+\DeclareOptionBeamer{dark}{\PassOptionsToPackage{dark}{beamercolorthemealta}}
+\DeclareOptionBeamer{example}{\PassOptionsToPackage{example}{beamercolorthemealta}}
+
+% Optionen fuer das inner theme
+\DeclareOptionBeamer{shadow}{\PassOptionsToPackage{shadow}{beamerinnerthemealta}}
+\DeclareOptionBeamer{itemshape}{\PassOptionsToPackage{itemshape=#1}{beamerinnerthemealta}}
+\DeclareOptionBeamer{newitemshape}{\PassOptionsToPackage{newitemshape=#1}{beamerinnerthemealta}}
+\DeclareOptionBeamer{enumshape}{\PassOptionsToPackage{enumshape=#1}{beamerinnerthemealta}}
+\DeclareOptionBeamer{tocshape}{\PassOptionsToPackage{tocshape=#1}{beamerinnerthemealta}}
+%
+%
+%Colors of references internal, external etc.
+\hypersetup{hidelinks} %default option
+
+\DeclareOptionBeamer{citecolor}{%
+	\hypersetup{colorlinks,linkcolor=black,urlcolor=black,citecolor=black,anchorcolor=black}%
+	\let\@mycite\@cite
+	\def\@cite##1##2{{%
+		\hypersetup{linkcolor=#1}[{##1\if@tempswa , ##2\fi}]}}
+}
+
+\def\beamer@alta@linkcolor{black}
+\def\beamer@alta@urlcolor{black}
+
+\DeclareOptionBeamer{linkcolor}{%
+	\def\beamer@alta@linkcolor{#1}
+	\hypersetup{colorlinks,linkcolor=#1,urlcolor=\beamer@alta@urlcolor,citecolor=black,anchorcolor=black}%
+}
+
+\DeclareOptionBeamer{urlcolor}{%
+	\def\beamer@alta@urlcolor{#1}
+	\hypersetup{colorlinks,urlcolor=#1,linkcolor=\beamer@alta@linkcolor,citecolor=black,anchorcolor=black}%
+}
+%%
+%
+\ProcessOptionsBeamer\relax
+%%
+%
+
+\usecolortheme{alta}
+\useinnertheme{alta}
+\useoutertheme{alta}
+
+% Ergänzungen zum font theme
+\setbeamerfont{title}{series=\bfseries,size=\large}
+%\setbeamerfont{titlelike}{parent=title}
+\setbeamerfont*{frametitle}{parent=title,size=\large}
+\setbeamerfont{frametitle}{parent=title}
+\setbeamerfont{framesubtitle}{parent=title}
+\setbeamerfont{frametitle continuation}{parent=title}
+%
+%\setbeamerfont{block title}{series=\itshape}
+
+
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\mode<presentation>
+
+
+%%% Decides which image format to use
+\ifbeamer@theme@dvi
+%%% DVI-Version
+\institutelogo{%
+  \href{http://www.alta.uni-bremen.de}{%
+        \includegraphics[height=3\baselineskip]{./beamertheme_pics/alta-logo.eps}}
+}
+	\ifbeamer@theme@exzellenz
+		\universitylogo{%
+			\href{http://www.uni-bremen.de}{%
+	  		\includegraphics[height=1.5\baselineskip]{./beamertheme_pics/unilogo-exzellent.eps}}
+		}
+	\else
+		\universitylogo{%
+			\href{http://www.uni-bremen.de}{%
+	  		\includegraphics[height=1.5\baselineskip]{./beamertheme_pics/unilogo.eps}}
+		}
+	\fi
+\else
+%% PDF-Version
+\institutelogo{%
+  \href{http://www.alta.uni-bremen.de}{%
+        \includegraphics[height=3\baselineskip]{./beamertheme_pics/alta-logo.pdf}}
+}
+	\ifbeamer@theme@exzellenz
+		\universitylogo{%
+			\href{http://www.uni-bremen.de}{%
+	  		\includegraphics[height=1.5\baselineskip]{./beamertheme_pics/unilogo-exzellent.pdf}}
+		}
+	\else
+		\universitylogo{%
+			\href{http://www.uni-bremen.de}{%
+	  		\includegraphics[height=1.5\baselineskip]{./beamertheme_pics/unilogo.pdf}}
+		}
+	\fi
+\fi
+
+
+
+\mode<all>
