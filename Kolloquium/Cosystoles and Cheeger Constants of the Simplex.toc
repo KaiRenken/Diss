@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{On general cosystoles and Cheeger constants}{16}{0}{2}
-\beamer@sectionintoc {3}{The first Cheeger constant of a simplex}{45}{0}{3}
-\beamer@sectionintoc {4}{Alternative generalizations of the classical Cheeger constant}{51}{0}{4}
+\beamer@sectionintoc {2}{On general cosystoles and Cheeger constants}{18}{0}{2}
+\beamer@sectionintoc {3}{The first Cheeger constant of a simplex}{56}{0}{3}
+\beamer@sectionintoc {4}{Alternative generalizations of the classical Cheeger constant}{64}{0}{4}

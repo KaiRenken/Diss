@@ -8,6 +8,7 @@
 \newcommand{\im}{\mathrm{Im}}
 
 \newtheorem{conj}{Conjecture}[section]
+\newtheorem{cor}{Corollary}[section]
 
 \begin{document}
 \title{Cosystoles and Cheeger Constants of the Simplex}   
@@ -21,7 +22,7 @@
 \section{Introduction}
 
 \frame{\frametitle{An intuitive approach}
-
+\pause
 The classical Cheeger constant intuitively measures the stability of a connected graph.
 \pause
 \input{Figure1.tex}
@@ -59,12 +60,10 @@ Then we have:
 \[
 h(K_n)=\left\lceil\frac{n}{2}\right\rceil
 \]
-as follows:
-}
-
-\frame{\frametitle{The classical Cheeger constant of the simplex}
-
+as follows:\\
+\pause
 For any subset $A\subset [n]\coloneqq\{1,\ldots,n\}$ we have:
+\pause
 \[
 \frac{|\delta(A)|}{|A|}=\frac{|A|(n-|A|)}{|A|}=n-|A|,
 \]
@@ -111,16 +110,18 @@ For a cochain $\varphi\in C^k(X)\setminus\im(\delta^{k-1})$ the quotient
 \|\varphi\|_{exp}\coloneqq \frac{\|\delta^k(\varphi)\|}{\|\varphi\|_{csy}}
 \]
 is called the \textbf{coboundary expansion} of $\varphi$ and
+\pause
 \[
 h_k(X)\coloneqq \min_{\substack{\varphi\in C^k(X)\\\varphi\notin\im(\delta^{k-1})}}\|\varphi\|_{exp}
 \]
 is called the $k$-th \textbf{Cheeger constant} of $X$.\\
+\pause
 A cosystole $\varphi\in C^k(X)\setminus\im(\delta^{k-1})$ satisfying $\|\varphi\|_{exp}=h_k(X)$ is called a \textbf{Cheeger cosystole}.
 \end{Definition}
 }
 
 \frame{\frametitle{Relations to the classical Cheeger constant}
-
+\pause
 The classical Cheeger constant of a graph can be considered as the $0$-th Cheeger constant by defining the cosystolic norm of a $0$-cochain $\varphi\in C^0(X)$ as 
 \[
 \|\varphi\|_{csy}\coloneqq\min\{|\supp(\varphi)|,|X^{(0)}|-|\supp(\varphi)|\}
@@ -164,6 +165,7 @@ Let $\Delta^{[n]}$ always denote the standard simplex on $n$ vertices.
 }
 
 \frame{\frametitle{Some values for higher dimensional Cheeger constants}
+\pause
 \begin{theorem}[Wallach, Meshulam]
 Let $\Delta^{[n]}$ be the standard simplex on $n$ vertices and $1\leq k\leq n-2$, then we have:
 \[
@@ -184,12 +186,13 @@ h_1(\Delta^{[n]})=\frac{n}{3}
 }
 
 \frame{\frametitle{Hitting sets and hitting numbers}
-
+\pause
 \begin{Definition}
 Let $V$ be some set and $\mathcal{F}\subseteq 2^V$ a family of subsets of $V$. A subset $P\subseteq V$ is called a \textbf{hitting set} of $\mathcal{F}$ if we have $P\cap F\neq\emptyset$ for all $F\in\mathcal{F}$. The \textbf{hitting number} of $\mathcal{F}$ is defined by
 \[
 \tau(\mathcal{F})\coloneqq\min\{|P|:P\subseteq V\text{ is a hitting set of }\mathcal{F}\}
 \]
+\pause
 If $\mathcal{F}$ is a family of chains / cochains, the hitting sets and the hitting number of $\mathcal{F}$ are defined as the hitting sets and the hitting number of $\{\supp(\varphi):\varphi\in\mathcal{F}\}$.
 \end{Definition}
 \pause
@@ -199,7 +202,7 @@ Let $V\coloneqq \left\{1,2,3,4,5\right\}$ and $\mathcal{F}\coloneqq \left\{\{1,2
 }
 
 \frame{\frametitle{The cycle detection theorem}
-
+\pause
 \begin{theorem}[Kozlov]
 Let $X$ be a simplicial complex, $k\geq 1$, and $\varphi\in C^k(X)$. Let now $\mathcal{F}=\left\{\alpha_1,\ldots,\alpha_t\right\}$ be a family of $k$-cycles in $C_k(X)$, such that $\left\langle\varphi,\alpha_i\right\rangle=1$ for all $1\leq i\leq t$, then we have:
 \[
@@ -229,10 +232,17 @@ Since $\psi$ was chosen arbitrarily we are done.
 \end{proof}
 }
 
+\frame{\frametitle{The cycle detection theorem}
+\pause
+\begin{cor}[Kozlov]
+Let $\varphi\in C^k(X)$ and $\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\subset C_k(X)$ be a family of $k$-cycles, such that their supports are pairwise disjoint, then $\varphi$ is a cosystole.
+\end{cor}
+}
+
 \section{The first Cheeger constant of a simplex}
 
 \frame{\frametitle{Maximal cosystoles}
-
+\pause
 \begin{Definition}
 Let $X$ be a simplicial complex and $1\leq k\leq \dim(X)$, then
 \[
@@ -243,7 +253,7 @@ is the largest norm a $k$-cosystole in $X$ can attain.
 }
 
 \frame{\frametitle{The largest cosystoles of the simplex}
-
+\pause
 \begin{theorem}[Renken]
 \[
 C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}
@@ -276,7 +286,7 @@ h_1(\Delta^{[16]})>\frac{16}{3}
 \section{Alternative generalizations of the classical Cheeger constant}
 
 \frame{\frametitle{Disjoint cycle expansion}
-
+\pause
 \begin{Definition}
 Let $X$ be a simplicial complex, $\mathcal{F}\subset C_k(X)$ a family of cycles, such that their supports are pairwise disjoint and
 \footnotesize
@@ -284,10 +294,12 @@ Let $X$ be a simplicial complex, $\mathcal{F}\subset C_k(X)$ a family of cycles,
 P(\mathcal{F})\coloneqq\{\varphi\in C^k(X):|\supp(\varphi)\cap\supp(F)|=1\text{ for all }F\in\mathcal{F}\text{ and }\supp(\varphi)\subset\bigcup\limits_{F\in\mathcal{F}}\supp(F)\}
 \]
 \normalsize
+\pause
 Then we define
 \[
 \gamma_{\mathcal{F}}\coloneqq\frac{\min\limits_{\varphi\in P(\mathcal{F})}\|\delta^k(\varphi)\|}{|\mathcal{F}|}
 \]
+\pause
 and we call
 \[
 \gamma_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\gamma_{\mathcal{F}}
@@ -303,16 +315,18 @@ the $k$-th \textbf{disjoint cycle expansion} of $X$ with
 }
 
 \frame{\frametitle{Hitting expansion}
-
+\pause
 \begin{Definition}
 Let $X$ be a simplicial complex, $\mathcal{F}\subset C_k(X)$ a family of cycles and
 \[
 P'(\mathcal{F})\coloneqq\{\varphi\in C^k(X):|\supp(\varphi)\cap\supp(F)|\text{ is odd for all }F\in\mathcal{F}\}
 \]
+\pause
 Then we define
 \[
 \rho_{\mathcal{F}}\coloneqq\frac{\min\limits_{\varphi\in P'(\mathcal{F})}\|\delta^k(\varphi)\|}{\tau(\mathcal{F})}
 \]
+\pause
 and we call
 \[
 \rho_k(X)\coloneqq\min\limits_{\mathcal{F}\in\mathfrak{C}}\rho_{\mathcal{F}}
@@ -326,7 +340,6 @@ the $k$-th \textbf{hitting expansion} of $X$, with
 
 \frame{\frametitle{Relations to the Cheeger constant}
 \pause
-
 \begin{theorem}[Kozlov]
 Let $X$ be a simplicial complex and $k\geq 1$, then we have:
 \[
@@ -349,4 +362,20 @@ Let $n$ not be a power of $2$, then we have:
 \end{theorem}
 }
 
+\section*{Bibliography}
+\frame{\frametitle{Bibliography}
+\begin{thebibliography}{1}
+\bibitem{1}
+Dmitry N. Kozlov, \textit{The first Cheeger constant of a simplex}, Graphs and Combinatorics (2017) 33: 1543. https://doi.org/10.1007/s00373-017-1853-9
+\bibitem{2}
+N. Linial, R. Meshulam, \textit{Homological connectivity of random 2-complexes}, Combinatorica 26, 2006,
+no. 4, 475-487
+\bibitem{3}
+M. Gromov, \textit{Singularities, expanders and topology of maps. Part 2. From combinatorics to topology
+via algebraic isoperimetry}, Geom. Funct. Anal. 20, (2010), no. 2, 416-526.
+\bibitem{4}
+M. Wallach and R. Meshulam, \textit{Homological connectivity of random k-dimensional complexes}, Random Structures Algorithms 34, 2009, no. 3, 408–417
+\bibitem{5} Dmitry N. Kozlov and Roy Meshulam, \textit{Quantitative aspects of acyclicity}, arXiv:1802.03210 [math.CO], 2018
+\end{thebibliography}
+}
 \end{document}
