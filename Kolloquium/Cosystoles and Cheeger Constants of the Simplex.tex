@@ -1,5 +1,5 @@
 \documentclass[9pt]{beamer}
-\usetheme[standard]{alta}
+\usetheme[headlinetitle,footlineauthor,onesection]{alta}
 \usepackage{tikz}
 \usepackage{mathtools}
 \usepackage{amsmath}
@@ -119,34 +119,6 @@ A cosystole $\varphi\in C^k(X)\setminus\im(\delta^{k-1})$ satisfying $\|\varphi\
 \end{Definition}
 }
 
-\frame{\frametitle{Example}
-
-\input{Figure2.tex}
-
-}
-
-\frame{\frametitle{Some values for higher dimensional Cheeger constants}
-\begin{theorem}[Wallach, Meshulam]
-Let $\Delta^{[n]}$ be the standard simplex on $n$ vertices and $1\leq k\leq n-2$, then we have:
-\[
-\frac{n}{k+2}\leq h_k(\Delta^{[n]})\leq\left\lceil\frac{n}{k+2}\right\rceil
-\]
-If $n$ is divided by $k+2$, then we have:
-\[
-h_k(\Delta^{[n]})=\frac{n}{k+2}
-\]
-\end{theorem}
-}
-
-\frame{\frametitle{Some values for higher dimensional Cheeger constants}
-\begin{theorem}[Kozlov]
-Let $n>2$ not be a power of $2$, then we have:
-\[
-h_1(\Delta^{[n]})=\frac{n}{3}
-\]
-\end{theorem}
-}
-
 \frame{\frametitle{Relations to the classical Cheeger constant}
 
 The classical Cheeger constant of a graph can be considered as the $0$-th Cheeger constant by defining the cosystolic norm of a $0$-cochain $\varphi\in C^0(X)$ as 
@@ -159,7 +131,7 @@ The classical Cheeger constant of a graph equals $0$ iff the graph is disconnect
 
 \frame{\frametitle{Relations to the classical Cheeger constant}
 
-The $k$-th Cheeger constant of a simplicial complex $X$ equals $0$ iff the $k$-th homology group $H_k(X)$ is non-trivial, as follows:
+The $k$-th Cheeger constant of a simplicial complex $X$ equals $0$ iff the $k$-th cohomology group $H^k(X)$ is non-trivial, as follows:\\
 \pause
 Let $\varphi\in C^k(X)$, then we have:
 \pause
@@ -182,6 +154,33 @@ which is equivalent to
 \[
 H^k(X)\not\cong\{0\}
 \]
+}
+
+\frame{\frametitle{Example: The $1$-cosystoles of $\Delta^{[6]}$}
+\pause
+Let $\Delta^{[n]}$ always denote the standard simplex on $n$ vertices.
+\pause
+\input{Figure2.tex}
+}
+
+\frame{\frametitle{Some values for higher dimensional Cheeger constants}
+\begin{theorem}[Wallach, Meshulam]
+Let $\Delta^{[n]}$ be the standard simplex on $n$ vertices and $1\leq k\leq n-2$, then we have:
+\[
+\frac{n}{k+2}\leq h_k(\Delta^{[n]})\leq\left\lceil\frac{n}{k+2}\right\rceil
+\]
+If $n$ is divisible by $k+2$, then we have:
+\[
+h_k(\Delta^{[n]})=\frac{n}{k+2}
+\]
+\end{theorem}
+\pause
+\begin{theorem}[Kozlov]
+Let $n>2$ not be a power of $2$, then we have:
+\[
+h_1(\Delta^{[n]})=\frac{n}{3}
+\]
+\end{theorem}
 }
 
 \frame{\frametitle{Hitting sets and hitting numbers}
@@ -230,6 +229,8 @@ Since $\psi$ was chosen arbitrarily we are done.
 \end{proof}
 }
 
+\section{The first Cheeger constant of a simplex}
+
 \frame{\frametitle{Maximal cosystoles}
 
 \begin{Definition}
@@ -248,51 +249,6 @@ is the largest norm a $k$-cosystole in $X$ can attain.
 C_{max}(\Delta^{[n]},1)=\binom{\left\lceil\frac{n}{2}\right\rceil}{2}+\binom{\left\lfloor\frac{n}{2}\right\rfloor}{2}
 \]
 \end{theorem}
-}
-
-\frame{\frametitle{Sketch of a proof}
-
-
-
-}
-
-\section{Cut-minimal graphs and Cheeger graphs of a simplex}
-
-\frame{\frametitle{Cut-minimal graphs and Cheeger graphs of a simplex}
-\pause
-\begin{Definition}
-Consider a graph $G=([n],E)$. For any subsets $A,B\subset [n]$ define
-\[
-E_G(A,B)\coloneqq \{(v,w)\in E\: :\: v\in A\text{, }w\in B\}
-\]
-and
-\[
-NE_G(A,B)\coloneqq \{(v,w)\notin E\: :\: v\in A\text{, }w\in B\}
-\]
-A graph $G=([n],E)$ is called \textbf{cut-minimal}, if for every $S\subset[n]$ we have
-\[
-|E_G(S,[n]\setminus S)|\leq |NE_G(S,[n]\setminus S)|,
-\]
-which is equivalent to
-\[
-|E_G(S,[n]\setminus S)|\leq\frac{|S|(n-|S|)}{2}
-\]
-\end{Definition}
-}
-
-\frame{\frametitle{Cut-minimal graphs and Cheeger graphs of a simplex}
-
-There is a one-to-one correspondence between the cut-minimal graphs on $n$ vertices and the $1$-cosystoles in $C^1(\Delta^{[n]})$.
-\pause
-\begin{Definition}
-A cut-minimal graph which corresponds to a Cheeger cosystole is called a \textbf{Cheeger graph}.
-\end{Definition}
-}
-
-\frame{\frametitle{Maximal cut-minimal graphs}
-
-
-
 }
 
 \frame{\frametitle{The case when $n$ is a power of $2$}
