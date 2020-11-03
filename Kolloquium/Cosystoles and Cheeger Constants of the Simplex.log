@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  29 OCT 2020 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  3 NOV 2020 11:50
 entering extended mode
 **"./Cosystoles and Cheeger Constants of the Simplex.tex"
 ("Cosystoles and Cheeger Constants of the Simplex.tex"
@@ -1054,13 +1054,13 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
 ("C:\Users\Kai\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<./beamertheme_pics/unilogo.pdf, id=33, 1131.22626pt x 198.7425pt>
+<./beamertheme_pics/unilogo.pdf, id=29, 1131.22626pt x 198.7425pt>
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 13.
 
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
-<./beamertheme_pics/alta-logo.pdf, id=35, 99.37125pt x 25.09375pt>
+<./beamertheme_pics/alta-logo.pdf, id=31, 99.37125pt x 25.09375pt>
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 1
@@ -1594,11 +1594,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 165
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 1
-86.
+76.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 176
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [39
@@ -1607,11 +1607,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 1
-86.
+76.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 176
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [40
@@ -1620,11 +1620,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 1
-86.
+85.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 185
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [41
@@ -1632,12 +1632,12 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 186
 ]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-02.
+Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 1
+85.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 185
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [42
@@ -1646,11 +1646,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-02.
+06.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [43
@@ -1659,11 +1659,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-02.
+06.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [44
@@ -1672,11 +1672,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-02.
+06.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 206
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [45
@@ -1685,11 +1685,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 202
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-12.
+28.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 212
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 228
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [46
@@ -1698,11 +1698,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 212
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-12.
+28.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 212
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 228
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [47
@@ -1711,11 +1711,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 212
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+28.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 228
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [48
@@ -1724,11 +1724,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+28.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 228
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [49
@@ -1737,11 +1737,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+44.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 244
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
 
@@ -1751,11 +1751,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+44.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 244
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [51
@@ -1764,11 +1764,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+44.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 244
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [52
@@ -1777,11 +1777,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-33.
+44.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 244
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [53
@@ -1790,11 +1790,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 233
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-40.
+54.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 240
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 254
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [54
@@ -1803,90 +1803,89 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 240
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-40.
+54.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 240
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 254
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [55
 
-] (Figure4.tex)
+]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [56
 
-] (Figure4.tex)
+]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [57
 
 ]
-(Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [58
 
-] (Figure4.tex)
+]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [59
 
-] (Figure4.tex)
+]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [60
 
-] (Figure4.tex)
+]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-56.
+75.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 275
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [61
@@ -1895,109 +1894,110 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 256
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-69.
+82.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 269
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 282
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
-
-[62
+ [62
 
 ]
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-69.
+82.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 269
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 282
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [63
 
 ]
+(Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-78.
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 278
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [64
 
-]
+] (Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
-78.
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 278
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [65
 
-]
+] (Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-00.
+Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 300
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [66
 
-]
+] (Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-00.
+Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 300
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [67
 
 ]
+(Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-00.
+Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 300
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [68
 
-]
+] (Figure4.tex)
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-00.
+Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 2
+98.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 300
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 298
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [69
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 331
+LaTeX Font Info:    Trying to load font information for U+euf on input line 329
 .
 
 ("C:\Users\Kai\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd"
@@ -2006,11 +2006,11 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-31.
+29.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 329
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
 
@@ -2020,11 +2020,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-31.
+29.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 329
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [71
@@ -2033,11 +2033,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-31.
+29.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 329
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [72
@@ -2046,11 +2046,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-31.
+29.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 329
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [73
@@ -2059,11 +2059,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 331
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-55.
+53.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 353
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [74
@@ -2072,11 +2072,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-55.
+53.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 353
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [75
@@ -2085,11 +2085,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-55.
+53.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 353
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [76
@@ -2098,11 +2098,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-55.
+53.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 353
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [77
@@ -2111,11 +2111,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 355
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-79.
+77.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 377
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [78
@@ -2124,11 +2124,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-79.
+77.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 377
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [79
@@ -2137,11 +2137,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-79.
+77.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 377
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [80
@@ -2150,11 +2150,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-79.
+77.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 377
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [81
@@ -2163,11 +2163,11 @@ Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 379
 File: ./beamertheme_pics/alta-logo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/alta-logo.pdf>
 Package pdftex.def Info: ./beamertheme_pics/alta-logo.pdf  used on input line 3
-96.
+94.
 (pdftex.def)             Requested size: 71.28491pt x 18.0pt.
 File: ./beamertheme_pics/unilogo.pdf Graphic file (type pdf)
 <use ./beamertheme_pics/unilogo.pdf>
-Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 396
+Package pdftex.def Info: ./beamertheme_pics/unilogo.pdf  used on input line 394
 .
 (pdftex.def)             Requested size: 51.21368pt x 9.0pt.
  [82
@@ -2183,21 +2183,21 @@ icle.pdf>]
 \tf@snm=\write8
 \openout8 = `"Cosystoles and Cheeger Constants of the Simplex.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
 
 ("Cosystoles and Cheeger Constants of the Simplex.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 Package rerunfilecheck Info: File `"Cosystoles and Cheeger Constants of the Sim
 plex".out' has not changed.
-(rerunfilecheck)             Checksum: FC3B30B2D813DBE4A0BDB4DD6BC32D89;342.
+(rerunfilecheck)             Checksum: 0CECC364907E636086CD8C19D70AA23A;313.
  ) 
 Here is how much of TeX's memory you used:
- 22572 strings out of 480930
- 451996 string characters out of 2900699
- 789763 words of memory out of 3000000
- 37699 multiletter control sequences out of 15000+200000
+ 22567 strings out of 480930
+ 451952 string characters out of 2900699
+ 788851 words of memory out of 3000000
+ 37695 multiletter control sequences out of 15000+200000
  545669 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,19n,86p,874b,766s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2228,9 +2228,9 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:
 /Users/Kai/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
 Output written on "Cosystoles and Cheeger Constants of the Simplex.pdf" (82 pag
-es, 518905 bytes).
+es, 518414 bytes).
 PDF statistics:
- 941 PDF objects out of 1000 (max. 8388607)
- 176 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 936 PDF objects out of 1000 (max. 8388607)
+ 175 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
