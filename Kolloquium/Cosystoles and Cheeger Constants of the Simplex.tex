@@ -252,32 +252,11 @@ Let $X$ be a simplicial complex, $k\geq 1$, and $\varphi\in C^k(X)$. Let now $\m
 \]
 \end{theorem}
 }
-\frame{\frametitle{The cycle detection theorem}
-\begin{proof}
-\pause
-Let $\psi\in C^{k-1}(X)$, then for any $1\leq i\leq t$ we have:
-\pause
-\begin{align}
-\langle\varphi+\delta^{k-1}(\psi),\alpha_i\rangle&=\langle\varphi,\alpha_i\rangle+\langle\delta^{k-1}(\psi),\alpha_i\rangle\notag\\
-&=\langle\varphi,\alpha_i\rangle+\langle\psi,\partial_{k-1}(\alpha_i)\rangle\notag\\
-&=\langle\varphi,\alpha_i\rangle+\langle\psi,0\rangle\notag\\
-&=\langle\varphi,\alpha_i\rangle=1\notag
-\end{align}
-\pause
-This means that we have $\supp(\varphi+\delta^{k-1}(\psi))\cap \supp(\alpha_i)\neq\emptyset$ for all $1\leq i\leq t$, so $\supp(\varphi+\delta^{k-1}(\psi))$ is a hitting set of $\mathcal{F}$ and we get:
-\pause
-\[
-\|\varphi+\delta^{k-1}(\psi)\|=|\supp(\varphi+\delta^{k-1}(\psi))|\geq\tau(\mathcal{F})
-\]
-\pause
-Since $\psi$ was chosen arbitrarily we are done.
-\end{proof}
-}
 
 \frame{\frametitle{The cycle detection theorem}
 \pause
 \begin{cor}[Kozlov]
-Let $\varphi\in C^k(X)$ and $\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\subset C_k(X)$ be a family of $k$-cycles, such that their supports are pairwise disjoint, then $\varphi$ is a cosystole.
+Let $\varphi\in C^k(X)$ and $\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\subset C_k(X)$ be a family of $k$-cycles, such that their supports are pairwise disjoint and $\left\langle\varphi,\alpha_i\right\rangle=1$ for all $1\leq i\leq\|\varphi\|$, then $\varphi$ is a cosystole.
 \end{cor}
 }
 
@@ -376,6 +355,29 @@ Let $n$ not be a power of $2$, then we have:
 \end{theorem}
 }
 
+\section{Partitioning consecutive numbers}
+
+\frame{\frametitle{Partitioning consecutive numbers - Introducing example}
+\pause
+There are four ways to display the number \(15\) as a sum of consecutive numbers, namely:
+\[
+1+2+3+4+5=4+5+6=7+8=15
+\]
+\pause
+Question: Is it possible to partition the summands of the shorter sums, such that each part sums up to one of the summands of the longer sums?\\
+\pause
+Answer: No! For example there is no way to display the number \(7\) as a sum of the numbers \(4,5,6\).\\
+\pause
+But it is always possible if the longer sum's first summand is \(1\).
+}
+
+\frame{\frametitle{A theorem about partitioning consecutive numbers}
+\pause
+\begin{theorem}[Renken]
+Let \(n,a,b\in\mathbb{N}\) (\(b\geq a\)), such that \(\sum\limits_{i=1}^ni=\sum\limits_{i=a}^bi\), then for every \(a\leq t\leq b\) there exists a subset \(U_t\subseteq [n]\), such that \(U_i\cap U_j=\emptyset\) for all \(i\neq j\) and we have\\
+\([n]=\bigcup\limits_{a\leq t\leq b}U_t\) and \(\sum\limits_{i\in U_t}i=t\).
+\end{theorem}
+}
 \section*{Bibliography}
 \frame{\frametitle{Bibliography}
 \begin{thebibliography}{1}
