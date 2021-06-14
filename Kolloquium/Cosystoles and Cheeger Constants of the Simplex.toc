@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{The classical Cheeger constant of a graph}{3}{0}{1}
 \beamer@sectionintoc {2}{Cosystoles and generalized Cheeger constants of the simplex}{18}{0}{2}
-\beamer@sectionintoc {3}{Alternative generalizations of the classical Cheeger constant}{64}{0}{3}
-\beamer@sectionintoc {4}{Partitioning consecutive numbers}{76}{0}{4}
+\beamer@sectionintoc {3}{Alternative generalizations of the classical Cheeger constant}{58}{0}{3}
+\beamer@sectionintoc {4}{Partitioning consecutive numbers}{70}{0}{4}
