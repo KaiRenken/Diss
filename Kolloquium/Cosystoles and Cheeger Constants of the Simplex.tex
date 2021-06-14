@@ -182,12 +182,12 @@ h_1(\Delta^{[n]})=\frac{n}{3}
 
 \frame{\frametitle{The case when $n$ is a power of $2$}
 \pause
-\begin{conj}
+\begin{theorem}[Kozlov]
 Let $n$ be a power of $2$. Then we have:
 \[
-h_1(\Delta^{[n]})>\frac{n}{3}
+h_1(\Delta^{[n]})\leq\frac{n^3-4n}{3n^2-24}
 \]
-\end{conj}
+\end{theorem}
 \pause
 \begin{theorem}[Kozlov]
 \[
@@ -201,7 +201,6 @@ h_1(\Delta^{[16]})>\frac{16}{3}
 \]
 \end{theorem}
 }
-
 \frame{\frametitle{Hitting sets and hitting numbers}
 \pause
 \begin{Definition}
@@ -226,9 +225,6 @@ Let $X$ be a simplicial complex, $k\geq 1$, and $\varphi\in C^k(X)$. Let now $\m
 \|\varphi\|_{csy}\geq\tau(\mathcal{F})
 \]
 \end{theorem}
-}
-
-\frame{\frametitle{The cycle detection theorem}
 \pause
 \begin{cor}[Kozlov]
 Let $\varphi\in C^k(X)$ and $\mathcal{F}=\{\alpha_1,\ldots,\alpha_{\|\varphi\|}\}\subset C_k(X)$ be a family of $k$-cycles, such that their supports are pairwise disjoint and $\left\langle\varphi,\alpha_i\right\rangle=1$ for all $1\leq i\leq\|\varphi\|$, then $\varphi$ is a cosystole.
